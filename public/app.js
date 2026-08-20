@@ -128,6 +128,7 @@ function applyFilters() {
 
   filteredObs = observations.filter(o => {
     const matchQuery = !q || 
+      (o.est_name && o.est_name.toLowerCase().includes(q)) ||
       (o.taxon && o.taxon.toLowerCase().includes(q)) ||
       (o.locality && o.locality.toLowerCase().includes(q)) ||
       (o.county && o.county.toLowerCase().includes(q)) ||
@@ -175,12 +176,16 @@ function renderList() {
     if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
     if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
 
+    const estTitle = o.est_name ? `<div class="obs-est-name">${escapeHtml(o.est_name)}</div>` : "";
+    const sciTitle = `<div class="obs-taxon">${escapeHtml(o.taxon)}</div>`;
+
     card.innerHTML = `
       <div class="obs-thumb-container">
         ${imgHtml}
       </div>
       <div class="obs-body">
-        <div class="obs-taxon">${escapeHtml(o.taxon)}</div>
+        ${estTitle}
+        ${sciTitle}
         <div class="obs-meta-row">
           <span>${o.date || "-"}</span>
           <span>${escapeHtml(o.locality || o.county || "")}</span>
@@ -219,7 +224,8 @@ function renderMarkers() {
           highlightCard(o.id);
         });
 
-        marker.bindTooltip(`<strong>${escapeHtml(o.taxon)}</strong><br>${o.date || ""}`, {
+        const title = o.est_name ? `<strong>${escapeHtml(o.est_name)}</strong><br><em>${escapeHtml(o.taxon)}</em>` : `<strong>${escapeHtml(o.taxon)}</strong>`;
+        marker.bindTooltip(`${title}<br>${o.date || ""}`, {
           direction: "top",
           offset: [0, -6]
         });
@@ -243,7 +249,7 @@ function highlightCard(id) {
 
 function openModal(o) {
   const modal = document.getElementById("obsModal");
-  document.getElementById("modalTitle").textContent = o.taxon;
+  document.getElementById("modalTitle").textContent = o.est_name ? `${o.est_name} (${o.taxon})` : o.taxon;
   document.getElementById("modalDate").textContent = o.date || "-";
   document.getElementById("modalLocality").textContent = `${o.locality || "-"}, ${o.county || ""}`;
   document.getElementById("modalCoords").textContent = (o.latitude && o.longitude) ? `${parseFloat(o.latitude).toFixed(5)}, ${parseFloat(o.longitude).toFixed(5)}` : "-";

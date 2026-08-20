@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_observations": 207,
+    "total_observations": 208,
     "unique_taxa": 122,
     "counties": [
       "Harju maakond",
@@ -15,12 +15,13 @@
       "Valga maakond",
       "Võru maakond"
     ],
-    "generated_at": "2026-08-20T08:24:25Z"
+    "generated_at": "2026-08-20T08:41:47Z"
   },
   "observations": [
     {
       "id": "8318292",
       "taxon": "Gloeoporus pannocinctus (Romell) J. Erikss.",
+      "est_name": "Kollane tarrik",
       "date": "2026-08-17",
       "latitude": 57.75788611,
       "longitude": 27.07176111,
@@ -46,6 +47,7 @@
     {
       "id": "8318212",
       "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "est_name": "Tumepruun taelik",
       "date": "2026-08-17",
       "latitude": 57.738975,
       "longitude": 27.05970278,
@@ -71,6 +73,7 @@
     {
       "id": "8318220",
       "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "est_name": "Lõhetümak",
       "date": "2026-08-17",
       "latitude": 57.73896111,
       "longitude": 27.05970278,
@@ -96,6 +99,7 @@
     {
       "id": "8318186",
       "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "est_name": "Liibuv roostetorik",
       "date": "2026-08-17",
       "latitude": 57.73918889,
       "longitude": 27.05924444,
@@ -121,6 +125,7 @@
     {
       "id": "8318340",
       "taxon": "Pholiota flammans (Batsch) P. Kumm.",
+      "est_name": "Leekmampel",
       "date": "2026-08-17",
       "latitude": 57.73869444,
       "longitude": 27.06168056,
@@ -146,6 +151,7 @@
     {
       "id": "8318339",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2026-08-17",
       "latitude": 57.737775,
       "longitude": 27.06423889,
@@ -171,6 +177,7 @@
     {
       "id": "8318338",
       "taxon": "Pholiota flammans (Batsch) P. Kumm.",
+      "est_name": "Leekmampel",
       "date": "2026-08-17",
       "latitude": 57.73888889,
       "longitude": 27.06223889,
@@ -196,6 +203,7 @@
     {
       "id": "8318335",
       "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "est_name": "Lõhetümak",
       "date": "2026-08-17",
       "latitude": 57.73888889,
       "longitude": 27.06223889,
@@ -221,6 +229,7 @@
     {
       "id": "8318333",
       "taxon": "Sarcoporia polyspora P. Karst.",
+      "est_name": "",
       "date": "2026-08-17",
       "latitude": 57.737825,
       "longitude": 27.06444444,
@@ -256,6 +265,7 @@
     {
       "id": "8318293",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2026-08-17",
       "latitude": 57.73879444,
       "longitude": 27.06242222,
@@ -291,6 +301,7 @@
     {
       "id": "8318342",
       "taxon": "Laxitextum bicolor (Pers.) Lentz",
+      "est_name": "",
       "date": "2026-08-16",
       "latitude": 57.58215833,
       "longitude": 26.81960833,
@@ -316,6 +327,7 @@
     {
       "id": "8318341",
       "taxon": "Lenzites betulina (L.) Fr.",
+      "est_name": "",
       "date": "2026-08-16",
       "latitude": 57.649,
       "longitude": 26.77307222,
@@ -341,6 +353,7 @@
     {
       "id": "8318346",
       "taxon": "Hydnellum aurantiacum (Batsch) P. Karst.",
+      "est_name": "Kuld-kübarnarmik",
       "date": "2026-08-07",
       "latitude": 57.71859444,
       "longitude": 27.04921944,
@@ -376,6 +389,7 @@
     {
       "id": "8318343",
       "taxon": "Lactifluus glaucescens (Crossl.) Verbeken",
+      "est_name": "Rohepiimane riisikas",
       "date": "2026-08-07",
       "latitude": 57.71916667,
       "longitude": 27.03732222,
@@ -401,6 +415,7 @@
     {
       "id": "8318345",
       "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "est_name": "Ookernahkis",
       "date": "2026-08-06",
       "latitude": 58.54911111,
       "longitude": 26.98228889,
@@ -426,6 +441,7 @@
     {
       "id": "8318344",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2026-08-06",
       "latitude": 58.52381944,
       "longitude": 26.98822222,
@@ -451,6 +467,7 @@
     {
       "id": "8318347",
       "taxon": "Phaeolus schweinitzii (Fr.) Pat.",
+      "est_name": "",
       "date": "2026-08-04",
       "latitude": 57.89172222,
       "longitude": 27.01139167,
@@ -481,6 +498,7 @@
     {
       "id": "8318348",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2026-08-01",
       "latitude": 57.7217,
       "longitude": 27.03373611,
@@ -506,6 +524,7 @@
     {
       "id": "8318349",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2026-07-28",
       "latitude": 57.63525278,
       "longitude": 26.77180278,
@@ -531,6 +550,7 @@
     {
       "id": "8135676",
       "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "est_name": "",
       "date": "2026-05-25",
       "latitude": 58.22208889,
       "longitude": 26.66684722,
@@ -556,6 +576,7 @@
     {
       "id": "8066704",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2026-04-24",
       "latitude": 58.222075,
       "longitude": 26.66697222,
@@ -581,6 +602,7 @@
     {
       "id": "8055095",
       "taxon": "Pulsatilla patens (L.) Mill.",
+      "est_name": "",
       "date": "2026-04-09",
       "latitude": 57.81005556,
       "longitude": 27.02221667,
@@ -606,6 +628,7 @@
     {
       "id": "8018692",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2026-03-21",
       "latitude": 57.72005,
       "longitude": 26.50034444,
@@ -631,6 +654,7 @@
     {
       "id": "8018731",
       "taxon": "Byssomerulius corium (Pers.) Parmasto",
+      "est_name": "",
       "date": "2026-03-21",
       "latitude": 57.72027778,
       "longitude": 26.49934167,
@@ -656,6 +680,7 @@
     {
       "id": "8018691",
       "taxon": "Fomitopsis serialis (Fr.) Spirin & Runnel",
+      "est_name": "",
       "date": "2026-03-21",
       "latitude": 57.72027778,
       "longitude": 26.49934167,
@@ -681,6 +706,7 @@
     {
       "id": "8018686",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2026-03-21",
       "latitude": 57.72027778,
       "longitude": 26.49934167,
@@ -706,6 +732,7 @@
     {
       "id": "8018693",
       "taxon": "Ischnoderma benzoinum (Wahlenb.) P. Karst.",
+      "est_name": "Harilik tõrvis",
       "date": "2026-03-21",
       "latitude": 57.72171389,
       "longitude": 26.50461944,
@@ -731,6 +758,7 @@
     {
       "id": "8018676",
       "taxon": "Skeletocutis amorpha (Fr.) Kotl. & Pouzar",
+      "est_name": "Punatarrik puna-peenpoorik",
       "date": "2026-03-21",
       "latitude": 57.72020278,
       "longitude": 26.49878611,
@@ -756,6 +784,7 @@
     {
       "id": "7869786",
       "taxon": "Holwaya mucida (Schulzer) Korf & Abawi",
+      "est_name": "",
       "date": "2025-12-10",
       "latitude": 58.51788611,
       "longitude": 26.32444444,
@@ -781,6 +810,7 @@
     {
       "id": "7785287",
       "taxon": "Lactarius glyciosmus (Fr.) Fr.",
+      "est_name": "",
       "date": "2025-10-21",
       "latitude": 58.09648333,
       "longitude": 27.01340556,
@@ -806,6 +836,7 @@
     {
       "id": "7784157",
       "taxon": "Phlebia centrifuga P. Karst.",
+      "est_name": "Volt-tardnahkis",
       "date": "2025-10-19",
       "latitude": 57.73354444,
       "longitude": 27.06813056,
@@ -831,6 +862,7 @@
     {
       "id": "7784156",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2025-10-19",
       "latitude": 57.72936111,
       "longitude": 27.05574167,
@@ -856,6 +888,7 @@
     {
       "id": "7784153",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2025-10-19",
       "latitude": 57.74414167,
       "longitude": 27.07813333,
@@ -881,6 +914,7 @@
     {
       "id": "7784154",
       "taxon": "Antrodiella citrinella Niemelä & Ryvarden",
+      "est_name": "Sidrunkollane antrodiell",
       "date": "2025-10-19",
       "latitude": 57.73896389,
       "longitude": 27.0649,
@@ -906,6 +940,7 @@
     {
       "id": "7784158",
       "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "est_name": "",
       "date": "2025-10-19",
       "latitude": 57.73898056,
       "longitude": 27.05918611,
@@ -931,6 +966,7 @@
     {
       "id": "7784159",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2025-10-19",
       "latitude": 57.73898056,
       "longitude": 27.05918611,
@@ -956,6 +992,7 @@
     {
       "id": "7784152",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2025-10-19",
       "latitude": 57.73335833,
       "longitude": 27.06144444,
@@ -981,6 +1018,7 @@
     {
       "id": "7780561",
       "taxon": "Coprinopsis atramentaria (Bull.) Redhead, Vilgalys & Moncalvo",
+      "est_name": "Voldiline tindik",
       "date": "2025-10-16",
       "latitude": 58.384054,
       "longitude": 26.723718,
@@ -1006,6 +1044,7 @@
     {
       "id": "7786524",
       "taxon": "Mycena (Pers.) Roussel",
+      "est_name": "",
       "date": "2025-10-15",
       "latitude": 58.38290833,
       "longitude": 26.72412778,
@@ -1031,6 +1070,7 @@
     {
       "id": "7787242",
       "taxon": "Schizophyllum commune Fr.",
+      "est_name": "Lõhislehik",
       "date": "2025-10-15",
       "latitude": 58.383002,
       "longitude": 26.724356,
@@ -1056,6 +1096,7 @@
     {
       "id": "7787241",
       "taxon": "Nectria (Fr.) Fr.",
+      "est_name": "",
       "date": "2025-10-15",
       "latitude": 58.38389,
       "longitude": 26.72383,
@@ -1081,6 +1122,7 @@
     {
       "id": "7769201",
       "taxon": "Coriolopsis trogii (Berk.) Domański",
+      "est_name": "",
       "date": "2025-10-01",
       "latitude": 58.384054,
       "longitude": 26.723718,
@@ -1106,6 +1148,7 @@
     {
       "id": "7769086",
       "taxon": "Pholiota populnea (Pers.) Kuyper & Tjall.-Beuk.",
+      "est_name": "",
       "date": "2025-10-01",
       "latitude": 58.384054,
       "longitude": 26.723718,
@@ -1131,6 +1174,7 @@
     {
       "id": "7766811",
       "taxon": "Hygrocybe miniata (Fr.) P. Kumm.",
+      "est_name": "",
       "date": "2025-09-28",
       "latitude": 58.276072,
       "longitude": 27.1716,
@@ -1156,6 +1200,7 @@
     {
       "id": "7766810",
       "taxon": "Lenzites betulina (L.) Fr.",
+      "est_name": "",
       "date": "2025-09-27",
       "latitude": 59.3756964,
       "longitude": 26.7653655,
@@ -1181,6 +1226,7 @@
     {
       "id": "7766814",
       "taxon": "Datronia mollis (Sommerf.) Donk",
+      "est_name": "",
       "date": "2025-09-27",
       "latitude": 59.37600556,
       "longitude": 26.76354444,
@@ -1206,6 +1252,7 @@
     {
       "id": "7766816",
       "taxon": "Porodaedalea pini (Brot.) Murrill",
+      "est_name": "",
       "date": "2025-09-27",
       "latitude": 59.37625278,
       "longitude": 26.76304444,
@@ -1231,6 +1278,7 @@
     {
       "id": "7766819",
       "taxon": "Phlebia tremellosa (Schrad.) Nakasone & Burds.",
+      "est_name": "Kännuvammik",
       "date": "2025-09-27",
       "latitude": 59.37754444,
       "longitude": 26.76188056,
@@ -1256,6 +1304,7 @@
     {
       "id": "7766809",
       "taxon": "Lactifluus volemus (Fr.) Kuntze",
+      "est_name": "Kuldriisikas",
       "date": "2025-09-27",
       "latitude": 59.3774827,
       "longitude": 26.7619224,
@@ -1281,6 +1330,7 @@
     {
       "id": "7766835",
       "taxon": "Skeletocutis papyracea A. David",
+      "est_name": "Vesivalge peenpoorik",
       "date": "2025-09-27",
       "latitude": 59.41796944,
       "longitude": 26.71160278,
@@ -1306,6 +1356,7 @@
     {
       "id": "7766842",
       "taxon": "Tricholoma sulphureum (Bull.) P. Kumm.",
+      "est_name": "Väävelheinik",
       "date": "2025-09-27",
       "latitude": 59.42098056,
       "longitude": 26.69886111,
@@ -1331,6 +1382,7 @@
     {
       "id": "7769071",
       "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "est_name": "Tumepruun taelik",
       "date": "2025-09-27",
       "latitude": 59.42030556,
       "longitude": 26.69683333,
@@ -1356,6 +1408,7 @@
     {
       "id": "7769073",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2025-09-27",
       "latitude": 59.42030556,
       "longitude": 26.69683333,
@@ -1381,6 +1434,7 @@
     {
       "id": "7742937",
       "taxon": "Fomitopsis quercina (L.) Spirin & Miettinen",
+      "est_name": "",
       "date": "2025-09-09",
       "latitude": 58.37806111,
       "longitude": 26.70334722,
@@ -1406,6 +1460,7 @@
     {
       "id": "7742406",
       "taxon": "Volvariella bombycina (Schaeff.) Singer",
+      "est_name": "Siid-tupplehik",
       "date": "2025-09-09",
       "latitude": 58.37852222,
       "longitude": 26.71389444,
@@ -1431,6 +1486,7 @@
     {
       "id": "7739852",
       "taxon": "Leptoporus erubescens (Fr.) Bourdot & Galzin",
+      "est_name": "Männi-lillatümak",
       "date": "2025-09-06",
       "latitude": 57.58294722,
       "longitude": 26.828575,
@@ -1456,6 +1512,7 @@
     {
       "id": "7739845",
       "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "est_name": "Liibuv roostetorik",
       "date": "2025-09-06",
       "latitude": 57.58194167,
       "longitude": 26.81898889,
@@ -1481,6 +1538,7 @@
     {
       "id": "7775542",
       "taxon": "Hericium coralloides (Scop.) Pers.",
+      "est_name": "Harunev korallnarmik",
       "date": "2025-09-02",
       "latitude": 57.84015278,
       "longitude": 27.20209444,
@@ -1506,6 +1564,7 @@
     {
       "id": "7775454",
       "taxon": "Lactarius acerrimus Britzelm.",
+      "est_name": "",
       "date": "2025-09-02",
       "latitude": 57.83241944,
       "longitude": 27.18842778,
@@ -1531,6 +1590,7 @@
     {
       "id": "7735065",
       "taxon": "Gomphus clavatus (Pers.) Gray",
+      "est_name": "Vurrik",
       "date": "2025-09-02",
       "latitude": 57.626225,
       "longitude": 27.28974444,
@@ -1556,6 +1616,7 @@
     {
       "id": "7734909",
       "taxon": "Boletopsis leucomelaena (Pers.) Fayod",
+      "est_name": "Must hundiseenik",
       "date": "2025-09-02",
       "latitude": 57.62606389,
       "longitude": 27.28884444,
@@ -1581,6 +1642,7 @@
     {
       "id": "7729161",
       "taxon": "Tremella encephala Willd.",
+      "est_name": "Ajukõhrik",
       "date": "2025-08-27",
       "latitude": 59.03665,
       "longitude": 25.52723611,
@@ -1606,6 +1668,7 @@
     {
       "id": "7717558",
       "taxon": "Russula favrei M.M. Moser",
+      "est_name": "Favre pilvik ere pilvik rühmast",
       "date": "2025-08-14",
       "latitude": 57.73879722,
       "longitude": 27.066025,
@@ -1631,6 +1694,7 @@
     {
       "id": "7717556",
       "taxon": "Lactarius lignyotus Fr.",
+      "est_name": "Must riisikas",
       "date": "2025-08-14",
       "latitude": 57.73863889,
       "longitude": 27.06606111,
@@ -1656,6 +1720,7 @@
     {
       "id": "7684129",
       "taxon": "Coriolopsis trogii (Berk.) Domański",
+      "est_name": "",
       "date": "2025-07-15",
       "latitude": 57.62746944,
       "longitude": 26.87404444,
@@ -1681,6 +1746,7 @@
     {
       "id": "8318351",
       "taxon": "Ganoderma lucidum (Curtis) P. Karst.",
+      "est_name": "Lakkvaabik",
       "date": "2025-06-05",
       "latitude": 58.24305278,
       "longitude": 27.189575,
@@ -1706,6 +1772,7 @@
     {
       "id": "8318350",
       "taxon": "Morchella esculenta (L.) Pers.",
+      "est_name": "Harilik mürkel",
       "date": "2025-05-08",
       "latitude": 59.53412222,
       "longitude": 25.75538889,
@@ -1731,6 +1798,7 @@
     {
       "id": "8318354",
       "taxon": "Sarcosoma globosum (Schmidel) Rehm",
+      "est_name": "Limatünnik",
       "date": "2025-04-13",
       "latitude": 58.11125833,
       "longitude": 27.04801667,
@@ -1756,6 +1824,7 @@
     {
       "id": "8318353",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2025-04-13",
       "latitude": 58.10729722,
       "longitude": 27.05148611,
@@ -1781,6 +1850,7 @@
     {
       "id": "8318352",
       "taxon": "Stereum sanguinolentum (Alb. & Schwein.) Fr.",
+      "est_name": "Verev nahkis",
       "date": "2025-04-13",
       "latitude": 58.10673889,
       "longitude": 27.04313333,
@@ -1806,6 +1876,7 @@
     {
       "id": "8318355",
       "taxon": "Daedalea quercina (L.) Pers.",
+      "est_name": "Tammekakk",
       "date": "2025-03-11",
       "latitude": 58.37801389,
       "longitude": 26.70328056,
@@ -1831,6 +1902,7 @@
     {
       "id": "8318356",
       "taxon": "Phlebia centrifuga P. Karst.",
+      "est_name": "Volt-tardnahkis",
       "date": "2025-03-10",
       "latitude": 58.51974167,
       "longitude": 26.32384167,
@@ -1856,6 +1928,7 @@
     {
       "id": "8318357",
       "taxon": "Phyllotopsis nidulans (Pers.) Singer",
+      "est_name": "Kuldkülik",
       "date": "2025-01-17",
       "latitude": 57.909225,
       "longitude": 26.98733056,
@@ -1881,6 +1954,7 @@
     {
       "id": "8318358",
       "taxon": "Tremella mesenterica Retz.",
+      "est_name": "Kollane kõhrik",
       "date": "2025-01-11",
       "latitude": 57.73419167,
       "longitude": 27.06042222,
@@ -1906,6 +1980,7 @@
     {
       "id": "8318359",
       "taxon": "Schizophyllum commune Fr.",
+      "est_name": "Lõhislehik",
       "date": "2024-11-04",
       "latitude": 58.37863611,
       "longitude": 26.71378611,
@@ -1931,6 +2006,7 @@
     {
       "id": "7187388",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2024-09-10",
       "latitude": 58.27489444,
       "longitude": 27.31899722,
@@ -1956,6 +2032,7 @@
     {
       "id": "7187657",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2024-09-10",
       "latitude": 58.27513889,
       "longitude": 27.31877222,
@@ -1981,6 +2058,7 @@
     {
       "id": "7187659",
       "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "est_name": "Ookernahkis",
       "date": "2024-09-10",
       "latitude": 58.27449444,
       "longitude": 27.31946389,
@@ -2006,6 +2084,7 @@
     {
       "id": "7187658",
       "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "est_name": "Ookernahkis",
       "date": "2024-09-10",
       "latitude": 58.27206389,
       "longitude": 27.31425,
@@ -2031,6 +2110,7 @@
     {
       "id": "6706885",
       "taxon": "Helix pomatia Linnaeus, 1758",
+      "est_name": "",
       "date": "2024-05-10",
       "latitude": 57.81260278,
       "longitude": 27.00773889,
@@ -2056,6 +2136,7 @@
     {
       "id": "6645298",
       "taxon": "Rhizocybe pruinosa (Lasch) Vizzini, G. Moreno, P. Alvarado & Consiglio",
+      "est_name": "Risoidlehtrik",
       "date": "2024-03-25",
       "latitude": 58.11094722,
       "longitude": 27.04834722,
@@ -2081,6 +2162,7 @@
     {
       "id": "6645297",
       "taxon": "Sarcosoma globosum (Schmidel) Rehm",
+      "est_name": "Limatünnik",
       "date": "2024-03-25",
       "latitude": 58.11094722,
       "longitude": 27.04834722,
@@ -2106,6 +2188,7 @@
     {
       "id": "6560974",
       "taxon": "Tremiscus helvelloides (DC.) Donk",
+      "est_name": "Lehterüdik",
       "date": "2023-10-31",
       "latitude": 57.81114444,
       "longitude": 27.01411944,
@@ -2131,6 +2214,7 @@
     {
       "id": "6501327",
       "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "est_name": "Nabatorik",
       "date": "2023-09-05",
       "latitude": 57.89188,
       "longitude": 27.346679,
@@ -2156,6 +2240,7 @@
     {
       "id": "6486037",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2023-08-24",
       "latitude": 57.72144444,
       "longitude": 27.04085278,
@@ -2181,6 +2266,7 @@
     {
       "id": "6537812",
       "taxon": "Phellinus Quél.",
+      "est_name": "",
       "date": "2023-08-21",
       "latitude": 57.81801944,
       "longitude": 27.01832222,
@@ -2206,6 +2292,7 @@
     {
       "id": "6485847",
       "taxon": "Chamaemyces fracidus (Fr.) Donk",
+      "est_name": "Säärissirmik",
       "date": "2023-08-20",
       "latitude": 58.554175,
       "longitude": 22.57746111,
@@ -2231,6 +2318,7 @@
     {
       "id": "6485852",
       "taxon": "Amanita strobiliformis (Paulet ex Vittad.) Bertill.",
+      "est_name": "Loor-kärbseseen",
       "date": "2023-08-20",
       "latitude": 58.60439167,
       "longitude": 22.52531111,
@@ -2256,6 +2344,7 @@
     {
       "id": "7735062",
       "taxon": "Gomphus clavatus (Pers.) Gray",
+      "est_name": "Vurrik",
       "date": "2023-08-19",
       "latitude": 58.58897778,
       "longitude": 22.52637222,
@@ -2281,6 +2370,7 @@
     {
       "id": "6417946",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-08-10",
       "latitude": 57.73770833,
       "longitude": 27.06684444,
@@ -2306,6 +2396,7 @@
     {
       "id": "6417945",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2023-08-10",
       "latitude": 57.73741944,
       "longitude": 27.06748889,
@@ -2331,6 +2422,7 @@
     {
       "id": "6417943",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-08-10",
       "latitude": 57.73561111,
       "longitude": 27.05965,
@@ -2356,6 +2448,7 @@
     {
       "id": "6418448",
       "taxon": "Pseudohydnum gelatinosum (Scop.) P. Karst.",
+      "est_name": "Üdik ehk üdiseen ehk pärisüdik",
       "date": "2023-08-10",
       "latitude": 57.73626667,
       "longitude": 27.05953056,
@@ -2381,6 +2474,7 @@
     {
       "id": "6406654",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-30",
       "latitude": 58.02816389,
       "longitude": 26.9252,
@@ -2406,6 +2500,7 @@
     {
       "id": "6406652",
       "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "est_name": "Liibuv roostetorik",
       "date": "2023-07-30",
       "latitude": 58.026347,
       "longitude": 26.925067,
@@ -2431,6 +2526,7 @@
     {
       "id": "6406648",
       "taxon": "Phellinopsis conchata (Pers.) Y.C. Dai",
+      "est_name": "",
       "date": "2023-07-30",
       "latitude": 58.02501389,
       "longitude": 26.92406111,
@@ -2456,6 +2552,7 @@
     {
       "id": "6406647",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-30",
       "latitude": 58.02505,
       "longitude": 26.92435833,
@@ -2481,6 +2578,7 @@
     {
       "id": "6406645",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-30",
       "latitude": 58.02492222,
       "longitude": 26.92438611,
@@ -2506,6 +2604,7 @@
     {
       "id": "6406644",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2023-07-30",
       "latitude": 58.02452222,
       "longitude": 26.92476389,
@@ -2531,6 +2630,7 @@
     {
       "id": "6406624",
       "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "est_name": "Tumepruun taelik",
       "date": "2023-07-30",
       "latitude": 58.02201389,
       "longitude": 26.94253333,
@@ -2556,6 +2656,7 @@
     {
       "id": "6406623",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-30",
       "latitude": 58.02118056,
       "longitude": 26.94591389,
@@ -2581,6 +2682,7 @@
     {
       "id": "6593695",
       "taxon": "Climacodon pulcherrimus (Berk. & M.A. Curtis) M.I. Nikol.",
+      "est_name": "",
       "date": "2023-07-28",
       "latitude": 57.832958,
       "longitude": 26.932367,
@@ -2606,6 +2708,7 @@
     {
       "id": "6405565",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-07-27",
       "latitude": 57.73520556,
       "longitude": 27.06103611,
@@ -2631,6 +2734,7 @@
     {
       "id": "6405563",
       "taxon": "Porphyrellus porphyrosporus (Fr. & Hök) E.-J. Gilbert",
+      "est_name": "Tahmpuravik",
       "date": "2023-07-27",
       "latitude": 57.73563333,
       "longitude": 27.06058333,
@@ -2656,6 +2760,7 @@
     {
       "id": "6405564",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-07-27",
       "latitude": 57.74186389,
       "longitude": 27.04924722,
@@ -2681,6 +2786,7 @@
     {
       "id": "6405101",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-07-26",
       "latitude": 57.63365278,
       "longitude": 26.77236667,
@@ -2706,6 +2812,7 @@
     {
       "id": "6405004",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2023-07-25",
       "latitude": 57.71305556,
       "longitude": 27.06045,
@@ -2731,6 +2838,7 @@
     {
       "id": "6401034",
       "taxon": "Pholiota tuberculosa (Schaeff.) P. Kumm.",
+      "est_name": "",
       "date": "2023-07-19",
       "latitude": 57.73234167,
       "longitude": 27.064075,
@@ -2756,6 +2864,7 @@
     {
       "id": "6400997",
       "taxon": "Pluteus atromarginatus (Konrad) Kühner",
+      "est_name": "",
       "date": "2023-07-19",
       "latitude": 57.73178611,
       "longitude": 27.06436389,
@@ -2781,6 +2890,7 @@
     {
       "id": "6401033",
       "taxon": "Picipes badius (Persoon) I.V. Zmitrovich & A.E. Kovalenko",
+      "est_name": "",
       "date": "2023-07-19",
       "latitude": 57.73167778,
       "longitude": 27.06478611,
@@ -2806,6 +2916,7 @@
     {
       "id": "6401032",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2023-07-19",
       "latitude": 57.73125833,
       "longitude": 27.06428056,
@@ -2831,6 +2942,7 @@
     {
       "id": "6401030",
       "taxon": "Flammulaster limulatus (Fr.) Watling",
+      "est_name": "",
       "date": "2023-07-19",
       "latitude": 57.73191389,
       "longitude": 27.06541944,
@@ -2856,6 +2968,7 @@
     {
       "id": "6401031",
       "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "est_name": "Nabatorik",
       "date": "2023-07-19",
       "latitude": 57.73210833,
       "longitude": 27.06641389,
@@ -2881,6 +2994,7 @@
     {
       "id": "6401039",
       "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "est_name": "",
       "date": "2023-07-18",
       "latitude": 58.02635833,
       "longitude": 26.92508611,
@@ -2906,6 +3020,7 @@
     {
       "id": "6399765",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-18",
       "latitude": 58.02628056,
       "longitude": 26.92485833,
@@ -2931,6 +3046,7 @@
     {
       "id": "6399767",
       "taxon": "Amylocystis lapponica (Romell) Singer",
+      "est_name": "Poropoorik ehk lapi torik",
       "date": "2023-07-18",
       "latitude": 58.02411389,
       "longitude": 26.93632778,
@@ -2956,6 +3072,7 @@
     {
       "id": "6401038",
       "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "est_name": "",
       "date": "2023-07-18",
       "latitude": 58.02645833,
       "longitude": 26.924975,
@@ -2981,6 +3098,7 @@
     {
       "id": "6393710",
       "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "est_name": "",
       "date": "2023-07-12",
       "latitude": 57.62435,
       "longitude": 26.75297,
@@ -3006,6 +3124,7 @@
     {
       "id": "6393709",
       "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "est_name": "Nabatorik",
       "date": "2023-07-11",
       "latitude": 57.62435,
       "longitude": 26.75297,
@@ -3031,6 +3150,7 @@
     {
       "id": "6393708",
       "taxon": "Pluteus salicinus (Pers.) P. Kumm.",
+      "est_name": "Hall napsik",
       "date": "2023-07-11",
       "latitude": 57.62435,
       "longitude": 26.75297,
@@ -3056,6 +3176,7 @@
     {
       "id": "6393707",
       "taxon": "Ganoderma lucidum (Curtis) P. Karst.",
+      "est_name": "Lakkvaabik",
       "date": "2023-07-11",
       "latitude": 57.625778,
       "longitude": 26.748947,
@@ -3081,6 +3202,7 @@
     {
       "id": "6243180",
       "taxon": "Strobilurus stephanocystis (Kühner & Romagn. ex Hora) Singer",
+      "est_name": "Männi käbikõrges",
       "date": "2023-04-26",
       "latitude": 57.88818611,
       "longitude": 26.93744722,
@@ -3106,6 +3228,7 @@
     {
       "id": "6148780",
       "taxon": "Phellinopsis conchata (Pers.) Y.C. Dai",
+      "est_name": "",
       "date": "2022-11-30",
       "latitude": 58.38131667,
       "longitude": 26.71850278,
@@ -3131,6 +3254,7 @@
     {
       "id": "6133185",
       "taxon": "Inocutis rheades (Pers.) Fiasson & Niemelä",
+      "est_name": "",
       "date": "2022-11-13",
       "latitude": 57.74773,
       "longitude": 27.10045,
@@ -3156,6 +3280,7 @@
     {
       "id": "6133184",
       "taxon": "Bjerkandera fumosa (Pers.) P. Karst.",
+      "est_name": "Pruun suitsik",
       "date": "2022-11-13",
       "latitude": 57.74592,
       "longitude": 27.10529,
@@ -3181,6 +3306,7 @@
     {
       "id": "7769412",
       "taxon": "Phyllotopsis nidulans (Pers.) Singer",
+      "est_name": "Kuldkülik",
       "date": "2022-11-12",
       "latitude": 57.91385278,
       "longitude": 27.18780833,
@@ -3206,6 +3332,7 @@
     {
       "id": "7769430",
       "taxon": "Gloeoporus dichrous (Fr.) Bres.",
+      "est_name": "Kasetarrik",
       "date": "2022-11-12",
       "latitude": 57.911575,
       "longitude": 27.18605833,
@@ -3231,6 +3358,7 @@
     {
       "id": "7769445",
       "taxon": "Chondrostereum purpureum (Pers.) Pouzar",
+      "est_name": "Lilla ebanahkis",
       "date": "2022-11-12",
       "latitude": 57.91161389,
       "longitude": 27.18594444,
@@ -3256,6 +3384,7 @@
     {
       "id": "7769220",
       "taxon": "Schizophyllum commune Fr.",
+      "est_name": "Lõhislehik",
       "date": "2022-11-12",
       "latitude": 57.90953889,
       "longitude": 27.19453889,
@@ -3281,6 +3410,7 @@
     {
       "id": "6124923",
       "taxon": "Hypsizygus tessulatus (Bull.) Singer",
+      "est_name": "Servikheinik",
       "date": "2022-11-07",
       "latitude": 57.91414,
       "longitude": 27.18927,
@@ -3306,6 +3436,7 @@
     {
       "id": "5964972",
       "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "est_name": "Kühmtagel",
       "date": "2022-11-01",
       "latitude": 58.09710556,
       "longitude": 27.45693333,
@@ -3331,6 +3462,7 @@
     {
       "id": "5611453",
       "taxon": "Cystoderma jasonis (Cooke & Massee) Harmaja",
+      "est_name": "Kuld-pisisirmik",
       "date": "2022-10-28",
       "latitude": 57.832462,
       "longitude": 26.93715,
@@ -3356,6 +3488,7 @@
     {
       "id": "5607408",
       "taxon": "Tricholoma inocybeoides A. Pearson",
+      "est_name": "Narmasnutt-heinik",
       "date": "2022-10-23",
       "latitude": 57.846992,
       "longitude": 26.993208,
@@ -3381,6 +3514,7 @@
     {
       "id": "5607406",
       "taxon": "Trametes hirsuta (Wulfen) Pilat",
+      "est_name": "Villtagel",
       "date": "2022-10-23",
       "latitude": 57.844187,
       "longitude": 26.959575,
@@ -3406,6 +3540,7 @@
     {
       "id": "5606222",
       "taxon": "Pholiota populnea (Pers.) Kuyper & Tjall.-Beuk.",
+      "est_name": "",
       "date": "2022-10-21",
       "latitude": 57.838928,
       "longitude": 27.001397,
@@ -3431,6 +3566,7 @@
     {
       "id": "5605312",
       "taxon": "Hypsizygus tessulatus (Bull.) Singer",
+      "est_name": "Servikheinik",
       "date": "2022-10-20",
       "latitude": 58.36674167,
       "longitude": 26.720975,
@@ -3456,6 +3592,7 @@
     {
       "id": "5607409",
       "taxon": "Panellus serotinus (Pers.) Kühner",
+      "est_name": "",
       "date": "2022-10-20",
       "latitude": 58.38404167,
       "longitude": 26.72050278,
@@ -3481,6 +3618,7 @@
     {
       "id": "5605311",
       "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "est_name": "Kühmtagel",
       "date": "2022-10-20",
       "latitude": 58.38383611,
       "longitude": 26.720725,
@@ -3506,6 +3644,7 @@
     {
       "id": "5607410",
       "taxon": "Clitocybe nebularis (Batsch) Quél.",
+      "est_name": "Udulehtrik",
       "date": "2022-10-20",
       "latitude": 58.384517,
       "longitude": 26.72167,
@@ -3531,6 +3670,7 @@
     {
       "id": "5605313",
       "taxon": "Trametes versicolor (L.) Lloyd",
+      "est_name": "Libliktagel",
       "date": "2022-10-20",
       "latitude": 58.38477,
       "longitude": 26.719528,
@@ -3556,6 +3696,7 @@
     {
       "id": "5607389",
       "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "est_name": "Habeheinik",
       "date": "2022-10-19",
       "latitude": null,
       "longitude": null,
@@ -3581,6 +3722,7 @@
     {
       "id": "5606300",
       "taxon": "Vulpicida pinastri (Scop.) J.-E. Mattsson & M.J. Lai",
+      "est_name": "Männi-rebasesamblik",
       "date": "2022-10-19",
       "latitude": 57.753328,
       "longitude": 26.46745,
@@ -3606,6 +3748,7 @@
     {
       "id": "5958841",
       "taxon": "Pluteus petasatus (Fr.) Gillet",
+      "est_name": "Soomusnapsik",
       "date": "2022-10-17",
       "latitude": 57.83068,
       "longitude": 26.995613,
@@ -3631,6 +3774,7 @@
     {
       "id": "5607386",
       "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "est_name": "Rõngasheinik",
       "date": "2022-10-14",
       "latitude": 57.81898611,
       "longitude": 27.03886944,
@@ -3656,6 +3800,7 @@
     {
       "id": "5607385",
       "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "est_name": "Rõngasheinik",
       "date": "2022-10-14",
       "latitude": 57.82228889,
       "longitude": 27.04934444,
@@ -3681,6 +3826,7 @@
     {
       "id": "5605388",
       "taxon": "Arrhenia acerosa (Fr.) Kühner",
+      "est_name": "",
       "date": "2022-10-13",
       "latitude": 57.82379444,
       "longitude": 27.04650556,
@@ -3706,6 +3852,7 @@
     {
       "id": "5607407",
       "taxon": "Phlegmacium triumphans (Fr.) Niskanen & Liimat.",
+      "est_name": "",
       "date": "2022-10-13",
       "latitude": 57.789192,
       "longitude": 26.88205,
@@ -3731,6 +3878,7 @@
     {
       "id": "5607384",
       "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "est_name": "Rõngasheinik",
       "date": "2022-10-13",
       "latitude": 57.798637,
       "longitude": 26.889433,
@@ -3756,6 +3904,7 @@
     {
       "id": "5607388",
       "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "est_name": "Habeheinik",
       "date": "2022-10-12",
       "latitude": 57.811055,
       "longitude": 27.009419,
@@ -3781,6 +3930,7 @@
     {
       "id": "5607383",
       "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "est_name": "Rõngasheinik",
       "date": "2022-10-03",
       "latitude": 57.81638,
       "longitude": 26.99538,
@@ -3806,6 +3956,7 @@
     {
       "id": "5607387",
       "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "est_name": "Habeheinik",
       "date": "2022-10-02",
       "latitude": 57.82175,
       "longitude": 26.972555,
@@ -3831,6 +3982,7 @@
     {
       "id": "5582419",
       "taxon": "Gloiodon strigosus (Sw.) P. Karst.",
+      "est_name": "Harjasnarmik",
       "date": "2022-09-19",
       "latitude": 57.80879722,
       "longitude": 27.04718889,
@@ -3856,6 +4008,7 @@
     {
       "id": "5582420",
       "taxon": "Leptoporus erubescens (Fr.) Bourdot & Galzin",
+      "est_name": "Männi-lillatümak",
       "date": "2022-09-19",
       "latitude": 57.80856389,
       "longitude": 27.04675278,
@@ -3881,6 +4034,7 @@
     {
       "id": "5579413",
       "taxon": "Hemipholiota heteroclita (Fr.) Bon",
+      "est_name": "Lõhnamampel lõhna-ebamampel",
       "date": "2022-09-14",
       "latitude": 57.787812,
       "longitude": 27.163703,
@@ -3906,6 +4060,7 @@
     {
       "id": "5579137",
       "taxon": "Skeletocutis stellae (Pilát) Jean Keller",
+      "est_name": "Täht-peenpoorik",
       "date": "2022-09-13",
       "latitude": 57.73128611,
       "longitude": 27.06316111,
@@ -3931,6 +4086,7 @@
     {
       "id": "5579138",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2022-09-13",
       "latitude": 57.73119444,
       "longitude": 27.0629,
@@ -3956,6 +4112,7 @@
     {
       "id": "5579140",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2022-09-13",
       "latitude": 57.73103611,
       "longitude": 27.06291667,
@@ -3981,6 +4138,7 @@
     {
       "id": "5579139",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2022-09-13",
       "latitude": 57.731005,
       "longitude": 27.062772,
@@ -4006,6 +4164,7 @@
     {
       "id": "5578745",
       "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "est_name": "Liibuv roostetorik",
       "date": "2022-08-25",
       "latitude": 57.63485833,
       "longitude": 26.77505,
@@ -4031,6 +4190,7 @@
     {
       "id": "5561684",
       "taxon": "Aureoboletus projectellus (Murrill) Halling",
+      "est_name": "Männi-kuldpoorik",
       "date": "2022-08-19",
       "latitude": 58.90720833,
       "longitude": 22.13813889,
@@ -4056,6 +4216,7 @@
     {
       "id": "5557189",
       "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "est_name": "Liibuv roostetorik",
       "date": "2022-08-12",
       "latitude": 57.634303,
       "longitude": 26.772337,
@@ -4081,6 +4242,7 @@
     {
       "id": "6142024",
       "taxon": "Phellinus tuberculosus (Baumg.) Niemelä",
+      "est_name": "Ploomitaelik",
       "date": "2022-07-09",
       "latitude": 58.13063,
       "longitude": 23.99869,
@@ -4106,6 +4268,7 @@
     {
       "id": "6123659",
       "taxon": "Tubaria confragosa (Fr.) Kühner",
+      "est_name": "Rõngasnigerik",
       "date": "2022-06-19",
       "latitude": 57.80704444,
       "longitude": 27.12473611,
@@ -4131,6 +4294,7 @@
     {
       "id": "5476193",
       "taxon": "Agaricus bitorquis (Quél.) Sacc.",
+      "est_name": "Linnašampinjon",
       "date": "2022-06-15",
       "latitude": 57.83612,
       "longitude": 27.00982,
@@ -4156,6 +4320,7 @@
     {
       "id": "5552421",
       "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "est_name": "",
       "date": "2022-06-12",
       "latitude": 57.735772,
       "longitude": 27.066197,
@@ -4181,6 +4346,7 @@
     {
       "id": "5532259",
       "taxon": "Skeletocutis stellae (Pilát) Jean Keller",
+      "est_name": "Täht-peenpoorik",
       "date": "2022-06-12",
       "latitude": 57.734675,
       "longitude": 27.062728,
@@ -4206,6 +4372,7 @@
     {
       "id": "5552412",
       "taxon": "Pseudomerulius aureus (Fr.) Jülich",
+      "est_name": "Kuldvammik",
       "date": "2021-11-21",
       "latitude": 57.736058,
       "longitude": 27.064958,
@@ -4231,6 +4398,7 @@
     {
       "id": "5579414",
       "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "est_name": "Taiga-peenpoorik",
       "date": "2021-10-28",
       "latitude": 58.034139,
       "longitude": 26.93633,
@@ -4256,6 +4424,7 @@
     {
       "id": "4665539",
       "taxon": "Fomitiporia robusta (P. Karst.) Fiasson & Niemelä",
+      "est_name": "Tammetaelik",
       "date": "2021-10-13",
       "latitude": 57.638462,
       "longitude": 27.089728,
@@ -4281,6 +4450,7 @@
     {
       "id": "4665073",
       "taxon": "Hymenochaete rubiginosa (Dicks.) Lév.",
+      "est_name": "Tamme tubaknahkis",
       "date": "2021-10-12",
       "latitude": 57.63853,
       "longitude": 27.089558,
@@ -4306,6 +4476,7 @@
     {
       "id": "4664967",
       "taxon": "Xylobolus frustulatus (Pers.) Boidin",
+      "est_name": "Tammenahkis",
       "date": "2021-10-12",
       "latitude": 57.638572,
       "longitude": 27.089717,
@@ -4331,6 +4502,7 @@
     {
       "id": "6123660",
       "taxon": "Galerina sideroides (Bull.) Kühner",
+      "est_name": "Vöötjalg-tanuk",
       "date": "2021-10-06",
       "latitude": 57.738472,
       "longitude": 27.058678,
@@ -4356,6 +4528,7 @@
     {
       "id": "6417942",
       "taxon": "Inonotus leporinus (Fr.) Gilb. & Ryvarden",
+      "est_name": "",
       "date": "2021-10-05",
       "latitude": 58.10568889,
       "longitude": 27.04609444,
@@ -4381,6 +4554,7 @@
     {
       "id": "4660255",
       "taxon": "Antrodiella citrinella Niemelä & Ryvarden",
+      "est_name": "Sidrunkollane antrodiell",
       "date": "2021-10-05",
       "latitude": 58.107394,
       "longitude": 27.044456,
@@ -4406,6 +4580,7 @@
     {
       "id": "4660254",
       "taxon": "Inonotus leporinus (Fr.) Gilb. & Ryvarden",
+      "est_name": "",
       "date": "2021-10-05",
       "latitude": 58.105728,
       "longitude": 27.04608,
@@ -4431,6 +4606,7 @@
     {
       "id": "4800930",
       "taxon": "Hydnellum caeruleum (Hornem.) P. Karst.",
+      "est_name": "Sini-kübarnarmik",
       "date": "2021-10-04",
       "latitude": 57.823738,
       "longitude": 26.98217,
@@ -4456,6 +4632,7 @@
     {
       "id": "4660464",
       "taxon": "Boletopsis grisea (Peck) Bondartsev & Singer",
+      "est_name": "Hall hundiseenik",
       "date": "2021-10-02",
       "latitude": 57.822767,
       "longitude": 26.981388,
@@ -4479,8 +4656,29 @@
       ]
     },
     {
+      "id": "8318555",
+      "taxon": "Gloeoporus pannocinctus (Romell) J. Erikss.",
+      "est_name": "Kollane tarrik",
+      "date": "2021-09-16",
+      "latitude": 57.80890278,
+      "longitude": 27.05335278,
+      "altitude": 128.5,
+      "locality": "Verijärve küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318555",
+      "photos": []
+    },
+    {
       "id": "7732705",
       "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "est_name": "Pruun riisikas",
       "date": "2021-09-09",
       "latitude": 57.71569444,
       "longitude": 27.03786944,
@@ -4506,6 +4704,7 @@
     {
       "id": "4800587",
       "taxon": "Phellodon niger (Fr.) P. Karst.",
+      "est_name": "Must vöötnarmik",
       "date": "2021-09-04",
       "latitude": 57.608025,
       "longitude": 26.833828,
@@ -4531,6 +4730,7 @@
     {
       "id": "5607382",
       "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "est_name": "Rõngasheinik",
       "date": "2021-09-03",
       "latitude": 57.685287,
       "longitude": 26.521412,
@@ -4556,6 +4756,7 @@
     {
       "id": "4649531",
       "taxon": "Hemistropharia albocrenulata (Peck) Jacobsson & E. Larss.",
+      "est_name": "Täkiline ebamampel",
       "date": "2021-08-25",
       "latitude": 57.724858,
       "longitude": 27.03395,
@@ -4581,6 +4782,7 @@
     {
       "id": "4619531",
       "taxon": "Hydnellum geogenium (Fr.) Banker",
+      "est_name": "",
       "date": "2021-08-24",
       "latitude": 57.72508,
       "longitude": 27.03615,
@@ -4606,6 +4808,7 @@
     {
       "id": "5578714",
       "taxon": "Postia floriformis (Quél.) Jülich",
+      "est_name": "Lehviktümak",
       "date": "2021-08-19",
       "latitude": 57.73919167,
       "longitude": 27.0608,
@@ -4631,6 +4834,7 @@
     {
       "id": "5552417",
       "taxon": "Lactifluus volemus (Fr.) Kuntze",
+      "est_name": "Kuldriisikas",
       "date": "2021-08-19",
       "latitude": 57.739005,
       "longitude": 27.061153,
@@ -4656,6 +4860,7 @@
     {
       "id": "4613300",
       "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "est_name": "Kühmtagel",
       "date": "2021-08-17",
       "latitude": 57.84263,
       "longitude": 27.00352,
@@ -4681,6 +4886,7 @@
     {
       "id": "7732708",
       "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "est_name": "Pruun riisikas",
       "date": "2021-08-16",
       "latitude": 57.63390833,
       "longitude": 26.77071111,
@@ -4706,6 +4912,7 @@
     {
       "id": "4611852",
       "taxon": "Climacodon septentrionalis (Fr.) P. Karst.",
+      "est_name": "Põhjanarmik",
       "date": "2021-08-13",
       "latitude": 59.442603,
       "longitude": 24.732455,
@@ -4731,6 +4938,7 @@
     {
       "id": "7732706",
       "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "est_name": "Pruun riisikas",
       "date": "2021-08-12",
       "latitude": 57.73901389,
       "longitude": 27.06800556,
@@ -4756,6 +4964,7 @@
     {
       "id": "4609803",
       "taxon": "Porphyrellus porphyrosporus (Fr. & Hök) E.-J. Gilbert",
+      "est_name": "Tahmpuravik",
       "date": "2021-08-06",
       "latitude": 57.733312,
       "longitude": 27.063994,
@@ -4781,6 +4990,7 @@
     {
       "id": "4563181",
       "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "est_name": "Kühmtagel",
       "date": "2021-07-01",
       "latitude": 57.90786,
       "longitude": 26.98556,
@@ -4806,6 +5016,7 @@
     {
       "id": "4556992",
       "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "est_name": "Kühmtagel",
       "date": "2021-06-27",
       "latitude": 58.10118,
       "longitude": 27.45837,
@@ -4831,6 +5042,7 @@
     {
       "id": "4543212",
       "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "est_name": "Lõhetümak",
       "date": "2021-06-15",
       "latitude": 57.735675,
       "longitude": 27.059836,
@@ -4856,6 +5068,7 @@
     {
       "id": "5422077",
       "taxon": "Polyporus melanopus (Pers.) Fr.",
+      "est_name": "",
       "date": "2021-06-06",
       "latitude": 57.750942,
       "longitude": 27.35508,
@@ -4881,6 +5094,7 @@
     {
       "id": "4543229",
       "taxon": "Mycoacia aurea (Fr.) J. Erikss. & Ryvarden",
+      "est_name": "",
       "date": "2021-06-06",
       "latitude": 57.633992,
       "longitude": 26.7702,
@@ -4906,6 +5120,7 @@
     {
       "id": "5421987",
       "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "est_name": "Joontaelik",
       "date": "2021-06-02",
       "latitude": 57.736825,
       "longitude": 27.067836,
@@ -4931,6 +5146,7 @@
     {
       "id": "4510904",
       "taxon": "Encoelia furfuracea (Roth) P. Karst.",
+      "est_name": "Sametlõhkik",
       "date": "2021-05-24",
       "latitude": 57.96122,
       "longitude": 27.09478333,
@@ -4956,6 +5172,7 @@
     {
       "id": "4507596",
       "taxon": "Diplomitoporus flavescens (Bres.) Domanski",
+      "est_name": "Männikorgik ehk männi-vahakorgik",
       "date": "2021-05-22",
       "latitude": 57.73856667,
       "longitude": 26.49806667,
@@ -4981,6 +5198,7 @@
     {
       "id": "4502217",
       "taxon": "Phellinus populicola Niemelä",
+      "est_name": "Haava-tuletaelik",
       "date": "2021-05-16",
       "latitude": null,
       "longitude": null,
@@ -5006,6 +5224,7 @@
     {
       "id": "4503716",
       "taxon": "Phellinus chrysoloma (Fr.) Donk",
+      "est_name": "Kuusetaelik",
       "date": "2021-05-15",
       "latitude": 59.33624167,
       "longitude": 25.67484667,
@@ -5031,6 +5250,7 @@
     {
       "id": "4504964",
       "taxon": "Perenniporia subacida (Peck) Donk",
+      "est_name": "Kollane püsipoorik",
       "date": "2021-05-06",
       "latitude": 57.71618667,
       "longitude": 27.04355833,
@@ -5056,6 +5276,7 @@
     {
       "id": "4504559",
       "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "est_name": "Tumepruun taelik",
       "date": "2021-04-29",
       "latitude": 57.72316333,
       "longitude": 27.042775,
@@ -5081,6 +5302,7 @@
     {
       "id": "4563515",
       "taxon": "Aporpium macroporum T. Niemelä, V. Spirin & O. Miettinen",
+      "est_name": "Suur tardpoorik",
       "date": "2021-04-27",
       "latitude": 57.719087,
       "longitude": 27.044803,
@@ -5106,6 +5328,7 @@
     {
       "id": "4426957",
       "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "est_name": "Roosa pess",
       "date": "2021-03-27",
       "latitude": 58.11148,
       "longitude": 27.04691,
@@ -5131,6 +5354,7 @@
     {
       "id": "4426955",
       "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
       "date": "2021-03-27",
       "latitude": 58.11177,
       "longitude": 27.04726,
@@ -5156,6 +5380,7 @@
     {
       "id": "4406334",
       "taxon": "Trametes hirsuta (Wulfen) Pilat",
+      "est_name": "Villtagel",
       "date": "2021-02-26",
       "latitude": 57.8418,
       "longitude": 26.99602,
@@ -5181,6 +5406,7 @@
     {
       "id": "4404126",
       "taxon": "Trametes versicolor (L.) Lloyd",
+      "est_name": "Libliktagel",
       "date": "2020-12-06",
       "latitude": 57.89229,
       "longitude": 27.01786,
@@ -5206,6 +5432,7 @@
     {
       "id": "4404024",
       "taxon": "Hericium coralloides (Scop.) Pers.",
+      "est_name": "Harunev korallnarmik",
       "date": "2020-11-05",
       "latitude": 57.74116,
       "longitude": 27.06551,

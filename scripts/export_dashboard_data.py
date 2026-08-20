@@ -2,14 +2,48 @@ import sqlite3
 import json
 import csv
 import os
+import re
 
 DB_PATH = '/Users/metrobee/GEMINI/data/plutof_vaatlused.db'
 CSV_PATH = '/Users/metrobee/.gemini/antigravity/brain/449c0ec9-80fc-480c-9ff4-b1a8f94963a9/.user_uploaded/media_1787168498815.csv'
+SNIPPETS_PATH = os.path.expanduser('~/.clipsnippet_snippets.json')
 OUTPUT_JSON = '/Users/metrobee/Projects/fungib/public/data/observations.json'
+
+def load_est_name_map():
+    est_map = {}
+    if os.path.exists(SNIPPETS_PATH):
+        try:
+            with open(SNIPPETS_PATH, 'r', encoding='utf-8') as f:
+                d = json.load(f)
+            seened = d.get('Seened', {})
+            for trigger, val in seened.items():
+                m = re.match(r'^(.*?)\s*\((.*?)\)$', val)
+                if m:
+                    est = m.group(1).strip()
+                    sci = m.group(2).strip().lower()
+                    sci_species = ' '.join(sci.split()[:2])
+                    est_map[sci_species] = est
+                    est_map[sci] = est
+        except Exception:
+            pass
+    return est_map
+
+def find_est_name(taxon_name, est_map):
+    if not taxon_name:
+        return ""
+    # Eemalda autorid, et saada binaarne liiginimi (Genus species)
+    parts = taxon_name.split()
+    if len(parts) >= 2:
+        bin_name = f"{parts[0]} {parts[1]}".lower()
+        if bin_name in est_map:
+            return est_map[bin_name]
+    return est_map.get(taxon_name.lower(), "")
 
 def main():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
+
+    est_map = load_est_name_map()
 
     csv_meta = {}
     if os.path.exists(CSV_PATH):
@@ -54,13 +88,14 @@ def main():
         remarks = r[12] or ""
         url = r[13] or f"https://app.plutof.ut.ee/observation/view/{obs_id}"
         
-        c.execute("SELECT filename, filepath FROM observation_photos WHERE observation_id = ?;", (obs_id,))
+        c.execute("SELECT filename, filepath, plutof_file_id FROM observation_photos WHERE observation_id = ?;", (obs_id,))
         p_rows = c.fetchall()
         
         photos = []
         for pr in p_rows:
             fn = pr[0]
             fp = pr[1]
+            fid = pr[2]
             if fp.startswith("http"):
                 photos.append({"url": fp, "thumbnail": fp, "filename": fn})
             elif obs_id in csv_meta and csv_meta[obs_id]["image_url"]:
@@ -72,6 +107,7 @@ def main():
             photos.append({"url": s3_url, "thumbnail": s3_url, "filename": os.path.basename(s3_url)})
 
         extra = csv_meta.get(obs_id, {})
+        est_name = find_est_name(taxon, est_map)
 
         if taxon:
             taxa_set.add(taxon)
@@ -81,6 +117,7 @@ def main():
         observations.append({
             "id": obs_id,
             "taxon": taxon,
+            "est_name": est_name,
             "date": date_str,
             "latitude": lat,
             "longitude": lon,
