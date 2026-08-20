@@ -102,3 +102,7 @@
 ## [INCIDENT-2026-08-20-KIMP-SAMETKORGES-MAPPING]
 - **Süsteem:** `seen` CLI
 - **Lahendus:** Lisatud `kimp-sametkõrges` sidumine liigiga *Flammulina velutipes* (ID: 147778). Välja antud `v1.2.9`.
+
+## [INCIDENT-2026-08-20-KIMP-METSKORGES-CONNOPUS]
+- **Süsteem:** `seen` CLI
+- **Lahendus:** `Kimp-metskõrges` seotud taksoniga *Connopus acervatus* (ID: 141001). Välja antud `v1.3.2`.
