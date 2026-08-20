@@ -118,7 +118,23 @@ function populateFilters(meta) {
 function updateStats(meta) {
   document.getElementById("statTotalObs").textContent = meta.total_observations || observations.length;
   document.getElementById("statUniqueTaxa").textContent = meta.unique_taxa || "-";
-  document.getElementById("statCounties").textContent = (meta.counties ? meta.counties.length : 0);
+
+  if (meta.time_stats) {
+    document.getElementById("statToday").textContent = meta.time_stats.today;
+    document.getElementById("statWeek").textContent = meta.time_stats.this_week;
+    document.getElementById("statMonth").textContent = meta.time_stats.this_month;
+    document.getElementById("statYear").textContent = meta.time_stats.this_year;
+  }
+
+  if (meta.latest_observation) {
+    const lo = meta.latest_observation;
+    const link = document.getElementById("latestObsLink");
+    if (link) {
+      const name = lo.est_name ? `${lo.est_name} (${lo.taxon})` : lo.taxon;
+      link.textContent = `${name} • ${lo.date || ""} • ${lo.locality || lo.county || ""} (PlutoF ID: #${lo.id}) →`;
+      link.href = lo.url || `https://app.plutof.ut.ee/observation/view/${lo.id}`;
+    }
+  }
 }
 
 function applyFilters() {

@@ -17,18 +17,33 @@
     </div>
 
     <div class="header-center">
-      <input type="text" id="searchInput" class="search-input" placeholder="Otsi taksonit, substraati, maakonda või ID-d... (/ otsimiseks)" autocomplete="off">
+      <input type="text" id="searchInput" class="search-input" placeholder="Otsi liiki (nt kollane), ladina nime, substraati või asukohta... (/ otsimiseks)" autocomplete="off">
     </div>
 
     <div class="header-right">
       <div class="stats-bar">
         <div class="stat-item"><span id="statTotalObs">-</span> vaatlust</div>
         <div class="stat-item"><span id="statUniqueTaxa">-</span> liiki</div>
-        <div class="stat-item"><span id="statCounties">-</span> maakonda</div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">Täna: <strong id="statToday">-</strong></div>
+        <div class="stat-item">Nädalal: <strong id="statWeek">-</strong></div>
+        <div class="stat-item">Kuul: <strong id="statMonth">-</strong></div>
+        <div class="stat-item">Aastal: <strong id="statYear">-</strong></div>
       </div>
       <button id="themeToggleBtn" class="theme-toggle-btn" type="button">LIGHT MODE</button>
     </div>
   </header>
+
+  <!-- Latest Sync Status Bar -->
+  <div class="latest-sync-bar">
+    <div class="sync-status-badge">PLUTOF SÜNKROON</div>
+    <div class="sync-info">
+      <span class="sync-label">Viimane lisatud vaatlus:</span>
+      <a id="latestObsLink" href="#" target="_blank" rel="noopener noreferrer" class="latest-obs-link">
+        Laadin andmeid...
+      </a>
+    </div>
+  </div>
 
   <!-- Main Layout -->
   <main class="main-layout">

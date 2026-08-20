@@ -117,14 +117,72 @@ body {
 
 .stats-bar {
   display: flex;
-  gap: 16px;
-  font-size: 0.8rem;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
   color: var(--text-secondary);
+}
+
+.stat-divider {
+  color: var(--border-color);
+  font-weight: 300;
+  user-select: none;
 }
 
 .stat-item strong {
   color: var(--text-primary);
   font-family: var(--font-mono);
+}
+
+/* Latest Sync Status Bar */
+.latest-sync-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 28px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.sync-status-badge {
+  background-color: var(--accent-color);
+  color: var(--accent-invert);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sync-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sync-label {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.latest-obs-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px dotted var(--text-muted);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.latest-obs-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .theme-toggle-btn {
@@ -150,7 +208,7 @@ body {
 .main-layout {
   display: grid;
   grid-template-columns: 480px 1fr;
-  height: calc(100vh - 69px);
+  height: calc(100vh - 100px);
   overflow: hidden;
 }
 

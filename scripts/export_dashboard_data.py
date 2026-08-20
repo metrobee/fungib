@@ -3,6 +3,7 @@ import json
 import csv
 import os
 import re
+import datetime
 
 DB_PATH = '/Users/metrobee/GEMINI/data/plutof_vaatlused.db'
 CSV_PATH = '/Users/metrobee/.gemini/antigravity/brain/449c0ec9-80fc-480c-9ff4-b1a8f94963a9/.user_uploaded/media_1787168498815.csv'
@@ -31,7 +32,6 @@ def load_est_name_map():
 def find_est_name(taxon_name, est_map):
     if not taxon_name:
         return ""
-    # Eemalda autorid, et saada binaarne liiginimi (Genus species)
     parts = taxon_name.split()
     if len(parts) >= 2:
         bin_name = f"{parts[0]} {parts[1]}".lower()
@@ -72,6 +72,19 @@ def main():
     taxa_set = set()
     county_set = set()
 
+    now = datetime.datetime.now(datetime.timezone.utc)
+    today_str = now.strftime('%Y-%m-%d')
+    cur_year_str = now.strftime('%Y')
+    cur_month_str = now.strftime('%Y-%m')
+    start_of_week = (now - datetime.timedelta(days=now.weekday())).strftime('%Y-%m-%d')
+
+    added_today = 0
+    added_this_week = 0
+    added_this_month = 0
+    added_this_year = 0
+
+    latest_obs = None
+
     for r in rows:
         obs_id = str(r[0])
         taxon = r[1] or "Tundmatu takson"
@@ -87,7 +100,19 @@ def main():
         abundance = r[11] or ""
         remarks = r[12] or ""
         url = r[13] or f"https://app.plutof.ut.ee/observation/view/{obs_id}"
-        
+        created_at = r[14] or ""
+        created_date = created_at.split('T')[0] if created_at else date_str
+
+        # Arvuta perioodide statistika
+        if created_date == today_str:
+            added_today += 1
+        if created_date >= start_of_week:
+            added_this_week += 1
+        if created_date.startswith(cur_month_str):
+            added_this_month += 1
+        if created_date.startswith(cur_year_str):
+            added_this_year += 1
+
         c.execute("SELECT filename, filepath, plutof_file_id FROM observation_photos WHERE observation_id = ?;", (obs_id,))
         p_rows = c.fetchall()
         
@@ -114,7 +139,7 @@ def main():
         if county:
             county_set.add(county)
 
-        observations.append({
+        obs_item = {
             "id": obs_id,
             "taxon": taxon,
             "est_name": est_name,
@@ -132,8 +157,27 @@ def main():
             "determiner": extra.get("determiner", ""),
             "observer": extra.get("observer", "Boris Meldre"),
             "url": url,
+            "created_at": created_at,
             "photos": photos
-        })
+        }
+
+        observations.append(obs_item)
+
+    # Leia viimati andmebaasi lisatud vaatlus (created_at järgi)
+    c.execute("SELECT id, taxon_name, date_time, locality, county, url, created_at FROM observations ORDER BY created_at DESC, id DESC LIMIT 1;")
+    last_r = c.fetchone()
+    if last_r:
+        last_est = find_est_name(last_r[1], est_map)
+        latest_obs = {
+            "id": str(last_r[0]),
+            "taxon": last_r[1],
+            "est_name": last_est,
+            "date": (last_r[2] or "").split('T')[0],
+            "locality": last_r[3] or "",
+            "county": last_r[4] or "",
+            "url": last_r[5] or f"https://app.plutof.ut.ee/observation/view/{last_r[0]}",
+            "created_at": last_r[6]
+        }
 
     conn.close()
 
@@ -142,7 +186,14 @@ def main():
             "total_observations": len(observations),
             "unique_taxa": len(taxa_set),
             "counties": sorted(list(county_set)),
-            "generated_at": os.popen("date -u +'%Y-%m-%dT%H:%M:%SZ'").read().strip()
+            "generated_at": now.isoformat(),
+            "time_stats": {
+                "today": added_today,
+                "this_week": added_this_week,
+                "this_month": added_this_month,
+                "this_year": added_this_year
+            },
+            "latest_observation": latest_obs
         },
         "observations": observations
     }
@@ -151,6 +202,8 @@ def main():
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
+    print(f"Viimane vaatlus: {latest_obs}")
+    print(f"Perioodid: Täna={added_today}, Nädalal={added_this_week}, Kuul={added_this_month}, Aastal={added_this_year}")
 
 if __name__ == "__main__":
     main()
