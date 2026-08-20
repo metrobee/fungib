@@ -90,3 +90,7 @@
 ## [INCIDENT-2026-08-20-KV-PREFIX-AND-LEADING-COLONS]
 - **Süsteem:** `seen` CLI
 - **Täiendus:** Lisatud `kv:` ja `:kaasvaatleja:` formaatide tugi. Välja antud `v1.2.5`.
+
+## [INCIDENT-2026-08-20-CO-OBSERVER-LIST-WHITESPACE-SPLIT]
+- **Süsteem:** `seen` CLI
+- **Lahendus:** Lubatud tühikud koma järel kaasvaatlejate loetelus (`kv:aa, vl`). Välja antud `v1.2.6`.
