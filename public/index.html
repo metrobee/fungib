@@ -5,43 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLUTOFF — Mycology Observation Archive</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
-    <div class="brand">
-      <div class="brand-title">PLUTOFF</div>
-      <div class="brand-subtitle">Mycology Archive</div>
-    </div>
+    <div class="header-main-bar">
+      <div class="brand">
+        <div class="brand-title">PLUTOFF</div>
+        <div class="brand-subtitle">Mycology Archive</div>
+      </div>
 
-    <div class="header-center">
-      <input type="text" id="searchInput" class="search-input" placeholder="Otsi liiki (nt kollane), ladina nime, kaaslast, asukohta... (/ otsimiseks)" autocomplete="off">
-    </div>
+      <div class="header-center">
+        <input type="text" id="searchInput" class="search-input" placeholder="Otsi liiki (nt kollane), ladina nime, kaaslast, asukohta... (/ otsimiseks)" autocomplete="off">
+      </div>
 
-    <div class="header-right">
-      <div class="user-badge" id="userBadge">
-        <div class="user-avatar" id="userAvatar">BM</div>
-        <div class="user-info">
-          <div class="user-name-line">
-            <span class="user-name" id="userProfileName">Boris Meldre</span>
-            <span class="user-handle" id="userProfileUsername">@borismeldre</span>
+      <div class="header-right">
+        <div class="user-badge" id="userBadge">
+          <div class="user-avatar" id="userAvatar">BM</div>
+          <div class="user-info">
+            <div class="user-name-line">
+              <span class="user-name" id="userProfileName">Boris Meldre</span>
+              <span class="user-handle" id="userProfileUsername">@borismeldre</span>
+            </div>
+            <div class="user-email" id="userProfileEmail">borismeldre@gmail.com</div>
           </div>
-          <div class="user-email" id="userProfileEmail">borismeldre@gmail.com</div>
         </div>
-      </div>
 
-      <div class="stats-bar">
-        <div class="stat-item"><span id="statTotalObs">-</span> vaatlust</div>
-        <div class="stat-item"><span id="statUniqueTaxa">-</span> liiki</div>
-        <div class="stat-divider">|</div>
-        <div class="stat-item">Täna: <strong id="statToday">-</strong></div>
-        <div class="stat-item">Nädalal: <strong id="statWeek">-</strong></div>
-        <div class="stat-item">Kuul: <strong id="statMonth">-</strong></div>
-        <div class="stat-item">Aastal: <strong id="statYear">-</strong></div>
+        <div class="stats-bar">
+          <div class="stat-item"><span id="statTotalObs">-</span> vaatlust</div>
+          <div class="stat-item"><span id="statUniqueTaxa">-</span> liiki</div>
+          <div class="stat-divider">|</div>
+          <div class="stat-item">Täna: <strong id="statToday">-</strong></div>
+          <div class="stat-item">Nädalal: <strong id="statWeek">-</strong></div>
+          <div class="stat-item">Kuul: <strong id="statMonth">-</strong></div>
+          <div class="stat-item">Aastal: <strong id="statYear">-</strong></div>
+        </div>
+        <button id="themeToggleBtn" class="theme-toggle-btn" type="button">LIGHT MODE</button>
       </div>
-      <button id="themeToggleBtn" class="theme-toggle-btn" type="button">LIGHT MODE</button>
     </div>
   </header>
 
