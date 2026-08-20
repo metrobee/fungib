@@ -37,6 +37,8 @@
   --card-hover-border: #ffffff;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
