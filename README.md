@@ -80,3 +80,13 @@ Kasutaja saab rippmenüüst valida:
 - **Viimati lisatud (Uusimad ees)**
 - **Leiu kuupäev (Uusimad ees)**
 - **Liiginimi (A-Z)**
+
+---
+
+## Vaatluste Kinnituse Staatused (Kinnitatud vs Ootel)
+
+Arhiivis peetakse arvestust määramise kinnituse üle:
+- **Kinnitatud (586 vaatlust):** Eksperdi (nt Irja Saar) poolt modereeritud ja kinnitatud vaatlused.
+- **Ootel (185 vaatlust):** Äsja või varem sisestatud vaatlused, mis ootavad PlutoF süsteemis eksperdi kinnitust.
+
+Kõikidel kaartidel kuvatakse vastav märgend (`Kinnitatud` või `Ootel`). Lisaks on vasakul paneelis filtri rippmenüü staatuse järgi sorteerimiseks.
