@@ -6,7 +6,7 @@ import re
 import datetime
 
 DB_PATH = '/Users/metrobee/GEMINI/data/plutof_vaatlused.db'
-CSV_PATH = '/Users/metrobee/.gemini/antigravity/brain/449c0ec9-80fc-480c-9ff4-b1a8f94963a9/.user_uploaded/media_1787168498815.csv'
+CSV_PATH = '/Users/metrobee/GEMINI/data/plutof_full_export_latest.csv'
 SNIPPETS_PATH = os.path.expanduser('~/.clipsnippet_snippets.json')
 OUTPUT_JSON = '/Users/metrobee/Projects/fungib/public/data/observations.json'
 
@@ -56,10 +56,10 @@ def main():
                     img_url = r.get('Image URL', '').strip()
                     csv_meta[obs_id] = {
                         "image_url": img_url,
-                        "determiner": r.get('Määraja.Nimi', '').strip(),
-                        "observer": r.get('Vaatleja.Nimi', '').strip(),
-                        "notes": r.get('Lisainfo', '').strip(),
-                        "locality_csv": r.get('Ala.Nimi', '').strip()
+                        "determiner": r.get('Määrang.Määrajad', '').strip(),
+                        "observer": r.get('Sündmus.Kogujad', '').strip() or r.get('Õiguste hoidja', '').strip(),
+                        "notes": r.get('Märkused', '').strip(),
+                        "locality_csv": r.get('Ala.Asukoha tekst', '').strip() or r.get('Ala.Nimi', '').strip()
                     }
 
     c.execute("""
@@ -247,8 +247,9 @@ def main():
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
+    obs_with_photos_count = sum(1 for o in observations if o["photos"])
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Kinnitatud={verified_count}, Ootel={pending_count}")
+    print(f"Fotodega vaatlusi kokku: {obs_with_photos_count} / {len(observations)}")
 
 if __name__ == "__main__":
     main()
