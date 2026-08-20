@@ -96,3 +96,9 @@ Kõikidel kaartidel kuvatakse vastav märgend (`Kinnitatud` või `Ootel`). Lisak
 ## Ootel Märgendi Positsioneerimine
 
 Märgis **`OOTEL`** on eemaldatud alumisest siltide reast ja viidud kaardi/foto ülemisse paremasse nurka selgelt eraldatud staatuseindikaatorina.
+
+---
+
+## Täielik Fotoarhiiv (646 Fotot)
+
+Kõikidele vaatlustele (sh kaasvaatlused ja ühisretked) on imporditud Tartu Ülikooli HPC S3 serveri ametlikud kõrglahutusega fotod. 774 vaatlusest omavad fotot **646 vaatlust** (215 peavaatlust ja 431 kaasvaatlust).
