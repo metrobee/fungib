@@ -109,3 +109,11 @@ Kõikidele vaatlustele (sh kaasvaatlused ja ühisretked) on imporditud Tartu Ül
 
 1. **Terminali kaudu sisestused (`seen` CLI):** Iga uus lisatud vaatlus sünkroonitakse ja juurutatakse Firebase Hostingusse koheselt.
 2. **Kaasvaatlused ja teiste autorite lisandused:** Seadistatud GitHub Actions töövoog (`.github/workflows/sync_plutof.yml`), mis käivitub automaatselt kaks korda ööpäevas (03:00 ja 15:00 UTC) ning uuendab pilves arhiivi ilma kohalikku arvutit koormamata.
+
+---
+
+## Ühisvaatluste Andmete Värskuse Indikaator
+
+Päise all asuvas sünkroonimisribas kuvatakse reaalajas indikaator:
+`Ühisvaatluste seis: Värske (äsja uuendatud)` / `X päeva tagasi`.
+See annab kasutajale kohese ülevaate, millal viimati PlutoF-ist kaasvaatluste täielik andmestik imporditi.
