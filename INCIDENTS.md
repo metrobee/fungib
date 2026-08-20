@@ -78,3 +78,7 @@
 - **Süsteem:** `seen` CLI
 - **Sümptom:** Vahemälust võeti vana vigane kirje.
 - **Lahendus:** Vahemälu puhastatud ja parandatud vaatlus `#8318721`.
+
+## [INCIDENT-2026-08-20-CO-OBSERVER-FLAG-SUPPORT]
+- **Süsteem:** `seen` CLI
+- **Funktsioon:** Lisatud `kaasv:aa` jms kaasvaatlejate lipud. Välja antud `v1.2.3`.
