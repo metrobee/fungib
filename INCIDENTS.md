@@ -61,3 +61,6 @@
 ## [INCIDENT-2026-08-20-TAIM-CLI-FORM-AND-AUTH-FIX]
 - **Süsteem:** `taim` CLI
 - **Sümptom:** Taimevormi viga lahendatud `Form 73` integratsiooniga. Välja antud `v1.3.1`.
+
+## [INCIDENT-2026-08-20-TAIM-CLI-ISOLATION-AND-PRIVATE-REPO]
+- **Arhitektuur:** `taim` CLI eraldatud privaatsesse repositooriumisse (`metrobee/taim`).
