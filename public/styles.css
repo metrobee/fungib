@@ -245,6 +245,42 @@ body {
   background-color: var(--bg-surface);
 }
 
+.role-selector {
+  display: flex;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 2px;
+  gap: 2px;
+}
+
+.role-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 6px 4px;
+  font-size: 0.725rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.role-btn:hover {
+  color: var(--text-primary);
+}
+
+.role-btn.active {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
 .filter-row {
   display: flex;
   gap: 10px;

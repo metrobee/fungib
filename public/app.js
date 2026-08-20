@@ -1,6 +1,7 @@
 // PLUTOFF Mycology Dashboard - Executive Minimalist Client
 let observations = [];
 let filteredObs = [];
+let activeRole = "all"; // "all" | "primary" | "co"
 let map = null;
 let tileLayer = null;
 let markersLayer = null;
@@ -86,6 +87,28 @@ async function loadData() {
 }
 
 function populateFilters(meta) {
+  // Role counts
+  if (meta.role_stats) {
+    document.getElementById("roleCntAll").textContent = meta.role_stats.total;
+    document.getElementById("roleCntPrimary").textContent = meta.role_stats.primary;
+    document.getElementById("roleCntCo").textContent = meta.role_stats.co_observer;
+  }
+
+  // Observers filter
+  const obsSelect = document.getElementById("observerFilter");
+  if (obsSelect && meta.observers) {
+    obsSelect.innerHTML = '<option value="">Kõik autorid / kaaslased</option>';
+    meta.observers.forEach(o => {
+      if (o) {
+        const opt = document.createElement("option");
+        opt.value = o;
+        opt.textContent = o;
+        obsSelect.appendChild(opt);
+      }
+    });
+  }
+
+  // Counties filter
   const countySelect = document.getElementById("countyFilter");
   if (countySelect && meta.counties) {
     countySelect.innerHTML = '<option value="">Kõik maakonnad</option>';
@@ -99,6 +122,7 @@ function populateFilters(meta) {
     });
   }
 
+  // Substrates filter
   const subSelect = document.getElementById("substrateFilter");
   if (subSelect) {
     const substrates = new Set();
@@ -137,15 +161,34 @@ function updateStats(meta) {
   }
 }
 
+function setRole(role) {
+  activeRole = role;
+  document.querySelectorAll(".role-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.role === role);
+  });
+  applyFilters();
+}
+
 function applyFilters() {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
+  const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
   const sub = document.getElementById("substrateFilter").value;
 
   filteredObs = observations.filter(o => {
+    // Role filter
+    if (activeRole === "primary" && o.is_co_observer) return false;
+    if (activeRole === "co" && !o.is_co_observer) return false;
+
+    // Observer filter
+    if (observer && o.primary_observer !== observer && !o.collectors.includes(observer)) return false;
+
+    // Search query
     const matchQuery = !q || 
       (o.est_name && o.est_name.toLowerCase().includes(q)) ||
       (o.taxon && o.taxon.toLowerCase().includes(q)) ||
+      (o.collectors && o.collectors.toLowerCase().includes(q)) ||
+      (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
       (o.locality && o.locality.toLowerCase().includes(q)) ||
       (o.county && o.county.toLowerCase().includes(q)) ||
       (o.substrate && o.substrate.toLowerCase().includes(q)) ||
@@ -188,9 +231,13 @@ function renderList() {
     }
 
     let badgesHtml = "";
+    if (o.is_co_observer) {
+      badgesHtml += `<span class="badge badge-co">Kaasvaatleja: ${escapeHtml(o.primary_observer)}</span>`;
+    }
     if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
     if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
     if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
+    if (o.verified_by) badgesHtml += `<span class="badge badge-verified">Kinnitatud</span>`;
 
     const estTitle = o.est_name ? `<div class="obs-est-name">${escapeHtml(o.est_name)}</div>` : "";
     const sciTitle = `<div class="obs-taxon">${escapeHtml(o.taxon)}</div>`;
@@ -241,7 +288,8 @@ function renderMarkers() {
         });
 
         const title = o.est_name ? `<strong>${escapeHtml(o.est_name)}</strong><br><em>${escapeHtml(o.taxon)}</em>` : `<strong>${escapeHtml(o.taxon)}</strong>`;
-        marker.bindTooltip(`${title}<br>${o.date || ""}`, {
+        const coInfo = o.is_co_observer ? `<br><small>Peavaatleja: ${escapeHtml(o.primary_observer)}</small>` : "";
+        marker.bindTooltip(`${title}${coInfo}<br>${o.date || ""}`, {
           direction: "top",
           offset: [0, -6]
         });
@@ -266,14 +314,19 @@ function highlightCard(id) {
 function openModal(o) {
   const modal = document.getElementById("obsModal");
   document.getElementById("modalTitle").textContent = o.est_name ? `${o.est_name} (${o.taxon})` : o.taxon;
+  
+  const roleText = o.is_co_observer 
+    ? `Kaasvaatleja (Peavaatleja: ${o.primary_observer} | Vaatlejad: ${o.collectors})` 
+    : `Peavaatleja (Boris Meldre)`;
+  document.getElementById("modalRole").textContent = roleText;
+
   document.getElementById("modalDate").textContent = o.date || "-";
   document.getElementById("modalLocality").textContent = `${o.locality || "-"}, ${o.county || ""}`;
   document.getElementById("modalCoords").textContent = (o.latitude && o.longitude) ? `${parseFloat(o.latitude).toFixed(5)}, ${parseFloat(o.longitude).toFixed(5)}` : "-";
   document.getElementById("modalSubstrate").textContent = o.substrate || "-";
   document.getElementById("modalSubstrateType").textContent = o.substrate_type || "-";
-  document.getElementById("modalAbundance").textContent = o.abundance || "-";
   document.getElementById("modalDeterminer").textContent = o.determiner || "-";
-  document.getElementById("modalObserver").textContent = o.observer || "Boris Meldre";
+  document.getElementById("modalVerified").textContent = o.verified_by ? `Kinnitatud (${o.verified_by})` : "Kinnitamata";
   document.getElementById("modalRemarks").textContent = o.remarks || "-";
   
   const plutofLink = document.getElementById("modalPlutofLink");
@@ -298,9 +351,15 @@ function closeModal() {
 function initEventListeners() {
   document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
   document.getElementById("searchInput").addEventListener("input", applyFilters);
+  document.getElementById("observerFilter").addEventListener("change", applyFilters);
   document.getElementById("countyFilter").addEventListener("change", applyFilters);
   document.getElementById("substrateFilter").addEventListener("change", applyFilters);
   document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
+
+  // Role button events
+  document.querySelectorAll(".role-btn").forEach(btn => {
+    btn.addEventListener("click", () => setRole(btn.dataset.role));
+  });
 
   document.getElementById("obsModal").addEventListener("click", (e) => {
     if (e.target.id === "obsModal") {

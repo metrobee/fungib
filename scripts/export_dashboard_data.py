@@ -32,7 +32,9 @@ def load_est_name_map():
 def find_est_name(taxon_name, est_map):
     if not taxon_name:
         return ""
-    parts = taxon_name.split()
+    # Puhasta autorid ja liigikoodid
+    clean_name = re.sub(r'\(.*?\)', '', taxon_name).strip()
+    parts = clean_name.split()
     if len(parts) >= 2:
         bin_name = f"{parts[0]} {parts[1]}".lower()
         if bin_name in est_map:
@@ -62,7 +64,10 @@ def main():
                     }
 
     c.execute("""
-    SELECT id, taxon_name, date_time, latitude, longitude, altitude, locality, county, commune, substrate, substrate_type, abundance, remarks, url, created_at
+    SELECT id, taxon_name, date_time, latitude, longitude, altitude,
+           locality, county, commune, substrate, substrate_type,
+           abundance, remarks, url, created_at,
+           is_co_observer, collectors, primary_observer, determiner, verified_by, habitat
     FROM observations
     ORDER BY date_time DESC, id DESC;
     """)
@@ -71,6 +76,7 @@ def main():
     observations = []
     taxa_set = set()
     county_set = set()
+    collectors_set = set()
 
     now = datetime.datetime.now(datetime.timezone.utc)
     today_str = now.strftime('%Y-%m-%d')
@@ -83,7 +89,8 @@ def main():
     added_this_month = 0
     added_this_year = 0
 
-    latest_obs = None
+    primary_count = 0
+    co_count = 0
 
     for r in rows:
         obs_id = str(r[0])
@@ -101,9 +108,21 @@ def main():
         remarks = r[12] or ""
         url = r[13] or f"https://app.plutof.ut.ee/observation/view/{obs_id}"
         created_at = r[14] or ""
+        is_co = bool(r[15])
+        collectors = r[16] or ""
+        primary_observer = r[17] or "Boris Meldre"
+        determiner = r[18] or ""
+        verified_by = r[19] or ""
+        habitat = r[20] or ""
+
+        if is_co:
+            co_count += 1
+        else:
+            primary_count += 1
+
         created_date = created_at.split('T')[0] if created_at else date_str
 
-        # Arvuta perioodide statistika
+        # Perioodide loendus
         if created_date == today_str:
             added_today += 1
         if created_date >= start_of_week:
@@ -113,6 +132,7 @@ def main():
         if created_date.startswith(cur_year_str):
             added_this_year += 1
 
+        # Pildid
         c.execute("SELECT filename, filepath, plutof_file_id FROM observation_photos WHERE observation_id = ?;", (obs_id,))
         p_rows = c.fetchall()
         
@@ -120,8 +140,7 @@ def main():
         for pr in p_rows:
             fn = pr[0]
             fp = pr[1]
-            fid = pr[2]
-            if fp.startswith("http"):
+            if fp and fp.startswith("http"):
                 photos.append({"url": fp, "thumbnail": fp, "filename": fn})
             elif obs_id in csv_meta and csv_meta[obs_id]["image_url"]:
                 s3_url = csv_meta[obs_id]["image_url"]
@@ -138,6 +157,8 @@ def main():
             taxa_set.add(taxon)
         if county:
             county_set.add(county)
+        if primary_observer:
+            collectors_set.add(primary_observer)
 
         obs_item = {
             "id": obs_id,
@@ -154,8 +175,12 @@ def main():
             "substrate_type": substrate_type,
             "abundance": abundance,
             "remarks": remarks or extra.get("notes", ""),
-            "determiner": extra.get("determiner", ""),
-            "observer": extra.get("observer", "Boris Meldre"),
+            "is_co_observer": is_co,
+            "collectors": collectors or ("Boris Meldre" if not is_co else f"{primary_observer}, Boris Meldre"),
+            "primary_observer": primary_observer,
+            "determiner": determiner or extra.get("determiner", ""),
+            "verified_by": verified_by,
+            "habitat": habitat,
             "url": url,
             "created_at": created_at,
             "photos": photos
@@ -163,9 +188,10 @@ def main():
 
         observations.append(obs_item)
 
-    # Leia viimati andmebaasi lisatud vaatlus (created_at järgi)
-    c.execute("SELECT id, taxon_name, date_time, locality, county, url, created_at FROM observations ORDER BY created_at DESC, id DESC LIMIT 1;")
+    # Viimati sisestatud vaatlus
+    c.execute("SELECT id, taxon_name, date_time, locality, county, url, created_at, is_co_observer, primary_observer FROM observations ORDER BY created_at DESC, id DESC LIMIT 1;")
     last_r = c.fetchone()
+    latest_obs = None
     if last_r:
         last_est = find_est_name(last_r[1], est_map)
         latest_obs = {
@@ -176,7 +202,9 @@ def main():
             "locality": last_r[3] or "",
             "county": last_r[4] or "",
             "url": last_r[5] or f"https://app.plutof.ut.ee/observation/view/{last_r[0]}",
-            "created_at": last_r[6]
+            "created_at": last_r[6],
+            "is_co_observer": bool(last_r[7]),
+            "primary_observer": last_r[8]
         }
 
     conn.close()
@@ -186,7 +214,13 @@ def main():
             "total_observations": len(observations),
             "unique_taxa": len(taxa_set),
             "counties": sorted(list(county_set)),
+            "observers": sorted(list(collectors_set)),
             "generated_at": now.isoformat(),
+            "role_stats": {
+                "total": len(observations),
+                "primary": primary_count,
+                "co_observer": co_count
+            },
             "time_stats": {
                 "today": added_today,
                 "this_week": added_this_week,
@@ -202,8 +236,8 @@ def main():
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Viimane vaatlus: {latest_obs}")
-    print(f"Perioodid: Täna={added_today}, Nädalal={added_this_week}, Kuul={added_this_month}, Aastal={added_this_year}")
+    print(f"Rollid: Peavaatleja={primary_count}, Kaasvaatleja={co_count}")
+    print(f"Liike kokku: {len(taxa_set)}")
 
 if __name__ == "__main__":
     main()

@@ -17,7 +17,7 @@
     </div>
 
     <div class="header-center">
-      <input type="text" id="searchInput" class="search-input" placeholder="Otsi liiki (nt kollane), ladina nime, substraati või asukohta... (/ otsimiseks)" autocomplete="off">
+      <input type="text" id="searchInput" class="search-input" placeholder="Otsi liiki (nt kollane), ladina nime, kaaslast, asukohta... (/ otsimiseks)" autocomplete="off">
     </div>
 
     <div class="header-right">
@@ -52,10 +52,22 @@
       <div id="map" class="map-container"></div>
       
       <div class="filter-controls">
+        <!-- Role Switcher -->
+        <div class="role-selector">
+          <button type="button" class="role-btn active" data-role="all" id="roleBtnAll">Kõik (<span id="roleCntAll">-</span>)</button>
+          <button type="button" class="role-btn" data-role="primary" id="roleBtnPrimary">Minu vaatlused (<span id="roleCntPrimary">-</span>)</button>
+          <button type="button" class="role-btn" data-role="co" id="roleBtnCo">Kaasvaatleja (<span id="roleCntCo">-</span>)</button>
+        </div>
+
         <div class="filter-row">
+          <select id="observerFilter" class="filter-select">
+            <option value="">Kõik autorid / kaaslased</option>
+          </select>
           <select id="countyFilter" class="filter-select">
             <option value="">Kõik maakonnad</option>
           </select>
+        </div>
+        <div class="filter-row">
           <select id="substrateFilter" class="filter-select">
             <option value="">Kõik substraadid</option>
           </select>
@@ -90,6 +102,10 @@
 
         <div class="modal-details-grid">
           <div class="detail-block">
+            <div class="detail-label">Roll & Vaatlejad</div>
+            <div id="modalRole" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
             <div class="detail-label">Kuupäev</div>
             <div id="modalDate" class="detail-value">-</div>
           </div>
@@ -110,16 +126,12 @@
             <div id="modalSubstrateType" class="detail-value">-</div>
           </div>
           <div class="detail-block">
-            <div class="detail-label">Ohtrus</div>
-            <div id="modalAbundance" class="detail-value">-</div>
-          </div>
-          <div class="detail-block">
             <div class="detail-label">Määraja</div>
             <div id="modalDeterminer" class="detail-value">-</div>
           </div>
           <div class="detail-block">
-            <div class="detail-label">Vaatleja</div>
-            <div id="modalObserver" class="detail-value">Boris Meldre</div>
+            <div class="detail-label">Kinnitatud</div>
+            <div id="modalVerified" class="detail-value">-</div>
           </div>
         </div>
 
