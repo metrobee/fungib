@@ -90,3 +90,9 @@ Arhiivis peetakse arvestust määramise kinnituse üle:
 - **Ootel (185 vaatlust):** Äsja või varem sisestatud vaatlused, mis ootavad PlutoF süsteemis eksperdi kinnitust.
 
 Kõikidel kaartidel kuvatakse vastav märgend (`Kinnitatud` või `Ootel`). Lisaks on vasakul paneelis filtri rippmenüü staatuse järgi sorteerimiseks.
+
+---
+
+## Ootel Märgendi Positsioneerimine
+
+Märgis **`OOTEL`** on eemaldatud alumisest siltide reast ja viidud kaardi/foto ülemisse paremasse nurka selgelt eraldatud staatuseindikaatorina.
