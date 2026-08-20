@@ -147,7 +147,7 @@ const app = initializeApp({
     databaseURL: "https://sittkeeb-dd91f-default-rtdb.europe-west1.firebasedatabase.app"
 });
 const db = getDatabase(app);
-const GEMINI_API_KEY = "AIzaSyCPa2UUqr__t75HmtYTuTK9dxe9yWrbmos";
+const GEMINI_API_KEY = window.GEMINI_API_KEY || localStorage.getItem('GEMINI_API_KEY') || "";
 
 let currentUser = null;
 let annotations = {};
