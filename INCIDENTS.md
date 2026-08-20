@@ -98,3 +98,7 @@
 ## [INCIDENT-2026-08-20-GENUS-LEVEL-OBSERVATIONS-SUPPORT]
 - **Süsteem:** `seen` CLI
 - **Täiendus:** Lisatud perekonna tasemel vaatluste tugi (`Ramaria sp.`, `ramaria`, `harik sp.`). Välja antud `v1.2.7`.
+
+## [INCIDENT-2026-08-20-KIMP-SAMETKORGES-MAPPING]
+- **Süsteem:** `seen` CLI
+- **Lahendus:** Lisatud `kimp-sametkõrges` sidumine liigiga *Flammulina velutipes* (ID: 147778). Välja antud `v1.2.9`.
