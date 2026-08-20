@@ -57,3 +57,7 @@
 - **Süsteem:** `seen` CLI
 - **Sümptom:** `kahkjas mampel` valis vale sünonüümi/liigi.
 - **Lahendus:** Eelistatakse alati kohalikku ClipSnippet teaduslikku nime. Välja antud `v1.2.1`.
+
+## [INCIDENT-2026-08-20-TAIM-CLI-FORM-AND-AUTH-FIX]
+- **Süsteem:** `taim` CLI
+- **Sümptom:** Taimevormi viga lahendatud `Form 73` integratsiooniga. Välja antud `v1.3.1`.
