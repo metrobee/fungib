@@ -1,6 +1,7 @@
 // PLUTOFF Mycology Dashboard - Executive Minimalist Client
 let observations = [];
-let filteredObs = [];
+let filteredPrimary = [];
+let filteredCo = [];
 let activeRole = "all"; // "all" | "primary" | "co"
 let map = null;
 let tileLayer = null;
@@ -74,7 +75,6 @@ async function loadData() {
     const res = await fetch("data/observations.json?v=" + Date.now());
     const data = await res.json();
     observations = data.observations || [];
-    filteredObs = [...observations];
 
     populateFilters(data.metadata);
     updateStats(data.metadata);
@@ -175,11 +175,7 @@ function applyFilters() {
   const county = document.getElementById("countyFilter").value;
   const sub = document.getElementById("substrateFilter").value;
 
-  filteredObs = observations.filter(o => {
-    // Role filter
-    if (activeRole === "primary" && o.is_co_observer) return false;
-    if (activeRole === "co" && !o.is_co_observer) return false;
-
+  const matched = observations.filter(o => {
     // Observer filter
     if (observer && o.primary_observer !== observer && !o.collectors.includes(observer)) return false;
 
@@ -201,73 +197,132 @@ function applyFilters() {
     return matchQuery && matchCounty && matchSub;
   });
 
-  document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud`;
+  filteredPrimary = matched.filter(o => !o.is_co_observer);
+  filteredCo = matched.filter(o => o.is_co_observer);
+
+  const totalCount = (activeRole === "primary") ? filteredPrimary.length :
+                     (activeRole === "co") ? filteredCo.length :
+                     (filteredPrimary.length + filteredCo.length);
+
+  document.getElementById("resultsMeta").textContent = `${totalCount} vaatlust leitud (${filteredPrimary.length} minu, ${filteredCo.length} kaasvaatlust)`;
 
   renderList();
   renderMarkers();
 }
 
 function renderList() {
-  const grid = document.getElementById("obsGrid");
-  grid.innerHTML = "";
+  const container = document.getElementById("obsGrid");
+  container.innerHTML = "";
 
-  if (filteredObs.length === 0) {
-    grid.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 40px;">Ühtegi vaatlust ei leitud valitud filtritega.</div>`;
+  const showPrimary = activeRole === "all" || activeRole === "primary";
+  const showCo = activeRole === "all" || activeRole === "co";
+
+  const hasPrimary = showPrimary && filteredPrimary.length > 0;
+  const hasCo = showCo && filteredCo.length > 0;
+
+  if (!hasPrimary && !hasCo) {
+    container.innerHTML = `<div class="obs-no-thumb" style="padding: 40px; text-align: center;">Ühtegi vaatlust ei leitud valitud filtritega.</div>`;
     return;
   }
 
-  filteredObs.forEach(o => {
-    const card = document.createElement("div");
-    card.className = "obs-card";
-    card.dataset.id = o.id;
-    card.onclick = () => openModal(o);
-
-    let imgHtml = "";
-    if (o.photos && o.photos.length > 0 && o.photos[0].url && o.photos[0].url.startsWith("http")) {
-      const src = o.photos[0].url;
-      imgHtml = `<img src="${src}" alt="${escapeHtml(o.taxon)}" class="obs-thumb" loading="lazy" onerror="this.style.display='none';">`;
-    } else {
-      imgHtml = `<div class="obs-no-thumb">Foto puudub</div>`;
-    }
-
-    let badgesHtml = "";
-    if (o.is_co_observer) {
-      badgesHtml += `<span class="badge badge-co">Kaasvaatleja: ${escapeHtml(o.primary_observer)}</span>`;
-    }
-    if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
-    if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
-    if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
-    if (o.verified_by) badgesHtml += `<span class="badge badge-verified">Kinnitatud</span>`;
-
-    const estTitle = o.est_name ? `<div class="obs-est-name">${escapeHtml(o.est_name)}</div>` : "";
-    const sciTitle = `<div class="obs-taxon">${escapeHtml(o.taxon)}</div>`;
-
-    card.innerHTML = `
-      <div class="obs-thumb-container">
-        ${imgHtml}
+  // 1. Minu vaatlused (Primary)
+  if (showPrimary) {
+    const pSection = document.createElement("div");
+    pSection.className = "results-section";
+    pSection.innerHTML = `
+      <div class="section-header">
+        <h3 class="section-title">Minu Sisestatud Vaatlused</h3>
+        <span class="section-count">${filteredPrimary.length} vaatlust</span>
       </div>
-      <div class="obs-body">
-        ${estTitle}
-        ${sciTitle}
-        <div class="obs-meta-row">
-          <span>${o.date || "-"}</span>
-          <span>${escapeHtml(o.locality || o.county || "")}</span>
-        </div>
-        <div class="obs-badges">
-          ${badgesHtml}
-        </div>
-      </div>
+      <div class="observation-grid" id="gridPrimary"></div>
     `;
+    container.appendChild(pSection);
 
-    grid.appendChild(card);
-  });
+    const gridP = pSection.querySelector("#gridPrimary");
+    if (filteredPrimary.length === 0) {
+      gridP.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 20px;">Selle päringuga minu vaatlusi ei leitud.</div>`;
+    } else {
+      filteredPrimary.forEach(o => gridP.appendChild(createCard(o)));
+    }
+  }
+
+  // 2. Kaasvaatlused ja ühisretked (Co-observations)
+  if (showCo) {
+    const cSection = document.createElement("div");
+    cSection.className = "results-section";
+    cSection.innerHTML = `
+      <div class="section-header">
+        <h3 class="section-title">Kaasvaatlused ja Ühisretked</h3>
+        <span class="section-count">${filteredCo.length} vaatlust</span>
+      </div>
+      <div class="observation-grid" id="gridCo"></div>
+    `;
+    container.appendChild(cSection);
+
+    const gridC = cSection.querySelector("#gridCo");
+    if (filteredCo.length === 0) {
+      gridC.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 20px;">Selle päringuga kaasvaatlusi ei leitud.</div>`;
+    } else {
+      filteredCo.forEach(o => gridC.appendChild(createCard(o)));
+    }
+  }
+}
+
+function createCard(o) {
+  const card = document.createElement("div");
+  card.className = "obs-card";
+  card.dataset.id = o.id;
+  card.onclick = () => openModal(o);
+
+  let imgHtml = "";
+  if (o.photos && o.photos.length > 0 && o.photos[0].url && o.photos[0].url.startsWith("http")) {
+    const src = o.photos[0].url;
+    imgHtml = `<img src="${src}" alt="${escapeHtml(o.taxon)}" class="obs-thumb" loading="lazy" onerror="this.style.display='none';">`;
+  } else {
+    imgHtml = `<div class="obs-no-thumb">Foto puudub</div>`;
+  }
+
+  let badgesHtml = "";
+  if (o.is_co_observer) {
+    badgesHtml += `<span class="badge badge-co">Peavaatleja: ${escapeHtml(o.primary_observer)}</span>`;
+  }
+  if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
+  if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
+  if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
+  if (o.verified_by) badgesHtml += `<span class="badge badge-verified">Kinnitatud</span>`;
+
+  const estTitle = o.est_name ? `<div class="obs-est-name">${escapeHtml(o.est_name)}</div>` : "";
+  const sciTitle = `<div class="obs-taxon">${escapeHtml(o.taxon)}</div>`;
+
+  card.innerHTML = `
+    <div class="obs-thumb-container">
+      ${imgHtml}
+    </div>
+    <div class="obs-body">
+      ${estTitle}
+      ${sciTitle}
+      <div class="obs-meta-row">
+        <span>${o.date || "-"}</span>
+        <span>${escapeHtml(o.locality || o.county || "")}</span>
+      </div>
+      <div class="obs-badges">
+        ${badgesHtml}
+      </div>
+    </div>
+  `;
+
+  return card;
 }
 
 function renderMarkers() {
   markersLayer.clearLayers();
   const bounds = [];
 
-  filteredObs.forEach(o => {
+  const displayList = (activeRole === "primary") ? filteredPrimary :
+                      (activeRole === "co") ? filteredCo :
+                      [...filteredPrimary, ...filteredCo];
+
+  displayList.forEach(o => {
     if (o.latitude && o.longitude) {
       const lat = parseFloat(o.latitude);
       const lon = parseFloat(o.longitude);

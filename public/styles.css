@@ -316,6 +316,37 @@ body {
   background-color: var(--bg-primary);
 }
 
+.results-section {
+  margin-bottom: 36px;
+}
+
+.results-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.section-count {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
 .observation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
