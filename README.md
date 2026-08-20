@@ -63,3 +63,9 @@ MIT License. Boris Meldre, 2026.
 Otsingutulemused on visuaalselt jagatud kaheks selgeks plokiks:
 1. **Minu sisestatud vaatlused:** Esmased vaatlused koos kõrglahutusega fotodega.
 2. **Kaasvaatlused ja ühisretked:** Vaatlused, kus kasutaja on märgitud kaasvaatlejaks (kuvab peavaatleja nime, määraja, asukoha ja otselingi).
+
+---
+
+## Ühtne Kaardivõrgustik ja Märgendid
+
+Kõik 768 vaatlust kuvatakse ühtses minimalistlikus võrgustikus. Kaasvaatlustel on foto/kaardi ülanurgas selge kontrastne märgis **`KAASVAATLEJA`** ning all autori nimi (nt *Autor: Allar Antson*).
