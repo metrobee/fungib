@@ -82,3 +82,7 @@
 ## [INCIDENT-2026-08-20-CO-OBSERVER-FLAG-SUPPORT]
 - **Süsteem:** `seen` CLI
 - **Funktsioon:** Lisatud `kaasv:aa` jms kaasvaatlejate lipud. Välja antud `v1.2.3`.
+
+## [INCIDENT-2026-08-20-VELLO-LIIV-ALIAS-ADDED]
+- **Süsteem:** `seen` CLI
+- **Täiendus:** Lisatud `kaasv:vl` (*Vello Liiv* ID: 19681). Välja antud `v1.2.4`.
