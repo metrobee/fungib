@@ -456,10 +456,18 @@ body {
   font-family: var(--font-mono);
 }
 
-.badge-co-highlight {
+.obs-top-badges {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.badge-co-highlight {
   background-color: var(--accent-color);
   color: var(--accent-invert);
   font-size: 0.65rem;
@@ -469,7 +477,19 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+}
+
+.badge-pending-top {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .badge-co-author {
@@ -482,14 +502,6 @@ body {
 .badge-verified {
   background-color: var(--accent-color);
   color: var(--accent-invert);
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-
-.badge-pending {
-  border: 1px dashed var(--border-color);
-  background-color: var(--bg-secondary);
-  color: var(--text-secondary);
   font-weight: 600;
   letter-spacing: 0.03em;
 }

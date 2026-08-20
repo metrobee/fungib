@@ -256,24 +256,22 @@ function renderList() {
       imgHtml = `<div class="obs-no-thumb">Foto puudub</div>`;
     }
 
-    let roleBadge = "";
+    let topBadges = "";
     if (o.is_co_observer) {
-      roleBadge = `<span class="badge badge-co-highlight">KAASVAATLEJA</span>`;
+      topBadges += `<span class="badge badge-co-highlight">KAASVAATLEJA</span>`;
     }
-
-    let statusBadge = "";
-    if (o.is_verified) {
-      const vText = o.verified_by ? `Kinnitatud (${escapeHtml(o.verified_by)})` : "Kinnitatud";
-      statusBadge = `<span class="badge badge-verified">${vText}</span>`;
-    } else {
-      statusBadge = `<span class="badge badge-pending">Ootel</span>`;
+    if (!o.is_verified) {
+      topBadges += `<span class="badge badge-pending-top">OOTEL</span>`;
     }
 
     let badgesHtml = "";
     if (o.is_co_observer && o.primary_observer) {
       badgesHtml += `<span class="badge badge-co-author">Autor: ${escapeHtml(o.primary_observer)}</span>`;
     }
-    badgesHtml += statusBadge;
+    if (o.is_verified) {
+      const vText = o.verified_by ? `Kinnitatud (${escapeHtml(o.verified_by)})` : "Kinnitatud";
+      badgesHtml += `<span class="badge badge-verified">${vText}</span>`;
+    }
     if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
     if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
     if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
@@ -284,7 +282,9 @@ function renderList() {
     card.innerHTML = `
       <div class="obs-thumb-container">
         ${imgHtml}
-        ${roleBadge}
+        <div class="obs-top-badges">
+          ${topBadges}
+        </div>
       </div>
       <div class="obs-body">
         ${estTitle}
@@ -329,7 +329,7 @@ function renderMarkers() {
 
         const title = o.est_name ? `<strong>${escapeHtml(o.est_name)}</strong><br><em>${escapeHtml(o.taxon)}</em>` : `<strong>${escapeHtml(o.taxon)}</strong>`;
         const roleInfo = o.is_co_observer ? `<br><span style="color:#e0e0e0;font-size:0.7rem;">[KAASVAATLEJA: ${escapeHtml(o.primary_observer)}]</span>` : "";
-        const statusText = o.is_verified ? `[Kinnitatud]` : `[Ootel]`;
+        const statusText = o.is_verified ? `[Kinnitatud]` : `[OOTEL]`;
         marker.bindTooltip(`${title}${roleInfo}<br>${o.date || ""} • ${statusText}`, {
           direction: "top",
           offset: [0, -6]
