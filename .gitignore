@@ -1,0 +1,9 @@
+.firebase/
+firebase-debug.log
+*.log
+.env
+.slides_token.json
+.DS_Store
+template.pptx
+watch_error.log
+watch_output.log

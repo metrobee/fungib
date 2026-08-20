@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Seeneriigi Nähtamatud Niidid - Evolutsioon & Allikad</title>
+    <!-- Google Fonts: Space Grotesk for headings, Outfit for body -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --bg-dark: #0f2022;
+            --slide-bg: rgba(26, 54, 58, 0.85);
+            --card-bg: rgba(38, 73, 78, 0.75);
+            --accent-color: #2ec4b6;
+            --accent-glow: rgba(46, 196, 182, 0.4);
+            --sub-color: #d6d8d2;
+            --text-main: #ffffff;
+            --text-sub: #cbd5e1;
+            --gold-accent: #e5c158;
+            --gold-glow: rgba(229, 193, 88, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* Ambient Canvas & Background */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        #forest-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('mycelium_forest.jpg') no-repeat center center/cover;
+            opacity: 0.05;
+            filter: blur(10px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Auth Screen Styling (Identical to index.html) */
+        .screen-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .glass-card {
+            background: rgba(26, 54, 58, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(15px);
+        }
+
+        .title-main {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        .subtitle-main {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+
+        .quote-main {
+            font-style: italic;
+            color: var(--text-sub);
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .card-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+            margin: 25px 0;
+        }
+
+        .google-btn {
+            background: #ffffff;
+            color: #1f2937;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .google-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
+        }
+
+        .google-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .logged-user-info {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin: 20px 0;
+            word-break: break-all;
+        }
+
+        .btn-action {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .btn-action:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Notes Dashboard Screen */
+        #notes-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Top Bar */
+        #top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo-bar {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #ffffff, var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .user-panel {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid var(--accent-color);
+        }
+
+        .user-email {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+        }
+
+        .btn-logout-mini {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-sub);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-logout-mini:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        /* Back Navigation */
+        .back-btn-wrapper {
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 8px 16px;
+            background: rgba(46, 196, 182, 0.08);
+            border: 1px solid rgba(46, 196, 182, 0.2);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(46, 196, 182, 0.15);
+            transform: translateX(-4px);
+        }
+
+        /* Page Layout Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Headings */
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title span {
+            color: var(--accent-color);
+        }
+
+        /* Timeline Cards */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            box-shadow: 0 0 8px var(--accent-color);
+        }
+
+        .timeline-item.active::before {
+            background: var(--gold-accent);
+            box-shadow: 0 0 8px var(--gold-accent);
+        }
+
+        .timeline-card {
+            background: var(--slide-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            border-color: rgba(46, 196, 182, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .timeline-stage {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .timeline-card.active .timeline-stage {
+            color: var(--gold-accent);
+        }
+
+        .timeline-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        .timeline-desc ul {
+            margin-left: 18px;
+            margin-top: 8px;
+        }
+
+        .timeline-desc li {
+            margin-bottom: 6px;
+        }
+
+        /* Source/Reference Cards */
+        .source-card {
+            background: var(--slide-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .source-card:hover {
+            border-color: rgba(229, 193, 88, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .source-type {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--gold-accent);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .source-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .source-desc {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .source-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-color);
+            text-decoration: underline;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .source-link:hover {
+            color: #ffffff;
+        }
+
+        /* Live Slide List */
+        .slide-list {
+            background: rgba(15, 32, 34, 0.5);
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .slide-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+            border-radius: 6px;
+        }
+
+        .slide-item:last-child {
+            border-bottom: none;
+        }
+
+        .slide-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .slide-num {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--gold-accent);
+            background: rgba(229, 193, 88, 0.1);
+            padding: 3px 8px;
+            border-radius: 10px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .slide-title {
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mycelial Network Background Animation -->
+    <canvas id="bg-canvas"></canvas>
+    <div id="forest-bg"></div>
+
+    <!-- 1. LOGIN SCREEN -->
+    <div class="screen-container" id="login-container">
+        <div class="glass-card">
+            <h1 class="title-main">SEENERIIGI</h1>
+            <h1 class="title-main" style="margin-top:-8px; font-weight:900; letter-spacing:4px;">NÄHTAMATUD NIIDID</h1>
+            <p class="subtitle-main">Esitluse Evolutsioon & Allikad</p>
+            <p class="quote-main">
+                "Uuri seente põnevat arengut ja teaduslikku tausta."
+            </p>
+            <div class="card-divider"></div>
+            <button class="google-btn" id="google-login-btn">
+                <svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" fill="#FFC107"></path>
+                    <path d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" fill="#FF3D00"></path>
+                    <path d="M24,44c5.166,0,9.86-1.977,13.422-5.189l-6.233-5.262C29.24,34.92,26.734,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" fill="#4CAF50"></path>
+                    <path d="M43.611,20.083H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.225C36.926,35.292,44,28.229,44,20C44,18.66,43.862,17.35,43.611,20.083z" fill="#1976D2"></path>
+                </svg>
+                <span>Logi sisse Google kontoga</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 2. ACCESS DENIED SCREEN -->
+    <div class="screen-container" id="access-denied-container" style="display: none;">
+        <div class="glass-card">
+            <h1 class="title-main">LIGIPÄÄS PIIRATUD</h1>
+            <p class="subtitle-main" style="color: #f87171;">Sisule pääseb ligi vaid omanik</p>
+            <div class="card-divider"></div>
+            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-sub);">
+                Vabandust! See veebileht on nähtav vaid kasutajale <strong>borismeldre@gmail.com</strong>.
+            </p>
+            <div class="logged-user-info">
+                Sa oled sisse logitud kontoga:<br/>
+                <span id="denied-email">loading...</span>
+            </div>
+            <button class="btn-action" id="logout-btn-denied">
+                Logi välja / Vaheta kontot
+            </button>
+        </div>
+    </div>
+
+    <!-- 3. DASHBOARD SCREEN -->
+    <div id="notes-container" style="display: none;">
+        <!-- Top Bar -->
+        <div id="top-bar">
+            <div class="logo-bar">Evolutsioon & Allikad</div>
+            <div class="user-panel">
+                <img alt="Avatar" class="user-avatar" id="user-avatar" src=""/>
+                <span class="user-email" id="user-email">borismeldre@gmail.com</span>
+                <button class="btn-logout-mini" id="logout-btn">Logi välja</button>
+            </div>
+        </div>
+
+        <!-- Back Button & Tools -->
+        <div class="back-btn-wrapper" style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap;">
+            <a class="back-btn" href="/">
+                <svg height="16" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Tagasi esitlusse
+            </a>
+            <a class="back-btn" href="/curator" style="color: var(--gold-accent); border-color: rgba(229, 193, 88, 0.2); background: rgba(229, 193, 88, 0.08);">
+                <svg height="16" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                </svg>
+                Slaidide Kuraator (Abimees)
+            </a>
+        </div>
+
+        <!-- Main Content Layout -->
+        <div class="dashboard-grid">
+            <!-- Left Side: Evolution Timeline -->
+            <div>
+                <h2 class="section-title">📈 <span>Esitluse</span> Evolutsioon</h2>
+                <div class="timeline">
+                    <!-- Stage 10 -->
+                    <div class="timeline-item active">
+                        <div class="timeline-card active">
+                            <div class="timeline-stage">Faas 10 (Praegune)</div>
+                            <div class="timeline-title">Krohmseened (Glomeromycota) ja ürgne endosümbioos</div>
+                            <div class="timeline-desc">
+                                Lisasime esitlusse dedicated slaidi krohmseente (Glomeromycota) kohta:
+                                <ul>
+                                    <li>Klassifikatsiooni jaotamine 4 seltsi: <em>Glomerales</em>, <em>Diversisporales</em>, <em>Archaeosporales</em> ja <em>Paraglomerales</em>.</li>
+                                    <li>Ürgne endosümbioos tsüanobakteriga <em>Nostoc punctiforme</em> seene <em>Geosiphon pyriformis</em> raku sees (evolutsiooniline üleminek).</li>
+                                    <li>Arbuskulaarse mükoriisa anatoomia: vesiikulid ja arbusklid juurerakkudes.</li>
+                                    <li>Mulla liimaine glomaliini roll süsiniku ladustamises ja mulla struktuuris.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 9 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 9</div>
+                            <div class="timeline-title">Seened vihmasadude tekitajana</div>
+                            <div class="timeline-desc">
+                                Lisasime esitlusse unikaalse teadusliku peatüki seente ja sademete bioloogilisest ringist:
+                                <ul>
+                                    <li>Pilvede kondensatsioonituumad (eosed atmosfääris koguvad veeauru).</li>
+                                    <li>Ballistospooride aktiivne heide Bulleri veepiisa abil ja soojade õhuvooludega üles kandmine.</li>
+                                    <li>Jääkristalliseerumise valgud (Mortierellaceae perekonnast), mis külmutavad vett pilvedes ja vallandavad vihmasaju.</li>
+                                    <li>Looduslik tagasisideahel: vihm stimuleerib seente viljumist, mis omakorda toodab uusi eoseid ja uut vihma.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 8 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 8</div>
+                            <div class="timeline-title">Haldjaringide rahvapärimuse laiendamine</div>
+                            <div class="timeline-desc">
+                                Integreerisime esitlusse rikkaliku Euroopa ja Eesti rahvapärimuse haldjaringide (nõiaringide) kohta:
+                                <ul>
+                                    <li>Haldjate ja nõidade tantsuplatsid (Briti saarte haldjad, Saksamaa Hexenringe, Eesti maaalused/maod).</li>
+                                    <li>Hoiatused ja ohud (ringi astumise keeld, haldjate ajaline lummus, kus minutid võrduvad 7 aastaga).</li>
+                                    <li>Peidetud aarded ja ilmaennustused (maetud kuld, ilma muutumise ennustamine seente kiire kasvu järgi).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 7 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 7</div>
+                            <div class="timeline-title">Samblikud ja mulla sünd (Evolutsiooniline pioneeritöö)</div>
+                            <div class="timeline-desc">
+                                Lisasime esitluse algusesse slaidi sellest, kuidas samblikud lõid mulla:
+                                <ul>
+                                    <li>Maismaa esmakordne koloniseerimine sümbioosi abil.</li>
+                                    <li>Kivimi happeline lahustamine ja mineraalide vabastamine.</li>
+                                    <li>Pedogenees (mulla sünd), mis tegi võimalikuks kõigi maismaataimede juurdumise.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 6</div>
+                            <div class="timeline-title">Radikaalne mükoloogia ja ökoloogiline taaste</div>
+                            <div class="timeline-desc">
+                                Lisasime esitlusse ökoloogilise taaste ja rakendusmükoloogia teemad Peter McCoy loengu põhjal:
+                                <ul>
+                                    <li>Mükoremediatsioon (keskkonnamürkide lagundamine seente abil).</li>
+                                    <li>Mükopermakultuur ja mulla tervise taastamine mütseeli abil.</li>
+                                    <li>Mükofabrikatsioon (biolagunevad pakkematerjalid ja nahalaadsed tooted mütseelist).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 5</div>
+                            <div class="timeline-title">Meditsiiniline mükoloogia ja USMLE integratsioon</div>
+                            <div class="timeline-desc">
+                                Lisasime esitlusse meditsiinilise mükoloogia slaidid Physeo Step 1 loengute põhjal:
+                                <ul>
+                                    <li>Seeneraku membraan (ergosterool) ja kest (kitiin) kui antimükootikumide sihtmärk.</li>
+                                    <li>Diformsuse ("mold in the cold, yeast in the heat") kliiniline toimemehhanism.</li>
+                                    <li>Märkmete ja evolutsiooni täielik sünkroniseerimine reaalajas toimivasse veebikeskkonda.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 4</div>
+                            <div class="timeline-title">Tšornobõli kiiritusseened ja radiosüntees</div>
+                            <div class="timeline-desc">
+                                Lisasime slaidi *Cladosporium sphaerospermum* klammerdumisest reaktori seintele ja radiosünteesi teooriast (melaniini abil kiirguse keemiliseks energiaks muutmine). Lisatud otselink Postimees Teaduse artiklile.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 3</div>
+                            <div class="timeline-title">PowerPointi mallide ja kirjatüüpide tugi</div>
+                            <div class="timeline-desc">
+                                Integreerisime võimaluse laadida esitlusse valmis disainiga PowerPointi mallid.
+                                <ul>
+                                    <li>Vaikimisi kohahoidjate konfliktide automaatne puhastamine slaidide pealt.</li>
+                                    <li>Esitluse disaineri kirjatüüpide (fondi) ja tüpograafia automaatne pärimine.</li>
+                                    <li>Heleda/tumeda malli automaatne värvituvastus parandatud kontrastsuse saavutamiseks.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 2</div>
+                            <div class="timeline-title">Tekstikastide parandused & loetelupunktide taastamine</div>
+                            <div class="timeline-desc">
+                                Parandasime veebist PowerPointi tõmbamise skripti, mis kaotas lisatekstikastide puhul loetelupunkte. Algupärane sisu taastati täielikult Giti ajaloost.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stage 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-card">
+                            <div class="timeline-stage">Faas 1</div>
+                            <div class="timeline-title">Esitluse algversioon (13 slaidi)</div>
+                            <div class="timeline-desc">
+                                Algse 13 slaidi koostamine ja mütseeli liikumise animatsiooni programmeerimine veebirakendusse. Automaatse Firebase Hostingusse laadimise ja Giti töövoo seadistamine.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Bibliography & Live Slides -->
+            <div>
+                <!-- Bibliography -->
+                <h2 class="section-title">📚 <span>Bibliograafia</span> & Allikad</h2>
+                
+                <!-- Source 1 -->
+                <div class="source-card">
+                    <div class="source-type">Teaduslik artikkel (ISS Kosmos)</div>
+                    <div class="source-title">Fungal radiation shielding on the International Space Station (2022)</div>
+                    <div class="source-desc">Averesch jt uuring musta seene Cladosporium sphaerospermum kasutusest kiirguse vastu Rahvusvahelises Kosmosejaamas.</div>
+                    <a class="source-link" href="https://www.biorxiv.org/content/10.1101/2020.07.16.205534v5" target="_blank">Vaata artiklit BioRxiv-is</a>
+                </div>
+
+                <!-- Source 2 -->
+                <div class="source-card">
+                    <div class="source-type">Teaduslik artikkel (Radiosüntees)</div>
+                    <div class="source-title">Ionizing radiation: how fungi cope, adapt, and exploit (2008)</div>
+                    <div class="source-desc">Dadatšova ja Casadevalli uuring, mis tõestab melaniini radiosünteesi – kiirgusenergia muutmist keemiliseks energiaks seenerakkudes.</div>
+                    <a class="source-link" href="https://pubmed.ncbi.nlm.nih.gov/18023199/" target="_blank">Vaata artiklit PubMed-is</a>
+                </div>
+
+                <!-- Source 3 -->
+                <div class="source-card">
+                    <div class="source-type">Tegevusuuring (Vaabikud)</div>
+                    <div class="source-title">Ganoderma applanatum / Jänesvaabiku uuringud (2021)</div>
+                    <div class="source-desc">Uuringud Ganoderma perekonna (*lucidum* vs. *applanatum*) analüüsist, mis tõestavad kodumaise Jänesvaabiku Reishiga samaväärseid valuvaigistavaid ja anksiolüütilisi mõjusid.</div>
+                </div>
+
+                <!-- Source 4 -->
+                <div class="source-card">
+                    <div class="source-type">Õppevideo (USMLE Step 1)</div>
+                    <div class="source-title">Introduction to Fungi for the USMLE Step 1 (Physeo)</div>
+                    <div class="source-desc">Physeo mikrobioloogia loeng seente rakumembraanist, kestast, ergosteroolist ja diformsest elutsüklist meditsiinilises kontekstis.</div>
+                    <a class="source-link" href="https://www.youtube.com/watch?v=0spjg-0sfAk" target="_blank">Vaata videot YouTube'is</a>
+                </div>
+
+                <!-- Source 5 -->
+                <div class="source-card">
+                    <div class="source-type">Meistriklass (Öko-innovatsioon)</div>
+                    <div class="source-title">Radical Mycology with Peter McCoy: Improving Soil, Livelihoods, and Health with Mushrooms</div>
+                    <div class="source-desc">Peter McCoy ja Sustainable Design Masterclassi koostöös sündinud loeng applied mycology (rakendusmükoloogia) meetoditest ökoloogilise taaste, bioremediatsiooni ja permakultuuri teenistuses.</div>
+                    <a class="source-link" href="https://www.youtube.com/watch?v=Tcy-KcMkhKU" target="_blank">Vaata loengut YouTube'is</a>
+                </div>
+
+                <!-- Source 6 -->
+                <div class="source-card">
+                    <div class="source-type">Teos</div>
+                    <div class="source-title">Merlin Sheldrake — Entangled Life (Põimunud Elu)</div>
+                    <div class="source-desc">Seeneriigi vaimustava intelligentsuse ja radikaalse sümbioosi täielik käsitlus raamatuna.</div>
+                </div>
+
+                <!-- Live Slides List -->
+                <h2 class="section-title" style="margin-top: 40px;">📋 <span>Slaidid</span> Reaalajas</h2>
+                <div class="slide-list" id="slides-list">
+                    <div class="slide-item" style="color: var(--text-sub);">Laadin slaidide nimekirja...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK & Authentication Logic -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        // Firebase configuration
+        const firebaseConfig = {
+            projectId: "fungib",
+            appId: "1:589912931967:web:8e4d9a3c33160617ab094a",
+            storageBucket: "fungib.firebasestorage.app",
+            apiKey: "AIzaSyBEtiCBt2hYWiiL2dDeTRSqE8pY15eGbcE",
+            authDomain: "fungib.firebaseapp.com",
+            messagingSenderId: "589912931967"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+        provider.setCustomParameters({ prompt: 'select_account' });
+
+        const loginContainer = document.getElementById('login-container');
+        const accessDeniedContainer = document.getElementById('access-denied-container');
+        const notesContainer = document.getElementById('notes-container');
+
+        const googleLoginBtn = document.getElementById('google-login-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const logoutBtnDenied = document.getElementById('logout-btn-denied');
+
+        const deniedEmailSpan = document.getElementById('denied-email');
+        const userAvatar = document.getElementById('user-avatar');
+        const userEmail = document.getElementById('user-email');
+
+        // Track Auth status
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                if (user.email === 'borismeldre@gmail.com') {
+                    loginContainer.style.display = 'none';
+                    accessDeniedContainer.style.display = 'none';
+                    notesContainer.style.display = 'block';
+
+                    userAvatar.src = user.photoURL || 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
+                    userEmail.textContent = user.email;
+
+                    // Load live slides list dynamically
+                    loadLiveSlides();
+                } else {
+                    loginContainer.style.display = 'none';
+                    accessDeniedContainer.style.display = 'flex';
+                    notesContainer.style.display = 'none';
+                    deniedEmailSpan.textContent = user.email;
+                }
+            } else {
+                loginContainer.style.display = 'flex';
+                accessDeniedContainer.style.display = 'none';
+                notesContainer.style.display = 'none';
+            }
+        });
+
+        // Login / Logout Handlers
+        googleLoginBtn.addEventListener('click', () => {
+            signInWithPopup(auth, provider).catch(err => {
+                if (err.code !== 'auth/popup-closed-by-user') {
+                    alert("Sisselogimise viga: " + err.message);
+                }
+            });
+        });
+
+        const handleLogout = () => {
+            signOut(auth).catch(err => console.error("Väljalogimise viga:", err));
+        };
+
+        logoutBtn.addEventListener('click', handleLogout);
+        logoutBtnDenied.addEventListener('click', handleLogout);
+
+        // Fetch index.html and dynamically parse the slides list!
+        function loadLiveSlides() {
+            fetch('/index.html')
+                .then(res => {
+                    if (!res.ok) throw new Error("Viga faili laadimisel");
+                    return res.text();
+                })
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const slides = doc.querySelectorAll('.slide');
+                    const slidesList = document.getElementById('slides-list');
+                    
+                    if (slides.length === 0) {
+                        slidesList.innerHTML = '<div class="slide-item" style="color: var(--text-sub);">Slaide ei leitud.</div>';
+                        return;
+                    }
+
+                    slidesList.innerHTML = '';
+                    slides.forEach((slide, idx) => {
+                        const h = slide.querySelector('h1, h2');
+                        if (h) {
+                            const li = document.createElement('div');
+                            li.className = 'slide-item';
+                            
+                            const numSpan = document.createElement('span');
+                            numSpan.className = 'slide-num';
+                            numSpan.textContent = `Slaid ${(idx + 1).toString().padStart(2, '0')}`;
+                            
+                            const titleSpan = document.createElement('span');
+                            titleSpan.className = 'slide-title';
+                            titleSpan.textContent = h.textContent.trim();
+                            
+                            li.appendChild(numSpan);
+                            li.appendChild(titleSpan);
+                            slidesList.appendChild(li);
+                        }
+                    });
+                })
+                .catch(err => {
+                    console.error("Viga slaidide laadimisel:", err);
+                    document.getElementById('slides-list').innerHTML = '<div class="slide-item" style="color: #f87171;">Viga slaidide laadimisel veebist.</div>';
+                });
+        }
+    </script>
+
+    <!-- Mycelial Network Animation -->
+    <script>
+        class MyceliumNetwork {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.particles = [];
+                this.mouse = { x: null, y: null, radius: 160 };
+                this.maxParticles = 50;
+                this.connectionDist = 120;
+                
+                this.init();
+                this.animate();
+                
+                window.addEventListener('resize', () => this.resize());
+                
+                window.addEventListener('mousemove', (e) => {
+                    this.mouse.x = e.clientX;
+                    this.mouse.y = e.clientY;
+                });
+                
+                window.addEventListener('mouseleave', () => {
+                    this.mouse.x = null;
+                    this.mouse.y = null;
+                });
+            }
+            
+            init() {
+                this.resize();
+                this.particles = [];
+                for (let i = 0; i < this.maxParticles; i++) {
+                    this.particles.push({
+                        x: Math.random() * this.canvas.width,
+                        y: Math.random() * this.canvas.height,
+                        vx: (Math.random() - 0.5) * 0.3,
+                        vy: (Math.random() - 0.5) * 0.3,
+                        radius: Math.random() * 2 + 1,
+                        alpha: Math.random() * 0.3 + 0.1
+                    });
+                }
+            }
+            
+            resize() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+            
+            animate() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                for (let i = 0; i < this.particles.length; i++) {
+                    let p1 = this.particles[i];
+                    p1.x += p1.vx;
+                    p1.y += p1.vy;
+                    
+                    if (p1.x < 0 || p1.x > this.canvas.width) p1.vx *= -1;
+                    if (p1.y < 0 || p1.y > this.canvas.height) p1.vy *= -1;
+                    
+                    this.ctx.beginPath();
+                    this.ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
+                    this.ctx.fillStyle = `rgba(46, 196, 182, ${p1.alpha})`;
+                    
+                    this.ctx.shadowBlur = 4;
+                    this.ctx.shadowColor = '#2ec4b6';
+                    this.ctx.fill();
+                    this.ctx.shadowBlur = 0;
+                    
+                    for (let j = i + 1; j < this.particles.length; j++) {
+                        let p2 = this.particles[j];
+                        let dx = p1.x - p2.x;
+                        let dy = p1.y - p2.y;
+                        let dist = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (dist < this.connectionDist) {
+                            let alpha = (1 - dist / this.connectionDist) * 0.08;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(p1.x, p1.y);
+                            this.ctx.lineTo(p2.x, p2.y);
+                            this.ctx.strokeStyle = `rgba(164, 235, 209, ${alpha})`;
+                            this.ctx.lineWidth = 0.7;
+                            this.ctx.stroke();
+                        }
+                    }
+                    
+                    if (this.mouse.x !== null) {
+                        let dx = p1.x - this.mouse.x;
+                        let dy = p1.y - this.mouse.y;
+                        let dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < this.mouse.radius) {
+                            let alpha = (1 - dist / this.mouse.radius) * 0.15;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(p1.x, p1.y);
+                            this.ctx.lineTo(this.mouse.x, this.mouse.y);
+                            this.ctx.strokeStyle = `rgba(229, 193, 88, ${alpha})`;
+                            this.ctx.lineWidth = 0.9;
+                            this.ctx.stroke();
+                        }
+                    }
+                }
+                
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('bg-canvas');
+            new MyceliumNetwork(canvas);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,5232 @@
+{
+  "metadata": {
+    "total_observations": 207,
+    "unique_taxa": 122,
+    "counties": [
+      "Harju maakond",
+      "Hiiu maakond",
+      "Ida-Viru maakond",
+      "Järva maakond",
+      "Lääne-Viru maakond",
+      "Pärnu maakond",
+      "Põlva maakond",
+      "Saare maakond",
+      "Tartu maakond",
+      "Valga maakond",
+      "Võru maakond"
+    ],
+    "generated_at": "2026-08-20T08:24:25Z"
+  },
+  "observations": [
+    {
+      "id": "8318292",
+      "taxon": "Gloeoporus pannocinctus (Romell) J. Erikss.",
+      "date": "2026-08-17",
+      "latitude": 57.75788611,
+      "longitude": 27.07176111,
+      "altitude": 264.2,
+      "locality": "Ala-Tilga küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318292",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e9b74e27-38f4-4244-9349-5cefd8bb0b67.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e9b74e27-38f4-4244-9349-5cefd8bb0b67.jpg",
+          "filename": "PXL_20260817_151540598.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318212",
+      "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "date": "2026-08-17",
+      "latitude": 57.738975,
+      "longitude": 27.05970278,
+      "altitude": null,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "Ohtrus: Üksikud | Substraat: Kuusk (Picea abies, lamatüvi)",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8318212",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ffeb7694-cacb-4bbe-a61c-e2c82cd358f9.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ffeb7694-cacb-4bbe-a61c-e2c82cd358f9.jpg",
+          "filename": "ffeb7694-cacb-4bbe-a61c-e2c82cd358f9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318220",
+      "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "date": "2026-08-17",
+      "latitude": 57.73896111,
+      "longitude": 27.05970278,
+      "altitude": null,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8318220",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6271cfbe-4f70-47f6-9b2e-7d5156837757.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6271cfbe-4f70-47f6-9b2e-7d5156837757.jpg",
+          "filename": "6271cfbe-4f70-47f6-9b2e-7d5156837757.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318186",
+      "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "date": "2026-08-17",
+      "latitude": 57.73918889,
+      "longitude": 27.05924444,
+      "altitude": null,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "Vällamäe, Soodi küla. Kuuse lamatüvel.",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8318186",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/706f5e46-5bf0-4b63-969f-dbac11e503ba.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/706f5e46-5bf0-4b63-969f-dbac11e503ba.jpg",
+          "filename": "706f5e46-5bf0-4b63-969f-dbac11e503ba.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318340",
+      "taxon": "Pholiota flammans (Batsch) P. Kumm.",
+      "date": "2026-08-17",
+      "latitude": 57.73869444,
+      "longitude": 27.06168056,
+      "altitude": 283.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318340",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e5af0254-c830-4c6e-9bc5-e8a169e07a3d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e5af0254-c830-4c6e-9bc5-e8a169e07a3d.jpg",
+          "filename": "PXL_20260817_152734456.MACRO_FOCUS.MP.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318339",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2026-08-17",
+      "latitude": 57.737775,
+      "longitude": 27.06423889,
+      "altitude": 343.8,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318339",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7d114567-7da6-4add-9934-fe9d4ded992a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7d114567-7da6-4add-9934-fe9d4ded992a.jpg",
+          "filename": "PXL_20260817_154608042.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318338",
+      "taxon": "Pholiota flammans (Batsch) P. Kumm.",
+      "date": "2026-08-17",
+      "latitude": 57.73888889,
+      "longitude": 27.06223889,
+      "altitude": 311.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318338",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b7853a46-084b-47cc-93bd-37fefe42bd7b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b7853a46-084b-47cc-93bd-37fefe42bd7b.jpg",
+          "filename": "PXL_20260817_153952692.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318335",
+      "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "date": "2026-08-17",
+      "latitude": 57.73888889,
+      "longitude": 27.06223889,
+      "altitude": 322.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318335",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ed43e6c8-4e31-4e7f-89bc-fde3b0434a18.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ed43e6c8-4e31-4e7f-89bc-fde3b0434a18.jpg",
+          "filename": "PXL_20260817_154055213.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318333",
+      "taxon": "Sarcoporia polyspora P. Karst.",
+      "date": "2026-08-17",
+      "latitude": 57.737825,
+      "longitude": 27.06444444,
+      "altitude": 312.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318333",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/219de910-643e-4b83-9a69-3ab199eb18ab.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/219de910-643e-4b83-9a69-3ab199eb18ab.jpg",
+          "filename": "PXL_20260817_154218132.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5b93c1cd-1a34-4e04-ac16-c1c3d5d7e9f1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5b93c1cd-1a34-4e04-ac16-c1c3d5d7e9f1.jpg",
+          "filename": "PXL_20260817_154238243.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9af7a5a3-79a3-48ff-9bf8-239a9b9c513c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9af7a5a3-79a3-48ff-9bf8-239a9b9c513c.jpg",
+          "filename": "PXL_20260817_154307558.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318293",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2026-08-17",
+      "latitude": 57.73879444,
+      "longitude": 27.06242222,
+      "altitude": 284.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318293",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/921e969c-b3f6-4b5e-abb1-af735d987f9f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/921e969c-b3f6-4b5e-abb1-af735d987f9f.jpg",
+          "filename": "PXL_20260817_152954416.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8ecb9d0a-beab-4ed4-b96d-c6fa7ced8f45.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8ecb9d0a-beab-4ed4-b96d-c6fa7ced8f45.jpg",
+          "filename": "PXL_20260817_152958292.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c3ed4f03-2c0b-47e7-b526-07ef5eb9bf23.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c3ed4f03-2c0b-47e7-b526-07ef5eb9bf23.jpg",
+          "filename": "PXL_20260817_153121020.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318342",
+      "taxon": "Laxitextum bicolor (Pers.) Lentz",
+      "date": "2026-08-16",
+      "latitude": 57.58215833,
+      "longitude": 26.81960833,
+      "altitude": 168.8,
+      "locality": "Paganamaa küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318342",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/44081719-5081-4899-afed-c012127a19b4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/44081719-5081-4899-afed-c012127a19b4.jpg",
+          "filename": "PXL_20260816_135059931.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318341",
+      "taxon": "Lenzites betulina (L.) Fr.",
+      "date": "2026-08-16",
+      "latitude": 57.649,
+      "longitude": 26.77307222,
+      "altitude": 140.3,
+      "locality": "Metstaga küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318341",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9c110bbb-d70d-46ca-b988-c0ffa6d7450f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9c110bbb-d70d-46ca-b988-c0ffa6d7450f.jpg",
+          "filename": "PXL_20260816_113316767.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318346",
+      "taxon": "Hydnellum aurantiacum (Batsch) P. Karst.",
+      "date": "2026-08-07",
+      "latitude": 57.71859444,
+      "longitude": 27.04921944,
+      "altitude": 256.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318346",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b4dfa5db-6bc4-4b68-8cde-96065eb96c08.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b4dfa5db-6bc4-4b68-8cde-96065eb96c08.jpg",
+          "filename": "PXL_20260807_124813114.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/34681a59-7327-46aa-9237-07c42437addf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/34681a59-7327-46aa-9237-07c42437addf.jpg",
+          "filename": "PXL_20260807_124846021.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b75f4f4f-d857-4e23-a12f-e30ee5f2758c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b75f4f4f-d857-4e23-a12f-e30ee5f2758c.jpg",
+          "filename": "PXL_20260807_124908489.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318343",
+      "taxon": "Lactifluus glaucescens (Crossl.) Verbeken",
+      "date": "2026-08-07",
+      "latitude": 57.71916667,
+      "longitude": 27.03732222,
+      "altitude": 277.1,
+      "locality": "Rõuge küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318343",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3f43c448-08de-45d0-a6a4-273f560973f1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3f43c448-08de-45d0-a6a4-273f560973f1.jpg",
+          "filename": "PXL_20260807_130500845.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318345",
+      "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "date": "2026-08-06",
+      "latitude": 58.54911111,
+      "longitude": 26.98228889,
+      "altitude": 83.9,
+      "locality": "Sookalduse küla",
+      "county": "Tartu maakond",
+      "commune": "Peipsiääre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "Substraat: Picea abies (L.) H.Karst.",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318345",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ffe9b1e2-2318-4609-8b3b-4b3f72de9773.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ffe9b1e2-2318-4609-8b3b-4b3f72de9773.jpg",
+          "filename": "PXL_20260806_105135265.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318344",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2026-08-06",
+      "latitude": 58.52381944,
+      "longitude": 26.98822222,
+      "altitude": 94.1,
+      "locality": "Sookalduse küla",
+      "county": "Tartu maakond",
+      "commune": "Peipsiääre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318344",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ddee548f-0427-4746-b5f0-9f3d099a7059.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ddee548f-0427-4746-b5f0-9f3d099a7059.jpg",
+          "filename": "PXL_20260806_105404294.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318347",
+      "taxon": "Phaeolus schweinitzii (Fr.) Pat.",
+      "date": "2026-08-04",
+      "latitude": 57.89172222,
+      "longitude": 27.01139167,
+      "altitude": 99.9,
+      "locality": "Väimela alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318347",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/412920b3-c632-46fe-91ac-088f8a3a3e6d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/412920b3-c632-46fe-91ac-088f8a3a3e6d.jpg",
+          "filename": "PXL_20260804_135902416.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/18a2ec62-f703-4c28-9022-47dd4c07f1fd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/18a2ec62-f703-4c28-9022-47dd4c07f1fd.jpg",
+          "filename": "PXL_20260804_135909978.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318348",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2026-08-01",
+      "latitude": 57.7217,
+      "longitude": 27.03373611,
+      "altitude": 262.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318348",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/96bccc0d-6c18-44ae-ae32-dba9ef0fe241.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/96bccc0d-6c18-44ae-ae32-dba9ef0fe241.jpg",
+          "filename": "PXL_20260801_124332616.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318349",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2026-07-28",
+      "latitude": 57.63525278,
+      "longitude": 26.77180278,
+      "altitude": 152.2,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Tüügas",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Tüügas",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318349",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8e2b1023-5b7e-4d1f-a482-069db9946ea2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8e2b1023-5b7e-4d1f-a482-069db9946ea2.jpg",
+          "filename": "PXL_20260728_114619748.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8135676",
+      "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "date": "2026-05-25",
+      "latitude": 58.22208889,
+      "longitude": 26.66684722,
+      "altitude": null,
+      "locality": "Pühi küla",
+      "county": "Tartu maakond",
+      "commune": "Kambja vald",
+      "substrate": "Corylus L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Sage",
+      "remarks": "KM017-8, KM017-9 - eraldisel esineb antud liiki sagedasti.",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8135676",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8de24fd4-a730-4e13-b572-cb94507c4fc9.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8de24fd4-a730-4e13-b572-cb94507c4fc9.jpg",
+          "filename": "8de24fd4-a730-4e13-b572-cb94507c4fc9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8066704",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2026-04-24",
+      "latitude": 58.222075,
+      "longitude": 26.66697222,
+      "altitude": null,
+      "locality": "Pühi küla",
+      "county": "Tartu maakond",
+      "commune": "Kambja vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Känd",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8066704",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bc7a0e09-e4a8-43b7-9b1e-689458180ad3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bc7a0e09-e4a8-43b7-9b1e-689458180ad3.jpg",
+          "filename": "bc7a0e09-e4a8-43b7-9b1e-689458180ad3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8055095",
+      "taxon": "Pulsatilla patens (L.) Mill.",
+      "date": "2026-04-09",
+      "latitude": 57.81005556,
+      "longitude": 27.02221667,
+      "altitude": null,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8055095",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/dd40410c-0d35-4e7d-aad1-784e8b58b7e5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/dd40410c-0d35-4e7d-aad1-784e8b58b7e5.jpg",
+          "filename": "dd40410c-0d35-4e7d-aad1-784e8b58b7e5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018692",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2026-03-21",
+      "latitude": 57.72005,
+      "longitude": 26.50034444,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018692",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1c6a72c4-96d1-4a26-9cc4-5f84ee963074.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1c6a72c4-96d1-4a26-9cc4-5f84ee963074.jpg",
+          "filename": "1c6a72c4-96d1-4a26-9cc4-5f84ee963074.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018731",
+      "taxon": "Byssomerulius corium (Pers.) Parmasto",
+      "date": "2026-03-21",
+      "latitude": 57.72027778,
+      "longitude": 26.49934167,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018731",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c33b64a1-27da-4ffe-829c-540052de3f6b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c33b64a1-27da-4ffe-829c-540052de3f6b.jpg",
+          "filename": "c33b64a1-27da-4ffe-829c-540052de3f6b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018691",
+      "taxon": "Fomitopsis serialis (Fr.) Spirin & Runnel",
+      "date": "2026-03-21",
+      "latitude": 57.72027778,
+      "longitude": 26.49934167,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018691",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7ae75dc2-0d1b-479b-a377-3b6d5a032782.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7ae75dc2-0d1b-479b-a377-3b6d5a032782.jpg",
+          "filename": "7ae75dc2-0d1b-479b-a377-3b6d5a032782.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018686",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2026-03-21",
+      "latitude": 57.72027778,
+      "longitude": 26.49934167,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018686",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9a7c984a-544b-49b6-91a4-899a389fce85.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9a7c984a-544b-49b6-91a4-899a389fce85.jpg",
+          "filename": "9a7c984a-544b-49b6-91a4-899a389fce85.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018693",
+      "taxon": "Ischnoderma benzoinum (Wahlenb.) P. Karst.",
+      "date": "2026-03-21",
+      "latitude": 57.72171389,
+      "longitude": 26.50461944,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018693",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d5cfe661-7b06-4468-8c6e-885e584c4c9d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d5cfe661-7b06-4468-8c6e-885e584c4c9d.jpg",
+          "filename": "d5cfe661-7b06-4468-8c6e-885e584c4c9d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8018676",
+      "taxon": "Skeletocutis amorpha (Fr.) Kotl. & Pouzar",
+      "date": "2026-03-21",
+      "latitude": 57.72020278,
+      "longitude": 26.49878611,
+      "altitude": null,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8018676",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/27648faf-9642-420b-839e-6284d5aae062.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/27648faf-9642-420b-839e-6284d5aae062.jpg",
+          "filename": "27648faf-9642-420b-839e-6284d5aae062.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7869786",
+      "taxon": "Holwaya mucida (Schulzer) Korf & Abawi",
+      "date": "2025-12-10",
+      "latitude": 58.51788611,
+      "longitude": 26.32444444,
+      "altitude": null,
+      "locality": "Siniküla",
+      "county": "Tartu maakond",
+      "commune": "Tartu vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7869786",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6dfd0df3-4514-4f26-849e-59fd4b240222.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6dfd0df3-4514-4f26-849e-59fd4b240222.jpg",
+          "filename": "6dfd0df3-4514-4f26-849e-59fd4b240222.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7785287",
+      "taxon": "Lactarius glyciosmus (Fr.) Fr.",
+      "date": "2025-10-21",
+      "latitude": 58.09648333,
+      "longitude": 27.01340556,
+      "altitude": null,
+      "locality": "Kiidjärve küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7785287",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/eddbc81b-809e-4207-b3a7-12c1441c3c2f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/eddbc81b-809e-4207-b3a7-12c1441c3c2f.jpg",
+          "filename": "eddbc81b-809e-4207-b3a7-12c1441c3c2f.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784157",
+      "taxon": "Phlebia centrifuga P. Karst.",
+      "date": "2025-10-19",
+      "latitude": 57.73354444,
+      "longitude": 27.06813056,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784157",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e8e5243f-dcc3-435e-b2a2-8e9707442ff2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e8e5243f-dcc3-435e-b2a2-8e9707442ff2.jpg",
+          "filename": "e8e5243f-dcc3-435e-b2a2-8e9707442ff2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784156",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2025-10-19",
+      "latitude": 57.72936111,
+      "longitude": 27.05574167,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784156",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/008d0675-e1f5-4e03-9809-3de098032424.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/008d0675-e1f5-4e03-9809-3de098032424.jpg",
+          "filename": "008d0675-e1f5-4e03-9809-3de098032424.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784153",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2025-10-19",
+      "latitude": 57.74414167,
+      "longitude": 27.07813333,
+      "altitude": null,
+      "locality": "Miilimäe küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784153",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1da00540-1a28-4970-b982-de2946957536.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1da00540-1a28-4970-b982-de2946957536.jpg",
+          "filename": "1da00540-1a28-4970-b982-de2946957536.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784154",
+      "taxon": "Antrodiella citrinella Niemelä & Ryvarden",
+      "date": "2025-10-19",
+      "latitude": 57.73896389,
+      "longitude": 27.0649,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784154",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/56009bf9-4013-4024-ac0f-94cce6f2b402.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/56009bf9-4013-4024-ac0f-94cce6f2b402.jpg",
+          "filename": "56009bf9-4013-4024-ac0f-94cce6f2b402.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784158",
+      "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "date": "2025-10-19",
+      "latitude": 57.73898056,
+      "longitude": 27.05918611,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784158",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e8f17056-3183-4982-a9f7-465967080fd7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e8f17056-3183-4982-a9f7-465967080fd7.jpg",
+          "filename": "e8f17056-3183-4982-a9f7-465967080fd7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784159",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2025-10-19",
+      "latitude": 57.73898056,
+      "longitude": 27.05918611,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784159",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c3139b00-270b-4119-875e-c0bd11b3672c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c3139b00-270b-4119-875e-c0bd11b3672c.jpg",
+          "filename": "c3139b00-270b-4119-875e-c0bd11b3672c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7784152",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2025-10-19",
+      "latitude": 57.73335833,
+      "longitude": 27.06144444,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7784152",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/edebdf5b-f23f-4850-8af6-4bff4bfaaffe.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/edebdf5b-f23f-4850-8af6-4bff4bfaaffe.jpg",
+          "filename": "edebdf5b-f23f-4850-8af6-4bff4bfaaffe.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7780561",
+      "taxon": "Coprinopsis atramentaria (Bull.) Redhead, Vilgalys & Moncalvo",
+      "date": "2025-10-16",
+      "latitude": 58.384054,
+      "longitude": 26.723718,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Populus L.",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "#13-8",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7780561",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/af6e61ee-4f0e-473c-9616-26b348605919.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/af6e61ee-4f0e-473c-9616-26b348605919.jpg",
+          "filename": "af6e61ee-4f0e-473c-9616-26b348605919.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7786524",
+      "taxon": "Mycena (Pers.) Roussel",
+      "date": "2025-10-15",
+      "latitude": 58.38290833,
+      "longitude": 26.72412778,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Tilia L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "#2-7",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7786524",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d0fd71a0-f151-42de-8cc2-fc08bc8639e6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d0fd71a0-f151-42de-8cc2-fc08bc8639e6.jpg",
+          "filename": "d0fd71a0-f151-42de-8cc2-fc08bc8639e6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7787242",
+      "taxon": "Schizophyllum commune Fr.",
+      "date": "2025-10-15",
+      "latitude": 58.383002,
+      "longitude": 26.724356,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Aesculus hippocastanum L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "#4A-4",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7787242",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/048de54d-f594-46df-a910-3aebe41c9f3a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/048de54d-f594-46df-a910-3aebe41c9f3a.jpg",
+          "filename": "048de54d-f594-46df-a910-3aebe41c9f3a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7787241",
+      "taxon": "Nectria (Fr.) Fr.",
+      "date": "2025-10-15",
+      "latitude": 58.38389,
+      "longitude": 26.72383,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Populus L.",
+      "substrate_type": "Tüügas",
+      "abundance": "",
+      "remarks": "#13-7",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7787241",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/29238c7f-099d-4ae7-a77f-2f5ab293e9c7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/29238c7f-099d-4ae7-a77f-2f5ab293e9c7.jpg",
+          "filename": "29238c7f-099d-4ae7-a77f-2f5ab293e9c7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769201",
+      "taxon": "Coriolopsis trogii (Berk.) Domański",
+      "date": "2025-10-01",
+      "latitude": 58.384054,
+      "longitude": 26.723718,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Populus L.",
+      "substrate_type": "Tüügas",
+      "abundance": "",
+      "remarks": "#13-2",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769201",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/57e8f234-3690-4978-8e04-d09e9ac08f0d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/57e8f234-3690-4978-8e04-d09e9ac08f0d.jpg",
+          "filename": "57e8f234-3690-4978-8e04-d09e9ac08f0d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769086",
+      "taxon": "Pholiota populnea (Pers.) Kuyper & Tjall.-Beuk.",
+      "date": "2025-10-01",
+      "latitude": 58.384054,
+      "longitude": 26.723718,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Populus L.",
+      "substrate_type": "Tüügas",
+      "abundance": "",
+      "remarks": "#13-3",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769086",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3f217230-b581-44bd-ac73-21de6b437637.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3f217230-b581-44bd-ac73-21de6b437637.jpg",
+          "filename": "3f217230-b581-44bd-ac73-21de6b437637.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766811",
+      "taxon": "Hygrocybe miniata (Fr.) P. Kumm.",
+      "date": "2025-09-28",
+      "latitude": 58.276072,
+      "longitude": 27.1716,
+      "altitude": null,
+      "locality": "Kõnnu küla",
+      "county": "Tartu maakond",
+      "commune": "Kastre vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "Identified using Kindwise Mushroom.ID API",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766811",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3eb6899f-6002-47a7-b8a6-41c02247387a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3eb6899f-6002-47a7-b8a6-41c02247387a.jpg",
+          "filename": "3eb6899f-6002-47a7-b8a6-41c02247387a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766810",
+      "taxon": "Lenzites betulina (L.) Fr.",
+      "date": "2025-09-27",
+      "latitude": 59.3756964,
+      "longitude": 26.7653655,
+      "altitude": null,
+      "locality": "Uljaste küla",
+      "county": "Ida-Viru maakond",
+      "commune": "Lüganuse vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766810",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fcc1e4e8-d6da-4745-8ede-cbcb800bab1d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fcc1e4e8-d6da-4745-8ede-cbcb800bab1d.jpg",
+          "filename": "fcc1e4e8-d6da-4745-8ede-cbcb800bab1d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766814",
+      "taxon": "Datronia mollis (Sommerf.) Donk",
+      "date": "2025-09-27",
+      "latitude": 59.37600556,
+      "longitude": 26.76354444,
+      "altitude": null,
+      "locality": "Uljaste küla",
+      "county": "Ida-Viru maakond",
+      "commune": "Lüganuse vald",
+      "substrate": "Betula L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766814",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f5c247d2-fcb1-47a1-b39a-04581e5f2270.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f5c247d2-fcb1-47a1-b39a-04581e5f2270.jpg",
+          "filename": "f5c247d2-fcb1-47a1-b39a-04581e5f2270.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766816",
+      "taxon": "Porodaedalea pini (Brot.) Murrill",
+      "date": "2025-09-27",
+      "latitude": 59.37625278,
+      "longitude": 26.76304444,
+      "altitude": null,
+      "locality": "Uljaste küla",
+      "county": "Ida-Viru maakond",
+      "commune": "Lüganuse vald",
+      "substrate": "Pinus",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766816",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/be8ce2f6-73a5-441c-b057-7f2cb32d0ff3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/be8ce2f6-73a5-441c-b057-7f2cb32d0ff3.jpg",
+          "filename": "be8ce2f6-73a5-441c-b057-7f2cb32d0ff3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766819",
+      "taxon": "Phlebia tremellosa (Schrad.) Nakasone & Burds.",
+      "date": "2025-09-27",
+      "latitude": 59.37754444,
+      "longitude": 26.76188056,
+      "altitude": null,
+      "locality": "Uljaste küla",
+      "county": "Ida-Viru maakond",
+      "commune": "Lüganuse vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766819",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f63c758f-4a8f-46a1-9b73-df211b720489.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f63c758f-4a8f-46a1-9b73-df211b720489.jpg",
+          "filename": "f63c758f-4a8f-46a1-9b73-df211b720489.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766809",
+      "taxon": "Lactifluus volemus (Fr.) Kuntze",
+      "date": "2025-09-27",
+      "latitude": 59.3774827,
+      "longitude": 26.7619224,
+      "altitude": null,
+      "locality": "Uljaste küla",
+      "county": "Ida-Viru maakond",
+      "commune": "Lüganuse vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766809",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0b945672-76d2-41d5-b855-e58a4e98e0b0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0b945672-76d2-41d5-b855-e58a4e98e0b0.jpg",
+          "filename": "0b945672-76d2-41d5-b855-e58a4e98e0b0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766835",
+      "taxon": "Skeletocutis papyracea A. David",
+      "date": "2025-09-27",
+      "latitude": 59.41796944,
+      "longitude": 26.71160278,
+      "altitude": null,
+      "locality": "Samma küla",
+      "county": "Lääne-Viru maakond",
+      "commune": "Viru-Nigula vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766835",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e9e5fdde-64d1-451f-8d40-233de62cb1f3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e9e5fdde-64d1-451f-8d40-233de62cb1f3.jpg",
+          "filename": "e9e5fdde-64d1-451f-8d40-233de62cb1f3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7766842",
+      "taxon": "Tricholoma sulphureum (Bull.) P. Kumm.",
+      "date": "2025-09-27",
+      "latitude": 59.42098056,
+      "longitude": 26.69886111,
+      "altitude": null,
+      "locality": "Samma küla",
+      "county": "Lääne-Viru maakond",
+      "commune": "Viru-Nigula vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7766842",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/00638d7a-58f0-4545-a1f1-de192d80f14e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/00638d7a-58f0-4545-a1f1-de192d80f14e.jpg",
+          "filename": "00638d7a-58f0-4545-a1f1-de192d80f14e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769071",
+      "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "date": "2025-09-27",
+      "latitude": 59.42030556,
+      "longitude": 26.69683333,
+      "altitude": null,
+      "locality": "Samma küla",
+      "county": "Lääne-Viru maakond",
+      "commune": "Viru-Nigula vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769071",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f7786c4a-8dfa-4567-82b4-b419590ff732.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f7786c4a-8dfa-4567-82b4-b419590ff732.jpg",
+          "filename": "f7786c4a-8dfa-4567-82b4-b419590ff732.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769073",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2025-09-27",
+      "latitude": 59.42030556,
+      "longitude": 26.69683333,
+      "altitude": null,
+      "locality": "Samma küla",
+      "county": "Lääne-Viru maakond",
+      "commune": "Viru-Nigula vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769073",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0a67212e-d258-4b3e-9f41-3f1f318c59b5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0a67212e-d258-4b3e-9f41-3f1f318c59b5.jpg",
+          "filename": "0a67212e-d258-4b3e-9f41-3f1f318c59b5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7742937",
+      "taxon": "Fomitopsis quercina (L.) Spirin & Miettinen",
+      "date": "2025-09-09",
+      "latitude": 58.37806111,
+      "longitude": 26.70334722,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Quercus robur L.",
+      "substrate_type": "Lehtpuu tüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7742937",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/13c82b84-9c45-4eea-9a7c-44418fd3b6f2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/13c82b84-9c45-4eea-9a7c-44418fd3b6f2.jpg",
+          "filename": "13c82b84-9c45-4eea-9a7c-44418fd3b6f2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7742406",
+      "taxon": "Volvariella bombycina (Schaeff.) Singer",
+      "date": "2025-09-09",
+      "latitude": 58.37852222,
+      "longitude": 26.71389444,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7742406",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/17bff95e-b081-4435-9bc6-5c7866d76199.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/17bff95e-b081-4435-9bc6-5c7866d76199.jpg",
+          "filename": "17bff95e-b081-4435-9bc6-5c7866d76199.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7739852",
+      "taxon": "Leptoporus erubescens (Fr.) Bourdot & Galzin",
+      "date": "2025-09-06",
+      "latitude": 57.58294722,
+      "longitude": 26.828575,
+      "altitude": null,
+      "locality": "Paganamaa küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Pinus sylvestris L.",
+      "substrate_type": "Okaspuu tüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7739852",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/01c36f36-010e-4f1f-b8d4-96ee10e69ad5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/01c36f36-010e-4f1f-b8d4-96ee10e69ad5.jpg",
+          "filename": "01c36f36-010e-4f1f-b8d4-96ee10e69ad5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7739845",
+      "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "date": "2025-09-06",
+      "latitude": 57.58194167,
+      "longitude": 26.81898889,
+      "altitude": null,
+      "locality": "Paganamaa küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Okaspuu tüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7739845",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/255edfd9-542e-4589-a4ca-3070f5ce1568.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/255edfd9-542e-4589-a4ca-3070f5ce1568.jpg",
+          "filename": "255edfd9-542e-4589-a4ca-3070f5ce1568.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7775542",
+      "taxon": "Hericium coralloides (Scop.) Pers.",
+      "date": "2025-09-02",
+      "latitude": 57.84015278,
+      "longitude": 27.20209444,
+      "altitude": null,
+      "locality": "Kaku küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7775542",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fda34020-dc06-4992-9ce1-db772705a3ff.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fda34020-dc06-4992-9ce1-db772705a3ff.jpg",
+          "filename": "fda34020-dc06-4992-9ce1-db772705a3ff.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7775454",
+      "taxon": "Lactarius acerrimus Britzelm.",
+      "date": "2025-09-02",
+      "latitude": 57.83241944,
+      "longitude": 27.18842778,
+      "altitude": null,
+      "locality": "Kaku küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7775454",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8c692f39-17cf-4fc7-a7ee-e29a766299bf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8c692f39-17cf-4fc7-a7ee-e29a766299bf.jpg",
+          "filename": "8c692f39-17cf-4fc7-a7ee-e29a766299bf.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7735065",
+      "taxon": "Gomphus clavatus (Pers.) Gray",
+      "date": "2025-09-02",
+      "latitude": 57.626225,
+      "longitude": 27.28974444,
+      "altitude": null,
+      "locality": "Missokülä küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7735065",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/cc4e50e8-07c3-427a-978c-fdaf3be80531.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/cc4e50e8-07c3-427a-978c-fdaf3be80531.jpg",
+          "filename": "cc4e50e8-07c3-427a-978c-fdaf3be80531.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7734909",
+      "taxon": "Boletopsis leucomelaena (Pers.) Fayod",
+      "date": "2025-09-02",
+      "latitude": 57.62606389,
+      "longitude": 27.28884444,
+      "altitude": null,
+      "locality": "Missokülä küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7734909",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/44dbdd60-5ad8-42be-b2d9-a43d667a21aa.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/44dbdd60-5ad8-42be-b2d9-a43d667a21aa.jpg",
+          "filename": "44dbdd60-5ad8-42be-b2d9-a43d667a21aa.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7729161",
+      "taxon": "Tremella encephala Willd.",
+      "date": "2025-08-27",
+      "latitude": 59.03665,
+      "longitude": 25.52723611,
+      "altitude": null,
+      "locality": "Võõbu küla",
+      "county": "Järva maakond",
+      "commune": "Paide linn",
+      "substrate": "Pinus",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7729161",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6066a9e9-87cf-4fb7-89b3-7ef9aeb40060.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6066a9e9-87cf-4fb7-89b3-7ef9aeb40060.jpg",
+          "filename": "6066a9e9-87cf-4fb7-89b3-7ef9aeb40060.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7717558",
+      "taxon": "Russula favrei M.M. Moser",
+      "date": "2025-08-14",
+      "latitude": 57.73879722,
+      "longitude": 27.066025,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7717558",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6938a9a6-b8a7-4a0f-a772-09309312464a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6938a9a6-b8a7-4a0f-a772-09309312464a.jpg",
+          "filename": "6938a9a6-b8a7-4a0f-a772-09309312464a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7717556",
+      "taxon": "Lactarius lignyotus Fr.",
+      "date": "2025-08-14",
+      "latitude": 57.73863889,
+      "longitude": 27.06606111,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7717556",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/53ae07b8-8cd7-45df-972f-0d2505447788.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/53ae07b8-8cd7-45df-972f-0d2505447788.jpg",
+          "filename": "53ae07b8-8cd7-45df-972f-0d2505447788.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7684129",
+      "taxon": "Coriolopsis trogii (Berk.) Domański",
+      "date": "2025-07-15",
+      "latitude": 57.62746944,
+      "longitude": 26.87404444,
+      "altitude": null,
+      "locality": "Soolätte küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7684129",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e66704bc-1fcb-433f-99f0-325b5cc78551.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e66704bc-1fcb-433f-99f0-325b5cc78551.jpg",
+          "filename": "e66704bc-1fcb-433f-99f0-325b5cc78551.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8318351",
+      "taxon": "Ganoderma lucidum (Curtis) P. Karst.",
+      "date": "2025-06-05",
+      "latitude": 58.24305278,
+      "longitude": 27.189575,
+      "altitude": 46.6,
+      "locality": "Kastmekoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318351",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ee238fd7-effa-4ffa-bede-b05100102800.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ee238fd7-effa-4ffa-bede-b05100102800.jpg",
+          "filename": "A39C0A64-E778-4696-A34A-4DB1F7AA02CC_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318350",
+      "taxon": "Morchella esculenta (L.) Pers.",
+      "date": "2025-05-08",
+      "latitude": 59.53412222,
+      "longitude": 25.75538889,
+      "altitude": 43.0,
+      "locality": "Kotka küla",
+      "county": "Harju maakond",
+      "commune": "Kuusalu vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318350",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/16322418-5a3f-4394-bc46-b8139155dfcc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/16322418-5a3f-4394-bc46-b8139155dfcc.jpg",
+          "filename": "IMG_4426.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318354",
+      "taxon": "Sarcosoma globosum (Schmidel) Rehm",
+      "date": "2025-04-13",
+      "latitude": 58.11125833,
+      "longitude": 27.04801667,
+      "altitude": 60.8,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318354",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c756ec34-8cb5-4bbb-a305-93133e5a268c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c756ec34-8cb5-4bbb-a305-93133e5a268c.jpg",
+          "filename": "IMG_4269.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318353",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2025-04-13",
+      "latitude": 58.10729722,
+      "longitude": 27.05148611,
+      "altitude": 73.3,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318353",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0a9b837d-5e89-46e2-8e5f-a12ae1291570.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0a9b837d-5e89-46e2-8e5f-a12ae1291570.jpg",
+          "filename": "IMG_4273.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318352",
+      "taxon": "Stereum sanguinolentum (Alb. & Schwein.) Fr.",
+      "date": "2025-04-13",
+      "latitude": 58.10673889,
+      "longitude": 27.04313333,
+      "altitude": 83.1,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318352",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9f309884-811b-4047-af9c-29f70f4701da.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9f309884-811b-4047-af9c-29f70f4701da.jpg",
+          "filename": "IMG_4275.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318355",
+      "taxon": "Daedalea quercina (L.) Pers.",
+      "date": "2025-03-11",
+      "latitude": 58.37801389,
+      "longitude": 26.70328056,
+      "altitude": 60.8,
+      "locality": "Näituse",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Quercus robur L.",
+      "substrate_type": "Elav puu",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Quercus robur L., Elav puu",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318355",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/81fc9481-1a54-4f77-85c3-acd488e2bac2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/81fc9481-1a54-4f77-85c3-acd488e2bac2.jpg",
+          "filename": "IMG_4152.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318356",
+      "taxon": "Phlebia centrifuga P. Karst.",
+      "date": "2025-03-10",
+      "latitude": 58.51974167,
+      "longitude": 26.32384167,
+      "altitude": 42.4,
+      "locality": "Siniküla",
+      "county": "Tartu maakond",
+      "commune": "Tartu vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318356",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/93c50274-a928-4eb3-afad-e303b5c965dd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/93c50274-a928-4eb3-afad-e303b5c965dd.jpg",
+          "filename": "IMG_4136.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318357",
+      "taxon": "Phyllotopsis nidulans (Pers.) Singer",
+      "date": "2025-01-17",
+      "latitude": 57.909225,
+      "longitude": 26.98733056,
+      "altitude": 87.1,
+      "locality": "Parksepa alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318357",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0389e7b1-7431-44be-812e-b188bf7c57c7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0389e7b1-7431-44be-812e-b188bf7c57c7.jpg",
+          "filename": "IMG_3849.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318358",
+      "taxon": "Tremella mesenterica Retz.",
+      "date": "2025-01-11",
+      "latitude": 57.73419167,
+      "longitude": 27.06042222,
+      "altitude": 278.5,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318358",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2509fd9b-c203-4e9b-a78a-e92d2b23a3f7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2509fd9b-c203-4e9b-a78a-e92d2b23a3f7.jpg",
+          "filename": "IMG_3825.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8318359",
+      "taxon": "Schizophyllum commune Fr.",
+      "date": "2024-11-04",
+      "latitude": 58.37863611,
+      "longitude": 26.71378611,
+      "altitude": 74.1,
+      "locality": "Juhan Liivi",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Mõõdukalt",
+      "remarks": "Ohtrus: Mõõdukalt | Substraat: Lamatüvi",
+      "determiner": "",
+      "observer": "Boris Meldre",
+      "url": "https://app.plutof.ut.ee/observation/view/8318359",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b1028925-0eaa-434a-ae76-560d4f1cdc5c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b1028925-0eaa-434a-ae76-560d4f1cdc5c.jpg",
+          "filename": "IMG_3378.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "7187388",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2024-09-10",
+      "latitude": 58.27489444,
+      "longitude": 27.31899722,
+      "altitude": null,
+      "locality": "Järvselja küla",
+      "county": "Tartu maakond",
+      "commune": "Kastre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7187388",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ef877441-2c07-43e5-9b97-0504de019ff9.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ef877441-2c07-43e5-9b97-0504de019ff9.jpg",
+          "filename": "ef877441-2c07-43e5-9b97-0504de019ff9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7187657",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2024-09-10",
+      "latitude": 58.27513889,
+      "longitude": 27.31877222,
+      "altitude": null,
+      "locality": "Järvselja küla",
+      "county": "Tartu maakond",
+      "commune": "Kastre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7187657",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6cfff8a1-3801-4c95-9abd-3103606975cc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6cfff8a1-3801-4c95-9abd-3103606975cc.jpg",
+          "filename": "6cfff8a1-3801-4c95-9abd-3103606975cc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7187659",
+      "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "date": "2024-09-10",
+      "latitude": 58.27449444,
+      "longitude": 27.31946389,
+      "altitude": null,
+      "locality": "Järvselja küla",
+      "county": "Tartu maakond",
+      "commune": "Kastre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7187659",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d64365f1-4162-495f-83a3-87a5e95ec778.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d64365f1-4162-495f-83a3-87a5e95ec778.jpg",
+          "filename": "d64365f1-4162-495f-83a3-87a5e95ec778.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7187658",
+      "taxon": "Crustoderma dryinum (Berk. & M.A. Curtis) Parmasto",
+      "date": "2024-09-10",
+      "latitude": 58.27206389,
+      "longitude": 27.31425,
+      "altitude": null,
+      "locality": "Järvselja küla",
+      "county": "Tartu maakond",
+      "commune": "Kastre vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7187658",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/77ae90f5-9766-4dc7-a0fc-2fb4c0cdafa2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/77ae90f5-9766-4dc7-a0fc-2fb4c0cdafa2.jpg",
+          "filename": "77ae90f5-9766-4dc7-a0fc-2fb4c0cdafa2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6706885",
+      "taxon": "Helix pomatia Linnaeus, 1758",
+      "date": "2024-05-10",
+      "latitude": 57.81260278,
+      "longitude": 27.00773889,
+      "altitude": null,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Ohtralt",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6706885",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e4d04ba6-b6ee-42bd-863b-1d01e09b73e8.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e4d04ba6-b6ee-42bd-863b-1d01e09b73e8.jpg",
+          "filename": "e4d04ba6-b6ee-42bd-863b-1d01e09b73e8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6645298",
+      "taxon": "Rhizocybe pruinosa (Lasch) Vizzini, G. Moreno, P. Alvarado & Consiglio",
+      "date": "2024-03-25",
+      "latitude": 58.11094722,
+      "longitude": 27.04834722,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6645298",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/cfab3f29-3eb3-40b1-b624-f31c0878b9c6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/cfab3f29-3eb3-40b1-b624-f31c0878b9c6.jpg",
+          "filename": "cfab3f29-3eb3-40b1-b624-f31c0878b9c6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6645297",
+      "taxon": "Sarcosoma globosum (Schmidel) Rehm",
+      "date": "2024-03-25",
+      "latitude": 58.11094722,
+      "longitude": 27.04834722,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6645297",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bae139dc-58c0-4610-8d27-a04c4259a129.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bae139dc-58c0-4610-8d27-a04c4259a129.jpg",
+          "filename": "bae139dc-58c0-4610-8d27-a04c4259a129.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6560974",
+      "taxon": "Tremiscus helvelloides (DC.) Donk",
+      "date": "2023-10-31",
+      "latitude": 57.81114444,
+      "longitude": 27.01411944,
+      "altitude": null,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6560974",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/baebd308-4f41-435f-840e-bcdc071ecc4d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/baebd308-4f41-435f-840e-bcdc071ecc4d.jpg",
+          "filename": "baebd308-4f41-435f-840e-bcdc071ecc4d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6501327",
+      "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "date": "2023-09-05",
+      "latitude": 57.89188,
+      "longitude": 27.346679,
+      "altitude": null,
+      "locality": "Jantra küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "Tüügas",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6501327",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e4807419-31d6-4f01-9e10-984c7323ac57.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e4807419-31d6-4f01-9e10-984c7323ac57.jpg",
+          "filename": "e4807419-31d6-4f01-9e10-984c7323ac57.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6486037",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2023-08-24",
+      "latitude": 57.72144444,
+      "longitude": 27.04085278,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6486037",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/71f881c8-3fb0-43f1-995f-afaf012a6e82.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/71f881c8-3fb0-43f1-995f-afaf012a6e82.jpg",
+          "filename": "71f881c8-3fb0-43f1-995f-afaf012a6e82.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6537812",
+      "taxon": "Phellinus Quél.",
+      "date": "2023-08-21",
+      "latitude": 57.81801944,
+      "longitude": 27.01832222,
+      "altitude": null,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6537812",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c5ac3295-bb83-49ff-846a-698bef8dca7e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c5ac3295-bb83-49ff-846a-698bef8dca7e.jpg",
+          "filename": "c5ac3295-bb83-49ff-846a-698bef8dca7e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6485847",
+      "taxon": "Chamaemyces fracidus (Fr.) Donk",
+      "date": "2023-08-20",
+      "latitude": 58.554175,
+      "longitude": 22.57746111,
+      "altitude": null,
+      "locality": "Peederga küla",
+      "county": "Saare maakond",
+      "commune": "Saaremaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6485847",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a6c9538c-b976-45e5-a3cd-bd6055a3cb02.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a6c9538c-b976-45e5-a3cd-bd6055a3cb02.jpg",
+          "filename": "a6c9538c-b976-45e5-a3cd-bd6055a3cb02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6485852",
+      "taxon": "Amanita strobiliformis (Paulet ex Vittad.) Bertill.",
+      "date": "2023-08-20",
+      "latitude": 58.60439167,
+      "longitude": 22.52531111,
+      "altitude": null,
+      "locality": "Murika küla",
+      "county": "Saare maakond",
+      "commune": "Saaremaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6485852",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b855967f-eeb3-4944-83ec-0e9737cec6e6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b855967f-eeb3-4944-83ec-0e9737cec6e6.jpg",
+          "filename": "b855967f-eeb3-4944-83ec-0e9737cec6e6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7735062",
+      "taxon": "Gomphus clavatus (Pers.) Gray",
+      "date": "2023-08-19",
+      "latitude": 58.58897778,
+      "longitude": 22.52637222,
+      "altitude": null,
+      "locality": "Murika küla",
+      "county": "Saare maakond",
+      "commune": "Saaremaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7735062",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/98126ba3-8763-434f-bec4-1fc076653828.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/98126ba3-8763-434f-bec4-1fc076653828.jpg",
+          "filename": "98126ba3-8763-434f-bec4-1fc076653828.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6417946",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-08-10",
+      "latitude": 57.73770833,
+      "longitude": 27.06684444,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Tüügas",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6417946",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/553db077-e713-4bf5-a53c-3bf90d377260.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/553db077-e713-4bf5-a53c-3bf90d377260.jpg",
+          "filename": "553db077-e713-4bf5-a53c-3bf90d377260.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6417945",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2023-08-10",
+      "latitude": 57.73741944,
+      "longitude": 27.06748889,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6417945",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a95e29ed-5808-4e31-8980-a811e268c6db.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a95e29ed-5808-4e31-8980-a811e268c6db.jpg",
+          "filename": "a95e29ed-5808-4e31-8980-a811e268c6db.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6417943",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-08-10",
+      "latitude": 57.73561111,
+      "longitude": 27.05965,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6417943",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/318f2c0f-0c9b-4501-a0a2-74d9ccd872fb.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/318f2c0f-0c9b-4501-a0a2-74d9ccd872fb.jpg",
+          "filename": "318f2c0f-0c9b-4501-a0a2-74d9ccd872fb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6418448",
+      "taxon": "Pseudohydnum gelatinosum (Scop.) P. Karst.",
+      "date": "2023-08-10",
+      "latitude": 57.73626667,
+      "longitude": 27.05953056,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6418448",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a7956e69-e591-4f4e-be09-59eb52008a34.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a7956e69-e591-4f4e-be09-59eb52008a34.jpg",
+          "filename": "a7956e69-e591-4f4e-be09-59eb52008a34.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406654",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-30",
+      "latitude": 58.02816389,
+      "longitude": 26.9252,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406654",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ac9aab37-6170-46cf-a920-43b65e292eb8.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ac9aab37-6170-46cf-a920-43b65e292eb8.jpg",
+          "filename": "ac9aab37-6170-46cf-a920-43b65e292eb8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406652",
+      "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "date": "2023-07-30",
+      "latitude": 58.026347,
+      "longitude": 26.925067,
+      "altitude": null,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406652",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a3692486-6578-4040-9e8c-17d82577a0af.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a3692486-6578-4040-9e8c-17d82577a0af.jpg",
+          "filename": "a3692486-6578-4040-9e8c-17d82577a0af.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406648",
+      "taxon": "Phellinopsis conchata (Pers.) Y.C. Dai",
+      "date": "2023-07-30",
+      "latitude": 58.02501389,
+      "longitude": 26.92406111,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Salix L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406648",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6fb404d9-dc69-469c-acbe-927fcfc14392.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6fb404d9-dc69-469c-acbe-927fcfc14392.jpg",
+          "filename": "6fb404d9-dc69-469c-acbe-927fcfc14392.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406647",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-30",
+      "latitude": 58.02505,
+      "longitude": 26.92435833,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406647",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/385793e8-81f9-42cd-93fd-b1d9c9c94eff.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/385793e8-81f9-42cd-93fd-b1d9c9c94eff.jpg",
+          "filename": "385793e8-81f9-42cd-93fd-b1d9c9c94eff.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406645",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-30",
+      "latitude": 58.02492222,
+      "longitude": 26.92438611,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406645",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a5357aa5-2ebd-4f6a-ae80-63d819253778.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a5357aa5-2ebd-4f6a-ae80-63d819253778.jpg",
+          "filename": "a5357aa5-2ebd-4f6a-ae80-63d819253778.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406644",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2023-07-30",
+      "latitude": 58.02452222,
+      "longitude": 26.92476389,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406644",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2c8084be-622c-4cc8-8bcc-2cc3373a4fc5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2c8084be-622c-4cc8-8bcc-2cc3373a4fc5.jpg",
+          "filename": "2c8084be-622c-4cc8-8bcc-2cc3373a4fc5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406624",
+      "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "date": "2023-07-30",
+      "latitude": 58.02201389,
+      "longitude": 26.94253333,
+      "altitude": null,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406624",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/594fb00c-37b5-4477-80b6-dc7d41f5db23.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/594fb00c-37b5-4477-80b6-dc7d41f5db23.jpg",
+          "filename": "594fb00c-37b5-4477-80b6-dc7d41f5db23.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6406623",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-30",
+      "latitude": 58.02118056,
+      "longitude": 26.94591389,
+      "altitude": null,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6406623",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fd840fc5-4b49-40f0-add9-5caf1674e1a4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fd840fc5-4b49-40f0-add9-5caf1674e1a4.jpg",
+          "filename": "fd840fc5-4b49-40f0-add9-5caf1674e1a4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6593695",
+      "taxon": "Climacodon pulcherrimus (Berk. & M.A. Curtis) M.I. Nikol.",
+      "date": "2023-07-28",
+      "latitude": 57.832958,
+      "longitude": 26.932367,
+      "altitude": null,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "Känd",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6593695",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c92478da-456a-4b62-a9ba-03b69fbebdc4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c92478da-456a-4b62-a9ba-03b69fbebdc4.jpg",
+          "filename": "c92478da-456a-4b62-a9ba-03b69fbebdc4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6405565",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-07-27",
+      "latitude": 57.73520556,
+      "longitude": 27.06103611,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6405565",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/668e7582-9953-4711-8186-1aa2754b2237.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/668e7582-9953-4711-8186-1aa2754b2237.jpg",
+          "filename": "668e7582-9953-4711-8186-1aa2754b2237.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6405563",
+      "taxon": "Porphyrellus porphyrosporus (Fr. & Hök) E.-J. Gilbert",
+      "date": "2023-07-27",
+      "latitude": 57.73563333,
+      "longitude": 27.06058333,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6405563",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/06b34cb6-5999-4b92-a6fe-0f5bfc01a09c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/06b34cb6-5999-4b92-a6fe-0f5bfc01a09c.jpg",
+          "filename": "06b34cb6-5999-4b92-a6fe-0f5bfc01a09c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6405564",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-07-27",
+      "latitude": 57.74186389,
+      "longitude": 27.04924722,
+      "altitude": null,
+      "locality": "Simula küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6405564",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/cc85ef44-d7eb-490b-8607-c2d582b6f68a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/cc85ef44-d7eb-490b-8607-c2d582b6f68a.jpg",
+          "filename": "cc85ef44-d7eb-490b-8607-c2d582b6f68a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6405101",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-07-26",
+      "latitude": 57.63365278,
+      "longitude": 26.77236667,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6405101",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/68d67517-97a7-4ad9-9131-c0d920cd639e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/68d67517-97a7-4ad9-9131-c0d920cd639e.jpg",
+          "filename": "68d67517-97a7-4ad9-9131-c0d920cd639e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6405004",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2023-07-25",
+      "latitude": 57.71305556,
+      "longitude": 27.06045,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6405004",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d6417f7f-fe0b-4f60-bf41-d54da1116715.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d6417f7f-fe0b-4f60-bf41-d54da1116715.jpg",
+          "filename": "d6417f7f-fe0b-4f60-bf41-d54da1116715.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401034",
+      "taxon": "Pholiota tuberculosa (Schaeff.) P. Kumm.",
+      "date": "2023-07-19",
+      "latitude": 57.73234167,
+      "longitude": 27.064075,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Alnus Mill.",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401034",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a1f7e82e-9270-44bb-bed3-d06107549e2a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a1f7e82e-9270-44bb-bed3-d06107549e2a.jpg",
+          "filename": "a1f7e82e-9270-44bb-bed3-d06107549e2a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6400997",
+      "taxon": "Pluteus atromarginatus (Konrad) Kühner",
+      "date": "2023-07-19",
+      "latitude": 57.73178611,
+      "longitude": 27.06436389,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6400997",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6046b3f0-472f-430b-b8ca-d043a3721ee7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6046b3f0-472f-430b-b8ca-d043a3721ee7.jpg",
+          "filename": "6046b3f0-472f-430b-b8ca-d043a3721ee7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401033",
+      "taxon": "Picipes badius (Persoon) I.V. Zmitrovich & A.E. Kovalenko",
+      "date": "2023-07-19",
+      "latitude": 57.73167778,
+      "longitude": 27.06478611,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401033",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/433b12dc-961c-4b2f-aa33-9c8512dd69bf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/433b12dc-961c-4b2f-aa33-9c8512dd69bf.jpg",
+          "filename": "433b12dc-961c-4b2f-aa33-9c8512dd69bf.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401032",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2023-07-19",
+      "latitude": 57.73125833,
+      "longitude": 27.06428056,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401032",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d5a24502-bced-4073-a2bd-457767787b83.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d5a24502-bced-4073-a2bd-457767787b83.jpg",
+          "filename": "d5a24502-bced-4073-a2bd-457767787b83.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401030",
+      "taxon": "Flammulaster limulatus (Fr.) Watling",
+      "date": "2023-07-19",
+      "latitude": 57.73191389,
+      "longitude": 27.06541944,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401030",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9c6197c5-489d-4a31-a73c-be4661a67c15.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9c6197c5-489d-4a31-a73c-be4661a67c15.jpg",
+          "filename": "9c6197c5-489d-4a31-a73c-be4661a67c15.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401031",
+      "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "date": "2023-07-19",
+      "latitude": 57.73210833,
+      "longitude": 27.06641389,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Betula L.",
+      "substrate_type": "Lehtpuu tüvejalam",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401031",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/beae1b90-c17f-4e2c-85d7-e70f2491a0be.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/beae1b90-c17f-4e2c-85d7-e70f2491a0be.jpg",
+          "filename": "beae1b90-c17f-4e2c-85d7-e70f2491a0be.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401039",
+      "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "date": "2023-07-18",
+      "latitude": 58.02635833,
+      "longitude": 26.92508611,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401039",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/00e53827-fe35-46f8-8e5e-9405a813b80d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/00e53827-fe35-46f8-8e5e-9405a813b80d.jpg",
+          "filename": "00e53827-fe35-46f8-8e5e-9405a813b80d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6399765",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-18",
+      "latitude": 58.02628056,
+      "longitude": 26.92485833,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6399765",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4f576668-ab93-48aa-bf19-40338df976d1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4f576668-ab93-48aa-bf19-40338df976d1.jpg",
+          "filename": "4f576668-ab93-48aa-bf19-40338df976d1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6399767",
+      "taxon": "Amylocystis lapponica (Romell) Singer",
+      "date": "2023-07-18",
+      "latitude": 58.02411389,
+      "longitude": 26.93632778,
+      "altitude": null,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6399767",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5c58b555-9988-49b5-bbc4-4ed5a0aefd03.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5c58b555-9988-49b5-bbc4-4ed5a0aefd03.jpg",
+          "filename": "5c58b555-9988-49b5-bbc4-4ed5a0aefd03.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6401038",
+      "taxon": "Resinoporia piceata (K. Runnel, Spirin & Vlasák) Audet",
+      "date": "2023-07-18",
+      "latitude": 58.02645833,
+      "longitude": 26.924975,
+      "altitude": null,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6401038",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/acb3eb22-7682-4c14-919a-2cb1dbc64e0f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/acb3eb22-7682-4c14-919a-2cb1dbc64e0f.jpg",
+          "filename": "acb3eb22-7682-4c14-919a-2cb1dbc64e0f.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6393710",
+      "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "date": "2023-07-12",
+      "latitude": 57.62435,
+      "longitude": 26.75297,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Corylus L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6393710",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5c4cbd0e-a6ea-4e3d-a598-c6c3a1c744af.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5c4cbd0e-a6ea-4e3d-a598-c6c3a1c744af.jpg",
+          "filename": "5c4cbd0e-a6ea-4e3d-a598-c6c3a1c744af.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6393709",
+      "taxon": "Polyporus umbellatus (Pers.) Fr.",
+      "date": "2023-07-11",
+      "latitude": 57.62435,
+      "longitude": 26.75297,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6393709",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4563336b-de49-4aa0-aca9-7215cb6c8830.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4563336b-de49-4aa0-aca9-7215cb6c8830.jpg",
+          "filename": "4563336b-de49-4aa0-aca9-7215cb6c8830.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6393708",
+      "taxon": "Pluteus salicinus (Pers.) P. Kumm.",
+      "date": "2023-07-11",
+      "latitude": 57.62435,
+      "longitude": 26.75297,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6393708",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/49bea1fc-d578-4c00-b42b-9e09f222e673.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/49bea1fc-d578-4c00-b42b-9e09f222e673.jpg",
+          "filename": "49bea1fc-d578-4c00-b42b-9e09f222e673.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6393707",
+      "taxon": "Ganoderma lucidum (Curtis) P. Karst.",
+      "date": "2023-07-11",
+      "latitude": 57.625778,
+      "longitude": 26.748947,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6393707",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/aefb5b6a-1be1-4b82-8883-eb601d6f23cc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/aefb5b6a-1be1-4b82-8883-eb601d6f23cc.jpg",
+          "filename": "aefb5b6a-1be1-4b82-8883-eb601d6f23cc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6243180",
+      "taxon": "Strobilurus stephanocystis (Kühner & Romagn. ex Hora) Singer",
+      "date": "2023-04-26",
+      "latitude": 57.88818611,
+      "longitude": 26.93744722,
+      "altitude": null,
+      "locality": "Navi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6243180",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c9efac3a-bec6-41bd-97fd-e2e89f6e993c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c9efac3a-bec6-41bd-97fd-e2e89f6e993c.jpg",
+          "filename": "c9efac3a-bec6-41bd-97fd-e2e89f6e993c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6148780",
+      "taxon": "Phellinopsis conchata (Pers.) Y.C. Dai",
+      "date": "2022-11-30",
+      "latitude": 58.38131667,
+      "longitude": 26.71850278,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Crataegus L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6148780",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/20c12d42-bfde-4485-919b-f84f76643f29.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/20c12d42-bfde-4485-919b-f84f76643f29.jpg",
+          "filename": "20c12d42-bfde-4485-919b-f84f76643f29.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6133185",
+      "taxon": "Inocutis rheades (Pers.) Fiasson & Niemelä",
+      "date": "2022-11-13",
+      "latitude": 57.74773,
+      "longitude": 27.10045,
+      "altitude": null,
+      "locality": "Uue-Saaluse küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6133185",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/06def52f-c24c-4670-b9f4-6c1118a15341.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/06def52f-c24c-4670-b9f4-6c1118a15341.jpg",
+          "filename": "06def52f-c24c-4670-b9f4-6c1118a15341.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6133184",
+      "taxon": "Bjerkandera fumosa (Pers.) P. Karst.",
+      "date": "2022-11-13",
+      "latitude": 57.74592,
+      "longitude": 27.10529,
+      "altitude": null,
+      "locality": "Uue-Saaluse küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6133184",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9a184dae-1985-4776-a359-9bb27eadc671.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9a184dae-1985-4776-a359-9bb27eadc671.jpg",
+          "filename": "9a184dae-1985-4776-a359-9bb27eadc671.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769412",
+      "taxon": "Phyllotopsis nidulans (Pers.) Singer",
+      "date": "2022-11-12",
+      "latitude": 57.91385278,
+      "longitude": 27.18780833,
+      "altitude": null,
+      "locality": "Pindi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769412",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3f5c1191-d63a-4d7a-9549-b2de3d29ab00.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3f5c1191-d63a-4d7a-9549-b2de3d29ab00.jpg",
+          "filename": "3f5c1191-d63a-4d7a-9549-b2de3d29ab00.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769430",
+      "taxon": "Gloeoporus dichrous (Fr.) Bres.",
+      "date": "2022-11-12",
+      "latitude": 57.911575,
+      "longitude": 27.18605833,
+      "altitude": null,
+      "locality": "Paidra küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769430",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7022f33b-59b5-4d5c-8406-27b4f7bddd62.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7022f33b-59b5-4d5c-8406-27b4f7bddd62.jpg",
+          "filename": "7022f33b-59b5-4d5c-8406-27b4f7bddd62.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769445",
+      "taxon": "Chondrostereum purpureum (Pers.) Pouzar",
+      "date": "2022-11-12",
+      "latitude": 57.91161389,
+      "longitude": 27.18594444,
+      "altitude": null,
+      "locality": "Paidra küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769445",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fce0a9c0-c6c2-464d-802e-a22927838028.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fce0a9c0-c6c2-464d-802e-a22927838028.jpg",
+          "filename": "fce0a9c0-c6c2-464d-802e-a22927838028.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7769220",
+      "taxon": "Schizophyllum commune Fr.",
+      "date": "2022-11-12",
+      "latitude": 57.90953889,
+      "longitude": 27.19453889,
+      "altitude": null,
+      "locality": "Pindi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7769220",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d3910843-f24b-47ee-90c8-6357979c88d5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d3910843-f24b-47ee-90c8-6357979c88d5.jpg",
+          "filename": "d3910843-f24b-47ee-90c8-6357979c88d5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6124923",
+      "taxon": "Hypsizygus tessulatus (Bull.) Singer",
+      "date": "2022-11-07",
+      "latitude": 57.91414,
+      "longitude": 27.18927,
+      "altitude": null,
+      "locality": "Pindi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Betula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6124923",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1063e8e5-e8de-4690-b1b1-a0a9fbb89607.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1063e8e5-e8de-4690-b1b1-a0a9fbb89607.jpg",
+          "filename": "1063e8e5-e8de-4690-b1b1-a0a9fbb89607.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5964972",
+      "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "date": "2022-11-01",
+      "latitude": 58.09710556,
+      "longitude": 27.45693333,
+      "altitude": null,
+      "locality": "Räpina linn",
+      "county": "Põlva maakond",
+      "commune": "Räpina vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5964972",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/474f0618-278c-45d2-8201-6688ccfaec3c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/474f0618-278c-45d2-8201-6688ccfaec3c.jpg",
+          "filename": "474f0618-278c-45d2-8201-6688ccfaec3c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5611453",
+      "taxon": "Cystoderma jasonis (Cooke & Massee) Harmaja",
+      "date": "2022-10-28",
+      "latitude": 57.832462,
+      "longitude": 26.93715,
+      "altitude": null,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5611453",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/33bec449-d020-4566-b8e9-6c0ceee118bf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/33bec449-d020-4566-b8e9-6c0ceee118bf.jpg",
+          "filename": "33bec449-d020-4566-b8e9-6c0ceee118bf.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607408",
+      "taxon": "Tricholoma inocybeoides A. Pearson",
+      "date": "2022-10-23",
+      "latitude": 57.846992,
+      "longitude": 26.993208,
+      "altitude": null,
+      "locality": "Eesti, Võru maakond, Võru linn",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607408",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fe4f1259-ed17-45f3-addd-2fc727cb8fd8.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fe4f1259-ed17-45f3-addd-2fc727cb8fd8.jpg",
+          "filename": "fe4f1259-ed17-45f3-addd-2fc727cb8fd8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607406",
+      "taxon": "Trametes hirsuta (Wulfen) Pilat",
+      "date": "2022-10-23",
+      "latitude": 57.844187,
+      "longitude": 26.959575,
+      "altitude": null,
+      "locality": "Roosisaare küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607406",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1b7b1846-a0c8-4fe1-8015-72bd7301154a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1b7b1846-a0c8-4fe1-8015-72bd7301154a.jpg",
+          "filename": "1b7b1846-a0c8-4fe1-8015-72bd7301154a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5606222",
+      "taxon": "Pholiota populnea (Pers.) Kuyper & Tjall.-Beuk.",
+      "date": "2022-10-21",
+      "latitude": 57.838928,
+      "longitude": 27.001397,
+      "altitude": null,
+      "locality": "Estonia, Võru maakond, Võru linn",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5606222",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5bb31e68-ad2a-48a3-956d-63776498ee4d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5bb31e68-ad2a-48a3-956d-63776498ee4d.jpg",
+          "filename": "5bb31e68-ad2a-48a3-956d-63776498ee4d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5605312",
+      "taxon": "Hypsizygus tessulatus (Bull.) Singer",
+      "date": "2022-10-20",
+      "latitude": 58.36674167,
+      "longitude": 26.720975,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5605312",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/21999c57-9d78-442e-a754-0ca5ff409dcc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/21999c57-9d78-442e-a754-0ca5ff409dcc.jpg",
+          "filename": "21999c57-9d78-442e-a754-0ca5ff409dcc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607409",
+      "taxon": "Panellus serotinus (Pers.) Kühner",
+      "date": "2022-10-20",
+      "latitude": 58.38404167,
+      "longitude": 26.72050278,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607409",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bab42508-45c6-48cf-aca4-9f4a1973cde2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bab42508-45c6-48cf-aca4-9f4a1973cde2.jpg",
+          "filename": "bab42508-45c6-48cf-aca4-9f4a1973cde2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5605311",
+      "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "date": "2022-10-20",
+      "latitude": 58.38383611,
+      "longitude": 26.720725,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5605311",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8bea2192-20cb-4d9e-a6b2-d8105d7ec52e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8bea2192-20cb-4d9e-a6b2-d8105d7ec52e.jpg",
+          "filename": "8bea2192-20cb-4d9e-a6b2-d8105d7ec52e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607410",
+      "taxon": "Clitocybe nebularis (Batsch) Quél.",
+      "date": "2022-10-20",
+      "latitude": 58.384517,
+      "longitude": 26.72167,
+      "altitude": null,
+      "locality": "Tartu linn",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "Pinus koraiensis Siebold & Zucc.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607410",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1d96f498-dd77-4752-835b-93aaa4f17e33.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1d96f498-dd77-4752-835b-93aaa4f17e33.jpg",
+          "filename": "1d96f498-dd77-4752-835b-93aaa4f17e33.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5605313",
+      "taxon": "Trametes versicolor (L.) Lloyd",
+      "date": "2022-10-20",
+      "latitude": 58.38477,
+      "longitude": 26.719528,
+      "altitude": null,
+      "locality": "Botaanikaaed",
+      "county": "Tartu maakond",
+      "commune": "Tartu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5605313",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f823d606-ef81-43e7-94ea-66e6cb065c5a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f823d606-ef81-43e7-94ea-66e6cb065c5a.jpg",
+          "filename": "f823d606-ef81-43e7-94ea-66e6cb065c5a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607389",
+      "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "date": "2022-10-19",
+      "latitude": null,
+      "longitude": null,
+      "altitude": null,
+      "locality": "Eesti",
+      "county": "",
+      "commune": "",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607389",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/146f7186-c7ce-4ce4-a7d6-c2f445ddead8.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/146f7186-c7ce-4ce4-a7d6-c2f445ddead8.jpg",
+          "filename": "146f7186-c7ce-4ce4-a7d6-c2f445ddead8.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5606300",
+      "taxon": "Vulpicida pinastri (Scop.) J.-E. Mattsson & M.J. Lai",
+      "date": "2022-10-19",
+      "latitude": 57.753328,
+      "longitude": 26.46745,
+      "altitude": null,
+      "locality": "Rebasemõisa küla",
+      "county": "Valga maakond",
+      "commune": "Valga vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5606300",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/36f80c15-b7e7-4369-95e6-318b59d80e38.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/36f80c15-b7e7-4369-95e6-318b59d80e38.jpg",
+          "filename": "36f80c15-b7e7-4369-95e6-318b59d80e38.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5958841",
+      "taxon": "Pluteus petasatus (Fr.) Gillet",
+      "date": "2022-10-17",
+      "latitude": 57.83068,
+      "longitude": 26.995613,
+      "altitude": null,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5958841",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c29561f6-d8e9-4c4b-8dfc-66c011161f21.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c29561f6-d8e9-4c4b-8dfc-66c011161f21.jpg",
+          "filename": "c29561f6-d8e9-4c4b-8dfc-66c011161f21.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607386",
+      "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "date": "2022-10-14",
+      "latitude": 57.81898611,
+      "longitude": 27.03886944,
+      "altitude": null,
+      "locality": "Kose alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607386",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/112f3642-fa95-480a-ae75-32e24a1d6391.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/112f3642-fa95-480a-ae75-32e24a1d6391.jpg",
+          "filename": "112f3642-fa95-480a-ae75-32e24a1d6391.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607385",
+      "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "date": "2022-10-14",
+      "latitude": 57.82228889,
+      "longitude": 27.04934444,
+      "altitude": null,
+      "locality": "Umbsaare küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607385",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/852aeb73-fc1c-4acc-af6f-18635ddaa8b0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/852aeb73-fc1c-4acc-af6f-18635ddaa8b0.jpg",
+          "filename": "852aeb73-fc1c-4acc-af6f-18635ddaa8b0.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5605388",
+      "taxon": "Arrhenia acerosa (Fr.) Kühner",
+      "date": "2022-10-13",
+      "latitude": 57.82379444,
+      "longitude": 27.04650556,
+      "altitude": null,
+      "locality": "Umbsaare küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5605388",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/26b16723-c4fa-44c8-968e-3d8af2fbfb73.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/26b16723-c4fa-44c8-968e-3d8af2fbfb73.jpg",
+          "filename": "26b16723-c4fa-44c8-968e-3d8af2fbfb73.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607407",
+      "taxon": "Phlegmacium triumphans (Fr.) Niskanen & Liimat.",
+      "date": "2022-10-13",
+      "latitude": 57.789192,
+      "longitude": 26.88205,
+      "altitude": null,
+      "locality": "Nursi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607407",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d5ed42fd-af1f-4af7-8d30-6ffc19d24ff7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d5ed42fd-af1f-4af7-8d30-6ffc19d24ff7.jpg",
+          "filename": "d5ed42fd-af1f-4af7-8d30-6ffc19d24ff7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607384",
+      "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "date": "2022-10-13",
+      "latitude": 57.798637,
+      "longitude": 26.889433,
+      "altitude": null,
+      "locality": "Pugõstu küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607384",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c68897c8-2b59-4f70-87e1-a546dcf88019.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c68897c8-2b59-4f70-87e1-a546dcf88019.jpg",
+          "filename": "c68897c8-2b59-4f70-87e1-a546dcf88019.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607388",
+      "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "date": "2022-10-12",
+      "latitude": 57.811055,
+      "longitude": 27.009419,
+      "altitude": null,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607388",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/967d8e27-b64d-4ca9-aaa5-3c17fdd9b75a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/967d8e27-b64d-4ca9-aaa5-3c17fdd9b75a.jpg",
+          "filename": "967d8e27-b64d-4ca9-aaa5-3c17fdd9b75a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607383",
+      "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "date": "2022-10-03",
+      "latitude": 57.81638,
+      "longitude": 26.99538,
+      "altitude": null,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607383",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c0649b25-5a1c-4345-adbe-f80e83e424f4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c0649b25-5a1c-4345-adbe-f80e83e424f4.jpg",
+          "filename": "c0649b25-5a1c-4345-adbe-f80e83e424f4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607387",
+      "taxon": "Tricholoma vaccinum (Schaeff.) P. Kumm.",
+      "date": "2022-10-02",
+      "latitude": 57.82175,
+      "longitude": 26.972555,
+      "altitude": null,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607387",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5bd7742e-874f-4ab9-bff7-a5bcb88b152e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5bd7742e-874f-4ab9-bff7-a5bcb88b152e.jpg",
+          "filename": "5bd7742e-874f-4ab9-bff7-a5bcb88b152e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5582419",
+      "taxon": "Gloiodon strigosus (Sw.) P. Karst.",
+      "date": "2022-09-19",
+      "latitude": 57.80879722,
+      "longitude": 27.04718889,
+      "altitude": null,
+      "locality": "Verijärve küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Populus tremula L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5582419",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0601bcb4-5275-4372-ad21-0bec15b0da88.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0601bcb4-5275-4372-ad21-0bec15b0da88.jpg",
+          "filename": "0601bcb4-5275-4372-ad21-0bec15b0da88.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5582420",
+      "taxon": "Leptoporus erubescens (Fr.) Bourdot & Galzin",
+      "date": "2022-09-19",
+      "latitude": 57.80856389,
+      "longitude": 27.04675278,
+      "altitude": null,
+      "locality": "Verijärve küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Pinus",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5582420",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/48d03af8-8334-4073-b94f-83508f28d4d6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/48d03af8-8334-4073-b94f-83508f28d4d6.jpg",
+          "filename": "48d03af8-8334-4073-b94f-83508f28d4d6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579413",
+      "taxon": "Hemipholiota heteroclita (Fr.) Bon",
+      "date": "2022-09-14",
+      "latitude": 57.787812,
+      "longitude": 27.163703,
+      "altitude": null,
+      "locality": "Tohkri küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Alnus Mill.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579413",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/35d00e0b-414b-4e0a-82e5-8ce9d448d83e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/35d00e0b-414b-4e0a-82e5-8ce9d448d83e.jpg",
+          "filename": "35d00e0b-414b-4e0a-82e5-8ce9d448d83e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579137",
+      "taxon": "Skeletocutis stellae (Pilát) Jean Keller",
+      "date": "2022-09-13",
+      "latitude": 57.73128611,
+      "longitude": 27.06316111,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579137",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/11077056-7038-4dac-8a3f-2ced650234d4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/11077056-7038-4dac-8a3f-2ced650234d4.jpg",
+          "filename": "11077056-7038-4dac-8a3f-2ced650234d4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579138",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2022-09-13",
+      "latitude": 57.73119444,
+      "longitude": 27.0629,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579138",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0735781d-6996-4074-8d1e-9f92a92977bf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0735781d-6996-4074-8d1e-9f92a92977bf.jpg",
+          "filename": "0735781d-6996-4074-8d1e-9f92a92977bf.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579140",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2022-09-13",
+      "latitude": 57.73103611,
+      "longitude": 27.06291667,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579140",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/94e78fac-d136-4216-ac03-663c604bdd3c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/94e78fac-d136-4216-ac03-663c604bdd3c.jpg",
+          "filename": "94e78fac-d136-4216-ac03-663c604bdd3c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579139",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2022-09-13",
+      "latitude": 57.731005,
+      "longitude": 27.062772,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579139",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c158d546-1ae6-4657-8340-ae3501aa8a81.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c158d546-1ae6-4657-8340-ae3501aa8a81.jpg",
+          "filename": "c158d546-1ae6-4657-8340-ae3501aa8a81.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5578745",
+      "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "date": "2022-08-25",
+      "latitude": 57.63485833,
+      "longitude": 26.77505,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5578745",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7f74e8be-a6a0-4db8-b0ec-8dbe7e64796e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7f74e8be-a6a0-4db8-b0ec-8dbe7e64796e.jpg",
+          "filename": "7f74e8be-a6a0-4db8-b0ec-8dbe7e64796e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5561684",
+      "taxon": "Aureoboletus projectellus (Murrill) Halling",
+      "date": "2022-08-19",
+      "latitude": 58.90720833,
+      "longitude": 22.13813889,
+      "altitude": null,
+      "locality": "Kaleste küla",
+      "county": "Hiiu maakond",
+      "commune": "Hiiumaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5561684",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d04e34f0-2ccd-4c5e-904a-733f472f7a47.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d04e34f0-2ccd-4c5e-904a-733f472f7a47.jpg",
+          "filename": "d04e34f0-2ccd-4c5e-904a-733f472f7a47.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5557189",
+      "taxon": "Pycnoporellus alboluteus (Ellis & Everh.) Kotl. & Pouzar",
+      "date": "2022-08-12",
+      "latitude": 57.634303,
+      "longitude": 26.772337,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Okaspuu",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5557189",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5901ef7c-7abe-454a-a3b1-3483a3c5cc37.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5901ef7c-7abe-454a-a3b1-3483a3c5cc37.jpg",
+          "filename": "5901ef7c-7abe-454a-a3b1-3483a3c5cc37.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6142024",
+      "taxon": "Phellinus tuberculosus (Baumg.) Niemelä",
+      "date": "2022-07-09",
+      "latitude": 58.13063,
+      "longitude": 23.99869,
+      "altitude": null,
+      "locality": "Viitina küla",
+      "county": "Pärnu maakond",
+      "commune": "Kihnu vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6142024",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6411466f-cc56-4828-94a9-b42a6545d819.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6411466f-cc56-4828-94a9-b42a6545d819.jpg",
+          "filename": "6411466f-cc56-4828-94a9-b42a6545d819.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6123659",
+      "taxon": "Tubaria confragosa (Fr.) Kühner",
+      "date": "2022-06-19",
+      "latitude": 57.80704444,
+      "longitude": 27.12473611,
+      "altitude": null,
+      "locality": "Palometsa küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6123659",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3a6db6fd-18d5-4a3a-b7f4-0d261ca45341.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3a6db6fd-18d5-4a3a-b7f4-0d261ca45341.jpg",
+          "filename": "3a6db6fd-18d5-4a3a-b7f4-0d261ca45341.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5476193",
+      "taxon": "Agaricus bitorquis (Quél.) Sacc.",
+      "date": "2022-06-15",
+      "latitude": 57.83612,
+      "longitude": 27.00982,
+      "altitude": null,
+      "locality": "Eesti, Võru maakond, Võru linn",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5476193",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b10d3f5e-85b4-481d-8086-ba9c69ff804f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b10d3f5e-85b4-481d-8086-ba9c69ff804f.jpg",
+          "filename": "b10d3f5e-85b4-481d-8086-ba9c69ff804f.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5552421",
+      "taxon": "Polyporus tuberaster (Jacq.) Fr.",
+      "date": "2022-06-12",
+      "latitude": 57.735772,
+      "longitude": 27.066197,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Corylus L.",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5552421",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/17f53ae0-f114-42e6-a133-0e0b1a28a991.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/17f53ae0-f114-42e6-a133-0e0b1a28a991.jpg",
+          "filename": "17f53ae0-f114-42e6-a133-0e0b1a28a991.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5532259",
+      "taxon": "Skeletocutis stellae (Pilát) Jean Keller",
+      "date": "2022-06-12",
+      "latitude": 57.734675,
+      "longitude": 27.062728,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5532259",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/baad232f-1336-439b-960c-2a2b51f52179.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/baad232f-1336-439b-960c-2a2b51f52179.jpg",
+          "filename": "baad232f-1336-439b-960c-2a2b51f52179.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5552412",
+      "taxon": "Pseudomerulius aureus (Fr.) Jülich",
+      "date": "2021-11-21",
+      "latitude": 57.736058,
+      "longitude": 27.064958,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5552412",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c8378166-e49e-49c7-8b64-be09b7a7e9ec.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c8378166-e49e-49c7-8b64-be09b7a7e9ec.jpg",
+          "filename": "c8378166-e49e-49c7-8b64-be09b7a7e9ec.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5579414",
+      "taxon": "Skeletocutis odora (Peck ex Sacc.) Ginns",
+      "date": "2021-10-28",
+      "latitude": 58.034139,
+      "longitude": 26.93633,
+      "altitude": null,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5579414",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9b1338b9-ec26-46e9-936d-644adb910632.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9b1338b9-ec26-46e9-936d-644adb910632.jpg",
+          "filename": "9b1338b9-ec26-46e9-936d-644adb910632.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4665539",
+      "taxon": "Fomitiporia robusta (P. Karst.) Fiasson & Niemelä",
+      "date": "2021-10-13",
+      "latitude": 57.638462,
+      "longitude": 27.089728,
+      "altitude": null,
+      "locality": "Ruusmäe küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Quercus L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4665539",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/897145fe-cfa4-4814-878f-510576aa9015.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/897145fe-cfa4-4814-878f-510576aa9015.jpg",
+          "filename": "897145fe-cfa4-4814-878f-510576aa9015.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4665073",
+      "taxon": "Hymenochaete rubiginosa (Dicks.) Lév.",
+      "date": "2021-10-12",
+      "latitude": 57.63853,
+      "longitude": 27.089558,
+      "altitude": null,
+      "locality": "Ruusmäe küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Quercus L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4665073",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/befe69fd-d93f-4c8b-88c5-94c31fb064b2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/befe69fd-d93f-4c8b-88c5-94c31fb064b2.jpg",
+          "filename": "befe69fd-d93f-4c8b-88c5-94c31fb064b2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4664967",
+      "taxon": "Xylobolus frustulatus (Pers.) Boidin",
+      "date": "2021-10-12",
+      "latitude": 57.638572,
+      "longitude": 27.089717,
+      "altitude": null,
+      "locality": "Ruusmäe küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Quercus L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4664967",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/60efdfce-b98a-41f4-a1eb-e773efc196ae.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/60efdfce-b98a-41f4-a1eb-e773efc196ae.jpg",
+          "filename": "60efdfce-b98a-41f4-a1eb-e773efc196ae.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6123660",
+      "taxon": "Galerina sideroides (Bull.) Kühner",
+      "date": "2021-10-06",
+      "latitude": 57.738472,
+      "longitude": 27.058678,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6123660",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c265c781-5592-497c-97b4-2cd54d07037d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c265c781-5592-497c-97b4-2cd54d07037d.jpg",
+          "filename": "c265c781-5592-497c-97b4-2cd54d07037d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6417942",
+      "taxon": "Inonotus leporinus (Fr.) Gilb. & Ryvarden",
+      "date": "2021-10-05",
+      "latitude": 58.10568889,
+      "longitude": 27.04609444,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/6417942",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5f870bae-9f2a-459b-8d2e-a4aeb7b4ed05.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5f870bae-9f2a-459b-8d2e-a4aeb7b4ed05.jpg",
+          "filename": "5f870bae-9f2a-459b-8d2e-a4aeb7b4ed05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4660255",
+      "taxon": "Antrodiella citrinella Niemelä & Ryvarden",
+      "date": "2021-10-05",
+      "latitude": 58.107394,
+      "longitude": 27.044456,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4660255",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b550924a-ca07-455e-a1a3-1aa38817f53b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b550924a-ca07-455e-a1a3-1aa38817f53b.jpg",
+          "filename": "b550924a-ca07-455e-a1a3-1aa38817f53b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4660254",
+      "taxon": "Inonotus leporinus (Fr.) Gilb. & Ryvarden",
+      "date": "2021-10-05",
+      "latitude": 58.105728,
+      "longitude": 27.04608,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Okaspuu tüvi",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4660254",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/91db2ea6-d95b-4d94-b4ed-136471648737.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/91db2ea6-d95b-4d94-b4ed-136471648737.jpg",
+          "filename": "91db2ea6-d95b-4d94-b4ed-136471648737.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4800930",
+      "taxon": "Hydnellum caeruleum (Hornem.) P. Karst.",
+      "date": "2021-10-04",
+      "latitude": 57.823738,
+      "longitude": 26.98217,
+      "altitude": null,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4800930",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/44af1cd4-1cee-4282-acbc-3a37db4d7f74.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/44af1cd4-1cee-4282-acbc-3a37db4d7f74.jpg",
+          "filename": "44af1cd4-1cee-4282-acbc-3a37db4d7f74.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4660464",
+      "taxon": "Boletopsis grisea (Peck) Bondartsev & Singer",
+      "date": "2021-10-02",
+      "latitude": 57.822767,
+      "longitude": 26.981388,
+      "altitude": null,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4660464",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c8ec33ac-9aa3-476b-95c9-c433d5705e3b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c8ec33ac-9aa3-476b-95c9-c433d5705e3b.jpg",
+          "filename": "c8ec33ac-9aa3-476b-95c9-c433d5705e3b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7732705",
+      "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "date": "2021-09-09",
+      "latitude": 57.71569444,
+      "longitude": 27.03786944,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7732705",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0b4a7734-20ed-4aa6-86b2-bee51e8482ef.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0b4a7734-20ed-4aa6-86b2-bee51e8482ef.jpg",
+          "filename": "0b4a7734-20ed-4aa6-86b2-bee51e8482ef.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4800587",
+      "taxon": "Phellodon niger (Fr.) P. Karst.",
+      "date": "2021-09-04",
+      "latitude": 57.608025,
+      "longitude": 26.833828,
+      "altitude": null,
+      "locality": "Krabi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4800587",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1271262e-24f3-4af3-b523-ea522c8c68db.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1271262e-24f3-4af3-b523-ea522c8c68db.jpg",
+          "filename": "1271262e-24f3-4af3-b523-ea522c8c68db.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5607382",
+      "taxon": "Tricholoma cingulatum (Almfelt ex Fr.) Jacobashch",
+      "date": "2021-09-03",
+      "latitude": 57.685287,
+      "longitude": 26.521412,
+      "altitude": null,
+      "locality": "Ähijärve küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5607382",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0c172ac2-364a-4cb3-ba16-f3669281f051.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0c172ac2-364a-4cb3-ba16-f3669281f051.jpg",
+          "filename": "0c172ac2-364a-4cb3-ba16-f3669281f051.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4649531",
+      "taxon": "Hemistropharia albocrenulata (Peck) Jacobsson & E. Larss.",
+      "date": "2021-08-25",
+      "latitude": 57.724858,
+      "longitude": 27.03395,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "pole kindel substraadi osas",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4649531",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/435db852-b8e4-47ad-8420-7522eed0596c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/435db852-b8e4-47ad-8420-7522eed0596c.jpg",
+          "filename": "435db852-b8e4-47ad-8420-7522eed0596c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4619531",
+      "taxon": "Hydnellum geogenium (Fr.) Banker",
+      "date": "2021-08-24",
+      "latitude": 57.72508,
+      "longitude": 27.03615,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4619531",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/15b19a77-7252-482a-877c-136b29f0c5b3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/15b19a77-7252-482a-877c-136b29f0c5b3.jpg",
+          "filename": "15b19a77-7252-482a-877c-136b29f0c5b3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5578714",
+      "taxon": "Postia floriformis (Quél.) Jülich",
+      "date": "2021-08-19",
+      "latitude": 57.73919167,
+      "longitude": 27.0608,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5578714",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/85cd5add-02b3-40cc-a0ec-660a20cc1d85.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/85cd5add-02b3-40cc-a0ec-660a20cc1d85.jpg",
+          "filename": "85cd5add-02b3-40cc-a0ec-660a20cc1d85.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5552417",
+      "taxon": "Lactifluus volemus (Fr.) Kuntze",
+      "date": "2021-08-19",
+      "latitude": 57.739005,
+      "longitude": 27.061153,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5552417",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/534a6672-6389-488f-862a-687ff8c20a2c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/534a6672-6389-488f-862a-687ff8c20a2c.jpg",
+          "filename": "534a6672-6389-488f-862a-687ff8c20a2c.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4613300",
+      "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "date": "2021-08-17",
+      "latitude": 57.84263,
+      "longitude": 27.00352,
+      "altitude": null,
+      "locality": "Eesti, Võru maakond, Võru linn",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "lehtpuu känd. võimalik et Vaher.",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4613300",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/51f6e297-1c5b-400c-ba80-2037956a066a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/51f6e297-1c5b-400c-ba80-2037956a066a.jpg",
+          "filename": "51f6e297-1c5b-400c-ba80-2037956a066a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7732708",
+      "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "date": "2021-08-16",
+      "latitude": 57.63390833,
+      "longitude": 26.77071111,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7732708",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c4cddf9c-fb3a-41e5-b842-2ae399f8eccc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c4cddf9c-fb3a-41e5-b842-2ae399f8eccc.jpg",
+          "filename": "c4cddf9c-fb3a-41e5-b842-2ae399f8eccc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4611852",
+      "taxon": "Climacodon septentrionalis (Fr.) P. Karst.",
+      "date": "2021-08-13",
+      "latitude": 59.442603,
+      "longitude": 24.732455,
+      "altitude": null,
+      "locality": "Põhja-Tallinna linnaosa",
+      "county": "Harju maakond",
+      "commune": "Tallinn",
+      "substrate": "Acer platanoides L.",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4611852",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/14973f92-5686-4cbb-8ebd-849264605909.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/14973f92-5686-4cbb-8ebd-849264605909.jpg",
+          "filename": "14973f92-5686-4cbb-8ebd-849264605909.jpg"
+        }
+      ]
+    },
+    {
+      "id": "7732706",
+      "taxon": "Lactarius fuliginosus (Fr.) Fr.",
+      "date": "2021-08-12",
+      "latitude": 57.73901389,
+      "longitude": 27.06800556,
+      "altitude": null,
+      "locality": "Mäe-Tilga küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/7732706",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5b4e4ba3-4124-4cc3-8112-805cda7f0d95.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5b4e4ba3-4124-4cc3-8112-805cda7f0d95.jpg",
+          "filename": "5b4e4ba3-4124-4cc3-8112-805cda7f0d95.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4609803",
+      "taxon": "Porphyrellus porphyrosporus (Fr. & Hök) E.-J. Gilbert",
+      "date": "2021-08-06",
+      "latitude": 57.733312,
+      "longitude": 27.063994,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4609803",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e4eb0a22-4ec8-4a09-84a0-6845e9965ae5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e4eb0a22-4ec8-4a09-84a0-6845e9965ae5.jpg",
+          "filename": "e4eb0a22-4ec8-4a09-84a0-6845e9965ae5.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4563181",
+      "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "date": "2021-07-01",
+      "latitude": 57.90786,
+      "longitude": 26.98556,
+      "altitude": null,
+      "locality": "Parksepa alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "Acer L.",
+      "substrate_type": "Tüügas",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4563181",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/488af2ab-c573-4f01-a4db-1cf41cc1c1eb.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/488af2ab-c573-4f01-a4db-1cf41cc1c1eb.jpg",
+          "filename": "488af2ab-c573-4f01-a4db-1cf41cc1c1eb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4556992",
+      "taxon": "Trametes gibbosa (Pers.) Fr.",
+      "date": "2021-06-27",
+      "latitude": 58.10118,
+      "longitude": 27.45837,
+      "altitude": null,
+      "locality": "Räpina linn",
+      "county": "Põlva maakond",
+      "commune": "Räpina vald",
+      "substrate": "ei osanud määrata",
+      "substrate_type": "Känd",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4556992",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a13333ef-a76a-440f-ae0d-1e017f5bcea4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a13333ef-a76a-440f-ae0d-1e017f5bcea4.jpg",
+          "filename": "a13333ef-a76a-440f-ae0d-1e017f5bcea4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4543212",
+      "taxon": "Rhodonia placenta (Fr.) Niemelä, K.H. Larss. & Schigel",
+      "date": "2021-06-15",
+      "latitude": 57.735675,
+      "longitude": 27.059836,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "",
+      "commune": "",
+      "substrate": "okaspuu pakk",
+      "substrate_type": "Okaspuu",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4543212",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7400bd67-d93f-42cc-8786-92003e510f3a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7400bd67-d93f-42cc-8786-92003e510f3a.jpg",
+          "filename": "7400bd67-d93f-42cc-8786-92003e510f3a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5422077",
+      "taxon": "Polyporus melanopus (Pers.) Fr.",
+      "date": "2021-06-06",
+      "latitude": 57.750942,
+      "longitude": 27.35508,
+      "altitude": null,
+      "locality": "Tallikeste küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5422077",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7927b978-869c-45d7-a750-cc3b481309c7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7927b978-869c-45d7-a750-cc3b481309c7.jpg",
+          "filename": "7927b978-869c-45d7-a750-cc3b481309c7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4543229",
+      "taxon": "Mycoacia aurea (Fr.) J. Erikss. & Ryvarden",
+      "date": "2021-06-06",
+      "latitude": 57.633992,
+      "longitude": 26.7702,
+      "altitude": null,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "haava lamatüvi",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4543229",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ced56fd5-a684-45c5-a96d-a01e67141925.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ced56fd5-a684-45c5-a96d-a01e67141925.jpg",
+          "filename": "ced56fd5-a684-45c5-a96d-a01e67141925.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5421987",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "date": "2021-06-02",
+      "latitude": 57.736825,
+      "longitude": 27.067836,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Picea A.Dietr.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/5421987",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/85e282db-e129-4f11-8bac-13dd8cf07b96.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/85e282db-e129-4f11-8bac-13dd8cf07b96.jpg",
+          "filename": "85e282db-e129-4f11-8bac-13dd8cf07b96.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4510904",
+      "taxon": "Encoelia furfuracea (Roth) P. Karst.",
+      "date": "2021-05-24",
+      "latitude": 57.96122,
+      "longitude": 27.09478333,
+      "altitude": null,
+      "locality": "Vana-Koiola küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "Corylus avellana L.",
+      "substrate_type": "",
+      "abundance": "Vähe",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4510904",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bc1ce896-cd07-4b27-9a7c-d941a1e12d45.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bc1ce896-cd07-4b27-9a7c-d941a1e12d45.jpg",
+          "filename": "bc1ce896-cd07-4b27-9a7c-d941a1e12d45.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4507596",
+      "taxon": "Diplomitoporus flavescens (Bres.) Domanski",
+      "date": "2021-05-22",
+      "latitude": 57.73856667,
+      "longitude": 26.49806667,
+      "altitude": null,
+      "locality": "Kaika küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4507596",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/866e6aac-9f93-457c-b46e-705a6d934822.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/866e6aac-9f93-457c-b46e-705a6d934822.jpg",
+          "filename": "866e6aac-9f93-457c-b46e-705a6d934822.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4502217",
+      "taxon": "Phellinus populicola Niemelä",
+      "date": "2021-05-16",
+      "latitude": null,
+      "longitude": null,
+      "altitude": null,
+      "locality": "Jäneda mõisapark",
+      "county": "Lääne-Viru maakond",
+      "commune": "Tapa vald",
+      "substrate": "Populus tremula L.",
+      "substrate_type": "Lehtpuu tüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4502217",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/deb27ffd-3f36-41cc-90eb-b93108adb1ba.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/deb27ffd-3f36-41cc-90eb-b93108adb1ba.jpg",
+          "filename": "deb27ffd-3f36-41cc-90eb-b93108adb1ba.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4503716",
+      "taxon": "Phellinus chrysoloma (Fr.) Donk",
+      "date": "2021-05-15",
+      "latitude": 59.33624167,
+      "longitude": 25.67484667,
+      "altitude": null,
+      "locality": "Pillapalu küla",
+      "county": "Harju maakond",
+      "commune": "Anija vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4503716",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3e1eec31-6e9f-40bf-9258-1abdfee9f39d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3e1eec31-6e9f-40bf-9258-1abdfee9f39d.jpg",
+          "filename": "3e1eec31-6e9f-40bf-9258-1abdfee9f39d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4504964",
+      "taxon": "Perenniporia subacida (Peck) Donk",
+      "date": "2021-05-06",
+      "latitude": 57.71618667,
+      "longitude": 27.04355833,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "Populus tremula L.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4504964",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/21b3cf9c-18c6-46f4-b82a-8fcbb2e8c65e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/21b3cf9c-18c6-46f4-b82a-8fcbb2e8c65e.jpg",
+          "filename": "21b3cf9c-18c6-46f4-b82a-8fcbb2e8c65e.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4504559",
+      "taxon": "Phellinidium ferrugineofuscum (P. Karst.) Fiasson & Niemelä",
+      "date": "2021-04-29",
+      "latitude": 57.72316333,
+      "longitude": 27.042775,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4504559",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/522930f6-0e96-4123-9495-66e1367f9671.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/522930f6-0e96-4123-9495-66e1367f9671.jpg",
+          "filename": "522930f6-0e96-4123-9495-66e1367f9671.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4563515",
+      "taxon": "Aporpium macroporum T. Niemelä, V. Spirin & O. Miettinen",
+      "date": "2021-04-27",
+      "latitude": 57.719087,
+      "longitude": 27.044803,
+      "altitude": null,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "kuusk",
+      "substrate_type": "Lamatüvi",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4563515",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/08429697-a1d1-4b18-b3ab-fb5f85082943.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/08429697-a1d1-4b18-b3ab-fb5f85082943.jpg",
+          "filename": "08429697-a1d1-4b18-b3ab-fb5f85082943.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4426957",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "date": "2021-03-27",
+      "latitude": 58.11148,
+      "longitude": 27.04691,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4426957",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/13e9f3c4-5602-448f-aa8c-cc1d675faa3f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/13e9f3c4-5602-448f-aa8c-cc1d675faa3f.jpg",
+          "filename": "13e9f3c4-5602-448f-aa8c-cc1d675faa3f.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4426955",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "date": "2021-03-27",
+      "latitude": 58.11177,
+      "longitude": 27.04726,
+      "altitude": null,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4426955",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/382353dd-2bc8-4028-b279-869a3e0c73b7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/382353dd-2bc8-4028-b279-869a3e0c73b7.jpg",
+          "filename": "382353dd-2bc8-4028-b279-869a3e0c73b7.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4406334",
+      "taxon": "Trametes hirsuta (Wulfen) Pilat",
+      "date": "2021-02-26",
+      "latitude": 57.8418,
+      "longitude": 26.99602,
+      "altitude": null,
+      "locality": "Eesti, Võru maakond, Võru linn",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4406334",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b4f3bda9-58c3-42cf-9e9a-4fe50543e942.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b4f3bda9-58c3-42cf-9e9a-4fe50543e942.jpg",
+          "filename": "b4f3bda9-58c3-42cf-9e9a-4fe50543e942.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4404126",
+      "taxon": "Trametes versicolor (L.) Lloyd",
+      "date": "2020-12-06",
+      "latitude": 57.89229,
+      "longitude": 27.01786,
+      "altitude": null,
+      "locality": "Väimela alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "Lehtpuu juured",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4404126",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/06cf23e8-7dd6-496f-8f03-b1c402e99740.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/06cf23e8-7dd6-496f-8f03-b1c402e99740.jpg",
+          "filename": "06cf23e8-7dd6-496f-8f03-b1c402e99740.jpg"
+        }
+      ]
+    },
+    {
+      "id": "4404024",
+      "taxon": "Hericium coralloides (Scop.) Pers.",
+      "date": "2020-11-05",
+      "latitude": 57.74116,
+      "longitude": 27.06551,
+      "altitude": null,
+      "locality": "Simula küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "Lehtpuu tüvi",
+      "abundance": "Üksikud",
+      "remarks": "",
+      "determiner": "",
+      "observer": "",
+      "url": "https://app.plutof.ut.ee/observation/view/4404024",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ee3e281a-b1dd-4114-adcd-339419b9035e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ee3e281a-b1dd-4114-adcd-339419b9035e.jpg",
+          "filename": "ee3e281a-b1dd-4114-adcd-339419b9035e.jpg"
+        }
+      ]
+    }
+  ]
+}

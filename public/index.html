@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="et" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLUTOFF — Mycology Observation Archive</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <div class="brand-title">PLUTOFF</div>
+      <div class="brand-subtitle">Mycology Archive</div>
+    </div>
+
+    <div class="header-center">
+      <input type="text" id="searchInput" class="search-input" placeholder="Otsi taksonit, substraati, maakonda või ID-d... (/ otsimiseks)" autocomplete="off">
+    </div>
+
+    <div class="header-right">
+      <div class="stats-bar">
+        <div class="stat-item"><span id="statTotalObs">-</span> vaatlust</div>
+        <div class="stat-item"><span id="statUniqueTaxa">-</span> liiki</div>
+        <div class="stat-item"><span id="statCounties">-</span> maakonda</div>
+      </div>
+      <button id="themeToggleBtn" class="theme-toggle-btn" type="button">LIGHT MODE</button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="main-layout">
+    <!-- Left: Map and Secondary Filters -->
+    <aside class="sidebar-pane">
+      <div id="map" class="map-container"></div>
+      
+      <div class="filter-controls">
+        <div class="filter-row">
+          <select id="countyFilter" class="filter-select">
+            <option value="">Kõik maakonnad</option>
+          </select>
+          <select id="substrateFilter" class="filter-select">
+            <option value="">Kõik substraadid</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="resultsMeta" class="results-meta">
+        Laadin vaatlusi...
+      </div>
+    </aside>
+
+    <!-- Right: Observations Grid -->
+    <section class="content-pane">
+      <div id="obsGrid" class="observation-grid">
+        <!-- Javascript renders cards here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Observation Detail Modal -->
+  <div id="obsModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div id="modalTitle" class="modal-title">Taksoni Nimi</div>
+        <button id="modalCloseBtn" class="modal-close-btn" type="button" aria-label="Sulge">✕</button>
+      </div>
+
+      <div class="modal-content">
+        <div id="modalGallery" class="modal-gallery">
+          <!-- Main Image -->
+        </div>
+
+        <div class="modal-details-grid">
+          <div class="detail-block">
+            <div class="detail-label">Kuupäev</div>
+            <div id="modalDate" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Asukoht</div>
+            <div id="modalLocality" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Koordinaadid</div>
+            <div id="modalCoords" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Substraat (Puuliik)</div>
+            <div id="modalSubstrate" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Substraadi Tüüp</div>
+            <div id="modalSubstrateType" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Ohtrus</div>
+            <div id="modalAbundance" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Määraja</div>
+            <div id="modalDeterminer" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
+            <div class="detail-label">Vaatleja</div>
+            <div id="modalObserver" class="detail-value">Boris Meldre</div>
+          </div>
+        </div>
+
+        <div class="detail-block" style="border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+          <div class="detail-label">Märkused / Lisainfo</div>
+          <div id="modalRemarks" class="detail-value">-</div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">PLUTOF PUBLIC ARCHIVE</span>
+        <a id="modalPlutofLink" href="#" target="_blank" rel="noopener noreferrer" class="plutof-link-btn">
+          Ava PlutoF Portaalis →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>

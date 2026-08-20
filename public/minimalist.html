@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+
+<html lang="et">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Seeneriigi Nähtamatud Niidid - Esitlus</title>
+<!-- Google Fonts: Playfair Display for headings, Outfit for body and UI -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        :root {
+            --bg-dark: #f2efeb;
+            --slide-bg: #fdfcfb;
+            --card-bg: #f5f2ed;
+            --accent-color: #1f2722;
+            --accent-glow: rgba(31, 39, 34, 0.08);
+            --sub-color: #606a64;
+            --text-main: #1f2722;
+            --text-sub: #4e5651;
+            --gold-accent: #b07d50;
+            --gold-glow: rgba(176, 125, 80, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow: hidden;
+            user-select: none;
+        }
+
+        /* Ambient Forest Background Image & Canvas Network */
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            pointer-events: auto;
+        }
+
+        #forest-bg {
+            display: none;
+        }
+
+        /* Screens Layout */
+        .screen-container {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Glassmorphic Cards */
+        .glass-card {
+            background: var(--card-bg);
+            border: 1.5px solid #1f2722;
+            border-radius: 8px;
+            padding: 50px 40px;
+            width: 90%;
+            max-width: 550px;
+            box-shadow: 0 10px 30px rgba(31, 39, 34, 0.06);
+            text-align: center;
+            animation: cardEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -50%;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(
+                90deg, 
+                transparent, 
+                rgba(255, 255, 255, 0.02), 
+                transparent
+            );
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        @keyframes cardEntrance {
+            from {
+                opacity: 0;
+                transform: scale(0.92) translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Headers and Titles */
+        .title-main {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            letter-spacing: 0px;
+            margin-bottom: 8px;
+            text-shadow: none;
+        }
+
+        .subtitle-main {
+            font-size: 1.1rem;
+            color: var(--sub-color);
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .quote-main {
+            font-style: italic;
+            color: var(--text-sub);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 30px 0;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border-left: 3px solid var(--gold-accent);
+        }
+
+            height: 1px;
+            background: var(--accent-color);
+            opacity: 0.15;
+            margin: 25px 0;
+
+        /* Buttons styling */
+        .btn-action {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 14px 28px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            outline: none;
+            box-shadow: none;
+        }
+
+        .btn-action:hover {
+            background: var(--accent-color);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+
+        .btn-action:active {
+            transform: translateY(1px);
+        }
+
+        /* Google Sign-in Button styling */
+        .google-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-main);
+            padding: 12px 24px;
+            font-size: 1.05rem;
+            font-weight: 500;
+            border-radius: 30px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .google-btn:hover {
+            background: rgba(31, 39, 34, 0.05);
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 12px rgba(31, 39, 34, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .google-btn svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* Logo thumbnail frame */
+        .mushrooms-thumbnail {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 2px solid var(--accent-color);
+            margin: 0 auto 25px auto;
+            background: url('mycelium_forest.jpg') no-repeat center center/cover;
+            box-shadow: none;
+            animation: none;
+        }
+
+        /* Access Denied Card specific styles */
+        .denied-card {
+            border-color: rgba(239, 68, 68, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .denied-card .title-main {
+            color: #ef4444;
+            text-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
+        }
+
+        .logged-user-info {
+            background: rgba(239, 68, 68, 0.05);
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(239, 68, 68, 0.1);
+            margin: 20px 0;
+            font-size: 0.95rem;
+            color: var(--text-sub);
+        }
+
+        .logged-user-info span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .btn-denied-logout {
+            border-color: rgba(239, 68, 68, 0.5);
+            color: #f87171;
+        }
+
+        .btn-denied-logout:hover {
+            background: #ef4444;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+        }
+
+        /* App Screen Layout */
+        #app-container {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Top Bar styling */
+        #top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75px;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(242, 239, 235, 0.95) 0%, rgba(242, 239, 235, 0) 100%);
+            z-index: 20;
+        }
+
+        .logo-bar {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            text-shadow: none;
+            cursor: default;
+        }
+
+        .user-panel {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 15px;
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1.5px solid var(--accent-color);
+            background: #2a3b2c;
+            object-fit: cover;
+        }
+
+        .user-email {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+            font-weight: 400;
+        }
+
+        .btn-logout-mini {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: var(--text-sub);
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-logout-mini:hover {
+            border-color: #f87171;
+            color: #f87171;
+            background: rgba(248, 113, 113, 0.05);
+        }
+
+        /* Slide Viewer Area */
+        .slide-container-wrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 60px; /* space for progress and controls */
+        }
+
+        .slide-deck {
+            width: 85%;
+            max-width: 900px;
+            height: 520px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Single Slide style */
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 45px 50px;
+            background: var(--slide-bg);
+            border-radius: 8px;
+            border-top: 1.5px solid var(--accent-color);
+            border-bottom: 1.5px solid var(--accent-color);
+            border-left: 1px solid rgba(31, 39, 34, 0.05);
+            border-right: 1px solid rgba(31, 39, 34, 0.05);
+            box-shadow: 0 10px 30px rgba(31, 39, 34, 0.04);
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(0.97) translateY(15px);
+            transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            overflow-y: auto;
+        }
+
+        .slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: scale(1) translateY(0);
+            z-index: 10;
+        }
+
+        /* Custom scrollbar for slide */
+        .slide::-webkit-scrollbar {
+            width: 6px;
+        }
+        .slide::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .slide::-webkit-scrollbar-thumb {
+            background: var(--accent-glow);
+            border-radius: 3px;
+        }
+        .slide::-webkit-scrollbar-thumb:hover {
+            background: rgba(31, 39, 34, 0.2);
+        }
+
+        /* Slide Typography */
+        .slide h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba(31, 39, 34, 0.1);
+            padding-bottom: 12px;
+        }
+
+        .slide h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        .slide p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-sub);
+            margin-bottom: 15px;
+        }
+
+        .slide blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--gold-accent);
+            padding-left: 20px;
+            margin: 20px 0;
+            color: var(--text-sub);
+            font-size: 1.1rem;
+            line-height: 1.65;
+            background: rgba(255, 255, 255, 0.015);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .slide ul {
+            margin-top: 15px;
+            padding-left: 25px;
+            list-style: none;
+        }
+
+        .slide li {
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--text-sub);
+            margin-bottom: 18px;
+            position: relative;
+            /* Inner staggered animation settings */
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* Staggered entries when slide is active */
+        .slide.active li {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide.active li:nth-child(1) { transition-delay: 0.12s; }
+        .slide.active li:nth-child(2) { transition-delay: 0.24s; }
+        .slide.active li:nth-child(3) { transition-delay: 0.36s; }
+        .slide.active li:nth-child(4) { transition-delay: 0.48s; }
+
+        .slide li::before {
+            content: "✦";
+            position: absolute;
+            left: -22px;
+            color: var(--accent-color);
+            text-shadow: 0 0 5px var(--accent-color);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 600;
+            text-shadow: 0 0 5px rgba(111, 201, 122, 0.1);
+        }
+
+        /* Slide-specific helper classes */
+        .slide-title-card {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-top: 1.5px solid var(--accent-color);
+            border-bottom: 1.5px solid var(--accent-color);
+            border-left: 1px solid rgba(31, 39, 34, 0.05);
+            border-right: 1px solid rgba(31, 39, 34, 0.05);
+        }
+
+        .slide-title-card h1 {
+            font-family: 'Playfair Display', serif;
+            border-bottom: none;
+            margin-bottom: 20px;
+            font-size: 3.4rem;
+            letter-spacing: 0px;
+            color: var(--accent-color);
+        }
+
+        .slide-title-card h2 {
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 45px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--sub-color);
+        }
+
+        .lecture-meta {
+            font-size: 1.05rem;
+            color: var(--text-sub);
+            margin-top: 10px;
+        }
+
+        /* Slide controls (bottom right) */
+        .controls {
+            position: absolute;
+            bottom: 35px;
+            right: 50px;
+            display: flex;
+            gap: 15px;
+            z-index: 30;
+        }
+
+        .btn-nav {
+            background: var(--card-bg);
+            border: 1.5px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 8px 22px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            outline: none;
+        }
+
+        .btn-nav:hover {
+            border-color: var(--accent-color);
+            background: var(--accent-color);
+            color: var(--bg-dark);
+            box-shadow: 0 0 12px var(--accent-glow);
+        }
+
+        .btn-nav:active {
+            transform: translateY(1px);
+        }
+
+        /* Progress Bar (bottom) */
+        .progress-bar-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            z-index: 30;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), var(--sub-color));
+            width: 0%;
+            transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        /* Slide indicator (bottom left) */
+        .slide-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50px;
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            letter-spacing: 1px;
+            z-index: 30;
+        }
+
+        .slide-indicator span {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Split layout inside slides */
+        .slide-split {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin-top: 15px;
+        }
+        .slide-split-left {
+            flex: 1.2;
+        }
+        .slide-split-right {
+            flex: 0.8;
+            display: flex;
+            justify-content: center;
+        }
+        .slide-img-preview {
+            max-width: 100%;
+            max-height: 280px;
+            border-radius: 4px;
+            border: 1.2px solid var(--accent-color);
+            box-shadow: 0 6px 15px rgba(31, 39, 34, 0.04);
+            object-fit: contain;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .slide-img-preview:hover {
+            transform: scale(1.03);
+            border-color: var(--accent-color);
+        }
+        @media (max-width: 768px) {
+            .slide-split {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .slide-img-preview {
+                max-height: 200px;
+            }
+        }
+
+        /* 2026 Hypernatural Design Redesign Styles */
+        .slide-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .slide-card {
+            background: var(--card-bg);
+            border: 1.2px solid var(--accent-color);
+            border-radius: 6px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0 4px 12px rgba(31, 39, 34, 0.03);
+        }
+
+        .slide-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(31, 39, 34, 0.08);
+        }
+
+        .slide-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 2px;
+        }
+
+        .slide-card p {
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+            margin-bottom: 0 !important;
+            color: var(--text-sub) !important;
+        }
+
+        .slide-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .slide-step {
+            display: flex;
+            gap: 20px;
+            padding: 16px;
+            background: #ffffff;
+            border: 1px solid rgba(31, 39, 34, 0.08);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .slide-step:hover {
+            background: var(--card-bg);
+        }
+
+        .slide-step-num {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+            min-width: 35px;
+        }
+
+        .slide-step-content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .slide-step-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .slide-step-content p {
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+            margin: 0 !important;
+            color: var(--text-sub) !important;
+        }
+
+        .slide blockquote {
+            border-left: 2.5px solid var(--accent-color);
+            padding: 16px 20px;
+            margin: 15px 0;
+            background: rgba(31, 39, 34, 0.015);
+            border-radius: 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--text-sub);
+        }
+    </style>
+</head>
+<body>
+<!-- Mycelial Network Canvas -->
+<canvas id="bg-canvas"></canvas>
+<!-- Forest Ambient Background Layer -->
+<div id="forest-bg"></div>
+<!-- 1. LOGIN SCREEN -->
+<div class="screen-container" id="login-container">
+<div class="glass-card">
+<div class="mushrooms-thumbnail"></div>
+<h1 class="title-main">SEENERIIGI</h1>
+<h1 class="title-main" style="margin-top:-8px; font-weight:900; letter-spacing:4px;">NÄHTAMATUD NIIDID</h1>
+<p class="subtitle-main">Müstika, pärimus ja maa-alune võrgustik</p>
+<p class="quote-main">
+                "Kas me suudame kuulata sama sügavalt, kui mütseel kasvab?"
+            </p>
+<div class="card-divider"></div>
+<!-- Custom Google Sign-In Button -->
+<button class="google-btn" id="google-login-btn">
+<svg viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" fill="#FFC107"></path>
+<path d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" fill="#FF3D00"></path>
+<path d="M24,44c5.166,0,9.86-1.977,13.422-5.189l-6.233-5.262C29.24,34.92,26.734,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" fill="#4CAF50"></path>
+<path d="M43.611,20.083H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.225C36.926,35.292,44,28.229,44,20C44,18.66,43.862,17.35,43.611,20.083z" fill="#1976D2"></path>
+</svg>
+<span>Logi sisse Google kontoga</span>
+</button>
+</div>
+</div>
+<!-- 2. ACCESS DENIED SCREEN -->
+<div class="screen-container" id="access-denied-container" style="display: none;">
+<div class="glass-card denied-card">
+<h1 class="title-main">LIGIPÄÄS PIIRATUD</h1>
+<p class="subtitle-main" style="color: #f87171;">Sisule pääseb ligi vaid omanik</p>
+<div class="card-divider"></div>
+<p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-sub);">
+                Vabandust! See veebileht sisaldab konfidentsiaalset esitlust ja on nähtav vaid kasutajale <strong>borismeldre@gmail.com</strong>.
+            </p>
+<div class="logged-user-info">
+                Sa oled sisse logitud kontoga:<br/>
+<span id="denied-email">loading...</span>
+</div>
+<button class="btn-action btn-denied-logout" id="logout-btn-denied">
+                Logi välja / Vaheta kontot
+            </button>
+</div>
+</div>
+<!-- 3. SLIDES VIEWER SCREEN -->
+<div id="app-container">
+<!-- Header Top Bar -->
+<div id="top-bar">
+<div class="logo-bar">Seeneriigi Nähtamatud Niidid</div>
+<div class="user-panel">
+<img alt="Avatar" class="user-avatar" id="user-avatar" src=""/>
+<span class="user-email" id="user-email">borismeldre@gmail.com</span>
+<a href="/notes" class="btn-logout-mini" style="text-decoration:none; margin-right:8px; display:inline-block; border-color:var(--accent-color); color:var(--accent-color);">Evolutsioon & Allikad</a>
+<button class="btn-logout-mini" id="logout-btn">Logi välja</button>
+</div>
+</div>
+<!-- Slides Wrapper -->
+<div class="slide-container-wrapper" onclick="nextSlideClick(event)">
+<div class="slide-deck"> <!-- Slaid 1: Seeneriigi Nähtamatud Niidid -->
+<div class="slide active slide-title-card">
+<h1>Seeneriigi Nähtamatud Niidid</h1>
+<h2>Müstika, pärimus ja maa-alune võrgustik</h2>
+<div class="lecture-meta">
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-weight: 500; font-size: 1.2rem; color: var(--accent-color);">Lektor: Boris Meldre</p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;">20. august 2026</p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+<p style="font-size: 0.95rem; color: #64748b; margin-top: 5px;"></p>
+</div>
+</div>
+<!-- Slaid 2: Kuidas olla rohkem nagu seen? -->
+<div class="slide">
+<h2>Kuidas olla rohkem nagu seen?</h2>
+<p>Mõttepaus enne rännakut seeneriiki:</p>
+
+<blockquote>
+                        """"Kas me suudame kuulata sama sügavalt, kui mütseel kasvab? Kuulatada nii sügavalt, et kuuleme tuuli, vesi ja kive sosistamas oma iidseid saladusi?" – Jasper"""
+                    </blockquote><ul>
+<li><span class="highlight">Infomürast vabanemine:</span> Meie kõrvad on täis uudiseid, podcaste ja helisid. Mütseel õpetab vaikust.</li>
+<li><span class="highlight">Ökosüsteemi toetamine:</span> Kuidas olla liitlane teistele organismidele, et me kõik õitseksime koos?</li>
+</ul></div>
+<!-- Slaid 3: Mis on seen tegelikult? -->
+<div class="slide">
+<h2>Mis on seen tegelikult?</h2>
+<p>Meie igapäevane ettekujutus seenest on sageli puudulik ja piirdub vaid pealispinnaga:</p>
+<ul>
+<li><span class="highlight">Mütseel:</span> Seene tegelik keha – hiiglaslik maa-alune niidistik.</li>
+<li><span class="highlight">Viljakeha:</span> See, mida me kutsume "seeneks", on vaid seene õis ehk viljakandja.</li>
+<li>Seened ei ole taimed ega loomad, nad on täiesti omaette riik – eluloovad lammutajad.</li>
+</ul></div>
+<!-- Slaid: Samblikud ja mulla sünd -->
+<div class="slide">
+<h2>Samblikud ja mulla sünd</h2>
+<p>Seente ja vetikate ürgne liit, mis muutis elutu planeedi roheliseks oaasiks:</p>
+<blockquote>
+    "Enne samblikke oli maismaa vaid paljas elutu kalju. Nemad olid esimesed pioneerid, kes lahustasid kivi happega ja lõid esimese mulla." <cite>– <a href="https://youtu.be/Tcy-KcMkhKU?t=419" target="_blank" style="color: inherit; text-decoration: underline;">Peter McCoy loeng</a></cite>
+</blockquote>
+<ul>
+<li><span class="highlight">Maismaa koloniseerimine:</span> Umbes 450–500 miljonit aastat tagasi astusid samblikud (seente ja vetikate/tsüanobakterite sümbioos) esimesena veest kuivale maale.</li>
+<li><span class="highlight">Kivi lahustamine happega:</span> Samblikud eraldavad spetsiifilisi happeid (nt oksaalhapet), mis lagundavad keemiliselt ka kõige kõvemat graniiti, vabastades mineraalaineid.</li>
+<li><span class="highlight">Mulla sünd (pedogenees):</span> Lagunenud kivitolmu ja samblike endi orgaanilise aine segunemisel sündis esimene muld. Ilma seente happelise kivipuurimiseta poleks maismaataimed saanud kunagi juurduda.</li>
+</ul></div>
+<!-- Slaid: Krohmseened: Ürgne sümbioos ja mükoriisa -->
+<div class="slide">
+<h2>Krohmseened: Ürgne sümbioos ja mükoriisa</h2>
+<p>Mulla loojad, taimede ürgsed partnerid ja evolutsiooni elav ajalugu:</p>
+<div style="display: flex; gap: 20px; align-items: center; margin-top: 10px; flex-wrap: wrap;">
+    <div style="flex: 1.2; min-width: 300px;">
+        <ul>
+            <li><span class="highlight">Klassifikatsioon (4 seltsi):</span> Jaguneb neljaks peamiseks seltsiks: <em>Glomerales</em>, <em>Diversisporales</em>, <em>Archaeosporales</em> ja <em>Paraglomerales</em>. Nad ei moodusta viljakehi, vaid elavad mulla ja juurte sees.</li>
+            <li><span class="highlight">Geosiphon pyriformis:</span> Ainulaadne endosümbioos tsüanobakteriga <em>Nostoc punctiforme</em>, mis näitab seente rolli evolutsiooni varases faasis teiste fotosünteesivate organismide majutamisel oma raku sees.</li>
+            <li><span class="highlight">Arbuskulaarne mükoriisa:</span> Seened tungivad läbi juureraku kesta, luues arbuskleid (toitainete vahetus) ja vesiikuleid. Üle 90% taimedest sõltub nendest fosfori ja vee hankimisel.</li>
+            <li><span class="highlight">Mulla superliim:</span> Krohmseened toodavad glomaliini – valku, mis seob mulda ja on üks planeedi suurimaid maapinna süsinikusalvesid.</li>
+        </ul>
+    </div>
+    <div style="flex: 0.8; min-width: 250px; text-align: center;">
+        <img src="glomeromycota_row.png" alt="Krohmseened mikroskoobipildid" style="width: 100%; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.15);"/>
+        <p style="font-size: 0.75rem; color: var(--accent-color); margin-top: 5px; font-style: italic;">Krohmseened: Geosiphon pyriforme endosümbioos, AM seened ja eosed (Allikas: Wikipedia)</p>
+    </div>
+</div>
+</div>
+<!-- Slaid: "Wood Wide Web" – Metsa Internet -->
+<div class="slide">
+<h2>"Wood Wide Web" – Metsa Internet</h2>
+<p>Koostöö ja kommunikatsioon puude vahel:</p>
+
+<ul>
+<li>Mütseel ühendab terve metsa ühtseks närvisüsteemiks.</li>
+<li><span class="highlight">Info- ja toitainevahetus:</span> Puud jagavad seene kaudu ressursse (tugevam toetab nõrgemat).</li>
+</ul></div>
+<!-- Slaid 5: Põimunud Elu ja Seente Intelligentsus -->
+<div class="slide">
+<h2>Põimunud Elu ja Seente Intelligentsus</h2>
+<p>Põhipunktid Merlin Sheldrake'i raamatust "Entangled Life":</p>
+
+<blockquote>
+                        """Mütseelivõrgustik on seene hiljutise ajaloo kaart ja see tuletab meile meelde, et kõik eluvormid on tegelikult protsessid, mitte asjad." – Merlin Sheldrake""
+                    </blockquote><ul>
+<li><span class="highlight">Aju vaba intelligentsus:</span> Seened langetavad keerulisi otsuseid, lahendavad probleeme ja navigeerivad ruumis ilma tsentraalse ajuta.</li>
+<li><span class="highlight">Radikaalne sümbioos:</span> Samblikud ja mükoriisa esitavad väljakutse traditsioonilisele indiviidi kontseptsioonile – kus lõpeb üks ja algab teine?</li>
+<li><span class="highlight">Ainevahetuse meistrid:</span> Seened suudavad lagundada kive, plastikut ja naftat (mükoremediatsioon) ning luua uusi materjale.</li>
+<li><span class="highlight">Kujundav jõud:</span> Fungi ehk seeneriik loob maailmu – nad kujundavad meie muldasid, atmosfääri, meie meeli ja ühist tulevikku.</li>
+</ul></div>
+<!-- Slaid: Tšornobõli kiiritusseened ja radiosüntees -->
+<div class="slide">
+<h2>Tšornobõli kiiritusseened ja radiosüntees</h2>
+<p>Elu ja energia ioniseeriva kiirguse käes:</p>
+<blockquote>
+    "Loodus ei salli tõepoolest tühja kohta – tagasihoidlik sametine must seen teeb ioniseeriva kiirgusega midagi nutikat." <cite>– <a href="https://teadus.postimees.ee/8296316/tsernobolis-on-kiirguse-kaes-arenenud-enneolematu-seeneliik" target="_blank" style="color: inherit; text-decoration: underline;">teadus.postimees.ee</a></cite>
+</blockquote>
+<ul>
+<li><span class="highlight">Cladosporium sphaerospermum:</span> Tšornobõli reaktori seintelt leitud must seen, mis areneb kiirguse käes jõudsalt.</li>
+<li><span class="highlight">Radiosüntees:</span> Teooria, mille kohaselt seene tume pigment melaniin kasutab ioniseerivat kiirgust energia tootmiseks (sarnaselt klorofüllile fotosünteesis).</li>
+<li><span class="highlight">Kosmiline kiirguskaitse:</span> Rahvusvahelise kosmosejaama (ISS) katsetes vähendas seen sellest läbitungivat kiirgust, näidates potentsiaali tulevastel kosmosemissioonidel.</li>
+</ul></div>
+<!-- Slaid 6: Nõiaringid ja rahvapärimus -->
+<div class="slide">
+<h2>Nõiaringid ja rahvapärimus</h2>
+<p>Haldjate ja nõidade üleloomulikud tantsuplatsid läbi sajandite:</p>
+<blockquote>
+    "Kuna seenerõngad ilmusid maapinnale peaaegu üleöö ja täiusliku ringina, uskusid inimesed enne teaduse arengut, et tegu on üleloomulike jõudude kätetööga."
+</blockquote>
+<ul>
+<li><span class="highlight">Tantsuplatsid ja rituaalid:</span> Briti saartel usuti, et ringid on haldjate tantsukohad. Saksamaal (Hexenringe) tantsisid seal nõiad Valpurgi ööl. Eestis ja Skandinaavias seostati neid maa-aluste mütoloogiliste madudega.</li>
+<li><span class="highlight">Aja kadumine ja ohud: Inimesi hoiatati rangelt rõngasse astumise eest. Rõngasse astunud inimene võis sattuda haldjate lummusesse – tantsides nendega enda arvates vaid mõne minuti, oli pärismaailmas möödunud seitse aastat.</span></li>
+<li><span class="highlight">Peidetud aarded ja ennustused: Uskumuste kohaselt tähistab ring maetud kulda, mille leidmiseks oli vaja üleloomulike olendite luba. Seente kiiret ringikujulist kasvu peeti ka märgiks saabuvast vihmasajust.</span></li>
+</ul></div>
+<!-- Slaid 7: Nõiaringid Eestis: Vaatlus Hiiu pargis -->
+<div class="slide">
+<h2>Nõiaringid Eestis: Vaatlus Hiiu pargis</h2>
+<p>Reaalne näide sellest, kuidas mütseel kujundab maastikku (Tõnu Ploompuu vaatlus 20.06.2026):</p>
+<div class="slide-split">
+<div class="slide-split-left">
+<ul>
+<li><span class="highlight">Asukoht:</span> Nõmme, Hiiu park (Eestimaa Seened grupp).</li>
+<li><span class="highlight">Kevad-võluheinik:</span> Rohurõngas ilmub, kui seene viljakehad hakkavad maa alt välja tulema.</li>
+<li>Intensiivne orgaanilise aine lagundamine ja lämmastiku vabanemine tekitab lopsaka sinirohelise ringi.</li>
+<li>Peale viljakehade moodustumist ja eoste levitamist ringid kahvatuvad uuesti.</li>
+<li>Hilisemal perioodil võivad sarnaseid ringe tekitada aasnööbikud ja laiemaid ringe hiid-lehtervahelikud.</li>
+</ul></div>
+<div class="slide-split-right">
+<img alt="Nõiaringid Eestis: Vaatlus Hiiu pargis" class="slide-img-preview" src="extracted_image_6.png"/>
+</div>
+</div>
+</div>
+<!-- Slaid: Seened vihmasaju tekitajana -->
+<div class="slide">
+<h2>Seened vihmasaju tekitajana</h2>
+<p>Kuidas seeneeosed ja valgud toimivad atmosfääris pilveseemnetena:</p>
+<blockquote>
+    "Seenel on võime luua endale eluks vajalikku niiskust, vallandades atmosfääri miljardeid eoseid, mille ümber kondenseerub vihmavesi." <cite>– <a href="https://youtu.be/Tcy-KcMkhKU?t=419" target="_blank" style="color: inherit; text-decoration: underline;">Peter McCoy loeng</a></cite>
+</blockquote>
+<ul>
+<li><span class="highlight">Pilvede kondensatsioonituumad (CCN):</span> Seeneeosed sisaldavad hügroskoopseid molekule, mis tõmbavad ligi veeauru, toimides mikroskoopiliste šabloonidena vihmapiiskade tekkeks.</li>
+<li><span class="highlight">Ballistospooride heitemehhanism:</span> Seened paiskavad eoseid õhku kiire veepiisa katapuldi (Bulleri piisk) abil. Soojad õhuvoolud viivad need kõrgele atmosfääri, kus moodustuvad pilved.</li>
+<li><span class="highlight">Jääkristalliseerumise valgud:</span> Osa seeni (nt Mortierellaceae) eritab valke, mis külmutavad vett kõrgematel temperatuuridel. Need valgud pilvedes sunnivad vett koonduma, raskenema ja sademetena alla langema.</li>
+<li><span class="highlight">Looduslik tagasisideahel:</span> Vihm niisutab mütseeli, stimuleerides seente kasvu. Uued seened paiskavad õhku veelgi rohkem eoseid, tekitades uut vihma ja hoides metsa eluringi töös.</li>
+</ul></div>
+<!-- Slaid 8: Inimene vs. Seen: Tants või võitlus? -->
+<div class="slide">
+<h2>Inimene vs. Seen: Tants või võitlus?</h2>
+<p>Kultuuriline paradoks meie suhetes elava loodusega:</p>
+<div class="slide-split">
+<div class="slide-split-left">
+<ul>
+<li><span class="highlight">Armas pärimus:</span> Inimene on andnud sellele maa-alusele nähtusele muinasjutulise ja ilusa nime – haldjaringid (fairy rings).</li>
+<li><span class="highlight">Teaduse vaade:</span> Seened on unikaalsed ökosüsteemi insenerid, mis muudavad orgaanilised ained ja lämmastiku bioaktiivseks, et toita metsa ja taimi.</li>
+<li><span class="highlight">Monokultuuri ihalus:</span> Sellele vaatamata näevad paljud muruomanikud nõiaringides "haigust" või "defekti".</li>
+<li><span class="highlight">Google'i esimene soovitus inimeste otsinguis:</span> "What chemical kills fairy rings?" (Milline kemikaal tapab haldjaringe?).</li>
+<li>Soov hoida loodust steriilse ja allutatuna viib meid konflikti elulooja endaga.</li>
+</ul></div>
+<div class="slide-split-right">
+<img alt="Inimene vs. Seen: Tants või võitlus?" class="slide-img-preview" src="extracted_image_7.png"/>
+</div>
+</div>
+</div>
+<!-- Slaid: Radikaalne mükoloogia ja ökoloogiline taaste -->
+<div class="slide">
+<h2>Radikaalne mükoloogia ja ökoloogiline taaste</h2>
+<p>Partnerlus seeneriigiga maa parandamiseks ja tervendamiseks (Peter McCoy loengu põhjal):</p>
+<blockquote>
+    "Mükoloogia ei ole lihtsalt teadus laboris – see on radikaalne vahend pinnase taastamiseks, toidujulgeolekuks ja looduse tervendamiseks." <cite>– <a href="https://www.youtube.com/watch?v=Tcy-KcMkhKU" target="_blank" style="color: inherit; text-decoration: underline;">sustainabledesignmasterclass.com</a></cite>
+</blockquote>
+<ul>
+<li><span class="highlight">Mükoremediatsioon:</span> Seente võime lagundada ja neutraliseerida keskkonnamürke (nafta, plast, pestitsiidid ja raskemetallid), tehes neist elupäästvad ökoloogilised filtrid.</li>
+<li><span class="highlight">Mükopermakultuur ja muld:</span> Seened on mulla elujõu alus. Mütseeli lisamine parandab mulla struktuuri, hoiab niiskust ja teeb toitained taimedele kättesaadavaks.</li>
+<li><span class="highlight">Mükofabrikatsioon:</span> Uus ajastu materjalitööstuses – mütseelist kasvatatud biolagunevad pakkematerjalid, ehitusplokid ja nahalaadsed tooted, mis asendavad plasti ja sünteetikat.</li>
+</ul></div>
+<!-- Slaid 9: Puuseente Vägi ja Pärimus -->
+<div class="slide">
+<h2>Puuseente Vägi ja Pärimus</h2>
+<p>Sild looduse ja esivanemate tarkuse vahel:</p>
+<ul>
+<li><span class="highlight">Must pässik (Chaga):</span> Meie metsade must kuld. Immuunsuse ja elujõu keedised.</li>
+<li><span class="highlight">Tuletael:</span> Praktiline ellujäämisvahend – iidne tule süütamise kunst.</li>
+<li>Kuidas puuseente vaim toetab meid saunarituaalides ja igapäevases tervises.</li>
+</ul></div>
+<!-- Slaid 10: Meditsiinilised Vaabikud: Reishi vs. Jänesvaabik -->
+<div class="slide">
+<h2>Meditsiinilised Vaabikud: Reishi vs. Jänesvaabik</h2>
+<p>Ganoderma perekonna kaks vägevat raviseent – pärimus vs. teaduslik reaalsus:</p>
+<ul>
+<li><span class="highlight">Ganoderma perekond:</span> Nii Aasia kultusesse kuuluv Reishi (*Ganoderma lucidum*) kui ka Eestis laialt levinud Jänesvaabik (*Ganoderma applanatum*) kuuluvad samasse vaabikute suguvõsasse.</li>
+<li><span class="highlight">Artist's Conk (Kunstniku klamber):</span> Jänesvaabiku ingliskeelne nimi tuleneb selle valgest pooripinnast, millele kriipsutatud joonistused muutuvad püsivalt tumepruuniks.</li>
+<li><span class="highlight">Teaduslikult võrdne ravitoime:</span> Farmakoloogilised uuringud näitavad, et jänesvaabikul on Reishiga sarnane tugev põletikuvastane, immuunsüsteemi toetav ja viirusevastane toime.</li>
+<li><span class="highlight">Tugevam antioksüdant:</span> Mitmete uuringute kohaselt on jänesvaabikul tänu kõrgele fenoolide ja flavonoidide sisaldusele isegi kõrgem antioksüdantne aktiivsus kui Reishil.</li>
+<li><span class="highlight">Metsa kohalik apteek:</span> Kalli imporditud Reishi asemel leiame teaduslikult samaväärse immuunsuse tugevdaja täiesti tasuta otse oma koduümbruse lehtpuudelt!</li>
+</ul></div>
+<!-- Slaid: Seened meditsiinis: Rakuehitus ja patogeensus -->
+<div class="slide">
+<h2>Seened meditsiinis: Rakuehitus ja patogeensus</h2>
+<p>Kuidas seente unikaalne bioloogia mõjutab meditsiini ja ravi (Physeo USMLE põhjal):</p>
+<blockquote>
+    "Seenerakud erinevad taimedest ja loomadest unikaalse membraani ja kesta poolest, mis on ühtlasi peamised ravimite sihtmärgid." <cite>– <a href="https://www.youtube.com/watch?v=0spjg-0sfAk" target="_blank" style="color: inherit; text-decoration: underline;">physeo.com</a></cite>
+</blockquote>
+<ul>
+<li><span class="highlight">Ergosterool ja kitiin:</span> Seente rakumembraan sisaldab ergosterooli (inimestel kolesterool) ja kest kitiini. Enamik seenevastaseid ravimeid (asoolid, amfoteritsiin B) ründab just ergosterooli või selle sünteesi.</li>
+<li><span class="highlight">Diformsed seened:</span> Osa patogeenseid seeni suudab muuta oma kuju – külmas keskkonnas (20 °C) kasvavad nad hallitusseenena (mold), kuid inimese kehatemperatuuril (37 °C) pärmseenena (yeast).</li>
+<li><span class="highlight">Kliiniline tähendus:</span> Diformsus ("mold in the cold, yeast in the heat") aitab patogeenidel (nt Histoplasma, Blastomyces) kopsudesse ja kudedesse levida ning immuunsüsteemi eest hoiduda.</li>
+</ul></div>
+<!-- Slaid 11: Müstika ja Teadvus -->
+<div class="slide">
+<h2>Müstika ja Teadvus</h2>
+<p>Seened kultuuriloos, šamanismis ja vaimses tasakaalus:</p>
+<ul>
+<li>Kärbseseene pärimus ja sild teise maailma.</li>
+<li>Adaptogeensed seened – kuidas seeneriik aitab inimkehal stressiga kohaneda ja tasakaalu leida.</li>
+<li><span class="highlight">Korilus kui meditatsioon:</span> Siseilma vaigistamine, et kuulda elava maailma polüfoonilisi laule.</li>
+</ul></div>
+<!-- Slaid 12: Lugemissoovitused -->
+<div class="slide">
+<h2>Lugemissoovitused</h2>
+<p>Raamatud, mis avavad uksi seente ja fermentatsiooni saladustesse:</p>
+<ul>
+<li><span class="highlight">"Entangled Life" (Merlin Sheldrake):</span> Uurib seente võrgustike intelligentsust, elu kui suhete ja interaktsioonide põimunud protsessi ning nende rolli tulevikutehnoloogiates.</li>
+<li><span class="highlight">"The Art of Fermentation" (Sandor Ellix Katz):</span> Fermentatsiooni piibel, mis õpetab meid koos elama, töötama ja käärima koos kasulike mikroorganismidega.</li>
+<li><span class="highlight">"The Noma Guide to Fermentation" (René Redzepi &amp; David Zilber):</span> Maailma tipprestorani praktiline teejuht (koji, kombuchad, shoyud, misod jne), mis selgitab fermentatsiooni ensümaatilist maagiat köögis.</li>
+</ul></div>
+<!-- Slaid 13: Aitäh kuulamast! -->
+<div class="slide">
+<h2>Aitäh kuulamast!</h2>
+<p>Arutelu ja küsimused</p>
+</div>
+</div>
+</div>
+<!-- Navigation info / controls -->
+<div class="slide-indicator" onclick="event.stopPropagation()">
+            Slaid <span id="current-slide-num">1</span> / <span id="total-slides-num">13</span>
+</div>
+<div class="controls" onclick="event.stopPropagation()">
+<button class="btn-nav" onclick="prevSlide()">Tagasi</button>
+<button class="btn-nav" onclick="nextSlide()">Edasi</button>
+</div>
+<!-- Progress bar -->
+<div class="progress-bar-container">
+<div class="progress-fill" id="progress-bar"></div>
+</div>
+</div>
+<!-- Firebase SDK & Client logic -->
+<script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAuth, signInWithPopup, signOut, onAuthStateChanged, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+        // Firebase project configuration
+        const firebaseConfig = {
+            projectId: "fungib",
+            appId: "1:589912931967:web:8e4d9a3c33160617ab094a",
+            storageBucket: "fungib.firebasestorage.app",
+            apiKey: "AIzaSyBEtiCBt2hYWiiL2dDeTRSqE8pY15eGbcE",
+            authDomain: "fungib.firebaseapp.com",
+            messagingSenderId: "589912931967"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        
+        // Setup Google Auth Provider with account selection enforcement
+        const provider = new GoogleAuthProvider();
+        provider.setCustomParameters({
+            prompt: 'select_account'
+        });
+
+        // DOM elements
+        const loginContainer = document.getElementById('login-container');
+        const accessDeniedContainer = document.getElementById('access-denied-container');
+        const appContainer = document.getElementById('app-container');
+        const forestBg = document.getElementById('forest-bg');
+
+        const googleLoginBtn = document.getElementById('google-login-btn');
+        const logoutBtn = document.getElementById('logout-btn');
+        const logoutBtnDenied = document.getElementById('logout-btn-denied');
+
+        const deniedEmailSpan = document.getElementById('denied-email');
+        const userAvatar = document.getElementById('user-avatar');
+        const userEmail = document.getElementById('user-email');
+
+        // Track authentication status
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                if (user.email === 'borismeldre@gmail.com') {
+                    // Access Granted: show slides screen
+                    loginContainer.style.display = 'none';
+                    accessDeniedContainer.style.display = 'none';
+                    appContainer.style.display = 'block';
+                    forestBg.style.opacity = '0.08'; // fade image background a bit more to not distract from slides
+                    
+                    // Set user details in navigation header
+                    userAvatar.src = user.photoURL || 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
+                    userEmail.textContent = user.email;
+                    
+                    // Reset slide show back to initial state
+                    showSlide(0);
+                } else {
+                    // Access Denied: user logged in, but not the allowed email
+                    loginContainer.style.display = 'none';
+                    accessDeniedContainer.style.display = 'flex';
+                    appContainer.style.display = 'none';
+                    forestBg.style.opacity = '0.15';
+                    
+                    deniedEmailSpan.textContent = user.email;
+                }
+            } else {
+                // Not authenticated: show login screen
+                loginContainer.style.display = 'flex';
+                accessDeniedContainer.style.display = 'none';
+                appContainer.style.display = 'none';
+                forestBg.style.opacity = '0.15';
+            }
+        });
+
+        // Login Handler
+        googleLoginBtn.addEventListener('click', () => {
+            signInWithPopup(auth, provider).catch(err => {
+                console.error("Autentimise viga:", err);
+                if (err.code !== 'auth/popup-closed-by-user') {
+                    alert("Viga sisselogimisel: " + err.message);
+                }
+            });
+        });
+
+        // Logout Handler
+        const handleLogout = () => {
+            signOut(auth).catch(err => console.error("Väljalogimise viga:", err));
+        };
+
+        logoutBtn.addEventListener('click', handleLogout);
+        logoutBtnDenied.addEventListener('click', handleLogout);
+    </script>
+<!-- Slide Navigation Logic -->
+<script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const progressBar = document.getElementById('progress-bar');
+        const currentSlideNum = document.getElementById('current-slide-num');
+        const totalSlidesNum = document.getElementById('total-slides-num');
+        
+        // Initialize counts
+        if (totalSlidesNum) {
+            totalSlidesNum.textContent = slides.length;
+        }
+
+        function showSlide(index) {
+            if (slides.length === 0) return;
+            
+            // Remove active class from old slide
+            slides[currentSlide].classList.remove('active');
+            
+            // Wrap or bound indices
+            currentSlide = (index + slides.length) % slides.length;
+            
+            // Add active class to new slide
+            slides[currentSlide].classList.add('active');
+            
+            // Update slide counts
+            if (currentSlideNum) {
+                currentSlideNum.textContent = currentSlide + 1;
+            }
+            
+            // Update progress bar
+            const progressPercent = ((currentSlide + 1) / slides.length) * 100;
+            if (progressBar) {
+                progressBar.style.width = progressPercent + '%';
+            }
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        function nextSlideClick(e) {
+            // Only advance if clicking outside elements with logic or control bars
+            if (e.target.closest('.controls') || e.target.closest('#top-bar') || e.target.closest('.btn-nav')) {
+                return;
+            }
+            nextSlide();
+        }
+
+        // Global keyboard handlers for slide navigation
+        document.addEventListener('keydown', function(e) {
+            // Check if app is visible
+            if (document.getElementById('app-container').style.display === 'block') {
+                if (e.key === 'ArrowRight' || e.key === ' ') {
+                    nextSlide();
+                } else if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                }
+            }
+        });
+
+        // Make functions globally available for inline onclicks
+        window.showSlide = showSlide;
+        window.nextSlide = nextSlide;
+        window.prevSlide = prevSlide;
+        window.nextSlideClick = nextSlideClick;
+    </script>
+<!-- Mycelial Network Animation -->
+<script>
+        class MyceliumNetwork {
+            constructor(canvas) {
+                this.canvas = canvas;
+                this.ctx = canvas.getContext('2d');
+                this.particles = [];
+                this.mouse = { x: null, y: null, radius: 160 };
+                this.maxParticles = 75;
+                this.connectionDist = 125;
+                
+                this.init();
+                this.animate();
+                
+                window.addEventListener('resize', () => this.resize());
+                
+                // Track mouse position anywhere on screen
+                window.addEventListener('mousemove', (e) => {
+                    this.mouse.x = e.clientX;
+                    this.mouse.y = e.clientY;
+                });
+                
+                window.addEventListener('mouseleave', () => {
+                    this.mouse.x = null;
+                    this.mouse.y = null;
+                });
+            }
+            
+            init() {
+                this.resize();
+                this.particles = [];
+                for (let i = 0; i < this.maxParticles; i++) {
+                    this.particles.push({
+                        x: Math.random() * this.canvas.width,
+                        y: Math.random() * this.canvas.height,
+                        vx: (Math.random() - 0.5) * 0.35,
+                        vy: (Math.random() - 0.5) * 0.35,
+                        radius: Math.random() * 2 + 1,
+                        alpha: Math.random() * 0.4 + 0.15
+                    });
+                }
+            }
+            
+            resize() {
+                this.canvas.width = window.innerWidth;
+                this.canvas.height = window.innerHeight;
+            }
+            
+            animate() {
+                this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                
+                // Draw connections
+                for (let i = 0; i < this.particles.length; i++) {
+                    let p1 = this.particles[i];
+                    
+                    // Move particle
+                    p1.x += p1.vx;
+                    p1.y += p1.vy;
+                    
+                    // Bounce/wrap around bounds
+                    if (p1.x < 0 || p1.x > this.canvas.width) p1.vx *= -1;
+                    if (p1.y < 0 || p1.y > this.canvas.height) p1.vy *= -1;
+                    
+                    // Draw particle node
+                    this.ctx.beginPath();
+                    this.ctx.arc(p1.x, p1.y, p1.radius, 0, Math.PI * 2);
+                    this.ctx.fillStyle = `rgba(31, 39, 34, ${p1.alpha * 0.4})`;
+                    
+                    // No heavy glow for minimalist style
+                    this.ctx.shadowBlur = 0;
+                    this.ctx.shadowColor = 'transparent';
+                    this.ctx.fill();
+                    
+                    // Draw lines to neighboring nodes (mycelial connections)
+                    for (let j = i + 1; j < this.particles.length; j++) {
+                        let p2 = this.particles[j];
+                        let dx = p1.x - p2.x;
+                        let dy = p1.y - p2.y;
+                        let dist = Math.sqrt(dx * dx + dy * dy);
+                        
+                        if (dist < this.connectionDist) {
+                            let alpha = (1 - dist / this.connectionDist) * 0.08;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(p1.x, p1.y);
+                            this.ctx.lineTo(p2.x, p2.y);
+                            this.ctx.strokeStyle = `rgba(31, 39, 34, ${alpha})`;
+                            this.ctx.lineWidth = 0.6;
+                            this.ctx.stroke();
+                        }
+                    }
+                    
+                    // Interactive links to user cursor
+                    if (this.mouse.x !== null) {
+                        let dx = p1.x - this.mouse.x;
+                        let dy = p1.y - this.mouse.y;
+                        let dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < this.mouse.radius) {
+                            let alpha = (1 - dist / this.mouse.radius) * 0.25;
+                            this.ctx.beginPath();
+                            this.ctx.moveTo(p1.x, p1.y);
+                            this.ctx.lineTo(this.mouse.x, this.mouse.y);
+                            this.ctx.strokeStyle = `rgba(176, 125, 80, ${alpha})`; // Terracotta/clay threads
+                            this.ctx.lineWidth = 0.8;
+                            this.ctx.stroke();
+                        }
+                    }
+                }
+                
+                requestAnimationFrame(() => this.animate());
+            }
+        }
+
+        // Run network animation once content loads
+        window.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('bg-canvas');
+            new MyceliumNetwork(canvas);
+        });
+    </script>
+</body>
+</html>
