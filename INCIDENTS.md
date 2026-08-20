@@ -106,3 +106,12 @@
 ## [INCIDENT-2026-08-20-KIMP-METSKORGES-CONNOPUS]
 - **Süsteem:** `seen` CLI
 - **Lahendus:** `Kimp-metskõrges` seotud taksoniga *Connopus acervatus* (ID: 141001). Välja antud `v1.3.2`.
+
+## [INCIDENT-2026-08-20-CSS-BRACE-SYNTAX-ERROR-AND-MOBILE-LAYOUT]
+- **Süsteem:** `fungib.web.app` frontend
+- **Sümptom:** Brauser kuvas unstyled HTML-i, kuna stiilifaili parsimine katkes.
+- **Algpõhjus (RCA):** `[data-theme="dark"]` selektoril puudus sulgev loogeline sulg `}`, mistõttu CSS-parser luges terve faili vigaseks ja loobus stiilide rakendamisest.
+- **Püsiv Lahendus:**
+  1. Süntaks parandatud ja kontrollitud automaatse AST/braces parseriga.
+  2. Versioon tõstetud `styles.css?v=4`.
+  3. Juurutatud Firebase Hostingusse ja commititud GitHubi.
