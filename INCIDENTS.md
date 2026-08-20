@@ -86,3 +86,7 @@
 ## [INCIDENT-2026-08-20-VELLO-LIIV-ALIAS-ADDED]
 - **Süsteem:** `seen` CLI
 - **Täiendus:** Lisatud `kaasv:vl` (*Vello Liiv* ID: 19681). Välja antud `v1.2.4`.
+
+## [INCIDENT-2026-08-20-KV-PREFIX-AND-LEADING-COLONS]
+- **Süsteem:** `seen` CLI
+- **Täiendus:** Lisatud `kv:` ja `:kaasvaatleja:` formaatide tugi. Välja antud `v1.2.5`.
