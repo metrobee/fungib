@@ -64,3 +64,7 @@
 
 ## [INCIDENT-2026-08-20-TAIM-CLI-ISOLATION-AND-PRIVATE-REPO]
 - **Arhitektuur:** `taim` CLI eraldatud privaatsesse repositooriumisse (`metrobee/taim`).
+
+## [INCIDENT-2026-08-20-CLIPSNIPPET-BRACKETED-PASTE-CLEANUP]
+- **Süsteem:** CLI ja Zsh
+- **Lahendus:** Eemaldatud `^[[200~` koodid `clean_cli_arg` funktsiooniga ja `unset zle_bracketed_paste`.
