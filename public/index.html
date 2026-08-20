@@ -65,14 +65,21 @@
             <option value="date_desc">Sorteeri: Leiu kuupäev (Uusimad)</option>
             <option value="name_asc">Sorteeri: Liiginimi (A-Z)</option>
           </select>
-          <select id="countyFilter" class="filter-select">
-            <option value="">Kõik maakonnad</option>
+          <select id="statusFilter" class="filter-select">
+            <option value="">Kõik staatused (Kinnitatud / Ootel)</option>
+            <option value="verified">Ainult Kinnitatud</option>
+            <option value="pending">Ainult Ootel</option>
           </select>
         </div>
         <div class="filter-row">
           <select id="observerFilter" class="filter-select">
             <option value="">Kõik autorid / kaaslased</option>
           </select>
+          <select id="countyFilter" class="filter-select">
+            <option value="">Kõik maakonnad</option>
+          </select>
+        </div>
+        <div class="filter-row">
           <select id="substrateFilter" class="filter-select">
             <option value="">Kõik substraadid</option>
           </select>
@@ -111,6 +118,10 @@
             <div id="modalRole" class="detail-value">-</div>
           </div>
           <div class="detail-block">
+            <div class="detail-label">Staatus</div>
+            <div id="modalVerified" class="detail-value">-</div>
+          </div>
+          <div class="detail-block">
             <div class="detail-label">Kuupäev</div>
             <div id="modalDate" class="detail-value">-</div>
           </div>
@@ -133,10 +144,6 @@
           <div class="detail-block">
             <div class="detail-label">Määraja</div>
             <div id="modalDeterminer" class="detail-value">-</div>
-          </div>
-          <div class="detail-block">
-            <div class="detail-label">Kinnitatud</div>
-            <div id="modalVerified" class="detail-value">-</div>
           </div>
         </div>
 

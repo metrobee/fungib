@@ -171,6 +171,7 @@ function setRole(role) {
 function applyFilters() {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
   const sort = document.getElementById("sortOrder").value;
+  const status = document.getElementById("statusFilter").value;
   const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
   const sub = document.getElementById("substrateFilter").value;
@@ -179,6 +180,10 @@ function applyFilters() {
     // Role filter
     if (activeRole === "primary" && o.is_co_observer) return false;
     if (activeRole === "co" && !o.is_co_observer) return false;
+
+    // Status filter
+    if (status === "verified" && !o.is_verified) return false;
+    if (status === "pending" && o.is_verified) return false;
 
     // Observer filter
     if (observer && o.primary_observer !== observer && !o.collectors.includes(observer)) return false;
@@ -256,14 +261,22 @@ function renderList() {
       roleBadge = `<span class="badge badge-co-highlight">KAASVAATLEJA</span>`;
     }
 
+    let statusBadge = "";
+    if (o.is_verified) {
+      const vText = o.verified_by ? `Kinnitatud (${escapeHtml(o.verified_by)})` : "Kinnitatud";
+      statusBadge = `<span class="badge badge-verified">${vText}</span>`;
+    } else {
+      statusBadge = `<span class="badge badge-pending">Ootel</span>`;
+    }
+
     let badgesHtml = "";
     if (o.is_co_observer && o.primary_observer) {
       badgesHtml += `<span class="badge badge-co-author">Autor: ${escapeHtml(o.primary_observer)}</span>`;
     }
+    badgesHtml += statusBadge;
     if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
     if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
     if (o.abundance) badgesHtml += `<span class="badge">${escapeHtml(o.abundance)}</span>`;
-    if (o.verified_by) badgesHtml += `<span class="badge badge-verified">Kinnitatud</span>`;
 
     const estTitle = o.est_name ? `<div class="obs-est-name">${escapeHtml(o.est_name)}</div>` : "";
     const sciTitle = `<div class="obs-taxon">${escapeHtml(o.taxon)}</div>`;
@@ -316,7 +329,8 @@ function renderMarkers() {
 
         const title = o.est_name ? `<strong>${escapeHtml(o.est_name)}</strong><br><em>${escapeHtml(o.taxon)}</em>` : `<strong>${escapeHtml(o.taxon)}</strong>`;
         const roleInfo = o.is_co_observer ? `<br><span style="color:#e0e0e0;font-size:0.7rem;">[KAASVAATLEJA: ${escapeHtml(o.primary_observer)}]</span>` : "";
-        marker.bindTooltip(`${title}${roleInfo}<br>${o.date || ""}`, {
+        const statusText = o.is_verified ? `[Kinnitatud]` : `[Ootel]`;
+        marker.bindTooltip(`${title}${roleInfo}<br>${o.date || ""} • ${statusText}`, {
           direction: "top",
           offset: [0, -6]
         });
@@ -347,13 +361,17 @@ function openModal(o) {
     : `Peavaatleja (Boris Meldre)`;
   document.getElementById("modalRole").textContent = roleText;
 
+  const statusText = o.is_verified 
+    ? (o.verified_by ? `Kinnitatud (${o.verified_by})` : "Kinnitatud")
+    : "Ootel (Kinnitamata)";
+  document.getElementById("modalVerified").textContent = statusText;
+
   document.getElementById("modalDate").textContent = o.date || "-";
   document.getElementById("modalLocality").textContent = `${o.locality || "-"}, ${o.county || ""}`;
   document.getElementById("modalCoords").textContent = (o.latitude && o.longitude) ? `${parseFloat(o.latitude).toFixed(5)}, ${parseFloat(o.longitude).toFixed(5)}` : "-";
   document.getElementById("modalSubstrate").textContent = o.substrate || "-";
   document.getElementById("modalSubstrateType").textContent = o.substrate_type || "-";
   document.getElementById("modalDeterminer").textContent = o.determiner || "-";
-  document.getElementById("modalVerified").textContent = o.verified_by ? `Kinnitatud (${o.verified_by})` : "Kinnitamata";
   document.getElementById("modalRemarks").textContent = o.remarks || "-";
   
   const plutofLink = document.getElementById("modalPlutofLink");
@@ -379,6 +397,7 @@ function initEventListeners() {
   document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
   document.getElementById("searchInput").addEventListener("input", applyFilters);
   document.getElementById("sortOrder").addEventListener("change", applyFilters);
+  document.getElementById("statusFilter").addEventListener("change", applyFilters);
   document.getElementById("observerFilter").addEventListener("change", applyFilters);
   document.getElementById("countyFilter").addEventListener("change", applyFilters);
   document.getElementById("substrateFilter").addEventListener("change", applyFilters);

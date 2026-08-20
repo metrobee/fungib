@@ -483,6 +483,15 @@ body {
   background-color: var(--accent-color);
   color: var(--accent-invert);
   font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.badge-pending {
+  border: 1px dashed var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 /* Modal Drawer View */

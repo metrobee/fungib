@@ -90,6 +90,8 @@ def main():
 
     primary_count = 0
     co_count = 0
+    verified_count = 0
+    pending_count = 0
 
     for r in rows:
         obs_id = str(r[0])
@@ -113,6 +115,12 @@ def main():
         determiner = r[18] or ""
         verified_by = r[19] or ""
         habitat = r[20] or ""
+
+        is_verified = bool(verified_by)
+        if is_verified:
+            verified_count += 1
+        else:
+            pending_count += 1
 
         if is_co:
             co_count += 1
@@ -175,6 +183,7 @@ def main():
             "abundance": abundance,
             "remarks": remarks or extra.get("notes", ""),
             "is_co_observer": is_co,
+            "is_verified": is_verified,
             "collectors": collectors or ("Boris Meldre" if not is_co else f"{primary_observer}, Boris Meldre"),
             "primary_observer": primary_observer,
             "determiner": determiner or extra.get("determiner", ""),
@@ -220,6 +229,10 @@ def main():
                 "primary": primary_count,
                 "co_observer": co_count
             },
+            "verification_stats": {
+                "verified": verified_count,
+                "pending": pending_count
+            },
             "time_stats": {
                 "today": added_today,
                 "this_week": added_this_week,
@@ -235,7 +248,7 @@ def main():
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Esikohal: {observations[0]['est_name']} ({observations[0]['taxon']}) ID: {observations[0]['id']}")
+    print(f"Kinnitatud={verified_count}, Ootel={pending_count}")
 
 if __name__ == "__main__":
     main()
