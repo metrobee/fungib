@@ -48,3 +48,7 @@
 - **Sümptom:** Apple Photos rakendusest otse kopeeritud failide puhul tekkis Photos.app sulgumisviga.
 - **Algpõhjus (RCA):** Skript liigutas Photos Library sisefaili prügikasti.
 - **Püsiv Lahendus:** Lisatud `.photoslibrary` failikaitse `move_to_trash` funktsiooni.
+
+## [INCIDENT-2026-08-20-HOMEBREW-RELEASE-V120]
+- **Süsteem:** `plutoff` ja `homebrew-tap`
+- **Tegevus:** Versioon uuendatud `v1.2.0` peale Homebrewis.
