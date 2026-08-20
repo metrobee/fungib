@@ -32,7 +32,6 @@ def load_est_name_map():
 def find_est_name(taxon_name, est_map):
     if not taxon_name:
         return ""
-    # Puhasta autorid ja liigikoodid
     clean_name = re.sub(r'\(.*?\)', '', taxon_name).strip()
     parts = clean_name.split()
     if len(parts) >= 2:
@@ -69,7 +68,7 @@ def main():
            abundance, remarks, url, created_at,
            is_co_observer, collectors, primary_observer, determiner, verified_by, habitat
     FROM observations
-    ORDER BY date_time DESC, id DESC;
+    ORDER BY created_at DESC, date_time DESC, id DESC;
     """)
     rows = c.fetchall()
     
@@ -236,8 +235,7 @@ def main():
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Rollid: Peavaatleja={primary_count}, Kaasvaatleja={co_count}")
-    print(f"Liike kokku: {len(taxa_set)}")
+    print(f"Esikohal: {observations[0]['est_name']} ({observations[0]['taxon']}) ID: {observations[0]['id']}")
 
 if __name__ == "__main__":
     main()

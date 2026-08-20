@@ -170,6 +170,7 @@ function setRole(role) {
 
 function applyFilters() {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
+  const sort = document.getElementById("sortOrder").value;
   const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
   const sub = document.getElementById("substrateFilter").value;
@@ -198,6 +199,24 @@ function applyFilters() {
     const matchSub = !sub || o.substrate === sub;
 
     return matchQuery && matchCounty && matchSub;
+  });
+
+  // Sorteerimine
+  filteredObs.sort((a, b) => {
+    if (sort === "created_desc") {
+      const aCreated = a.created_at || a.date || "";
+      const bCreated = b.created_at || b.date || "";
+      return bCreated.localeCompare(aCreated) || (parseInt(b.id) - parseInt(a.id));
+    } else if (sort === "date_desc") {
+      const aDate = a.date || "";
+      const bDate = b.date || "";
+      return bDate.localeCompare(aDate) || (parseInt(b.id) - parseInt(a.id));
+    } else if (sort === "name_asc") {
+      const aName = a.est_name || a.taxon;
+      const bName = b.est_name || b.taxon;
+      return aName.localeCompare(bName, "et");
+    }
+    return 0;
   });
 
   const primCount = filteredObs.filter(o => !o.is_co_observer).length;
@@ -359,6 +378,7 @@ function closeModal() {
 function initEventListeners() {
   document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
   document.getElementById("searchInput").addEventListener("input", applyFilters);
+  document.getElementById("sortOrder").addEventListener("change", applyFilters);
   document.getElementById("observerFilter").addEventListener("change", applyFilters);
   document.getElementById("countyFilter").addEventListener("change", applyFilters);
   document.getElementById("substrateFilter").addEventListener("change", applyFilters);
