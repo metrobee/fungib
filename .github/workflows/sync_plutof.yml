@@ -1,0 +1,32 @@
+name: Scheduled PlutoF Live Sync
+
+on:
+  schedule:
+    # Käivitub automaatselt iga päev kell 03:00 ja 15:00 UTC
+    - cron: '0 3,15 * * *'
+  workflow_dispatch: # Võimaldab käivitada ka käsitsi ühe klikiga GitHubist
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Export Data
+        run: |
+          python3 scripts/export_dashboard_data.py
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FUNGIB }}'
+          channelId: live
+          projectId: fungib
+        continue-on-error: true
