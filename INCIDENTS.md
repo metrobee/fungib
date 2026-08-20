@@ -68,3 +68,8 @@
 ## [INCIDENT-2026-08-20-CLIPSNIPPET-BRACKETED-PASTE-CLEANUP]
 - **Süsteem:** CLI ja Zsh
 - **Lahendus:** Eemaldatud `^[[200~` koodid `clean_cli_arg` funktsiooniga ja `unset zle_bracketed_paste`.
+
+## [INCIDENT-2026-08-20-KIVIPURAVIK-TAXON-MATCHING]
+- **Süsteem:** `seen` CLI
+- **Sümptom:** `kivipuravik` valis vale liigi (*Neoboletus*).
+- **Lahendus:** Täiendatud sorteerimisloogikat ja lisatud sulgude tugi. Välja antud `v1.2.2`.
