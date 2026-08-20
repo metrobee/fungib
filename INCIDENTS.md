@@ -115,3 +115,8 @@
   1. Süntaks parandatud ja kontrollitud automaatse AST/braces parseriga.
   2. Versioon tõstetud `styles.css?v=4`.
   3. Juurutatud Firebase Hostingusse ja commititud GitHubi.
+
+## [INCIDENT-2026-08-20-FIREBASE-AUTH-GATE-AND-DOCS-UPDATE]
+- **Süsteem:** `fungib.web.app` frontend ja turvalisus
+- **Funktsioon:** Lisatud Google Sign-In autentimisvärav (`ALLOWED_EMAILS = ['borismeldre@gmail.com']`), mis teeb arhiivi privaatseks.
+- **Dokumentatsioon:** Uuendatud `README.md` koos täieliku paigaldus- ja seadistusjuhendiga uutele kasutajatele.
