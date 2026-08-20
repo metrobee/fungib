@@ -52,3 +52,8 @@
 ## [INCIDENT-2026-08-20-HOMEBREW-RELEASE-V120]
 - **Süsteem:** `plutoff` ja `homebrew-tap`
 - **Tegevus:** Versioon uuendatud `v1.2.0` peale Homebrewis.
+
+## [INCIDENT-2026-08-20-TAXON-MAPPING-AMBIGUITY]
+- **Süsteem:** `seen` CLI
+- **Sümptom:** `kahkjas mampel` valis vale sünonüümi/liigi.
+- **Lahendus:** Eelistatakse alati kohalikku ClipSnippet teaduslikku nime. Välja antud `v1.2.1`.
