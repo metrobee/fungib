@@ -242,6 +242,14 @@ def main():
                 "this_month": added_this_month,
                 "this_year": added_this_year
             },
+            "user_profile": {
+                "name": "Boris Meldre",
+                "first_name": "Boris",
+                "last_name": "Meldre",
+                "username": "borismeldre",
+                "email": "borismeldre@gmail.com",
+                "person_id": "83911"
+            },
             "latest_observation": latest_obs
         },
         "observations": observations

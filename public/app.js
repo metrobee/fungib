@@ -177,6 +177,22 @@ function updateStats(meta) {
     coFreshness.title = `Viimane PlutoF eksport: ${meta.co_data_updated_at.split("T")[0]}`;
   }
 
+  if (meta.user_profile) {
+    const p = meta.user_profile;
+    const nameEl = document.getElementById("userProfileName");
+    const handleEl = document.getElementById("userProfileUsername");
+    const emailEl = document.getElementById("userProfileEmail");
+    const avatarEl = document.getElementById("userAvatar");
+
+    if (nameEl && p.name) nameEl.textContent = p.name;
+    if (handleEl && p.username) handleEl.textContent = `@${p.username}`;
+    if (emailEl && p.email) emailEl.textContent = p.email;
+    if (avatarEl && p.name) {
+      const initials = p.name.split(" ").map(n => n[0]).join("").toUpperCase();
+      avatarEl.textContent = initials || "BM";
+    }
+  }
+
   if (meta.latest_observation) {
     const lo = meta.latest_observation;
     const link = document.getElementById("latestObsLink");
