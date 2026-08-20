@@ -69,3 +69,14 @@ Otsingutulemused on visuaalselt jagatud kaheks selgeks plokiks:
 ## Ühtne Kaardivõrgustik ja Märgendid
 
 Kõik 768 vaatlust kuvatakse ühtses minimalistlikus võrgustikus. Kaasvaatlustel on foto/kaardi ülanurgas selge kontrastne märgis **`KAASVAATLEJA`** ning all autori nimi (nt *Autor: Allar Antson*).
+
+---
+
+## Sorteerimise Loogika
+
+Vaikimisi sorteeritakse kõik vaatlused **sisestamise aja järgi (Viimati lisatud süsteemi / `created_at DESC`)**, mis tagab, et terminalist või PlutoF-ist värskelt sisestatud vaatlus on koheselt esikohal.
+
+Kasutaja saab rippmenüüst valida:
+- **Viimati lisatud (Uusimad ees)**
+- **Leiu kuupäev (Uusimad ees)**
+- **Liiginimi (A-Z)**
