@@ -73,3 +73,8 @@
 - **Süsteem:** `seen` CLI
 - **Sümptom:** `kivipuravik` valis vale liigi (*Neoboletus*).
 - **Lahendus:** Täiendatud sorteerimisloogikat ja lisatud sulgude tugi. Välja antud `v1.2.2`.
+
+## [INCIDENT-2026-08-20-TAXA-CACHE-STALE-KIVIPURAVIK]
+- **Süsteem:** `seen` CLI
+- **Sümptom:** Vahemälust võeti vana vigane kirje.
+- **Lahendus:** Vahemälu puhastatud ja parandatud vaatlus `#8318721`.
