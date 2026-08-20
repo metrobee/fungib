@@ -42,3 +42,9 @@
 - **Sümptom:** Äsja terminalist sisestatud vaatlus (Aprikoosvöödik) ei ilmunud nimekirja algusesse.
 - **Algpõhjus (RCA):** Nimekiri oli varem sorteeritud leiu kuupäeva järgi (`date_time DESC`), mistõttu 2021. aasta leiu foto paigutus 2021. aasta kirjete juurde.
 - **Lahendus:** Muudeti vaikimisi sorteerimine sisestamise aja järgi (`created_at DESC`) ning lisati kasutajale sorteerimise rippmenüü.
+
+## [INCIDENT-2026-08-20-PHOTOS-APP-CRASH-PREVENTION]
+- **Süsteem:** `seen` CLI (`seen_cli.py`)
+- **Sümptom:** Apple Photos rakendusest otse kopeeritud failide puhul tekkis Photos.app sulgumisviga.
+- **Algpõhjus (RCA):** Skript liigutas Photos Library sisefaili prügikasti.
+- **Püsiv Lahendus:** Lisatud `.photoslibrary` failikaitse `move_to_trash` funktsiooni.
