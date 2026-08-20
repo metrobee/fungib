@@ -31,3 +31,14 @@
 - **Sümptom**: Viimati lisatud vaatluste fotod ei avanenud veebis.
 - **Algpõhjus (RCA)**: `seen` CLI salvestas esialgu kohaliku arvuti failitee (`/Users/.../Downloads/...`), mida veebibrauser ei saa laadida.
 - **Püsiv lahendus**: PlutoF API faili ID-de (`plutof_file_id`) kaudu tehti päringud, mis tuvastasid ja salvestasid avalikud S3 lingid `https://s3.hpc.ut.ee/plutof-public/large/...`.
+
+
+## [INCIDENT-2026-08-20-CO-OBSERVATION-IMAGE-IMPORT]
+- **Sümptom:** Kaasvaatluste (Allar Antson, Piret Lõhmus jt) kaartidel kuvati "Foto puudub", kuigi fotod olid PlutoF-is olemas.
+- **Algpõhjus (RCA):** PlutoF standardne otsingueksport jättis vaikimisi veeru `Image URL` failist välja.
+- **Lahendus:** Teostati täielik eksport 54 veeruga (sh `Image URL`), millest imporditi andmebaasi 432 uut S3 fotolinki. Nüüd omavad fotot 646 vaatlust 774-st.
+
+## [INCIDENT-2026-08-20-DEFAULT-SORT-ORDER]
+- **Sümptom:** Äsja terminalist sisestatud vaatlus (Aprikoosvöödik) ei ilmunud nimekirja algusesse.
+- **Algpõhjus (RCA):** Nimekiri oli varem sorteeritud leiu kuupäeva järgi (`date_time DESC`), mistõttu 2021. aasta leiu foto paigutus 2021. aasta kirjete juurde.
+- **Lahendus:** Muudeti vaikimisi sorteerimine sisestamise aja järgi (`created_at DESC`) ning lisati kasutajale sorteerimise rippmenüü.

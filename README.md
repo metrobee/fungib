@@ -1,119 +1,53 @@
-# PlutoFF Mycology Dashboard (`fungib.web.app`)
+# PLUTOFF Mycology Archive (Fungib)
 
-> **Minimalistlik, monokroomne ja reaalajas mükoloogia veebidashboard seenevaatluste haldamiseks.**
+Executive minimalistlik ja suure jõudlusega mükoloogiline arhiiv ja reaalajas veebidashboard.
 
-Live veebirakendus: **[https://fungib.web.app](https://fungib.web.app)**
-
----
-
-## Peamised Funktsioonid
-
-1. **Monokroomne Light / Dark Disain:**
-   - Rangelt kahevärviline: must, valge ja neutraalsed halltoonid.
-   - Puhas tüpograafia (SF Pro / Inter / SF Mono).
-   - 0 emotikoni ja 0 visuaalset müra.
-2. **Interaktiivne GIS-kaart (Leaflet):**
-   - CartoDB monokroomsed kaardikihid (`Positron` valges režiimis, `DarkMatter` tumedas režiimis).
-   - 207+ ametlikku leiukohta üle Eesti koos detailse infoga.
-3. **Reaalajas otsing ja filtrid:**
-   - Otsing taksoni ladina ja eesti nime, substraadi, asukoha ja ID järgi (kiirklahv `/`).
-   - Rippfiltrid maakondade ja substraatide järgi.
-4. **Detailne vaatlusvaade (Modal):**
-   - Tartu Ülikooli HPC S3 kõrglahutusega fotod.
-   - Täpsed GPS koordinaadid (5 komakohta).
-   - PlutoF Vormi 72 mõõtmised (puuliik, substraadi tüüp, viljakehade ohtrus).
-   - Otselink ametlikule PlutoF lehele.
-5. **Automaatne sünkroon:**
-   - `seen` käsk terminalis värskendab automaatselt `public/data/observations.json` andmestikku.
+- **Veebiaadress:** https://fungib.web.app
+- **Lähtekood:** https://github.com/metrobee/fungib
 
 ---
 
-## Arhitektuur ja Tehnoloogiad
+## 1. Arhitektuur ja Komponendid
 
-- **Frontend:** Vanilla JS (ES6+), modulaarne CSS, Leaflet 1.9.4.
-- **Hosting:** Firebase Hosting (`fungib.web.app`).
-- **Andmeallikas:** PlutoF API & Tartu Ülikooli HPC S3 fotoladu.
-
----
-
-## Paigaldus ja Käivitamine Kohapeal
-
-```bash
-# Klooni repo
-git clone https://github.com/metrobee/fungib.git
-cd fungib
-
-# Uuenda andmestikku
-python3 scripts/export_dashboard_data.py
-
-# Juuruta Firebase Hostingusse
-firebase deploy --only hosting
-```
+- **Frontend:** Puhas natiivne Vanilla JS ja modulaarne CSS ilma väliste raamistiketa.
+- **Kaardirakendus:** Leaflet.js koos CartoDB Positron (Light) ja CartoDB Dark Matter (Dark) kihtidega.
+- **Andmebaas ja ladu:** SQLite (`/Users/metrobee/GEMINI/data/plutof_vaatlused.db`) ja Tartu Ülikooli HPC S3 pilveserver (`https://s3.hpc.ut.ee/plutof-public/large/...`).
+- **Terminali CLI (`seen`):** macOS natiivne fotode töötlemine (`sips` HEIC konverteerimine), EXIF metaandmete väljalugemine ja automaatne taustajuurutus.
 
 ---
 
-## Litsents
+## 2. Vaatluste ja Fotode Arhiiv
 
-MIT License. Boris Meldre, 2026.
-
----
-
-## Otsing ja Sektsioonide Jaotus
-
-Otsingutulemused on visuaalselt jagatud kaheks selgeks plokiks:
-1. **Minu sisestatud vaatlused:** Esmased vaatlused koos kõrglahutusega fotodega.
-2. **Kaasvaatlused ja ühisretked:** Vaatlused, kus kasutaja on märgitud kaasvaatlejaks (kuvab peavaatleja nime, määraja, asukoha ja otselingi).
+- **Vaatlusi kokku:** 774 vaatlust
+- **Erinevaid liike:** 464 liiki
+- **Fotodega vaatlusi:** 646 vaatlust (sh 215 peavaatlust ja 431 kaasvaatlust)
+- **Eestikeelsed liiginimed:** 600+ taksoni sõnastik ClipSnippet baasil.
 
 ---
 
-## Ühtne Kaardivõrgustik ja Märgendid
+## 3. Funktsionaalsus ja Kasutajaliides
 
-Kõik 768 vaatlust kuvatakse ühtses minimalistlikus võrgustikus. Kaasvaatlustel on foto/kaardi ülanurgas selge kontrastne märgis **`KAASVAATLEJA`** ning all autori nimi (nt *Autor: Allar Antson*).
-
----
-
-## Sorteerimise Loogika
-
-Vaikimisi sorteeritakse kõik vaatlused **sisestamise aja järgi (Viimati lisatud süsteemi / `created_at DESC`)**, mis tagab, et terminalist või PlutoF-ist värskelt sisestatud vaatlus on koheselt esikohal.
-
-Kasutaja saab rippmenüüst valida:
-- **Viimati lisatud (Uusimad ees)**
-- **Leiu kuupäev (Uusimad ees)**
-- **Liiginimi (A-Z)**
-
----
-
-## Vaatluste Kinnituse Staatused (Kinnitatud vs Ootel)
-
-Arhiivis peetakse arvestust määramise kinnituse üle:
-- **Kinnitatud (586 vaatlust):** Eksperdi (nt Irja Saar) poolt modereeritud ja kinnitatud vaatlused.
-- **Ootel (185 vaatlust):** Äsja või varem sisestatud vaatlused, mis ootavad PlutoF süsteemis eksperdi kinnitust.
-
-Kõikidel kaartidel kuvatakse vastav märgend (`Kinnitatud` või `Ootel`). Lisaks on vasakul paneelis filtri rippmenüü staatuse järgi sorteerimiseks.
+1. **Ühtne integreeritud vaade:**
+   - Kõik vaatlused kuvatakse ühtses võrgustikus.
+   - Kaasvaatlustel on foto ülanurgas selge kontrastne märgis `KAASVAATLEJA` ja all autori nimi.
+2. **Kinnituse staatused:**
+   - **`OOTEL`:** kuvatakse silmatorkava märgina foto ülemises paremas nurgas vaatlustel, mis ootavad eksperdi kinnitust.
+   - **`Kinnitatud (Irja Saar jt)`:** kuvatakse eksperdi poolt kinnitatud vaatlustel.
+3. **Sorteerimine:**
+   - Vaikimisi: **Viimati lisatud (Sisestamise aeg / `created_at DESC`)**.
+   - Valikud: **Leiu kuupäev (Uusimad ees)** ja **Liiginimi (A-Z)**.
+4. **Otsing ja Filtrid:**
+   - Reaalajas otsing (kiirklahv `/`): otsib eesti tavanime, teadusliku nime, kaaslaste, substraadi ja asukoha järgi.
+   - Filtrid: Roll (*Kõik / Minu / Kaasvaatleja*), Staatus (*Kõik / Kinnitatud / Ootel*), Autor, Maakond ja Substraat.
+5. **Ühisvaatluste värskuse indikaator:**
+   - Päiseribal kuvatakse reaalajas viimase kaasvaatluste impordi vanus (nt `Värske (äsja uuendatud)` või `X päeva tagasi`).
 
 ---
 
-## Ootel Märgendi Positsioneerimine
+## 4. Deduplikatsioon ja Apple Photos tugi
 
-Märgis **`OOTEL`** on eemaldatud alumisest siltide reast ja viidud kaardi/foto ülemisse paremasse nurka selgelt eraldatud staatuseindikaatorina.
-
----
-
-## Täielik Fotoarhiiv (646 Fotot)
-
-Kõikidele vaatlustele (sh kaasvaatlused ja ühisretked) on imporditud Tartu Ülikooli HPC S3 serveri ametlikud kõrglahutusega fotod. 774 vaatlusest omavad fotot **646 vaatlust** (215 peavaatlust ja 431 kaasvaatlust).
-
----
-
-## Automaatne Pilvesünkroon (Zero Local Resource Overhead)
-
-1. **Terminali kaudu sisestused (`seen` CLI):** Iga uus lisatud vaatlus sünkroonitakse ja juurutatakse Firebase Hostingusse koheselt.
-2. **Kaasvaatlused ja teiste autorite lisandused:** Seadistatud GitHub Actions töövoog (`.github/workflows/sync_plutof.yml`), mis käivitub automaatselt kaks korda ööpäevas (03:00 ja 15:00 UTC) ning uuendab pilves arhiivi ilma kohalikku arvutit koormamata.
-
----
-
-## Ühisvaatluste Andmete Värskuse Indikaator
-
-Päise all asuvas sünkroonimisribas kuvatakse reaalajas indikaator:
-`Ühisvaatluste seis: Värske (äsja uuendatud)` / `X päeva tagasi`.
-See annab kasutajale kohese ülevaate, millal viimati PlutoF-ist kaasvaatluste täielik andmestik imporditi.
+- **Kolmetasemeline deduplikatsioon (`seen_cli.py`):**
+  1. SHA-256 failiräsi kontroll.
+  2. Failinime kontroll.
+  3. EXIF kuupäeva/kellaaja ja 5-komakohalise GPS-koordinaadi ristkontroll.
+- **Apple Photos otsetugi:** Fotosid saab kopeerida otse macOS Photos rakendusest vahemällu ja kleepida terminali. Isegi kui failinimi on `Photos Library.photoslibrary/resources/derivatives/...`, hoiab süsteem ära topeltkirjed täpse GPS ja ajatempli alusel.
