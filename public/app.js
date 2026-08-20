@@ -12,12 +12,96 @@ const TILES = {
   dark: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
+// Firebase Auth Configuration
+const ALLOWED_EMAILS = ["borismeldre@gmail.com"];
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBEtiCBt2hYWiiL2dDeTRSqE8pY15eGbcE",
+  authDomain: "fungib.firebaseapp.com",
+  projectId: "fungib",
+  storageBucket: "fungib.firebasestorage.app",
+  messagingSenderId: "589912931967",
+  appId: "1:589912931967:web:8e4d9a3c33160617ab094a"
+};
+
+let auth = null;
+if (typeof firebase !== "undefined") {
+  try {
+    firebase.initializeApp(firebaseConfig);
+    auth = firebase.auth();
+  } catch (e) {
+    console.error("Firebase init error:", e);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
   initTheme();
-  initMap();
+  initAuth();
   initEventListeners();
-  await loadData();
 });
+
+function initAuth() {
+  const googleBtn = document.getElementById("googleSignInBtn");
+  if (googleBtn) {
+    googleBtn.addEventListener("click", () => {
+      if (!auth) return;
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider).catch(err => {
+        console.error("Auth viga:", err);
+        const errEl = document.getElementById("authErrorMsg");
+        if (errEl) {
+          errEl.style.display = "block";
+          errEl.textContent = "Sisselogimine ebaõnnestus: " + (err.message || err);
+        }
+      });
+    });
+  }
+
+  const signOutBtn = document.getElementById("signOutBtn");
+  if (signOutBtn) {
+    signOutBtn.addEventListener("click", () => {
+      if (auth) auth.signOut();
+    });
+  }
+
+  if (auth) {
+    auth.onAuthStateChanged(async (user) => {
+      const authScreen = document.getElementById("authScreen");
+      const appContent = document.getElementById("appContent");
+      const authError = document.getElementById("authErrorMsg");
+
+      if (user && user.email && ALLOWED_EMAILS.includes(user.email.toLowerCase())) {
+        if (authScreen) authScreen.style.display = "none";
+        if (appContent) appContent.style.display = "block";
+        if (authError) authError.style.display = "none";
+
+        const emailEl = document.getElementById("userProfileEmail");
+        if (emailEl) emailEl.textContent = user.email;
+
+        if (!map) {
+          initMap();
+          await loadData();
+        }
+      } else if (user) {
+        if (authScreen) authScreen.style.display = "flex";
+        if (appContent) appContent.style.display = "none";
+        if (authError) {
+          authError.style.display = "block";
+          authError.innerHTML = `Ligipääs puudub kontoga <strong>${escapeHtml(user.email)}</strong>.<br>See arhiiv on privaatne. <a href="#" id="authSignOutLink">Logi välja / vaheta kontot</a>`;
+          const link = document.getElementById("authSignOutLink");
+          if (link) link.onclick = (e) => { e.preventDefault(); auth.signOut(); };
+        }
+      } else {
+        if (authScreen) authScreen.style.display = "flex";
+        if (appContent) appContent.style.display = "none";
+      }
+    });
+  } else {
+    // If offline fallback
+    initMap();
+    loadData();
+  }
+}
 
 function initTheme() {
   document.documentElement.setAttribute("data-theme", currentTheme);
