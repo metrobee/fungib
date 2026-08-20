@@ -55,3 +55,11 @@ firebase deploy --only hosting
 ## Litsents
 
 MIT License. Boris Meldre, 2026.
+
+---
+
+## Otsing ja Sektsioonide Jaotus
+
+Otsingutulemused on visuaalselt jagatud kaheks selgeks plokiks:
+1. **Minu sisestatud vaatlused:** Esmased vaatlused koos kõrglahutusega fotodega.
+2. **Kaasvaatlused ja ühisretked:** Vaatlused, kus kasutaja on märgitud kaasvaatlejaks (kuvab peavaatleja nime, määraja, asukoha ja otselingi).
