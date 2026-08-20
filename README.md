@@ -102,3 +102,10 @@ Märgis **`OOTEL`** on eemaldatud alumisest siltide reast ja viidud kaardi/foto 
 ## Täielik Fotoarhiiv (646 Fotot)
 
 Kõikidele vaatlustele (sh kaasvaatlused ja ühisretked) on imporditud Tartu Ülikooli HPC S3 serveri ametlikud kõrglahutusega fotod. 774 vaatlusest omavad fotot **646 vaatlust** (215 peavaatlust ja 431 kaasvaatlust).
+
+---
+
+## Automaatne Pilvesünkroon (Zero Local Resource Overhead)
+
+1. **Terminali kaudu sisestused (`seen` CLI):** Iga uus lisatud vaatlus sünkroonitakse ja juurutatakse Firebase Hostingusse koheselt.
+2. **Kaasvaatlused ja teiste autorite lisandused:** Seadistatud GitHub Actions töövoog (`.github/workflows/sync_plutof.yml`), mis käivitub automaatselt kaks korda ööpäevas (03:00 ja 15:00 UTC) ning uuendab pilves arhiivi ilma kohalikku arvutit koormamata.
