@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLUTOFF — Mycology Observation Archive</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
 
@@ -109,9 +109,19 @@
     </aside>
 
     <!-- Right: Observations Grid -->
-    <section class="content-pane">
+    <section class="content-pane" id="contentPane">
+      <div class="pagination-bar pagination-top" id="paginationTopBar">
+        <div id="paginationTopInfo" class="pagination-info"></div>
+        <div id="paginationTopControls" class="pagination-controls"></div>
+      </div>
+
       <div id="obsGrid" class="observation-grid">
         <!-- Javascript renders cards here -->
+      </div>
+
+      <div class="pagination-bar pagination-bottom" id="paginationBottomBar">
+        <div id="paginationBottomInfo" class="pagination-info"></div>
+        <div id="paginationBottomControls" class="pagination-controls"></div>
       </div>
     </section>
   </main>

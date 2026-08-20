@@ -273,9 +273,13 @@ function applyFilters() {
 
   document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust)`;
 
+  currentPage = 1;
   renderList();
   renderMarkers();
 }
+
+let currentPage = 1;
+const PAGE_SIZE = 50;
 
 function renderList() {
   const grid = document.getElementById("obsGrid");
@@ -283,10 +287,18 @@ function renderList() {
 
   if (filteredObs.length === 0) {
     grid.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 40px; text-align: center;">Ühtegi vaatlust ei leitud valitud filtritega.</div>`;
+    renderPagination();
     return;
   }
 
-  filteredObs.forEach(o => {
+  const totalPages = Math.ceil(filteredObs.length / PAGE_SIZE) || 1;
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+
+  const startIdx = (currentPage - 1) * PAGE_SIZE;
+  const pageObs = filteredObs.slice(startIdx, startIdx + PAGE_SIZE);
+
+  pageObs.forEach(o => {
     const card = document.createElement("div");
     card.className = "obs-card";
     card.dataset.id = o.id;
@@ -345,6 +357,83 @@ function renderList() {
 
     grid.appendChild(card);
   });
+
+  renderPagination();
+}
+
+function renderPagination() {
+  const totalPages = Math.ceil(filteredObs.length / PAGE_SIZE) || 1;
+  const startIdx = filteredObs.length > 0 ? (currentPage - 1) * PAGE_SIZE + 1 : 0;
+  const endIdx = Math.min(currentPage * PAGE_SIZE, filteredObs.length);
+  const infoText = filteredObs.length > 0 
+    ? `Kuvatakse ${startIdx}–${endIdx} (kokku ${filteredObs.length}) • Leht ${currentPage}/${totalPages}`
+    : `0 vaatlust`;
+
+  const topInfo = document.getElementById("paginationTopInfo");
+  const bottomInfo = document.getElementById("paginationBottomInfo");
+  if (topInfo) topInfo.textContent = infoText;
+  if (bottomInfo) bottomInfo.textContent = infoText;
+
+  const controlsHtml = buildPaginationButtons(currentPage, totalPages);
+  const topControls = document.getElementById("paginationTopControls");
+  const bottomControls = document.getElementById("paginationBottomControls");
+  if (topControls) topControls.innerHTML = controlsHtml;
+  if (bottomControls) bottomControls.innerHTML = controlsHtml;
+}
+
+function buildPaginationButtons(page, totalPages) {
+  if (totalPages <= 1) return "";
+
+  let html = `<div class="pagination-btn-group">`;
+  
+  // Previous button
+  const prevDisabled = page <= 1 ? "disabled" : "";
+  html += `<button class="page-btn page-nav-btn" ${prevDisabled} onclick="goToPage(${page - 1})">‹ Eelmine</button>`;
+
+  // Number buttons
+  let pages = [];
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else {
+    pages.push(1);
+    if (page > 3) pages.push("...");
+    
+    let start = Math.max(2, page - 1);
+    let end = Math.min(totalPages - 1, page + 1);
+    for (let i = start; i <= end; i++) {
+      if (!pages.includes(i)) pages.push(i);
+    }
+    
+    if (page < totalPages - 2) pages.push("...");
+    if (!pages.includes(totalPages)) pages.push(totalPages);
+  }
+
+  pages.forEach(p => {
+    if (p === "...") {
+      html += `<span class="page-ellipsis">…</span>`;
+    } else {
+      const activeClass = p === page ? "active" : "";
+      html += `<button class="page-btn page-num-btn ${activeClass}" onclick="goToPage(${p})">${p}</button>`;
+    }
+  });
+
+  // Next button
+  const nextDisabled = page >= totalPages ? "disabled" : "";
+  html += `<button class="page-btn page-nav-btn" ${nextDisabled} onclick="goToPage(${page + 1})">Järgmine ›</button>`;
+  html += `</div>`;
+
+  return html;
+}
+
+function goToPage(page) {
+  currentPage = page;
+  renderList();
+  const contentPane = document.getElementById("contentPane");
+  if (contentPane) {
+    contentPane.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }
 
 function renderMarkers() {
