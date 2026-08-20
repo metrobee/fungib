@@ -94,3 +94,7 @@
 ## [INCIDENT-2026-08-20-CO-OBSERVER-LIST-WHITESPACE-SPLIT]
 - **Süsteem:** `seen` CLI
 - **Lahendus:** Lubatud tühikud koma järel kaasvaatlejate loetelus (`kv:aa, vl`). Välja antud `v1.2.6`.
+
+## [INCIDENT-2026-08-20-GENUS-LEVEL-OBSERVATIONS-SUPPORT]
+- **Süsteem:** `seen` CLI
+- **Täiendus:** Lisatud perekonna tasemel vaatluste tugi (`Ramaria sp.`, `ramaria`, `harik sp.`). Välja antud `v1.2.7`.
