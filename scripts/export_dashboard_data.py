@@ -47,7 +47,9 @@ def main():
     est_map = load_est_name_map()
 
     csv_meta = {}
+    csv_mtime = None
     if os.path.exists(CSV_PATH):
+        csv_mtime = datetime.datetime.fromtimestamp(os.path.getmtime(CSV_PATH), tz=datetime.timezone.utc).isoformat()
         with open(CSV_PATH, 'r', encoding='utf-8') as f:
             for r in csv.DictReader(f):
                 link = r.get('Veebilink', '').strip()
@@ -224,6 +226,7 @@ def main():
             "counties": sorted(list(county_set)),
             "observers": sorted(list(collectors_set)),
             "generated_at": now.isoformat(),
+            "co_data_updated_at": csv_mtime or now.isoformat(),
             "role_stats": {
                 "total": len(observations),
                 "primary": primary_count,
@@ -249,7 +252,7 @@ def main():
 
     obs_with_photos_count = sum(1 for o in observations if o["photos"])
     print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Fotodega vaatlusi kokku: {obs_with_photos_count} / {len(observations)}")
+    print(f"Kaasvaatluste andmete seis: {csv_mtime}")
 
 if __name__ == "__main__":
     main()

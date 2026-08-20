@@ -181,8 +181,23 @@ body {
 }
 
 .latest-obs-link:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--text-primary);
+  border-bottom-color: var(--accent-color);
+}
+
+.sync-co-freshness {
+  margin-left: auto;
+  font-size: 0.725rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.sync-co-freshness strong {
+  color: var(--text-primary);
 }
 
 .theme-toggle-btn {

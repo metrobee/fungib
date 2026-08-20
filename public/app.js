@@ -138,6 +138,28 @@ function populateFilters(meta) {
   }
 }
 
+function formatTimeAgo(isoString) {
+  if (!isoString) return "-";
+  try {
+    const date = new Date(isoString);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffMins = Math.floor(diffMs / (1000 * 60));
+    const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+    const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+    if (diffMins < 5) return "Värske (äsja uuendatud)";
+    if (diffMins < 60) return `${diffMins} min tagasi`;
+    if (diffHours < 24) return `${diffHours} h tagasi`;
+    if (diffDays === 1) return "Eile";
+    if (diffDays < 30) return `${diffDays} p tagasi`;
+    const diffMonths = Math.floor(diffDays / 30);
+    return `${diffMonths} k tagasi (${date.toISOString().split("T")[0]})`;
+  } catch (e) {
+    return "-";
+  }
+}
+
 function updateStats(meta) {
   document.getElementById("statTotalObs").textContent = meta.total_observations || observations.length;
   document.getElementById("statUniqueTaxa").textContent = meta.unique_taxa || "-";
@@ -147,6 +169,12 @@ function updateStats(meta) {
     document.getElementById("statWeek").textContent = meta.time_stats.this_week;
     document.getElementById("statMonth").textContent = meta.time_stats.this_month;
     document.getElementById("statYear").textContent = meta.time_stats.this_year;
+  }
+
+  const coFreshness = document.getElementById("coFreshnessText");
+  if (coFreshness && meta.co_data_updated_at) {
+    coFreshness.textContent = formatTimeAgo(meta.co_data_updated_at);
+    coFreshness.title = `Viimane PlutoF eksport: ${meta.co_data_updated_at.split("T")[0]}`;
   }
 
   if (meta.latest_observation) {
