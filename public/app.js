@@ -222,6 +222,33 @@ function populateFilters(meta) {
   }
 }
 
+const EST_MONTHS = [
+  "jaanuar", "veebruar", "märts", "aprill", "mai", "juuni",
+  "juuli", "august", "september", "oktoober", "november", "detsember"
+];
+
+function formatDateEstonian(dateStr) {
+  if (!dateStr) return "-";
+  const match = String(dateStr).match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+  if (match) {
+    const year = match[1];
+    const monthIdx = parseInt(match[2], 10) - 1;
+    const day = parseInt(match[3], 10);
+    if (monthIdx >= 0 && monthIdx < 12) {
+      return `${day}. ${EST_MONTHS[monthIdx]} ${year}`;
+    }
+  }
+  const ymMatch = String(dateStr).match(/^(\d{4})-(\d{1,2})$/);
+  if (ymMatch) {
+    const year = ymMatch[1];
+    const monthIdx = parseInt(ymMatch[2], 10) - 1;
+    if (monthIdx >= 0 && monthIdx < 12) {
+      return `${EST_MONTHS[monthIdx]} ${year}`;
+    }
+  }
+  return dateStr;
+}
+
 function formatTimeAgo(isoString) {
   if (!isoString) return "-";
   try {
@@ -282,7 +309,7 @@ function updateStats(meta) {
     const link = document.getElementById("latestObsLink");
     if (link) {
       const name = lo.est_name ? `${lo.est_name} (${lo.taxon})` : lo.taxon;
-      link.textContent = `${name} • ${lo.date || ""} • ${lo.locality || lo.county || ""} (PlutoF ID: #${lo.id}) →`;
+      link.textContent = `${name} • ${formatDateEstonian(lo.date) || ""} • ${lo.locality || lo.county || ""} (PlutoF ID: #${lo.id}) →`;
       link.href = lo.url || `https://app.plutof.ut.ee/observation/view/${lo.id}`;
     }
   }
@@ -430,7 +457,7 @@ function renderList() {
         ${estTitle}
         ${sciTitle}
         <div class="obs-meta-row">
-          <span>${o.date || "-"}</span>
+          <span>${formatDateEstonian(o.date) || "-"}</span>
           <span>${escapeHtml(o.locality || o.county || "")}</span>
         </div>
         <div class="obs-badges">
@@ -547,7 +574,7 @@ function renderMarkers() {
         const title = o.est_name ? `<strong>${escapeHtml(o.est_name)}</strong><br><em>${escapeHtml(o.taxon)}</em>` : `<strong>${escapeHtml(o.taxon)}</strong>`;
         const roleInfo = o.is_co_observer ? `<br><span style="color:#e0e0e0;font-size:0.7rem;">[KAASVAATLEJA: ${escapeHtml(o.primary_observer)}]</span>` : "";
         const statusText = o.is_verified ? `[Kinnitatud]` : `[OOTEL]`;
-        marker.bindTooltip(`${title}${roleInfo}<br>${o.date || ""} • ${statusText}`, {
+        marker.bindTooltip(`${title}${roleInfo}<br>${formatDateEstonian(o.date) || ""} • ${statusText}`, {
           direction: "top",
           offset: [0, -6]
         });
@@ -583,7 +610,7 @@ function openModal(o) {
     : "Ootel (Kinnitamata)";
   document.getElementById("modalVerified").textContent = statusText;
 
-  document.getElementById("modalDate").textContent = o.date || "-";
+  document.getElementById("modalDate").textContent = formatDateEstonian(o.date) || "-";
   document.getElementById("modalLocality").textContent = `${o.locality || "-"}, ${o.county || ""}`;
   document.getElementById("modalCoords").textContent = (o.latitude && o.longitude) ? `${parseFloat(o.latitude).toFixed(5)}, ${parseFloat(o.longitude).toFixed(5)}` : "-";
   document.getElementById("modalSubstrate").textContent = o.substrate || "-";
