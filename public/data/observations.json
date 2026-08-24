@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "total_observations": 1437,
-    "unique_taxa": 739,
+    "total_observations": 1442,
+    "unique_taxa": 742,
     "counties": [
       "Barcelonès",
       "Harju maakond",
@@ -28,22 +28,22 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-08-24T14:16:41.780256+00:00",
+    "generated_at": "2026-08-24T19:40:08.030360+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
-      "total": 1437,
-      "primary": 878,
+      "total": 1442,
+      "primary": 883,
       "co_observer": 559
     },
     "verification_stats": {
       "verified": 586,
-      "pending": 851
+      "pending": 856
     },
     "time_stats": {
-      "today": 1,
-      "this_week": 1,
-      "this_month": 757,
-      "this_year": 767
+      "today": 6,
+      "this_week": 6,
+      "this_month": 762,
+      "this_year": 772
     },
     "user_profile": {
       "name": "Boris Meldre",
@@ -54,19 +54,179 @@
       "person_id": "83911"
     },
     "latest_observation": {
-      "id": "8321440",
-      "taxon": "Pleurotus pulmonarius (Fr.) Quél.",
-      "est_name": "Kopsservik",
+      "id": "8321556",
+      "taxon": "Gyrodon lividus (Bull.) Fr.",
+      "est_name": "",
       "date": "2026-08-24",
-      "locality": "Ähijärve küla",
+      "locality": "Mähkli küla",
       "county": "Võru maakond",
-      "url": "https://app.plutof.ut.ee/observation/view/8321440",
-      "created_at": "2026-08-24T14:16:41.529500+00:00",
+      "url": "https://app.plutof.ut.ee/observation/view/8321556",
+      "created_at": "2026-08-24T19:37:15.758402+00:00",
       "is_co_observer": false,
       "primary_observer": "Boris Meldre"
     }
   },
   "observations": [
+    {
+      "id": "8321556",
+      "taxon": "Gyrodon lividus (Bull.) Fr.",
+      "est_name": "",
+      "date": "2026-08-24",
+      "latitude": 57.71595278,
+      "longitude": 26.49078611,
+      "altitude": 104.8,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321556",
+      "created_at": "2026-08-24T19:37:15.758402+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ff207321-7b9a-4ecc-98ce-27c9382d1fd0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ff207321-7b9a-4ecc-98ce-27c9382d1fd0.jpg",
+          "filename": "PXL_20260824_100842828.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321555",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "est_name": "Roostetorik",
+      "date": "2026-08-24",
+      "latitude": 57.71715,
+      "longitude": 26.49063056,
+      "altitude": 119.0,
+      "locality": "Mähkli küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "Picea abies (L.) H.Karst.",
+      "substrate_type": "Lamatüvi",
+      "abundance": "Üksikud",
+      "remarks": "Ohtrus: Üksikud | Substraat: Picea abies (L.) H.Karst., Lamatüvi",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321555",
+      "created_at": "2026-08-24T19:35:49.678870+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/064edffd-726a-442d-beb3-d747255220e0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/064edffd-726a-442d-beb3-d747255220e0.jpg",
+          "filename": "PXL_20260824_105223459.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321554",
+      "taxon": "Cordyceps militaris (L.) Link",
+      "est_name": "Harilik kedristõlvik",
+      "date": "2026-08-24",
+      "latitude": 57.71295833,
+      "longitude": 26.50615556,
+      "altitude": null,
+      "locality": "Ähijärve küla",
+      "county": "Võru maakond",
+      "commune": "Antsla vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321554",
+      "created_at": "2026-08-24T19:34:55.912954+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/798a146e-bc79-416f-a9c4-5356ddbd641a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/798a146e-bc79-416f-a9c4-5356ddbd641a.jpg",
+          "filename": "PXL_20260824_111836152.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321553",
+      "taxon": "Aspropaxillus giganteus (Sowerby) Kühner & Maire",
+      "est_name": "Hiid-lehtervahelik",
+      "date": "2026-08-24",
+      "latitude": 57.74104444,
+      "longitude": 26.80425,
+      "altitude": 118.0,
+      "locality": "Nursi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321553",
+      "created_at": "2026-08-24T19:29:35.947178+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9450d114-db84-4118-a672-35d5a3df2e5f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9450d114-db84-4118-a672-35d5a3df2e5f.jpg",
+          "filename": "PXL_20260824_153543139.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321552",
+      "taxon": "Gloeophyllum sepiarium (Wulfen) P. Karst.",
+      "est_name": "Pruun kõrbik mustjas kõrbik",
+      "date": "2026-08-24",
+      "latitude": 57.74773889,
+      "longitude": 26.79128333,
+      "altitude": 117.5,
+      "locality": "Sikalaanõ küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321552",
+      "created_at": "2026-08-24T19:28:24.125959+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ff0d04a9-ea67-4303-8fe8-f555f67122b6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ff0d04a9-ea67-4303-8fe8-f555f67122b6.jpg",
+          "filename": "PXL_20260824_155921302.jpg"
+        }
+      ]
+    },
     {
       "id": "8321440",
       "taxon": "Pleurotus pulmonarius (Fr.) Quél.",
@@ -44985,7 +45145,7 @@
     {
       "id": "4612619",
       "taxon": "Cordyceps militaris",
-      "est_name": "",
+      "est_name": "Harilik kedristõlvik",
       "date": "2021-08-16",
       "latitude": 57.63418762,
       "longitude": 26.77114839,
