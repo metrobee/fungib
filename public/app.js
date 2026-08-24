@@ -161,6 +161,14 @@ async function loadData() {
 
     populateFilters(data.metadata);
     updateStats(data.metadata);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const qParam = urlParams.get("q") || urlParams.get("search");
+    if (qParam) {
+      const searchInput = document.getElementById("searchInput");
+      if (searchInput) searchInput.value = qParam;
+    }
+
     applyFilters();
   } catch (err) {
     console.error("Viga andmete laadimisel:", err);
