@@ -68,7 +68,8 @@ def main():
     SELECT id, taxon_name, date_time, latitude, longitude, altitude,
            locality, county, commune, substrate, substrate_type,
            abundance, remarks, url, created_at,
-           is_co_observer, collectors, primary_observer, determiner, verified_by, habitat
+           is_co_observer, collectors, primary_observer, determiner, verified_by, habitat,
+           COALESCE(project_id, ''), COALESCE(project_name, '')
     FROM observations
     ORDER BY created_at DESC, date_time DESC, id DESC;
     """)
@@ -78,6 +79,7 @@ def main():
     taxa_set = set()
     county_set = set()
     collectors_set = set()
+    projects_dict = {}
 
     now = datetime.datetime.now(datetime.timezone.utc)
     today_str = now.strftime('%Y-%m-%d')
@@ -117,6 +119,8 @@ def main():
         determiner = r[18] or ""
         verified_by = r[19] or ""
         habitat = r[20] or ""
+        proj_id = str(r[21] or "").strip()
+        proj_name = str(r[22] or "").strip()
 
         is_verified = bool(verified_by)
         if is_verified:
@@ -169,6 +173,11 @@ def main():
         if primary_observer:
             collectors_set.add(primary_observer)
 
+        if proj_id:
+            if proj_id not in projects_dict:
+                projects_dict[proj_id] = {"id": proj_id, "name": proj_name or f"Projekt {proj_id}", "count": 0}
+            projects_dict[proj_id]["count"] += 1
+
         obs_item = {
             "id": obs_id,
             "taxon": taxon,
@@ -191,6 +200,8 @@ def main():
             "determiner": determiner or extra.get("determiner", ""),
             "verified_by": verified_by,
             "habitat": habitat,
+            "project_id": proj_id,
+            "project_name": proj_name,
             "url": url,
             "created_at": created_at,
             "photos": photos
@@ -242,6 +253,7 @@ def main():
                 "this_month": added_this_month,
                 "this_year": added_this_year
             },
+            "projects": list(projects_dict.values()),
             "user_profile": {
                 "name": "Boris Meldre",
                 "first_name": "Boris",

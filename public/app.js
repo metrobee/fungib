@@ -169,6 +169,12 @@ async function loadData() {
       if (searchInput) searchInput.value = qParam;
     }
 
+    const projParam = urlParams.get("project") || urlParams.get("proj");
+    if (projParam) {
+      const projSelect = document.getElementById("projectFilter");
+      if (projSelect) projSelect.value = projParam;
+    }
+
     applyFilters();
   } catch (err) {
     console.error("Viga andmete laadimisel:", err);
@@ -178,6 +184,25 @@ async function loadData() {
 }
 
 function populateFilters(meta) {
+  // Project filter
+  const projSelect = document.getElementById("projectFilter");
+  if (projSelect) {
+    const unassignedCount = observations.filter(o => !o.project_id).length;
+    const totalCount = observations.length;
+    const currentVal = projSelect.value || "none";
+
+    let optionsHtml = `<option value="none" ${currentVal === "none" ? "selected" : ""}>Projektita vaatlused (${unassignedCount})</option>`;
+    optionsHtml += `<option value="all" ${currentVal === "all" ? "selected" : ""}>Kõik vaatlused (${totalCount})</option>`;
+
+    if (meta && meta.projects && meta.projects.length > 0) {
+      meta.projects.forEach(p => {
+        const isSel = currentVal === String(p.id) ? "selected" : "";
+        optionsHtml += `<option value="${p.id}" ${isSel}>${escapeHtml(p.name)} (${p.count})</option>`;
+      });
+    }
+    projSelect.innerHTML = optionsHtml;
+  }
+
   // Role counts
   if (meta.role_stats) {
     document.getElementById("roleCntAll").textContent = meta.role_stats.total;
@@ -334,12 +359,20 @@ function setRole(role) {
 function applyFilters() {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
   const sort = document.getElementById("sortOrder").value;
+  const project = document.getElementById("projectFilter") ? document.getElementById("projectFilter").value : "none";
   const status = document.getElementById("statusFilter").value;
   const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
   const sub = document.getElementById("substrateFilter").value;
 
   filteredObs = observations.filter(o => {
+    // Project filter
+    if (project === "none") {
+      if (o.project_id) return false;
+    } else if (project !== "all" && project !== "") {
+      if (String(o.project_id) !== String(project)) return false;
+    }
+
     // Role filter
     if (activeRole === "primary" && o.is_co_observer) return false;
     if (activeRole === "co" && !o.is_co_observer) return false;
@@ -359,6 +392,8 @@ function applyFilters() {
       (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
       (o.locality && o.locality.toLowerCase().includes(q)) ||
       (o.county && o.county.toLowerCase().includes(q)) ||
+      (o.project_name && o.project_name.toLowerCase().includes(q)) ||
+      (o.project_id && o.project_id.includes(q)) ||
       (o.substrate && o.substrate.toLowerCase().includes(q)) ||
       (o.substrate_type && o.substrate_type.toLowerCase().includes(q)) ||
       (o.id && o.id.includes(q));
@@ -390,7 +425,8 @@ function applyFilters() {
   const primCount = filteredObs.filter(o => !o.is_co_observer).length;
   const coCount = filteredObs.filter(o => o.is_co_observer).length;
 
-  document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust)`;
+  const projLabel = project === "none" ? "isiklikku (projektita)" : (project === "all" ? "kõikidest" : "projekti");
+  document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust • ${projLabel})`;
 
   currentPage = 1;
   renderList();
@@ -432,6 +468,9 @@ function renderList() {
     }
 
     let topBadges = "";
+    if (o.project_name || o.project_id) {
+      topBadges += `<span class="badge badge-project-tag">${escapeHtml(o.project_name || 'Projekt ' + o.project_id)}</span>`;
+    }
     if (o.is_co_observer) {
       topBadges += `<span class="badge badge-co-highlight">KAASVAATLEJA</span>`;
     }
@@ -648,6 +687,17 @@ function openModal(o) {
   document.getElementById("modalCoords").textContent = (o.latitude && o.longitude) ? `${parseFloat(o.latitude).toFixed(5)}, ${parseFloat(o.longitude).toFixed(5)}` : "-";
   document.getElementById("modalSubstrate").textContent = o.substrate || "-";
   document.getElementById("modalSubstrateType").textContent = o.substrate_type || "-";
+
+  const modalProjBlock = document.getElementById("modalProjectBlock");
+  if (modalProjBlock) {
+    if (o.project_id) {
+      modalProjBlock.style.display = "block";
+      document.getElementById("modalProject").innerHTML = `<a href="https://app.plutof.ut.ee/study/view/${escapeHtml(o.project_id)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent-primary);text-decoration:underline;">${escapeHtml(o.project_name || 'Projekt ' + o.project_id)} (ID: #${escapeHtml(o.project_id)}) ↗</a>`;
+    } else {
+      modalProjBlock.style.display = "none";
+    }
+  }
+
   document.getElementById("modalDeterminer").textContent = o.determiner || "-";
   document.getElementById("modalRemarks").textContent = o.remarks || "-";
   
@@ -673,6 +723,8 @@ function closeModal() {
 function initEventListeners() {
   document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
   document.getElementById("searchInput").addEventListener("input", applyFilters);
+  const projSelect = document.getElementById("projectFilter");
+  if (projSelect) projSelect.addEventListener("change", applyFilters);
   document.getElementById("sortOrder").addEventListener("change", applyFilters);
   document.getElementById("statusFilter").addEventListener("change", applyFilters);
   document.getElementById("observerFilter").addEventListener("change", applyFilters);
