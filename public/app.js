@@ -434,6 +434,26 @@ function renderList() {
     let badgesHtml = "";
     if (o.is_co_observer && o.primary_observer) {
       badgesHtml += `<span class="badge badge-co-author">Autor: ${escapeHtml(o.primary_observer)}</span>`;
+      const otherCo = (o.collectors || "")
+        .split(",")
+        .map(s => s.trim())
+        .filter(s => s && s.toLowerCase() !== "boris meldre" && s.toLowerCase() !== (o.primary_observer || "").toLowerCase());
+      if (otherCo.length > 0) {
+        const otherLabel = otherCo.length > 1 ? "Kaasvaatlejad" : "Kaasvaatleja";
+        badgesHtml += `<span class="badge badge-co-observers">${otherLabel}: ${escapeHtml(otherCo.join(", "))}</span>`;
+      }
+    } else {
+      const coObservers = (o.collectors || "")
+        .split(",")
+        .map(s => s.trim())
+        .filter(s => s && s.toLowerCase() !== "boris meldre");
+      if (coObservers.length > 0) {
+        const coLabel = coObservers.length > 1 ? "Kaasvaatlejad" : "Kaasvaatleja";
+        badgesHtml += `<span class="badge badge-co-observers">${coLabel}: ${escapeHtml(coObservers.join(", "))}</span>`;
+      }
+    }
+    if (o.determiner && o.determiner.toLowerCase() !== "boris meldre" && (!o.is_co_observer || o.determiner.toLowerCase() !== (o.primary_observer || "").toLowerCase())) {
+      badgesHtml += `<span class="badge badge-determiner">Määraja: ${escapeHtml(o.determiner)}</span>`;
     }
     if (o.is_verified) {
       const vText = o.verified_by ? `Kinnitatud (${escapeHtml(o.verified_by)})` : "Kinnitatud";
@@ -600,9 +620,14 @@ function openModal(o) {
   const modal = document.getElementById("obsModal");
   document.getElementById("modalTitle").textContent = o.est_name ? `${o.est_name} (${o.taxon})` : o.taxon;
   
+  const coObservers = (o.collectors || "")
+    .split(",")
+    .map(s => s.trim())
+    .filter(s => s && s.toLowerCase() !== "boris meldre");
+
   const roleText = o.is_co_observer 
     ? `Kaasvaatleja (Peavaatleja: ${o.primary_observer} | Vaatlejad: ${o.collectors})` 
-    : `Peavaatleja (Boris Meldre)`;
+    : (coObservers.length > 0 ? `Peavaatleja (Boris Meldre | Kaasvaatlejad: ${coObservers.join(", ")})` : `Peavaatleja (Boris Meldre)`);
   document.getElementById("modalRole").textContent = roleText;
 
   const statusText = o.is_verified 

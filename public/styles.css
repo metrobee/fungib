@@ -808,6 +808,20 @@ html, body {
   font-weight: 500;
 }
 
+.badge-co-observers {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.badge-determiner {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 .badge-verified {
   background-color: var(--accent-color);
   color: var(--accent-invert);
