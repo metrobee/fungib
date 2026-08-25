@@ -69,7 +69,8 @@ def main():
            locality, county, commune, substrate, substrate_type,
            abundance, remarks, url, created_at,
            is_co_observer, collectors, primary_observer, determiner, verified_by, habitat,
-           COALESCE(project_id, ''), COALESCE(project_name, '')
+           COALESCE(project_id, ''), COALESCE(project_name, ''),
+           COALESCE(vernacular_name, '')
     FROM observations
     ORDER BY created_at DESC, date_time DESC, id DESC;
     """)
@@ -121,6 +122,7 @@ def main():
         habitat = r[20] or ""
         proj_id = str(r[21] or "").strip()
         proj_name = str(r[22] or "").strip()
+        vernacular_db = str(r[23] or "").strip()
 
         is_verified = bool(verified_by)
         if is_verified:
@@ -164,7 +166,7 @@ def main():
             photos.append({"url": s3_url, "thumbnail": s3_url, "filename": os.path.basename(s3_url)})
 
         extra = csv_meta.get(obs_id, {})
-        est_name = find_est_name(taxon, est_map)
+        est_name = vernacular_db or find_est_name(taxon, est_map)
 
         if taxon:
             taxa_set.add(taxon)
@@ -210,11 +212,11 @@ def main():
         observations.append(obs_item)
 
     # Viimati sisestatud vaatlus
-    c.execute("SELECT id, taxon_name, date_time, locality, county, url, created_at, is_co_observer, primary_observer FROM observations ORDER BY created_at DESC, id DESC LIMIT 1;")
+    c.execute("SELECT id, taxon_name, date_time, locality, county, url, created_at, is_co_observer, primary_observer, COALESCE(vernacular_name, '') FROM observations ORDER BY created_at DESC, id DESC LIMIT 1;")
     last_r = c.fetchone()
     latest_obs = None
     if last_r:
-        last_est = find_est_name(last_r[1], est_map)
+        last_est = (last_r[9] or "").strip() or find_est_name(last_r[1], est_map)
         latest_obs = {
             "id": str(last_r[0]),
             "taxon": last_r[1],
