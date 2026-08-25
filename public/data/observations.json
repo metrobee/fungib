@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "total_observations": 1504,
-    "unique_taxa": 767,
+    "total_observations": 1507,
+    "unique_taxa": 769,
     "counties": [
       "Barcelonès",
       "Harju maakond",
@@ -28,22 +28,22 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-08-25T07:28:53.407559+00:00",
+    "generated_at": "2026-08-25T07:37:29.857650+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
-      "total": 1504,
-      "primary": 945,
+      "total": 1507,
+      "primary": 948,
       "co_observer": 559
     },
     "verification_stats": {
       "verified": 586,
-      "pending": 918
+      "pending": 921
     },
     "time_stats": {
-      "today": 3,
-      "this_week": 68,
-      "this_month": 824,
-      "this_year": 834
+      "today": 6,
+      "this_week": 71,
+      "this_month": 827,
+      "this_year": 837
     },
     "projects": [
       {
@@ -61,19 +61,126 @@
       "person_id": "83911"
     },
     "latest_observation": {
-      "id": "8321800",
-      "taxon": "Neckera pennata Hedw.",
-      "est_name": "",
+      "id": "8321811",
+      "taxon": "Russula consobrina (Fr.) Fr.",
+      "est_name": "hõimpilvik",
       "date": "2026-08-01",
       "locality": "Haanja küla",
       "county": "Võru maakond",
-      "url": "https://app.plutof.ut.ee/observation/view/8321800",
-      "created_at": "2026-08-25T07:26:40.959423+00:00",
+      "url": "https://app.plutof.ut.ee/observation/view/8321811",
+      "created_at": "2026-08-25T07:36:45.109629+00:00",
       "is_co_observer": false,
       "primary_observer": "Boris Meldre"
     }
   },
   "observations": [
+    {
+      "id": "8321811",
+      "taxon": "Russula consobrina (Fr.) Fr.",
+      "est_name": "hõimpilvik",
+      "date": "2026-08-01",
+      "latitude": 57.71961667,
+      "longitude": 27.0356,
+      "altitude": 266.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321811",
+      "created_at": "2026-08-25T07:36:45.109629+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0eb7d38f-70a4-49ee-90a7-be061667415e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0eb7d38f-70a4-49ee-90a7-be061667415e.jpg",
+          "filename": "PXL_20260801_135221276.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321808",
+      "taxon": "Pluteus Fr.",
+      "est_name": "napsik",
+      "date": "2023-09-30",
+      "latitude": 57.77256111,
+      "longitude": 27.362475,
+      "altitude": 117.2,
+      "locality": "Tellaste küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321808",
+      "created_at": "2026-08-25T07:30:57.997609+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bf9a9829-4a64-444d-9a4e-799558243c12.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bf9a9829-4a64-444d-9a4e-799558243c12.jpg",
+          "filename": "592191BE-8069-4550-BCA4-BD774310FBF7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321801",
+      "taxon": "Cortinarius (Pers.) Gray",
+      "est_name": "vöödik",
+      "date": "2023-10-01",
+      "latitude": 57.853725,
+      "longitude": 26.90389167,
+      "altitude": 86.4,
+      "locality": "Vagula küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321801",
+      "created_at": "2026-08-25T07:29:24.171211+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/45fc2d45-9e88-4d12-9d26-e63fbaf3a98d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/45fc2d45-9e88-4d12-9d26-e63fbaf3a98d.jpg",
+          "filename": "19C81CD8-831A-4DAF-B8FD-4F23EE5F2B5F_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/aac3f5f4-d5b1-4f6d-b1cf-965a20e66aae.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/aac3f5f4-d5b1-4f6d-b1cf-965a20e66aae.jpg",
+          "filename": "6AC0F171-977B-4CD5-A693-8978544F3CDA_1_105_c.jpeg"
+        }
+      ]
+    },
     {
       "id": "8321800",
       "taxon": "Neckera pennata Hedw.",
