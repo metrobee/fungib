@@ -181,6 +181,7 @@ async function loadData() {
       if (redSelect) redSelect.value = redParam;
     }
 
+    updateSearchClearBtn();
     applyFilters();
   } catch (err) {
     console.error("Viga andmete laadimisel:", err);
@@ -850,9 +851,49 @@ function closeModal() {
   document.getElementById("obsModal").classList.remove("open");
 }
 
+function updateSearchClearBtn() {
+  const searchInput = document.getElementById("searchInput");
+  const searchClearBtn = document.getElementById("searchClearBtn");
+  if (searchClearBtn && searchInput) {
+    searchClearBtn.style.display = searchInput.value.trim().length > 0 ? "flex" : "none";
+  }
+}
+
 function initEventListeners() {
   document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
-  document.getElementById("searchInput").addEventListener("input", applyFilters);
+  
+  const searchInput = document.getElementById("searchInput");
+  const searchClearBtn = document.getElementById("searchClearBtn");
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      updateSearchClearBtn();
+      applyFilters();
+    });
+
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        if (searchInput.value) {
+          searchInput.value = "";
+          updateSearchClearBtn();
+          applyFilters();
+        }
+        searchInput.blur();
+      }
+    });
+  }
+
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener("click", () => {
+      if (searchInput) {
+        searchInput.value = "";
+        updateSearchClearBtn();
+        searchInput.focus();
+        applyFilters();
+      }
+    });
+  }
+
   const projSelect = document.getElementById("projectFilter");
   if (projSelect) projSelect.addEventListener("change", applyFilters);
   const redSelect = document.getElementById("redListFilter");
