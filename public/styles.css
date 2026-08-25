@@ -848,6 +848,50 @@ html, body {
   letter-spacing: 0.03em;
 }
 
+/* Vernacular Names Display in Modal */
+.modal-vernacular-block {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 12px;
+}
+
+.vernacular-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.vernacular-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+}
+
+.vernacular-pill.is-pref {
+  border-color: var(--accent-color);
+  background-color: var(--bg-surface);
+}
+
+.vernacular-pill .lang-label {
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-right: 4px;
+  border-right: 1px solid var(--border-color);
+}
+
+.vernacular-pill .name-label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
 /* Modal Drawer View */
 .modal-backdrop {
   position: fixed;

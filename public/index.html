@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLUTOFF — Mycology Observation Archive</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -208,6 +208,10 @@
             <div class="detail-label">Määraja</div>
             <div id="modalDeterminer" class="detail-value">-</div>
           </div>
+          <div class="detail-block modal-vernacular-block" id="modalVernacularBlock" style="display: none; grid-column: 1 / -1;">
+            <div class="detail-label">Tavanimetused (elurikkus.ee / PlutoF)</div>
+            <div id="modalVernacularList" class="vernacular-list">-</div>
+          </div>
         </div>
 
         <div class="detail-block" style="border-top: 1px solid var(--border-subtle); padding-top: 12px;">
@@ -230,6 +234,6 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>

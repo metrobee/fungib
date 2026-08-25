@@ -65,14 +65,16 @@ def main():
                     }
 
     c.execute("""
-    SELECT id, taxon_name, date_time, latitude, longitude, altitude,
-           locality, county, commune, substrate, substrate_type,
-           abundance, remarks, url, created_at,
-           is_co_observer, collectors, primary_observer, determiner, verified_by, habitat,
-           COALESCE(project_id, ''), COALESCE(project_name, ''),
-           COALESCE(vernacular_name, '')
-    FROM observations
-    ORDER BY created_at DESC, date_time DESC, id DESC;
+    SELECT o.id, o.taxon_name, o.date_time, o.latitude, o.longitude, o.altitude,
+           o.locality, o.county, o.commune, o.substrate, o.substrate_type,
+           o.abundance, o.remarks, o.url, o.created_at,
+           o.is_co_observer, o.collectors, o.primary_observer, o.determiner, o.verified_by, o.habitat,
+           COALESCE(o.project_id, ''), COALESCE(o.project_name, ''),
+           COALESCE(o.vernacular_name, ''), COALESCE(o.taxon_id, ''),
+           COALESCE(tv.vernacular_names_json, '[]'), COALESCE(tv.est_names, ''), COALESCE(tv.all_names_search, '')
+    FROM observations o
+    LEFT JOIN taxa_vernacular_names tv ON o.taxon_id = tv.taxon_id
+    ORDER BY o.created_at DESC, o.date_time DESC, o.id DESC;
     """)
     rows = c.fetchall()
     
@@ -123,6 +125,15 @@ def main():
         proj_id = str(r[21] or "").strip()
         proj_name = str(r[22] or "").strip()
         vernacular_db = str(r[23] or "").strip()
+        taxon_id = str(r[24] or "").strip()
+        v_json_str = r[25] or "[]"
+        tv_est_names = str(r[26] or "").strip()
+        all_names_search = str(r[27] or "").strip()
+
+        try:
+            vernacular_list = json.loads(v_json_str)
+        except Exception:
+            vernacular_list = []
 
         is_verified = bool(verified_by)
         if is_verified:
@@ -165,8 +176,10 @@ def main():
             s3_url = csv_meta[obs_id]["image_url"]
             photos.append({"url": s3_url, "thumbnail": s3_url, "filename": os.path.basename(s3_url)})
 
-        extra = csv_meta.get(obs_id, {})
-        est_name = vernacular_db or find_est_name(taxon, est_map)
+        est_name = tv_est_names or vernacular_db or find_est_name(taxon, est_map)
+
+        if not all_names_search:
+            all_names_search = f"{est_name} {taxon}"
 
         if taxon:
             taxa_set.add(taxon)
@@ -183,24 +196,27 @@ def main():
         obs_item = {
             "id": obs_id,
             "taxon": taxon,
+            "taxon_id": taxon_id,
             "est_name": est_name,
+            "vernacular_names": vernacular_list,
+            "all_names_search": all_names_search,
             "date": date_str,
             "latitude": lat,
             "longitude": lon,
             "altitude": alt,
-            "locality": locality or extra.get("locality_csv", ""),
+            "locality": locality,
             "county": county,
             "commune": commune,
             "substrate": substrate,
             "substrate_type": substrate_type,
             "abundance": abundance,
-            "remarks": remarks or extra.get("notes", ""),
+            "remarks": remarks,
             "is_co_observer": is_co,
-            "is_verified": is_verified,
-            "collectors": collectors or ("Boris Meldre" if not is_co else f"{primary_observer}, Boris Meldre"),
+            "collectors": collectors,
             "primary_observer": primary_observer,
-            "determiner": determiner or extra.get("determiner", ""),
+            "determiner": determiner,
             "verified_by": verified_by,
+            "is_verified": is_verified,
             "habitat": habitat,
             "project_id": proj_id,
             "project_name": proj_name,

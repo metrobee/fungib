@@ -388,6 +388,7 @@ function applyFilters() {
     const matchQuery = !q || 
       (o.est_name && o.est_name.toLowerCase().includes(q)) ||
       (o.taxon && o.taxon.toLowerCase().includes(q)) ||
+      (o.all_names_search && o.all_names_search.toLowerCase().includes(q)) ||
       (o.collectors && o.collectors.toLowerCase().includes(q)) ||
       (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
       (o.locality && o.locality.toLowerCase().includes(q)) ||
@@ -695,6 +696,41 @@ function openModal(o) {
       document.getElementById("modalProject").innerHTML = `<a href="https://app.plutof.ut.ee/study/view/${escapeHtml(o.project_id)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent-primary);text-decoration:underline;">${escapeHtml(o.project_name || 'Projekt ' + o.project_id)} (ID: #${escapeHtml(o.project_id)}) ↗</a>`;
     } else {
       modalProjBlock.style.display = "none";
+    }
+  }
+
+  // Tavanimetused
+  const vBlock = document.getElementById("modalVernacularBlock");
+  const vList = document.getElementById("modalVernacularList");
+  if (vBlock && vList) {
+    if (o.vernacular_names && o.vernacular_names.length > 0) {
+      vBlock.style.display = "block";
+      let vHtml = `<div class="vernacular-tags">`;
+      o.vernacular_names.forEach(v => {
+        const lang = v.lang_name || v.language || "Muu keel";
+        const prefClass = v.is_preferred ? "is-pref" : "";
+        vHtml += `<div class="vernacular-pill ${prefClass}">
+          <span class="lang-label">${escapeHtml(lang)}</span>
+          <span class="name-label">${escapeHtml(v.name)}</span>
+        </div>`;
+      });
+      vHtml += `</div>`;
+      vList.innerHTML = vHtml;
+    } else if (o.est_name) {
+      vBlock.style.display = "block";
+      const names = o.est_name.split(",").map(s => s.trim()).filter(Boolean);
+      let vHtml = `<div class="vernacular-tags">`;
+      names.forEach(n => {
+        vHtml += `<div class="vernacular-pill is-pref">
+          <span class="lang-label">Eesti keel</span>
+          <span class="name-label">${escapeHtml(n)}</span>
+        </div>`;
+      });
+      vHtml += `</div>`;
+      vList.innerHTML = vHtml;
+    } else {
+      vBlock.style.display = "none";
+      vList.innerHTML = "-";
     }
   }
 
