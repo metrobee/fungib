@@ -175,6 +175,12 @@ async function loadData() {
       if (projSelect) projSelect.value = projParam;
     }
 
+    const redParam = urlParams.get("redlist") || urlParams.get("red");
+    if (redParam) {
+      const redSelect = document.getElementById("redListFilter");
+      if (redSelect) redSelect.value = redParam;
+    }
+
     applyFilters();
   } catch (err) {
     console.error("Viga andmete laadimisel:", err);
@@ -201,6 +207,24 @@ function populateFilters(meta) {
       });
     }
     projSelect.innerHTML = optionsHtml;
+  }
+
+  // Red List filter
+  const redSelect = document.getElementById("redListFilter");
+  if (redSelect && meta.red_list_stats) {
+    const rs = meta.red_list_stats;
+    const curVal = redSelect.value || "";
+    let optHtml = `<option value="" ${curVal === "" ? "selected" : ""}>Kõik liigid (Punane nimestik & tavalised)</option>`;
+    optHtml += `<option value="any" ${curVal === "any" ? "selected" : ""}>Ainult Punase nimestiku liigid (${rs.total_listed})</option>`;
+    if (rs.protected > 0) {
+      optHtml += `<option value="protected" ${curVal === "protected" ? "selected" : ""}>Ainult Kaitsealused liigid (${rs.protected})</option>`;
+    }
+    if (rs.CR > 0) optHtml += `<option value="CR" ${curVal === "CR" ? "selected" : ""}>CR — Kriitilises seisundis (${rs.CR})</option>`;
+    if (rs.EN > 0) optHtml += `<option value="EN" ${curVal === "EN" ? "selected" : ""}>EN — Väljasuremisohus (${rs.EN})</option>`;
+    if (rs.VU > 0) optHtml += `<option value="VU" ${curVal === "VU" ? "selected" : ""}>VU — Ohualdis (${rs.VU})</option>`;
+    if (rs.NT > 0) optHtml += `<option value="NT" ${curVal === "NT" ? "selected" : ""}>NT — Ohulähedane (${rs.NT})</option>`;
+    if (rs.DD > 0) optHtml += `<option value="DD" ${curVal === "DD" ? "selected" : ""}>DD — Puuduliku andmestikuga (${rs.DD})</option>`;
+    redSelect.innerHTML = optHtml;
   }
 
   // Role counts
@@ -360,6 +384,7 @@ function applyFilters() {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
   const sort = document.getElementById("sortOrder").value;
   const project = document.getElementById("projectFilter") ? document.getElementById("projectFilter").value : "none";
+  const redList = document.getElementById("redListFilter") ? document.getElementById("redListFilter").value : "";
   const status = document.getElementById("statusFilter").value;
   const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
@@ -371,6 +396,13 @@ function applyFilters() {
       if (o.project_id) return false;
     } else if (project !== "all" && project !== "") {
       if (String(o.project_id) !== String(project)) return false;
+    }
+
+    // Red list filter
+    if (redList === "any" && !o.red_list_status) return false;
+    if (redList === "protected" && !o.protection_category) return false;
+    if (redList && redList !== "any" && redList !== "protected") {
+      if (o.red_list_status !== redList) return false;
     }
 
     // Role filter
@@ -389,6 +421,9 @@ function applyFilters() {
       (o.est_name && o.est_name.toLowerCase().includes(q)) ||
       (o.taxon && o.taxon.toLowerCase().includes(q)) ||
       (o.all_names_search && o.all_names_search.toLowerCase().includes(q)) ||
+      (o.red_list_status && o.red_list_status.toLowerCase().includes(q)) ||
+      (o.red_list_label && o.red_list_label.toLowerCase().includes(q)) ||
+      (o.protection_category && o.protection_category.toLowerCase().includes(q)) ||
       (o.collectors && o.collectors.toLowerCase().includes(q)) ||
       (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
       (o.locality && o.locality.toLowerCase().includes(q)) ||
@@ -415,6 +450,15 @@ function applyFilters() {
       const aDate = a.date || "";
       const bDate = b.date || "";
       return bDate.localeCompare(aDate) || (parseInt(b.id) - parseInt(a.id));
+    } else if (sort === "red_list_asc") {
+      const scoreA = a.red_list_score !== undefined ? a.red_list_score : 99;
+      const scoreB = b.red_list_score !== undefined ? b.red_list_score : 99;
+      if (scoreA !== scoreB) {
+        return scoreA - scoreB;
+      }
+      const aCreated = a.created_at || a.date || "";
+      const bCreated = b.created_at || b.date || "";
+      return bCreated.localeCompare(aCreated) || (parseInt(b.id) - parseInt(a.id));
     } else if (sort === "name_asc") {
       const aName = a.est_name || a.taxon;
       const bName = b.est_name || b.taxon;
@@ -427,7 +471,8 @@ function applyFilters() {
   const coCount = filteredObs.filter(o => o.is_co_observer).length;
 
   const projLabel = project === "none" ? "isiklikku (projektita)" : (project === "all" ? "kõikidest" : "projekti");
-  document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust • ${projLabel})`;
+  const redLabel = redList ? ` • Punane nimestik: ${redList}` : "";
+  document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust • ${projLabel}${redLabel})`;
 
   currentPage = 1;
   renderList();
@@ -469,6 +514,14 @@ function renderList() {
     }
 
     let topBadges = "";
+    if (o.red_list_status) {
+      const code = o.red_list_status;
+      const label = (o.red_list_label || "").split("(")[1]?.replace(")", "") || code;
+      topBadges += `<span class="badge badge-redlist badge-${code.toLowerCase()}">${escapeHtml(code)} • ${escapeHtml(label)}</span>`;
+    }
+    if (o.protection_category) {
+      topBadges += `<span class="badge badge-protected">${escapeHtml(o.protection_category)}</span>`;
+    }
     if (o.project_name || o.project_id) {
       topBadges += `<span class="badge badge-project-tag">${escapeHtml(o.project_name || 'Projekt ' + o.project_id)}</span>`;
     }
@@ -699,6 +752,25 @@ function openModal(o) {
     }
   }
 
+  // Punane nimestik & kaitsekategooria
+  const modalRedBlock = document.getElementById("modalRedListBlock");
+  if (modalRedBlock) {
+    if (o.red_list_status || o.protection_category) {
+      modalRedBlock.style.display = "block";
+      let rlHtml = "";
+      if (o.red_list_status) {
+        const code = o.red_list_status;
+        rlHtml += `<span class="badge badge-redlist badge-${code.toLowerCase()}" style="font-size:0.75rem;padding:4px 8px;margin-right:6px;">${escapeHtml(o.red_list_label || code)}</span>`;
+      }
+      if (o.protection_category) {
+        rlHtml += `<span class="badge badge-protected" style="font-size:0.75rem;padding:4px 8px;">${escapeHtml(o.protection_category)}</span>`;
+      }
+      document.getElementById("modalRedList").innerHTML = rlHtml;
+    } else {
+      modalRedBlock.style.display = "none";
+    }
+  }
+
   // Tavanimetused
   const vBlock = document.getElementById("modalVernacularBlock");
   const vList = document.getElementById("modalVernacularList");
@@ -761,6 +833,8 @@ function initEventListeners() {
   document.getElementById("searchInput").addEventListener("input", applyFilters);
   const projSelect = document.getElementById("projectFilter");
   if (projSelect) projSelect.addEventListener("change", applyFilters);
+  const redSelect = document.getElementById("redListFilter");
+  if (redSelect) redSelect.addEventListener("change", applyFilters);
   document.getElementById("sortOrder").addEventListener("change", applyFilters);
   document.getElementById("statusFilter").addEventListener("change", applyFilters);
   document.getElementById("observerFilter").addEventListener("change", applyFilters);

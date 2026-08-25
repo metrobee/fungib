@@ -8,7 +8,51 @@ import datetime
 DB_PATH = '/Users/metrobee/GEMINI/data/plutof_vaatlused.db'
 CSV_PATH = '/Users/metrobee/GEMINI/data/plutof_full_export_latest.csv'
 SNIPPETS_PATH = os.path.expanduser('~/.clipsnippet_snippets.json')
+RED_LIST_PATH = '/Users/metrobee/GEMINI/data/eesti_punane_nimestik_seened.json'
 OUTPUT_JSON = '/Users/metrobee/Projects/fungib/public/data/observations.json'
+
+def load_red_list():
+    if os.path.exists(RED_LIST_PATH):
+        try:
+            with open(RED_LIST_PATH, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+RED_ORDER = {"CR": 1, "EN": 2, "VU": 3, "NT": 4, "DD": 5, "RE": 6}
+
+def find_red_list_info(taxon_name, est_name, red_dict):
+    if not red_dict:
+        return {"status": "", "label": "", "protection": "", "score": 99}
+    
+    t_clean = re.sub(r'\(.*?\)', '', taxon_name or '').strip().lower()
+    words = t_clean.split()
+    bin_name = f"{words[0]} {words[1]}" if len(words) >= 2 else t_clean
+    
+    v_clean = (est_name or '').strip().lower()
+    v_words = [v.strip() for v in v_clean.split(',') if v.strip()]
+    
+    info = red_dict.get(bin_name) or red_dict.get(t_clean)
+    if not info:
+        for vw in v_words:
+            if vw in red_dict:
+                info = red_dict[vw]
+                break
+
+    if info:
+        raw_status = info.get('punane_nimestik') or ''
+        code = raw_status.split()[0] if raw_status else ''
+        prot = info.get('kaitsekategooria') or ''
+        score = RED_ORDER.get(code, 50)
+        return {
+            "status": code,
+            "label": raw_status,
+            "protection": prot,
+            "score": score
+        }
+        
+    return {"status": "", "label": "", "protection": "", "score": 99}
 
 def load_est_name_map():
     est_map = {}
@@ -45,6 +89,7 @@ def main():
     c = conn.cursor()
 
     est_map = load_est_name_map()
+    red_dict = load_red_list()
 
     csv_meta = {}
     csv_mtime = None
@@ -83,6 +128,17 @@ def main():
     county_set = set()
     collectors_set = set()
     projects_dict = {}
+
+    red_stats = {
+        "total_listed": 0,
+        "CR": 0,
+        "EN": 0,
+        "VU": 0,
+        "NT": 0,
+        "DD": 0,
+        "RE": 0,
+        "protected": 0
+    }
 
     now = datetime.datetime.now(datetime.timezone.utc)
     today_str = now.strftime('%Y-%m-%d')
@@ -181,6 +237,15 @@ def main():
         if not all_names_search:
             all_names_search = f"{est_name} {taxon}"
 
+        # Punane nimestik ja kaitsekategooria
+        red_info = find_red_list_info(taxon, est_name, red_dict)
+        if red_info["status"]:
+            red_stats["total_listed"] += 1
+            if red_info["status"] in red_stats:
+                red_stats[red_info["status"]] += 1
+        if red_info["protection"]:
+            red_stats["protected"] += 1
+
         if taxon:
             taxa_set.add(taxon)
         if county:
@@ -200,6 +265,10 @@ def main():
             "est_name": est_name,
             "vernacular_names": vernacular_list,
             "all_names_search": all_names_search,
+            "red_list_status": red_info["status"],
+            "red_list_label": red_info["label"],
+            "protection_category": red_info["protection"],
+            "red_list_score": red_info["score"],
             "date": date_str,
             "latitude": lat,
             "longitude": lon,
@@ -265,6 +334,7 @@ def main():
                 "verified": verified_count,
                 "pending": pending_count
             },
+            "red_list_stats": red_stats,
             "time_stats": {
                 "today": added_today,
                 "this_week": added_this_week,

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLUTOFF — Mycology Observation Archive</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 
@@ -106,12 +106,23 @@
             <option value="none" selected>Projektita vaatlused (Isiklikud)</option>
             <option value="all">Kõik vaatlused (Projektiga ja ilma)</option>
           </select>
+          <select id="redListFilter" class="filter-select red-list-filter-select">
+            <option value="">Kõik liigid (Punane nimestik & tavalised)</option>
+            <option value="any">Ainult Punase nimestiku liigid</option>
+            <option value="protected">Ainult Kaitsealused liigid (I, II, III kat)</option>
+            <option value="CR">CR — Kriitilises seisundis</option>
+            <option value="EN">EN — Väljasuremisohus</option>
+            <option value="VU">VU — Ohualdis</option>
+            <option value="NT">NT — Ohulähedane</option>
+            <option value="DD">DD — Puuduliku andmestikuga</option>
+          </select>
         </div>
 
         <div class="filter-row">
           <select id="sortOrder" class="filter-select">
             <option value="created_desc">Sorteeri: Viimati lisatud (Uusimad)</option>
             <option value="date_desc">Sorteeri: Leiu kuupäev (Uusimad)</option>
+            <option value="red_list_asc">Sorteeri: Punane nimestik (Ohustatuimad ees: CR → EN → VU → NT)</option>
             <option value="name_asc">Sorteeri: Liiginimi (A-Z)</option>
           </select>
           <select id="statusFilter" class="filter-select">
@@ -208,6 +219,10 @@
             <div class="detail-label">Määraja</div>
             <div id="modalDeterminer" class="detail-value">-</div>
           </div>
+          <div class="detail-block" id="modalRedListBlock" style="display: none;">
+            <div class="detail-label">Punane nimestik & Kaitse</div>
+            <div id="modalRedList" class="detail-value">-</div>
+          </div>
           <div class="detail-block modal-vernacular-block" id="modalVernacularBlock" style="display: none; grid-column: 1 / -1;">
             <div class="detail-label">Tavanimetused (elurikkus.ee / PlutoF)</div>
             <div id="modalVernacularList" class="vernacular-list">-</div>
@@ -234,6 +249,6 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="app.js?v=9"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>

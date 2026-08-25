@@ -801,10 +801,64 @@ html, body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.project-filter-select {
+.project-filter-select, .red-list-filter-select {
   font-weight: 600;
   border-color: var(--border-color);
   background-color: var(--bg-surface);
+}
+
+/* Red List Badges */
+.badge-redlist {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.badge-cr {
+  background-color: #7f1d1d;
+  color: #fef2f2;
+  border: 1px solid #dc2626;
+}
+
+.badge-en {
+  background-color: #991b1b;
+  color: #fff1f2;
+  border: 1px solid #ef4444;
+}
+
+.badge-vu {
+  background-color: #9a3412;
+  color: #fff7ed;
+  border: 1px solid #f97316;
+}
+
+.badge-nt {
+  background-color: #854d0e;
+  color: #fefce8;
+  border: 1px solid #eab308;
+}
+
+.badge-dd {
+  background-color: #374151;
+  color: #f3f4f6;
+  border: 1px solid #6b7280;
+}
+
+.badge-protected {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--accent-color);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .badge-pending-top {
