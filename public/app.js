@@ -487,7 +487,29 @@ function renderList() {
   grid.innerHTML = "";
 
   if (filteredObs.length === 0) {
-    grid.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 40px; text-align: center;">Ühtegi vaatlust ei leitud valitud filtritega.</div>`;
+    const q = document.getElementById("searchInput")?.value.trim();
+    const red = document.getElementById("redListFilter")?.value;
+    const proj = document.getElementById("projectFilter")?.value;
+    
+    let helpMsg = "Ühtegi vaatlust ei leitud valitud filtrite kombinatsiooniga.";
+    let resetBtns = `<div style="margin-top:14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">`;
+    
+    if (q) {
+      resetBtns += `<button type="button" class="page-btn" style="padding:6px 12px;font-size:0.75rem;" onclick="document.getElementById('searchInput').value='';applyFilters();">✕ Tühjenda otsing ("${escapeHtml(q)}")</button>`;
+    }
+    if (red && red !== "") {
+      resetBtns += `<button type="button" class="page-btn" style="padding:6px 12px;font-size:0.75rem;" onclick="document.getElementById('redListFilter').value='';applyFilters();">✕ Vali: Kõik kategooriad</button>`;
+    }
+    if (proj && proj !== "all") {
+      resetBtns += `<button type="button" class="page-btn" style="padding:6px 12px;font-size:0.75rem;" onclick="document.getElementById('projectFilter').value='all';applyFilters();">✕ Näita kõiki vaatlusi</button>`;
+    }
+    resetBtns += `</div>`;
+
+    grid.innerHTML = `<div class="obs-no-thumb" style="grid-column: 1/-1; padding: 40px; text-align: center; line-height: 1.6;">
+      <strong style="color:var(--text-primary);font-size:0.95rem;">${helpMsg}</strong><br>
+      <span style="color:var(--text-muted);font-size:0.8rem;">Kontrolli, kas otsitav liik kuulub just valitud kategooriasse või tühjenda kitsendav filter.</span>
+      ${resetBtns}
+    </div>`;
     renderPagination();
     return;
   }
