@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "total_observations": 1507,
-    "unique_taxa": 769,
+    "total_observations": 1569,
+    "unique_taxa": 783,
     "counties": [
       "Barcelonès",
       "Harju maakond",
@@ -28,22 +28,22 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-08-25T07:37:29.857650+00:00",
+    "generated_at": "2026-08-25T09:26:15.700706+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
-      "total": 1507,
-      "primary": 948,
+      "total": 1569,
+      "primary": 1010,
       "co_observer": 559
     },
     "verification_stats": {
       "verified": 586,
-      "pending": 921
+      "pending": 983
     },
     "time_stats": {
-      "today": 6,
-      "this_week": 71,
-      "this_month": 827,
-      "this_year": 837
+      "today": 68,
+      "this_week": 133,
+      "this_month": 889,
+      "this_year": 899
     },
     "projects": [
       {
@@ -61,19 +61,2321 @@
       "person_id": "83911"
     },
     "latest_observation": {
-      "id": "8321811",
-      "taxon": "Russula consobrina (Fr.) Fr.",
-      "est_name": "hõimpilvik",
-      "date": "2026-08-01",
-      "locality": "Haanja küla",
+      "id": "8321930",
+      "taxon": "Russula fennoscandica Ruots. & Vauras",
+      "est_name": "okerfotkremle",
+      "date": "2021-09-07",
+      "locality": "Meegomäe küla",
       "county": "Võru maakond",
-      "url": "https://app.plutof.ut.ee/observation/view/8321811",
-      "created_at": "2026-08-25T07:36:45.109629+00:00",
+      "url": "https://app.plutof.ut.ee/observation/view/8321930",
+      "created_at": "2026-08-25T09:17:48.591210+00:00",
       "is_co_observer": false,
       "primary_observer": "Boris Meldre"
     }
   },
   "observations": [
+    {
+      "id": "8321930",
+      "taxon": "Russula fennoscandica Ruots. & Vauras",
+      "est_name": "okerfotkremle",
+      "date": "2021-09-07",
+      "latitude": 57.81529167,
+      "longitude": 27.010225,
+      "altitude": 103.9,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321930",
+      "created_at": "2026-08-25T09:17:48.591210+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/80e14129-ba23-45dc-b71c-afb2555a902d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/80e14129-ba23-45dc-b71c-afb2555a902d.jpg",
+          "filename": "E4195CD9-18BD-496E-B457-F681749DC07B_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/22d58a29-6549-4fa8-89be-be2fd56f0c1c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/22d58a29-6549-4fa8-89be-be2fd56f0c1c.jpg",
+          "filename": "9DB360A6-0A1E-4643-92A7-8142F28B8155_1_201_a_1787649461.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321929",
+      "taxon": "Russula adusta (Pers.) Fr.",
+      "est_name": "tuhm pilvik",
+      "date": "2021-08-02",
+      "latitude": 57.72174167,
+      "longitude": 27.03733889,
+      "altitude": 243.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321929",
+      "created_at": "2026-08-25T09:17:11.801803+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8834989b-ac5a-44b0-beca-b632e88bb8e3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8834989b-ac5a-44b0-beca-b632e88bb8e3.jpg",
+          "filename": "8883C7A9-0BB0-4AEF-A63C-FB638CA0E52C_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1324afee-b3f1-409b-a2b7-1079cc9b737f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1324afee-b3f1-409b-a2b7-1079cc9b737f.jpg",
+          "filename": "EE71225E-E48B-4B07-8AEE-825576770ACE_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321928",
+      "taxon": "Russula nigricans (Bull.) Fr.",
+      "est_name": "must pilvik",
+      "date": "2021-08-02",
+      "latitude": 57.72345,
+      "longitude": 27.03825833,
+      "altitude": 251.8,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321928",
+      "created_at": "2026-08-25T09:16:47.638553+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/27318be7-8fd5-4232-aeec-c0106286737c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/27318be7-8fd5-4232-aeec-c0106286737c.jpg",
+          "filename": "9DC90CE6-8FDD-4B16-9285-572CA9101CB1_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321927",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2021-08-02",
+      "latitude": 57.72181389,
+      "longitude": 27.03698056,
+      "altitude": 242.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321927",
+      "created_at": "2026-08-25T09:16:31.254481+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/be7fd19b-65c4-41ec-ad37-4bd96db7ae1d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/be7fd19b-65c4-41ec-ad37-4bd96db7ae1d.jpg",
+          "filename": "80A8BD83-712C-4B6C-8623-E573AFFC6B78_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/06114036-bd51-4b6e-9086-99aa57988a40.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/06114036-bd51-4b6e-9086-99aa57988a40.jpg",
+          "filename": "FE42B6A1-55FC-4708-B9C2-FA8CCCE4DC1B_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321926",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2021-08-04",
+      "latitude": 57.73618611,
+      "longitude": 27.05505278,
+      "altitude": 249.2,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321926",
+      "created_at": "2026-08-25T09:16:11.390239+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7a2200e6-caf2-4923-9d0e-4db43b41319f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7a2200e6-caf2-4923-9d0e-4db43b41319f.jpg",
+          "filename": "CBD89041-29FD-484F-84B6-ED302AFFEB3D_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321925",
+      "taxon": "Russula claroflava Grove",
+      "est_name": "klaarkollane pilvik",
+      "date": "2021-08-03",
+      "latitude": 57.72377778,
+      "longitude": 27.03819444,
+      "altitude": 256.7,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321925",
+      "created_at": "2026-08-25T09:15:53.019203+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b8e72869-934a-4bf0-8b73-c51b3cc9f122.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b8e72869-934a-4bf0-8b73-c51b3cc9f122.jpg",
+          "filename": "06680248-1244-4369-81C8-7CFC0BA373C2_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321923",
+      "taxon": "Russula claroflava Grove",
+      "est_name": "klaarkollane pilvik",
+      "date": "2021-08-03",
+      "latitude": 57.72258056,
+      "longitude": 27.036275,
+      "altitude": 263.8,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321923",
+      "created_at": "2026-08-25T09:15:42.308112+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6d360af9-612d-4fab-b125-aba2493dd38f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6d360af9-612d-4fab-b125-aba2493dd38f.jpg",
+          "filename": "2783A196-76A8-4D69-A58F-045D4521C0C8_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d89dc1aa-f9f2-424f-8186-2e766e67598a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d89dc1aa-f9f2-424f-8186-2e766e67598a.jpg",
+          "filename": "A71616D9-38A9-47EA-9170-CE6505CEF959_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321922",
+      "taxon": "Russula xerampelina (Schaeff.) Fr.",
+      "est_name": "purpurjalgne pilvik",
+      "date": "2021-08-05",
+      "latitude": 57.71865556,
+      "longitude": 27.03475278,
+      "altitude": 258.6,
+      "locality": "Rõuge küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321922",
+      "created_at": "2026-08-25T09:15:01.392694+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4ada55a6-1ec4-4006-95fa-7f771f9b5690.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4ada55a6-1ec4-4006-95fa-7f771f9b5690.jpg",
+          "filename": "3CC839C0-F605-4286-A129-74C42B103838_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/36a05e47-6344-4f92-9239-883ae5b84146.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/36a05e47-6344-4f92-9239-883ae5b84146.jpg",
+          "filename": "20805BC2-9634-4D19-98FB-1D8E816F5205_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321921",
+      "taxon": "Russula paludosa Britzelm.",
+      "est_name": "soopilvik",
+      "date": "2021-08-18",
+      "latitude": 57.63695833,
+      "longitude": 26.78183056,
+      "altitude": 117.8,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321921",
+      "created_at": "2026-08-25T09:14:23.154562+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8364ef6b-2986-4241-ac7f-8856726500ce.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8364ef6b-2986-4241-ac7f-8856726500ce.jpg",
+          "filename": "DFE13D6C-82DB-4F76-A886-6BC25EA8ACA1_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321919",
+      "taxon": "Russula cyanoxantha (Schaeff.) Fr.",
+      "est_name": "sinikollane pilvik",
+      "date": "2021-08-24",
+      "latitude": 57.72468056,
+      "longitude": 27.03451667,
+      "altitude": 247.3,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321919",
+      "created_at": "2026-08-25T09:14:11.540140+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/95293dad-0e8a-460e-849e-f99e65d32e7e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/95293dad-0e8a-460e-849e-f99e65d32e7e.jpg",
+          "filename": "D8F417E8-F79F-409D-93EE-8A1F634A13C8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321918",
+      "taxon": "Polyporus tubaeformis (P. Karst.) Ryvarden & Gilb.",
+      "est_name": "kariktorik",
+      "date": "2026-08-01",
+      "latitude": 57.72427222,
+      "longitude": 27.03208333,
+      "altitude": 257.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321918",
+      "created_at": "2026-08-25T09:11:45.702106+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/da90c5cc-5bf1-4cd7-a39b-ab4301922166.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/da90c5cc-5bf1-4cd7-a39b-ab4301922166.jpg",
+          "filename": "PXL_20260801_123416464.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/cb1d4659-db30-4e86-b995-4216f2d21fe7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/cb1d4659-db30-4e86-b995-4216f2d21fe7.jpg",
+          "filename": "PXL_20260801_123417879.MACRO_FOCUS.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321905",
+      "taxon": "Russula vesca Fr.",
+      "est_name": "söögipilvik",
+      "date": "2021-08-06",
+      "latitude": 57.73748889,
+      "longitude": 26.93251111,
+      "altitude": 133.4,
+      "locality": "Rõuge küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321905",
+      "created_at": "2026-08-25T09:09:13.299655+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/00d463c6-8f70-4d8a-bcb6-4c7f61aacf85.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/00d463c6-8f70-4d8a-bcb6-4c7f61aacf85.jpg",
+          "filename": "DC2BBEAF-6809-4E4D-9BDE-69280AA59B97_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321904",
+      "taxon": "Russula favrei M.M. Moser",
+      "est_name": "brun sildekremle",
+      "date": "2021-08-06",
+      "latitude": 57.736725,
+      "longitude": 27.05260278,
+      "altitude": 266.2,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321904",
+      "created_at": "2026-08-25T09:08:52.000232+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/45dbe65f-a147-4aba-8fe9-5ed1b49cbd70.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/45dbe65f-a147-4aba-8fe9-5ed1b49cbd70.jpg",
+          "filename": "BCDD61FD-4587-4A9F-BE44-97FD011BEBDD_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8d9849f3-fa6b-41b8-b0c8-880422440fd6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8d9849f3-fa6b-41b8-b0c8-880422440fd6.jpg",
+          "filename": "139BAE12-88F0-4769-84AA-D6722D403B3A_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e67b3c84-cf7a-4939-8749-08ec87c7ded0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e67b3c84-cf7a-4939-8749-08ec87c7ded0.jpg",
+          "filename": "8097112B-A2CC-4EE4-AC37-7B930703FEC0_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ab928a0d-c3da-4a20-a481-88ab095fc8c4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ab928a0d-c3da-4a20-a481-88ab095fc8c4.jpg",
+          "filename": "2C224E6A-24F3-43BF-9518-02D1246AFB91_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321903",
+      "taxon": "Russula chloroides (Krombh.) Bres.",
+      "est_name": "rohelehine pilvik",
+      "date": "2021-08-07",
+      "latitude": 57.72060278,
+      "longitude": 27.04257778,
+      "altitude": 255.3,
+      "locality": "Rõuge küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321903",
+      "created_at": "2026-08-25T09:08:09.193333+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7f4d26fb-402e-4ecd-bd95-6073c5d7c366.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7f4d26fb-402e-4ecd-bd95-6073c5d7c366.jpg",
+          "filename": "7B673632-9F70-42B4-8A07-768D32A157FB_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9f68f038-5099-404c-9d83-e7c622ed5bc1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9f68f038-5099-404c-9d83-e7c622ed5bc1.jpg",
+          "filename": "5A61007F-6F30-4ED9-88C5-2C711F255474_1_201_a.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321901",
+      "taxon": "Russula vesca Fr.",
+      "est_name": "söögipilvik",
+      "date": "2021-08-08",
+      "latitude": 57.63379167,
+      "longitude": 26.7713,
+      "altitude": 115.3,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321901",
+      "created_at": "2026-08-25T09:07:41.857180+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a7a007d3-cdce-4cf8-b7e3-06f600cad87f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a7a007d3-cdce-4cf8-b7e3-06f600cad87f.jpg",
+          "filename": "CF5F0B2E-BCA8-45A9-8E01-2CB48CBE977B_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321900",
+      "taxon": "Russula vitellina (Pers.) Gray",
+      "est_name": "Rebupilvik",
+      "date": "2021-08-10",
+      "latitude": 57.71818056,
+      "longitude": 27.04815,
+      "altitude": 255.1,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321900",
+      "created_at": "2026-08-25T09:07:10.879326+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fd1d75e6-7f27-4f35-bc2f-042bd54b12d7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fd1d75e6-7f27-4f35-bc2f-042bd54b12d7.jpg",
+          "filename": "35B75909-660F-40FF-967A-B2BB459A1A56_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321899",
+      "taxon": "Russula vesca Fr.",
+      "est_name": "söögipilvik",
+      "date": "2021-08-08",
+      "latitude": 57.63656111,
+      "longitude": 26.77595,
+      "altitude": 87.2,
+      "locality": "Pähni küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321899",
+      "created_at": "2026-08-25T09:06:39.496263+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/14e96e34-ff31-4078-b0cf-3a6cc0ccc27f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/14e96e34-ff31-4078-b0cf-3a6cc0ccc27f.jpg",
+          "filename": "7E0289E0-873A-493B-839A-4F6FE4F396E0_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d1118e76-637e-4203-89b0-fe3bf701b3a3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d1118e76-637e-4203-89b0-fe3bf701b3a3.jpg",
+          "filename": "9D125620-B5C5-487B-BEA7-B3DD9F6E51A7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321897",
+      "taxon": "Russula anthracina Romagn.",
+      "est_name": "kokskremle",
+      "date": "2021-08-12",
+      "latitude": 57.73885278,
+      "longitude": 27.06841389,
+      "altitude": 256.1,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321897",
+      "created_at": "2026-08-25T09:06:22.397126+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d389b890-e076-433d-b3dc-57cded09c1c9.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d389b890-e076-433d-b3dc-57cded09c1c9.jpg",
+          "filename": "173F5B12-0867-44EF-A180-406A187FCAB0_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/44ce59f9-9bed-44da-801b-5f844678b18e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/44ce59f9-9bed-44da-801b-5f844678b18e.jpg",
+          "filename": "19DB65EC-F38C-4AFC-93F0-EB10762F0C84_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d36fbdde-20de-4d7c-a45a-f21694a81c47.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d36fbdde-20de-4d7c-a45a-f21694a81c47.jpg",
+          "filename": "A123E01E-98AA-4DFE-BE02-E185D2459CAD_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321896",
+      "taxon": "Russula aurea Pers.",
+      "est_name": "kuldpilvik",
+      "date": "2021-08-23",
+      "latitude": 57.72520556,
+      "longitude": 27.03671667,
+      "altitude": 246.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321896",
+      "created_at": "2026-08-25T09:05:37.931620+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2f63b6a0-7ce0-469e-b259-0bd5e4f47779.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2f63b6a0-7ce0-469e-b259-0bd5e4f47779.jpg",
+          "filename": "13BBD2FA-D120-493F-A3DC-DEF359E0FF6D_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c48487c5-032f-4da2-8894-1647194e4041.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c48487c5-032f-4da2-8894-1647194e4041.jpg",
+          "filename": "266C81D1-9771-4119-8333-3D96FCFE431D_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bd2d0cb5-a7e2-4493-8b74-95f490cd5132.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bd2d0cb5-a7e2-4493-8b74-95f490cd5132.jpg",
+          "filename": "74117667-67A2-458D-BDE7-8229FB4E6B67_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321895",
+      "taxon": "Russula queletii Fr.",
+      "est_name": "kuusepilvik",
+      "date": "2021-08-24",
+      "latitude": 57.72539167,
+      "longitude": 27.03785,
+      "altitude": 247.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321895",
+      "created_at": "2026-08-25T09:05:15.870314+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/16fd671b-3d5f-4705-a6ae-d0156ca27238.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/16fd671b-3d5f-4705-a6ae-d0156ca27238.jpg",
+          "filename": "8B6594BA-95EF-486F-840A-808AF5F1BBD7_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0627c2ee-39c9-432e-a02e-13f4fd7260f1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0627c2ee-39c9-432e-a02e-13f4fd7260f1.jpg",
+          "filename": "81454810-353D-4E41-9698-A4322AF2C761_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5d2ab0a6-65ba-48fd-a6d3-e4a3a96bdc68.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5d2ab0a6-65ba-48fd-a6d3-e4a3a96bdc68.jpg",
+          "filename": "2DF21595-97C7-44DC-9312-A9729B96F14D_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f717bb14-3225-44c2-86c6-cbfa68d7b72c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f717bb14-3225-44c2-86c6-cbfa68d7b72c.jpg",
+          "filename": "8632D1AB-CC07-4845-9A2A-3834A48246DD_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321894",
+      "taxon": "Russula ochroleuca (Pers.) Fr.",
+      "est_name": "paatjas pilvik",
+      "date": "2021-09-05",
+      "latitude": 57.73543056,
+      "longitude": 27.06086389,
+      "altitude": 259.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321894",
+      "created_at": "2026-08-25T09:04:30.219910+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4b26f741-4764-48cc-8ddc-2fea85868a88.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4b26f741-4764-48cc-8ddc-2fea85868a88.jpg",
+          "filename": "F4A609D8-D7DD-4BF3-ADB3-790F09696E34_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321893",
+      "taxon": "Russula vinosa Lindblad",
+      "est_name": "veinpunane pilvik",
+      "date": "2021-09-05",
+      "latitude": 57.72194722,
+      "longitude": 27.03495833,
+      "altitude": 277.7,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321893",
+      "created_at": "2026-08-25T09:04:17.120153+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6273792e-c7fa-4d7c-8553-7076f3fa2445.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6273792e-c7fa-4d7c-8553-7076f3fa2445.jpg",
+          "filename": "FC97D204-F46B-4E97-8F5D-3FF816AC28D8_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6a06d21b-2d42-4769-a85a-c8a78bca0977.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6a06d21b-2d42-4769-a85a-c8a78bca0977.jpg",
+          "filename": "6C0261ED-421E-47C6-B01C-87EE23B39FCF_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321892",
+      "taxon": "Russula gracillima Jul. Schäff.",
+      "est_name": "õrn pilvik",
+      "date": "2021-09-05",
+      "latitude": 57.7217,
+      "longitude": 27.03394167,
+      "altitude": 256.7,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321892",
+      "created_at": "2026-08-25T09:03:57.706979+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c97e64e3-fb86-4230-97b0-ba972a8937ca.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c97e64e3-fb86-4230-97b0-ba972a8937ca.jpg",
+          "filename": "E8BE51FF-9986-45D3-B712-ACA78AF75368_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8660ca41-0fb6-465a-a5aa-153cf082a62b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8660ca41-0fb6-465a-a5aa-153cf082a62b.jpg",
+          "filename": "0256BB74-8031-4E6B-8A1D-16DC684F8DF8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321891",
+      "taxon": "Russula decolorans (Fr.) Fr.",
+      "est_name": "hallikas pilvik",
+      "date": "2021-09-07",
+      "latitude": 57.814575,
+      "longitude": 27.010075,
+      "altitude": 91.1,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321891",
+      "created_at": "2026-08-25T09:03:16.746557+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0c59e7ea-676f-407a-a260-06bc3d15b99c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0c59e7ea-676f-407a-a260-06bc3d15b99c.jpg",
+          "filename": "5214F362-0A89-4972-BF92-E1F65EE34EC2_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321890",
+      "taxon": "Russula vinosa Lindblad",
+      "est_name": "veinpunane pilvik",
+      "date": "2021-09-07",
+      "latitude": 57.81526667,
+      "longitude": 27.01003333,
+      "altitude": 108.3,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321890",
+      "created_at": "2026-08-25T09:02:58.947994+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d57a9713-bc42-42d5-bc87-a54319d3e372.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d57a9713-bc42-42d5-bc87-a54319d3e372.jpg",
+          "filename": "835294EE-D767-402D-9D84-6D4DA84E88D8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321889",
+      "taxon": "Russula paludosa Britzelm.",
+      "est_name": "soopilvik",
+      "date": "2021-09-07",
+      "latitude": 57.81605833,
+      "longitude": 27.01133056,
+      "altitude": 86.1,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321889",
+      "created_at": "2026-08-25T09:00:31.167495+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/19371859-f331-44be-a454-1da8fd739801.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/19371859-f331-44be-a454-1da8fd739801.jpg",
+          "filename": "E960F5E4-AB13-4FA4-BEA8-5D219BDE566E_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2093bc96-455f-4c54-8348-5f7920904c58.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2093bc96-455f-4c54-8348-5f7920904c58.jpg",
+          "filename": "2B0E3AA5-0054-4D52-BE38-66B18B2414AC_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321888",
+      "taxon": "Russula firmula Jul. Schäff.",
+      "est_name": "kõrvepilvik",
+      "date": "2021-09-07",
+      "latitude": 57.81203333,
+      "longitude": 27.00824167,
+      "altitude": 103.5,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321888",
+      "created_at": "2026-08-25T09:00:05.568081+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/76bcbfc2-c72e-4881-ab7a-905d83a9cedb.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/76bcbfc2-c72e-4881-ab7a-905d83a9cedb.jpg",
+          "filename": "31FA1F69-FAE1-4C04-A149-A55F7416ED78_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321887",
+      "taxon": "Russula ochroleuca (Pers.) Fr.",
+      "est_name": "paatjas pilvik",
+      "date": "2021-09-08",
+      "latitude": 57.74015833,
+      "longitude": 27.067475,
+      "altitude": 250.0,
+      "locality": "Ala-Tilga küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321887",
+      "created_at": "2026-08-25T08:59:44.270978+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ef03b761-feeb-4d13-aefc-7b28970c6bd6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ef03b761-feeb-4d13-aefc-7b28970c6bd6.jpg",
+          "filename": "7A7F2867-B41D-4327-887F-9128AF79F77F_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321886",
+      "taxon": "Russula decolorans (Fr.) Fr.",
+      "est_name": "hallikas pilvik",
+      "date": "2021-09-08",
+      "latitude": 57.81786389,
+      "longitude": 27.02278889,
+      "altitude": 87.4,
+      "locality": "Kose tee",
+      "county": "Võru maakond",
+      "commune": "Võru linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321886",
+      "created_at": "2026-08-25T08:59:32.388153+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/028f0b28-4b7b-4e2e-82c3-13cec17c00cd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/028f0b28-4b7b-4e2e-82c3-13cec17c00cd.jpg",
+          "filename": "9542E0F6-F1BF-4236-BE47-D098B112E500_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321885",
+      "taxon": "Russula clavipes Velen.",
+      "est_name": "olivengrønn sildekremle",
+      "date": "2021-09-18",
+      "latitude": 57.813625,
+      "longitude": 27.01996667,
+      "altitude": 132.4,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321885",
+      "created_at": "2026-08-25T08:59:05.894030+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/69ac1689-0c7b-4944-af63-0750abfcdc58.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/69ac1689-0c7b-4944-af63-0750abfcdc58.jpg",
+          "filename": "FDE876AA-1349-453A-9618-73013565D1C1_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e0412c88-865e-4b47-93db-7edf03b83799.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e0412c88-865e-4b47-93db-7edf03b83799.jpg",
+          "filename": "DB145BBE-0C99-48C8-A9A3-16DCA7D7A14F_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321872",
+      "taxon": "Russula decolorans (Fr.) Fr.",
+      "est_name": "hallikas pilvik",
+      "date": "2021-09-21",
+      "latitude": 57.82019167,
+      "longitude": 27.04872222,
+      "altitude": 94.1,
+      "locality": "Kose alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321872",
+      "created_at": "2026-08-25T08:15:11.012963+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/85034faf-c03a-45b0-9db8-c479051da404.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/85034faf-c03a-45b0-9db8-c479051da404.jpg",
+          "filename": "383D2E26-787F-4DB3-A9D5-D8F3D8C5B421_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321871",
+      "taxon": "Russula intermedia P. Karst.",
+      "est_name": "Lundelli pilvik",
+      "date": "2021-09-26",
+      "latitude": 59.228475,
+      "longitude": 25.56478611,
+      "altitude": 75.7,
+      "locality": "Mägede küla",
+      "county": "Järva maakond",
+      "commune": "Järva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321871",
+      "created_at": "2026-08-25T08:14:55.810004+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f352e550-6cf7-44f6-b532-5e7a0333468a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f352e550-6cf7-44f6-b532-5e7a0333468a.jpg",
+          "filename": "2BCB0783-6E8E-44FF-91B8-479EA7E1A1E8_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ff4ed920-f9bc-47c5-ad54-0034ecbce6d5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ff4ed920-f9bc-47c5-ad54-0034ecbce6d5.jpg",
+          "filename": "942704D7-2442-4743-B6B9-D5C3926754F8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321870",
+      "taxon": "Russula clavipes Velen.",
+      "est_name": "olivengrønn sildekremle",
+      "date": "2021-09-29",
+      "latitude": 57.80121944,
+      "longitude": 26.90872222,
+      "altitude": 98.6,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321870",
+      "created_at": "2026-08-25T08:14:05.492616+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/87227b56-dc70-4d98-82d1-42e9254b9aef.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/87227b56-dc70-4d98-82d1-42e9254b9aef.jpg",
+          "filename": "70A26EF5-C925-48B2-8D33-4235641418A7_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/66f8912c-29d5-43a4-91b5-4c969f76ad83.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/66f8912c-29d5-43a4-91b5-4c969f76ad83.jpg",
+          "filename": "58F6A7F0-9B68-4151-9AAD-6705F8AC52F0_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321869",
+      "taxon": "Russula decolorans (Fr.) Fr.",
+      "est_name": "hallikas pilvik",
+      "date": "2021-09-30",
+      "latitude": 57.79953056,
+      "longitude": 27.27409444,
+      "altitude": 136.5,
+      "locality": "Sutte küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321869",
+      "created_at": "2026-08-25T08:13:41.578496+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/75cc713f-8037-40d7-b496-a387846aedfd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/75cc713f-8037-40d7-b496-a387846aedfd.jpg",
+          "filename": "25FD3A90-4B0B-4CF2-9D04-0EACB94B2CF4_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321868",
+      "taxon": "Russula adusta (Pers.) Fr.",
+      "est_name": "tuhm pilvik",
+      "date": "2021-10-02",
+      "latitude": 57.82324722,
+      "longitude": 26.98121944,
+      "altitude": 83.6,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321868",
+      "created_at": "2026-08-25T08:13:25.132826+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/68376060-ebf9-4dee-b0cf-d6e4ca6260c7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/68376060-ebf9-4dee-b0cf-d6e4ca6260c7.jpg",
+          "filename": "8B8CDBD9-0B53-4FB4-BD17-6422837F70CA_1_201_a_1787645598.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/dec094d3-ed46-45ca-98b2-aa25a5815bc3.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/dec094d3-ed46-45ca-98b2-aa25a5815bc3.jpg",
+          "filename": "C82A55A8-E880-4878-A189-CB95852D99E2_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/89c7875f-880b-4eb5-aec8-bc5c90463797.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/89c7875f-880b-4eb5-aec8-bc5c90463797.jpg",
+          "filename": "77A4C50E-1CAA-4838-BDC7-93DA40965B24_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321856",
+      "taxon": "Russula decolorans (Fr.) Fr.",
+      "est_name": "hallikas pilvik",
+      "date": "2022-07-24",
+      "latitude": 57.75694722,
+      "longitude": 26.83785,
+      "altitude": 117.0,
+      "locality": "Nursi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321856",
+      "created_at": "2026-08-25T07:54:38.227615+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/681d1e89-18b5-4c91-93cb-be7b98614ab6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/681d1e89-18b5-4c91-93cb-be7b98614ab6.jpg",
+          "filename": "D11F3D44-1E83-479D-9E13-E17DD3B07E3C_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/49a03305-8292-456d-b6c4-72811c7682fd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/49a03305-8292-456d-b6c4-72811c7682fd.jpg",
+          "filename": "530FD0AF-3CD3-49FE-A0E5-F3D1328C23A5_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321855",
+      "taxon": "Russula nigricans (Bull.) Fr.",
+      "est_name": "must pilvik",
+      "date": "2022-07-26",
+      "latitude": 57.73059444,
+      "longitude": 27.11103889,
+      "altitude": 249.5,
+      "locality": "Ihatsi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321855",
+      "created_at": "2026-08-25T07:54:22.148937+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b790bbe1-b38e-42d8-b8e0-0cb070b60288.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b790bbe1-b38e-42d8-b8e0-0cb070b60288.jpg",
+          "filename": "0FDFCA4E-8656-4A20-BF4A-3E1639CE6D55_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321854",
+      "taxon": "Russula emetica (Schaeff.) Pers.",
+      "est_name": "okseseen",
+      "date": "2022-07-26",
+      "latitude": 57.71481389,
+      "longitude": 27.12012778,
+      "altitude": 229.6,
+      "locality": "Leoski küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321854",
+      "created_at": "2026-08-25T07:54:08.878294+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ea54f95e-6bca-4b39-86ba-c141210e2281.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ea54f95e-6bca-4b39-86ba-c141210e2281.jpg",
+          "filename": "E8979731-C634-44A4-B4AA-4B4C283D1946_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/20b3ff2c-d688-4f04-8b2c-3c07a992cf2c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/20b3ff2c-d688-4f04-8b2c-3c07a992cf2c.jpg",
+          "filename": "90998E14-541C-4524-A30B-E1D9DBCF4C72_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321853",
+      "taxon": "Russula delica Fr.",
+      "est_name": "kuiv pilvik",
+      "date": "2022-08-15",
+      "latitude": 57.72174722,
+      "longitude": 27.03261944,
+      "altitude": 258.2,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321853",
+      "created_at": "2026-08-25T07:53:52.802279+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/825345b1-c59a-4302-b4ea-d9966c80d10a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/825345b1-c59a-4302-b4ea-d9966c80d10a.jpg",
+          "filename": "E90E26FF-94CA-4062-8CE0-9A3D5AA3F69F_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321851",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2022-07-27",
+      "latitude": 57.72177778,
+      "longitude": 27.04003611,
+      "altitude": 251.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321851",
+      "created_at": "2026-08-25T07:53:38.584610+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6408ad73-050d-4804-b00a-3e28cb8b9a19.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6408ad73-050d-4804-b00a-3e28cb8b9a19.jpg",
+          "filename": "4DC5F5EF-D17F-4628-BBA9-8021152E1F62_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321850",
+      "taxon": "Russula foetens (Pers.) Pers.",
+      "est_name": "lõhnav pilvik",
+      "date": "2022-08-15",
+      "latitude": 57.71886944,
+      "longitude": 27.04606389,
+      "altitude": 249.4,
+      "locality": "Rõuge küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321850",
+      "created_at": "2026-08-25T07:53:18.596691+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/dd6578ca-dfd7-4696-99f7-499a81710742.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/dd6578ca-dfd7-4696-99f7-499a81710742.jpg",
+          "filename": "FE4FCFEF-6F63-4FB5-AF3E-C951AB24D373_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321849",
+      "taxon": "Russula grata Britzelm.",
+      "est_name": "lõhnav pilvik",
+      "date": "2022-08-15",
+      "latitude": 57.72056944,
+      "longitude": 27.03268611,
+      "altitude": 248.5,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321849",
+      "created_at": "2026-08-25T07:52:49.518921+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/adfa0923-1609-42ff-bb9b-35200b5411b4.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/adfa0923-1609-42ff-bb9b-35200b5411b4.jpg",
+          "filename": "A065EAC2-12E8-4514-968D-4DF5DB1E4FC1_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321848",
+      "taxon": "Russula vesca Fr.",
+      "est_name": "söögipilvik",
+      "date": "2022-08-23",
+      "latitude": 57.80971944,
+      "longitude": 26.991575,
+      "altitude": 107.4,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321848",
+      "created_at": "2026-08-25T07:51:51.366064+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/dca72e89-8ce5-4045-8086-9bea8a9e4c42.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/dca72e89-8ce5-4045-8086-9bea8a9e4c42.jpg",
+          "filename": "2C3362C7-08E7-4874-9C30-48A04F4914CD_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321847",
+      "taxon": "Russula postiana Romell",
+      "est_name": "oranžilehine pilvik",
+      "date": "2022-09-20",
+      "latitude": 57.81151667,
+      "longitude": 27.04850278,
+      "altitude": 106.4,
+      "locality": "Kose alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321847",
+      "created_at": "2026-08-25T07:51:37.632696+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1ad0e766-d31c-4b77-8dda-afdd837a69fd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1ad0e766-d31c-4b77-8dda-afdd837a69fd.jpg",
+          "filename": "E56C61B1-DDA0-45F4-A4AE-3FB88FA10904_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/95962a05-289a-4552-9177-dfc11f09849e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/95962a05-289a-4552-9177-dfc11f09849e.jpg",
+          "filename": "B1281F9B-6959-4EA4-B254-67ACCD6D5118_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321845",
+      "taxon": "Russula postiana Romell",
+      "est_name": "oranžilehine pilvik",
+      "date": "2022-09-30",
+      "latitude": 58.30845,
+      "longitude": 22.06993611,
+      "altitude": 36.3,
+      "locality": "Viidu-Mäebe küla",
+      "county": "Saare maakond",
+      "commune": "Saaremaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre, Allar Antson, Vello Liiv",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321845",
+      "created_at": "2026-08-25T07:50:21.343251+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ab951754-e6b9-45cf-b96d-f3003baaa3aa.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ab951754-e6b9-45cf-b96d-f3003baaa3aa.jpg",
+          "filename": "318A6F5E-0DAE-4E8B-ABC7-FCD55676D1AC_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5a9d9211-59f2-4297-a78c-290003af960e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5a9d9211-59f2-4297-a78c-290003af960e.jpg",
+          "filename": "1E26E4F5-5F5C-4C10-B817-CDA10F274C05_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e29b7fa0-115a-4076-bc53-18b8d8e716ea.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e29b7fa0-115a-4076-bc53-18b8d8e716ea.jpg",
+          "filename": "1C735E73-DDBB-4E84-AF3E-F34C3A45422B_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/06000850-7862-499d-95c3-59c559ac80e2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/06000850-7862-499d-95c3-59c559ac80e2.jpg",
+          "filename": "81721BF1-2A45-400F-961E-C825C13A750A_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321843",
+      "taxon": "Russula nigricans (Bull.) Fr.",
+      "est_name": "must pilvik",
+      "date": "2022-09-30",
+      "latitude": 58.28276389,
+      "longitude": 22.12921944,
+      "altitude": 46.9,
+      "locality": "Käesla küla",
+      "county": "Saare maakond",
+      "commune": "Saaremaa vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre, Vello Liiv, Allar Antson",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321843",
+      "created_at": "2026-08-25T07:49:22.989160+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4b119436-08d9-4240-90dd-f1c769963f97.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4b119436-08d9-4240-90dd-f1c769963f97.jpg",
+          "filename": "CBB71462-5C0D-4151-A0C1-4F89714E865C_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/cdc57c8c-6adb-4ef0-83e6-120d95f413bc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/cdc57c8c-6adb-4ef0-83e6-120d95f413bc.jpg",
+          "filename": "1B6C3D2C-2001-4966-A178-F32564CA1FBD_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321841",
+      "taxon": "Russula postiana Romell",
+      "est_name": "oranžilehine pilvik",
+      "date": "2026-08-25",
+      "latitude": null,
+      "longitude": null,
+      "altitude": null,
+      "locality": "",
+      "county": "",
+      "commune": "",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321841",
+      "created_at": "2026-08-25T07:47:13.339623+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fef7f19f-9821-4816-bafc-059b768a6b5e.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fef7f19f-9821-4816-bafc-059b768a6b5e.jpg",
+          "filename": "5AAA6AA9-E82C-47E5-9F4E-D548E6625F4C_1_201_a_1787644031.jpg"
+        }
+      ]
+    },
+    {
+      "id": "8321840",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2022-10-13",
+      "latitude": 57.816125,
+      "longitude": 27.03378611,
+      "altitude": 95.4,
+      "locality": "Kose alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321840",
+      "created_at": "2026-08-25T07:46:29.837437+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/92a96f88-c18f-4e3c-941b-d39178e58ed1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/92a96f88-c18f-4e3c-941b-d39178e58ed1.jpg",
+          "filename": "44652C27-D0B2-43BF-BA33-01DF16311FE7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321838",
+      "taxon": "Russula xerampelina (Schaeff.) Fr.",
+      "est_name": "purpurjalgne pilvik",
+      "date": "2022-10-12",
+      "latitude": 57.810975,
+      "longitude": 26.99475556,
+      "altitude": 61.8,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321838",
+      "created_at": "2026-08-25T07:46:10.771003+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ffb0aa76-b1d2-46fc-aaae-6dbf8f767ebf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ffb0aa76-b1d2-46fc-aaae-6dbf8f767ebf.jpg",
+          "filename": "5F1F224A-DC83-4C8D-90B6-231FA1061205_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/af5860ea-d6b1-420d-a41e-259d90473648.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/af5860ea-d6b1-420d-a41e-259d90473648.jpg",
+          "filename": "8322D820-C0ED-4490-B94C-4D832BDE4286_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321837",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2022-10-10",
+      "latitude": 57.83286667,
+      "longitude": 26.914975,
+      "altitude": 42.1,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321837",
+      "created_at": "2026-08-25T07:45:51.007179+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6ebc76c5-2470-4476-967a-b237c547367c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6ebc76c5-2470-4476-967a-b237c547367c.jpg",
+          "filename": "E97DA4C2-05AD-47EB-81FE-A5751EB41AD2_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321836",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2022-10-10",
+      "latitude": 57.83294167,
+      "longitude": 26.91481111,
+      "altitude": 77.8,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321836",
+      "created_at": "2026-08-25T07:45:38.924546+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/514a4e09-d92c-4637-ae52-23d10fe6a38b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/514a4e09-d92c-4637-ae52-23d10fe6a38b.jpg",
+          "filename": "CFE06A13-F59E-497F-80A7-A2E22D145783_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321835",
+      "taxon": "Russula aeruginea Fr.",
+      "est_name": "kasepilvik",
+      "date": "2022-10-10",
+      "latitude": 57.83293611,
+      "longitude": 26.91480556,
+      "altitude": 74.0,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321835",
+      "created_at": "2026-08-25T07:45:05.577900+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c950be0a-285e-42b6-9883-62f04133b008.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c950be0a-285e-42b6-9883-62f04133b008.jpg",
+          "filename": "547D8434-A387-44C0-9E25-007C5496171C_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321832",
+      "taxon": "Russula cyanoxantha (Schaeff.) Fr.",
+      "est_name": "sinikollane pilvik",
+      "date": "2023-07-19",
+      "latitude": 57.73196389,
+      "longitude": 27.06648056,
+      "altitude": 280.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321832",
+      "created_at": "2026-08-25T07:44:47.779371+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e1894d2c-4938-4431-9355-6efdff4cac76.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e1894d2c-4938-4431-9355-6efdff4cac76.jpg",
+          "filename": "A6AAFC86-0111-44E1-8F60-B64B76ECD333_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ae8e3ca4-de3d-4132-b210-2991cf90eaa2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ae8e3ca4-de3d-4132-b210-2991cf90eaa2.jpg",
+          "filename": "AE92F644-1713-4180-843F-9EFA41540E0B_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321831",
+      "taxon": "Russula clavipes Velen.",
+      "est_name": "olivengrønn sildekremle",
+      "date": "2022-10-15",
+      "latitude": 57.79326944,
+      "longitude": 27.26969444,
+      "altitude": 150.9,
+      "locality": "Kaagu küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321831",
+      "created_at": "2026-08-25T07:44:23.299972+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/448cfe4c-aee6-44d3-be45-ada618ff2e71.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/448cfe4c-aee6-44d3-be45-ada618ff2e71.jpg",
+          "filename": "4508BAE0-880B-404C-8507-26EFCEE9127D_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/decc88fc-3032-42f3-a80b-5fb5294cc311.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/decc88fc-3032-42f3-a80b-5fb5294cc311.jpg",
+          "filename": "F7E81C9B-FB2A-4B5A-A77F-77FB79EF2635_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321830",
+      "taxon": "Russula vesca Fr.",
+      "est_name": "söögipilvik",
+      "date": "2023-07-18",
+      "latitude": 58.01907222,
+      "longitude": 26.95466944,
+      "altitude": 94.4,
+      "locality": "Puskaru küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321830",
+      "created_at": "2026-08-25T07:43:53.384973+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/233e6f05-1f91-4cba-ab8c-4376a9f6d5b0.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/233e6f05-1f91-4cba-ab8c-4376a9f6d5b0.jpg",
+          "filename": "C254FDF9-0F2A-46A4-B2ED-E5F8C2415575_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321819",
+      "taxon": "Russula velenovskyi Melzer & Zvara",
+      "est_name": "tellispunane pilvik",
+      "date": "2023-08-03",
+      "latitude": 57.72264167,
+      "longitude": 27.03381944,
+      "altitude": 253.3,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321819",
+      "created_at": "2026-08-25T07:42:26.002817+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e294143e-4e0e-4806-be76-c7716cb67ac7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e294143e-4e0e-4806-be76-c7716cb67ac7.jpg",
+          "filename": "A103F424-9C62-44BE-90E9-F1574C1F59C8_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/3efc8d2e-ab59-4869-ae3c-991229acf7e8.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/3efc8d2e-ab59-4869-ae3c-991229acf7e8.jpg",
+          "filename": "AA7E0275-E6D4-4EC4-A527-35E7FFAEEB64_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/4fac1b88-ef5b-47fa-a3f7-65de88a733a2.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/4fac1b88-ef5b-47fa-a3f7-65de88a733a2.jpg",
+          "filename": "9DE4B433-4B70-4076-8B98-B62575AD1EF3_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6270106e-aba3-4cb2-bae7-c98fdcf8e7e7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6270106e-aba3-4cb2-bae7-c98fdcf8e7e7.jpg",
+          "filename": "E9FC9FEB-FC8F-432A-83BC-8A7D9D067A96_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321818",
+      "taxon": "Russula paludosa Britzelm.",
+      "est_name": "soopilvik",
+      "date": "2023-08-06",
+      "latitude": 57.68776667,
+      "longitude": 27.24760833,
+      "altitude": 188.9,
+      "locality": "Kirikumäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321818",
+      "created_at": "2026-08-25T07:41:29.250964+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/af3c72bf-7333-4c3f-8974-1e5d4a0a8cb7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/af3c72bf-7333-4c3f-8974-1e5d4a0a8cb7.jpg",
+          "filename": "A59D25AF-393E-49CC-83EB-86ABB9561EE8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321817",
+      "taxon": "Russula azurea Bres.",
+      "est_name": "ametüstpilvik",
+      "date": "2023-07-30",
+      "latitude": 58.02131389,
+      "longitude": 26.95010833,
+      "altitude": 99.5,
+      "locality": "Kiuma küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre, Allar Antson",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321817",
+      "created_at": "2026-08-25T07:41:14.666330+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5627dffd-f197-4b55-89a7-76668a54875b.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5627dffd-f197-4b55-89a7-76668a54875b.jpg",
+          "filename": "0E093454-5F89-4A22-9B72-29C37201B77F_1_201_a_1787643668.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1cda7f4d-1b63-474e-a740-9f6f16a96ecc.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1cda7f4d-1b63-474e-a740-9f6f16a96ecc.jpg",
+          "filename": "8ACBE954-4437-429D-918D-9D1C0E4ABE09_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321816",
+      "taxon": "Russula azurea Bres.",
+      "est_name": "ametüstpilvik",
+      "date": "2023-07-30",
+      "latitude": 58.02678611,
+      "longitude": 26.92470833,
+      "altitude": 85.0,
+      "locality": "Varbuse küla",
+      "county": "Põlva maakond",
+      "commune": "Kanepi vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre, Allar Antson",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321816",
+      "created_at": "2026-08-25T07:40:20.242011+00:00",
+      "photos": []
+    },
+    {
+      "id": "8321815",
+      "taxon": "Russula intermedia P. Karst.",
+      "est_name": "Lundelli pilvik",
+      "date": "2023-07-30",
+      "latitude": 57.73214722,
+      "longitude": 27.06618333,
+      "altitude": 270.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321815",
+      "created_at": "2026-08-25T07:38:48.294552+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/caf4d9e2-ae65-4270-8a60-fe34e6121da6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/caf4d9e2-ae65-4270-8a60-fe34e6121da6.jpg",
+          "filename": "688D41D5-8F44-40AB-A318-8E37D1830D79_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321814",
+      "taxon": "Russula consobrina (Fr.) Fr.",
+      "est_name": "hõimpilvik",
+      "date": "2022-08-07",
+      "latitude": 57.72110833,
+      "longitude": 27.03808333,
+      "altitude": 245.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321814",
+      "created_at": "2026-08-25T07:38:22.283904+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/8afea2eb-ba2d-4ac2-a4bd-975e5ddab9c1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/8afea2eb-ba2d-4ac2-a4bd-975e5ddab9c1.jpg",
+          "filename": "BFBC4D50-5EC3-4374-913C-E4E8287552D5_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8321812",
+      "taxon": "Russula consobrina (Fr.) Fr.",
+      "est_name": "hõimpilvik",
+      "date": "2022-07-27",
+      "latitude": 57.72042222,
+      "longitude": 27.03748056,
+      "altitude": 253.7,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "is_verified": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8321812",
+      "created_at": "2026-08-25T07:38:08.859226+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d8ff50e3-0a26-4c2a-89d9-fee09af72552.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d8ff50e3-0a26-4c2a-89d9-fee09af72552.jpg",
+          "filename": "6B7B60EA-8A33-4535-9DF8-48BA5BF8C2DE_1_105_c.jpeg"
+        }
+      ]
+    },
     {
       "id": "8321811",
       "taxon": "Russula consobrina (Fr.) Fr.",
@@ -21966,13 +24268,7 @@
       "project_name": "",
       "url": "https://app.plutof.ut.ee/observation/view/8318915",
       "created_at": "2026-08-20T15:03:16.778875+00:00",
-      "photos": [
-        {
-          "url": "https://s3.hpc.ut.ee/plutof-public/large/41ddf844-8a07-4770-9777-68c6d75c0d5c.jpg",
-          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/41ddf844-8a07-4770-9777-68c6d75c0d5c.jpg",
-          "filename": "1B6C3D2C-2001-4966-A178-F32564CA1FBD_1_105_c.jpeg"
-        }
-      ]
+      "photos": []
     },
     {
       "id": "8318914",
