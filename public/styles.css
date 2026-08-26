@@ -948,13 +948,21 @@ html, body {
 
 .vernacular-pill {
   display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  padding: 4px 8px;
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.vernacular-pill .pill-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .vernacular-pill.is-pref {
@@ -968,13 +976,21 @@ html, body {
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding-right: 4px;
+  padding-right: 5px;
   border-right: 1px solid var(--border-color);
 }
 
 .vernacular-pill .name-label {
   font-weight: 600;
   color: var(--text-primary);
+}
+
+.vernacular-pill .literal-trans {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  letter-spacing: 0.01em;
+  opacity: 0.9;
 }
 
 /* Modal Drawer View */

@@ -804,9 +804,13 @@ function openModal(o) {
       o.vernacular_names.forEach(v => {
         const lang = v.lang_name || v.language || "Muu keel";
         const prefClass = v.is_preferred ? "is-pref" : "";
+        const litHtml = v.literal_trans ? `<span class="literal-trans">≈ "${escapeHtml(v.literal_trans)}"</span>` : "";
         vHtml += `<div class="vernacular-pill ${prefClass}">
-          <span class="lang-label">${escapeHtml(lang)}</span>
-          <span class="name-label">${escapeHtml(v.name)}</span>
+          <div class="pill-header">
+            <span class="lang-label">${escapeHtml(lang)}</span>
+            <span class="name-label">${escapeHtml(v.name)}</span>
+          </div>
+          ${litHtml}
         </div>`;
       });
       vHtml += `</div>`;
