@@ -12,7 +12,8 @@ Executive minimalistlik ja suure jõudlusega mükoloogiline arhiiv ja reaalajas 
 - **Frontend:** Puhas natiivne Vanilla JS, modulaarne CSS (Dark/Light mode, mobiilne kohanduvus) ilma väliste raamistiketa.
 - **Autentimine ja Turvalukk:** Firebase Authentication (Google Sign-In) rangelt kontrollitud lubatud e-posti nimekirjaga (*Whitelist: `ALLOWED_EMAILS`*).
 - **Lehekülgede süsteem (Pagination):** 50 kirjet lehel, kiire topeltnavigatsiooniga (loendi alguses ja lõpus) ning sujuva kerimisega.
-- **Kaardirakendus:** Leaflet.js koos CartoDB Positron (Light) ja CartoDB Dark Matter (Dark) kihtidega.
+- **Kaardirakendus:** Leaflet.js koos ESRI Canvas World Light Gray Base (Light) ja World Dark Gray Base (Dark) kihtidega (puhtad, ilma vesimärkideta ja kiire laadimisega).
+- **Mitmekeelne Taksonoomiamootor:** Automaatne nimerikastaja, mis ühendab PlutoF/eElurikkuse, Laji.fi (FinBIF), Dyntaxa (SLU), iNaturalist (vene keel) ja Wikidata/GBIF registrid 14 keeles (eesti, soome, rootsi, taani, norra, vene, läti, leedu, saksa, inglise, poola, prantsuse, hispaania, itaalia).
 - **Andmebaas:** SQLite andmebaasist genereeritav optimeeritud JSON (`public/data/observations.json`).
 - **Automaatne sünkroon:** GitHub Actions töövoog (`.github/workflows/sync_plutof.yml`) PlutoF andmete automaatseks eksportimiseks ja majutamiseks.
 
