@@ -529,14 +529,44 @@ function renderList() {
     card.onclick = () => openModal(o);
 
     let imgHtml = "";
-    if (o.photos && o.photos.length > 0 && o.photos[0].url && o.photos[0].url.startsWith("http")) {
-      const src = o.photos[0].url;
-      imgHtml = `<img src="${src}" alt="${escapeHtml(o.taxon)}" class="obs-thumb" loading="lazy" onerror="this.style.display='none';">`;
-    } else {
+    const validPhotos = (o.photos || []).filter(p => p && p.url && p.url.startsWith("http"));
+
+    if (validPhotos.length === 0) {
       imgHtml = `<div class="obs-no-thumb">Foto puudub</div>`;
+    } else if (validPhotos.length === 1) {
+      imgHtml = `<img src="${validPhotos[0].url}" alt="${escapeHtml(o.taxon)}" class="obs-thumb" loading="lazy" onerror="this.style.display='none';">`;
+    } else if (validPhotos.length === 2) {
+      imgHtml = `
+        <div class="obs-multi-thumb layout-2">
+          <img src="${validPhotos[0].url}" alt="${escapeHtml(o.taxon)}" class="multi-img" loading="lazy" onerror="this.style.display='none';">
+          <img src="${validPhotos[1].url}" alt="${escapeHtml(o.taxon)}" class="multi-img" loading="lazy" onerror="this.style.display='none';">
+        </div>
+      `;
+    } else {
+      const extraCount = validPhotos.length - 3;
+      const moreOverlay = extraCount > 0 ? `<div class="side-img-more">+${extraCount}</div>` : "";
+      imgHtml = `
+        <div class="obs-multi-thumb layout-3plus">
+          <div class="multi-col-main">
+            <img src="${validPhotos[0].url}" alt="${escapeHtml(o.taxon)}" loading="lazy" onerror="this.style.display='none';">
+          </div>
+          <div class="multi-col-side">
+            <div class="side-img-wrapper">
+              <img src="${validPhotos[1].url}" alt="${escapeHtml(o.taxon)}" loading="lazy" onerror="this.style.display='none';">
+            </div>
+            <div class="side-img-wrapper">
+              <img src="${validPhotos[2].url}" alt="${escapeHtml(o.taxon)}" loading="lazy" onerror="this.style.display='none';">
+              ${moreOverlay}
+            </div>
+          </div>
+        </div>
+      `;
     }
 
     let topBadges = "";
+    if (validPhotos.length > 1) {
+      topBadges += `<span class="badge badge-photo-count">${validPhotos.length} FOTOT</span>`;
+    }
     if (o.red_list_status) {
       const code = o.red_list_status;
       const label = (o.red_list_label || "").split("(")[1]?.replace(")", "") || code;
@@ -840,9 +870,36 @@ function openModal(o) {
   plutofLink.href = o.url || `https://app.plutof.ut.ee/observation/view/${o.id}`;
 
   const gallery = document.getElementById("modalGallery");
-  if (o.photos && o.photos.length > 0 && o.photos[0].url && o.photos[0].url.startsWith("http")) {
-    gallery.style.display = "flex";
-    gallery.innerHTML = `<img src="${o.photos[0].url}" alt="${escapeHtml(o.taxon)}" class="modal-main-image">`;
+  const validPhotos = (o.photos || []).filter(p => p && p.url && p.url.startsWith("http"));
+  currentModalObs = o;
+
+  if (validPhotos.length > 0) {
+    gallery.style.display = "block";
+    let thumbsHtml = "";
+    if (validPhotos.length > 1) {
+      thumbsHtml = `<div class="modal-gallery-strip">`;
+      validPhotos.forEach((p, idx) => {
+        const activeClass = idx === 0 ? "active" : "";
+        thumbsHtml += `
+          <button type="button" class="modal-gallery-thumb ${activeClass}" onclick="switchModalPhoto(${idx})" title="Vaata fotot ${idx + 1}">
+            <img src="${p.thumbnail || p.url}" alt="Foto ${idx + 1}">
+          </button>
+        `;
+      });
+      thumbsHtml += `</div>`;
+    }
+    
+    const counterHtml = validPhotos.length > 1 ? `<div class="modal-photo-counter" id="modalPhotoCounter">Foto 1 / ${validPhotos.length}</div>` : "";
+
+    gallery.innerHTML = `
+      <div class="modal-gallery-container">
+        <div class="modal-gallery-main">
+          <img id="modalMainImage" src="${validPhotos[0].url}" alt="${escapeHtml(o.taxon)}" class="modal-main-image" onclick="window.open('${validPhotos[0].url}', '_blank')">
+          ${counterHtml}
+        </div>
+        ${thumbsHtml}
+      </div>
+    `;
   } else {
     gallery.style.display = "none";
     gallery.innerHTML = "";
@@ -850,6 +907,29 @@ function openModal(o) {
 
   modal.classList.add("open");
 }
+
+let currentModalObs = null;
+
+window.switchModalPhoto = function(idx) {
+  if (!currentModalObs) return;
+  const validPhotos = (currentModalObs.photos || []).filter(p => p && p.url && p.url.startsWith("http"));
+  if (!validPhotos[idx]) return;
+  const p = validPhotos[idx];
+  const mainImg = document.getElementById("modalMainImage");
+  if (mainImg) {
+    mainImg.src = p.url;
+    mainImg.onclick = () => window.open(p.url, "_blank");
+  }
+  const counter = document.getElementById("modalPhotoCounter");
+  if (counter) {
+    counter.textContent = `Foto ${idx + 1} / ${validPhotos.length}`;
+  }
+  const thumbs = document.querySelectorAll(".modal-gallery-thumb");
+  thumbs.forEach((t, i) => {
+    if (i === idx) t.classList.add("active");
+    else t.classList.remove("active");
+  });
+};
 
 function closeModal() {
   document.getElementById("obsModal").classList.remove("open");

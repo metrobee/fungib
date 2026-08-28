@@ -734,6 +734,104 @@ html, body {
   transform: scale(1.03);
 }
 
+/* Multi-photo card layouts */
+.obs-multi-thumb {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.obs-multi-thumb.layout-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 100%;
+}
+
+.obs-multi-thumb.layout-2 .multi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.obs-card:hover .obs-multi-thumb.layout-2 .multi-img {
+  transform: scale(1.04);
+}
+
+.obs-multi-thumb.layout-3plus {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2px;
+  height: 100%;
+}
+
+.obs-multi-thumb.layout-3plus .multi-col-main {
+  height: 100%;
+  overflow: hidden;
+}
+
+.obs-multi-thumb.layout-3plus .multi-col-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.obs-multi-thumb.layout-3plus .multi-col-side {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.obs-multi-thumb.layout-3plus .multi-col-side .side-img-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.obs-multi-thumb.layout-3plus .multi-col-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.obs-card:hover .obs-multi-thumb.layout-3plus .multi-col-main img,
+.obs-card:hover .obs-multi-thumb.layout-3plus .multi-col-side img {
+  transform: scale(1.04);
+}
+
+.side-img-more {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+}
+
+.badge-photo-count {
+  background-color: rgba(15, 23, 42, 0.85);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
 .obs-no-thumb {
   width: 100%;
   height: 100%;
@@ -1066,19 +1164,88 @@ html, body {
 
 .modal-gallery {
   width: 100%;
+}
+
+.modal-gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.modal-gallery-main {
+  width: 100%;
   max-height: 480px;
+  min-height: 240px;
   background-color: var(--bg-secondary);
   border-radius: var(--radius-md);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .modal-main-image {
   max-width: 100%;
   max-height: 480px;
   object-fit: contain;
+  cursor: zoom-in;
+  transition: opacity 0.15s ease;
+}
+
+.modal-gallery-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0;
+  scrollbar-width: thin;
+}
+
+.modal-gallery-thumb {
+  width: 72px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--border-color);
+  overflow: hidden;
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+  padding: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+  opacity: 0.65;
+}
+
+.modal-gallery-thumb:hover {
+  opacity: 1;
+  border-color: var(--text-muted);
+  transform: translateY(-1px);
+}
+
+.modal-gallery-thumb.active {
+  opacity: 1;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.modal-gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-photo-counter {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(15, 23, 42, 0.75);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
 }
 
 .modal-details-grid {
