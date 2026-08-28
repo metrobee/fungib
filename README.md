@@ -13,7 +13,19 @@ Executive minimalistlik ja suure jõudlusega mükoloogiline arhiiv ja reaalajas 
 - **Autentimine ja Turvalukk:** Firebase Authentication (Google Sign-In) rangelt kontrollitud lubatud e-posti nimekirjaga (*Whitelist: `ALLOWED_EMAILS`*).
 - **Lehekülgede süsteem (Pagination):** 50 kirjet lehel, kiire topeltnavigatsiooniga (loendi alguses ja lõpus) ning sujuva kerimisega.
 - **Kaardirakendus:** Leaflet.js koos ESRI Canvas World Light Gray Base (Light) ja World Dark Gray Base (Dark) kihtidega (puhtad, ilma vesimärkideta ja kiire laadimisega).
-- **Mitmekeelne Taksonoomiamootor:** Automaatne nimerikastaja, mis ühendab PlutoF/eElurikkuse, Laji.fi (FinBIF), Dyntaxa (SLU), iNaturalist (vene keel) ja Wikidata/GBIF registrid 14 keeles (eesti, soome, rootsi, taani, norra, vene, läti, leedu, saksa, inglise, poola, prantsuse, hispaania, itaalia).
+- **Dünaamiline Mitmikfotode Võrgustik (Multi-Photo Layouts):**
+  - **1 foto:** Üksik täismõõdus eelvaatepilt.
+  - **2 fotot:** 2-veeruline kõrvuti jaotus (50% / 50%), võimaldades kohe näha nii seene kübarat kui ka eoslehekesi/torikuid.
+  - **3+ fotot:** Hero-põhine fotovõrgustik (60% peafoto + 2 lisafotot) koos diskreetse looriga `+N FOTOT` ja kaardi arvu tähisega.
+- **Interaktiivne Detailgalerii (Modal Gallery):**
+  - Suur kõrgresolutsioonis peafoto koos klikitava täissuuruses vaatega.
+  - Interaktiivne pisipiltide riba (*thumbnail strip*), millel klõpsates vahetub peafoto koheselt.
+  - Reaalajas fotode indeks (*nt Foto 1 / 4*).
+- **Mitmekeelne Taksonoomiamootor ja Sõnasõnaline Etümoloogia:**
+  - Ühendab PlutoF/eElurikkuse, Laji.fi (FinBIF), Dyntaxa (SLU), iNaturalist (vene keel) ja Wikidata/GBIF registrid 14 keeles.
+  - Iga võõrkeelse seenenime all kuvatakse selle sõnasõnaline (toores) etümoloogiline tõlge eesti keelde (`≈ "..."`).
+- **Projektide ja Uuringute Seostamine:**
+  - Tugi projektipõhisele filtreerimisele ja automaatsele sidumisele (*nt 2023 Autumn Mushroom Foray, Karula praktikum*).
 - **Andmebaas:** SQLite andmebaasist genereeritav optimeeritud JSON (`public/data/observations.json`).
 - **Automaatne sünkroon:** GitHub Actions töövoog (`.github/workflows/sync_plutof.yml`) PlutoF andmete automaatseks eksportimiseks ja majutamiseks.
 
