@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "total_observations": 2041,
-    "unique_taxa": 880,
+    "total_observations": 2071,
+    "unique_taxa": 886,
     "counties": [
       "Barcelonès",
       "Harju maakond",
@@ -29,16 +29,16 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-08-28T10:18:47.009422+00:00",
+    "generated_at": "2026-08-29T19:31:34.615644+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
-      "total": 2041,
-      "primary": 1482,
+      "total": 2071,
+      "primary": 1512,
       "co_observer": 559
     },
     "verification_stats": {
       "verified": 586,
-      "pending": 1455
+      "pending": 1485
     },
     "red_list_stats": {
       "total_listed": 177,
@@ -48,13 +48,13 @@
       "NT": 58,
       "DD": 2,
       "RE": 0,
-      "protected": 42
+      "protected": 69
     },
     "time_stats": {
-      "today": 129,
-      "this_week": 605,
-      "this_month": 1361,
-      "this_year": 1371
+      "today": 23,
+      "this_week": 635,
+      "this_month": 1391,
+      "this_year": 1401
     },
     "projects": [
       {
@@ -77,19 +77,3885 @@
       "person_id": "83911"
     },
     "latest_observation": {
-      "id": "8325446",
-      "taxon": "Leucocortinarius bulbiger (Alb. & Schwein.) Singer",
-      "est_name": "ebavöödik",
-      "date": "2021-10-02",
-      "locality": "Võlsi küla",
+      "id": "8326562",
+      "taxon": "Lactarius helvus (Fr.) Fr.",
+      "est_name": "sooriisikas",
+      "date": "2023-08-06",
+      "locality": "Kirikumäe küla",
       "county": "Võru maakond",
-      "url": "https://app.plutof.ut.ee/observation/view/8325446",
-      "created_at": "2026-08-28T10:14:34.555205+00:00",
+      "url": "https://app.plutof.ut.ee/observation/view/8326562",
+      "created_at": "2026-08-29T16:53:30.361450+00:00",
       "is_co_observer": false,
       "primary_observer": "Boris Meldre"
     }
   },
   "observations": [
+    {
+      "id": "8326562",
+      "taxon": "Lactarius helvus (Fr.) Fr.",
+      "taxon_id": "154112",
+      "est_name": "sooriisikas",
+      "vernacular_names": [
+        {
+          "name": "sooriisikas",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "lakritsirousku",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "lakritsriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "lakrisriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "lakrisriske",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mose-mælkehat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Млечник серо-розовый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Sarkandzeltaine",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Samaninis piengrybis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj płowy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Burnt-sugar Milky",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Fenugreek Milkcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Filziger Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Maggipilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire à odeur de céleri",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "lactario marrón amarillento",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "sooriisikas lakritsirousku lakritsriska lakrisriske lakrisriske Mose-mælkehat Млечник серо-розовый Sarkandzeltaine Samaninis piengrybis Mleczaj płowy Burnt-sugar Milky Fenugreek Milkcap Filziger Milchling Maggipilz Lactaire à odeur de céleri lactario marrón amarillento Lactarius helvus Lactarius helvus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-06",
+      "latitude": 57.68777222,
+      "longitude": 27.24761389,
+      "altitude": 178.6,
+      "locality": "Kirikumäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326562",
+      "created_at": "2026-08-29T16:53:30.361450+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/ffe5f131-f5cd-4611-83fc-a1d113b684c1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/ffe5f131-f5cd-4611-83fc-a1d113b684c1.jpg",
+          "filename": "8A7FD9B3-A572-4B94-874F-E5AA6B8D2333_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326561",
+      "taxon": "Lactarius torminosus (Schaeff.) Pers.",
+      "taxon_id": "154227",
+      "est_name": "kaseriisikas, vahelik, vahulik",
+      "vernacular_names": [
+        {
+          "name": "kaseriisikas",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "vahelik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "vahulik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "karvarousku",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "karvane-riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "skäggriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "skjeggriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "skjeggriske",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Волнушка розовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Parastais vilnītis",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Piengrybis paberžis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj wełnianka",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Woolly Milkcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Birken-Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Grubiger Weißtannen-Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kaseriisikas vahelik vahulik karvarousku skäggriska skjeggriske skjeggriske Волнушка розовая Parastais vilnītis Piengrybis paberžis Mleczaj wełnianka Woolly Milkcap Birken-Milchling Grubiger Weißtannen-Milchling Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées Lactarius torminosus (Schaeff.) Pers. Lactarius torminosus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-06",
+      "latitude": 57.68815556,
+      "longitude": 27.25010833,
+      "altitude": 187.8,
+      "locality": "Kirikumäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326561",
+      "created_at": "2026-08-29T16:53:10.821272+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2566047b-82b1-4e31-9980-925e6b411b09.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2566047b-82b1-4e31-9980-925e6b411b09.jpg",
+          "filename": "3EC498BD-A0C8-4633-BBC2-E0ADA515A0ED_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bce8890c-3cff-42f1-bd1e-2c3969d9fa04.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bce8890c-3cff-42f1-bd1e-2c3969d9fa04.jpg",
+          "filename": "12AE7E6A-D6C8-48A1-9EE9-95AB90F9506F_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9618e16f-db67-4c86-a2f9-5ecc65d7007f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9618e16f-db67-4c86-a2f9-5ecc65d7007f.jpg",
+          "filename": "69511EF0-77AE-469A-BB98-CC2B7DB0AD56_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326557",
+      "taxon": "Cantharellus cibarius Fr.",
+      "taxon_id": "137204",
+      "est_name": "harilik kukeseen",
+      "vernacular_names": [
+        {
+          "name": "harilik kukeseen",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "keltavahvero",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "kollane-",
+          "is_preferred": false
+        },
+        {
+          "name": "kantarell",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "kantarell",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "kantarell",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Almindelig kantarel",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Лисичка обыкновенная",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "harilik rebasekene (kukeseen)",
+          "is_preferred": false
+        },
+        {
+          "name": "Parastā gailene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "valgomoji voveraitė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "pieprznik jadalny",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chanterelle",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Echter Pfifferling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Eierschwammerl",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Anacate",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Cardarella",
+          "language": "ita",
+          "lang_name": "Itaalia keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chantarela",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chanterelle commune",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chanterelle à plis pâles",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chevrette",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Duraznillo",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Fifrelin",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Finferlo",
+          "language": "ita",
+          "lang_name": "Itaalia keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "harilik kukeseen keltavahvero kantarell kantarell kantarell Almindelig kantarel Лисичка обыкновенная Parastā gailene valgomoji voveraitė pieprznik jadalny Chanterelle Echter Pfifferling Eierschwammerl Anacate Cardarella Chantarela Chanterelle commune Chanterelle à plis pâles Chevrette Duraznillo Fifrelin Finferlo Cantharellus cibarius Cantharellus cibarius",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-07",
+      "latitude": 57.65940833,
+      "longitude": 26.87898056,
+      "altitude": 160.6,
+      "locality": "Mikita küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326557",
+      "created_at": "2026-08-29T16:52:12.678161+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/46f07d73-e59e-4bfd-a0e8-f55a07350af7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/46f07d73-e59e-4bfd-a0e8-f55a07350af7.jpg",
+          "filename": "2577107C-3491-439D-93E5-5B965DB314E8_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326555",
+      "taxon": "Amanita rubescens Pers.",
+      "taxon_id": "131992",
+      "est_name": "roosa kärbseseen",
+      "vernacular_names": [
+        {
+          "name": "roosa kärbseseen",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rusokärpässieni",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "rodnande flugsvamp",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "rødnende fluesopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "punane seen",
+          "is_preferred": false
+        },
+        {
+          "name": "raudnande flugesopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Rødmende fluesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "punane seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Мухомор серо-розовый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "kärbsetapja",
+          "is_preferred": false
+        },
+        {
+          "name": "Sarkstošā mušmire",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "Pērļainā mušmire",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rausvoji musmirė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "muchomor czerwieniejący",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Blusher",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Perlpilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Amanite rougissante, Oronge vineuse",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "roosa kärbseseen rusokärpässieni rodnande flugsvamp rødnende fluesopp raudnande flugesopp Rødmende fluesvamp Мухомор серо-розовый Sarkstošā mušmire Pērļainā mušmire Rausvoji musmirė muchomor czerwieniejący Blusher Perlpilz Amanite rougissante, Oronge vineuse Amanita rubescens Pers. Amanita rubescens",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-08",
+      "latitude": 57.89592778,
+      "longitude": 26.99872778,
+      "altitude": 89.8,
+      "locality": "Loosu küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326555",
+      "created_at": "2026-08-29T16:51:59.353253+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e68749c7-addb-42cf-ac64-addb4c561f6d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e68749c7-addb-42cf-ac64-addb4c561f6d.jpg",
+          "filename": "F047A490-4532-4855-8B70-DB37A22659B0_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326554",
+      "taxon": "Leucocybe connata (Schumach.) Vizzini, P. Alvarado, G. Moreno & Consiglio",
+      "taxon_id": "212943",
+      "est_name": "valge kobarheinik",
+      "vernacular_names": [],
+      "all_names_search": "valge kobarheinik Leucocybe connata (Schumach.) Vizzini, P. Alvarado, G. Moreno & Consiglio",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-08",
+      "latitude": 57.74543333,
+      "longitude": 27.04350278,
+      "altitude": 256.0,
+      "locality": "Simula küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326554",
+      "created_at": "2026-08-29T16:51:44.004882+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e0358917-9ce7-44b7-a58c-8ab03ea36156.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e0358917-9ce7-44b7-a58c-8ab03ea36156.jpg",
+          "filename": "A938D02D-F9A7-4823-8C62-9531943E6F51_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326553",
+      "taxon": "Pseudohydnum gelatinosum (Scop.) P. Karst.",
+      "taxon_id": "169621",
+      "est_name": "pärisüdik, üdik, üdiseen",
+      "vernacular_names": [
+        {
+          "name": "pärisüdik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "üdik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "üdiseen",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "issvullsopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "issvullsopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Bævretand",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Ложноежовик студенистый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Adatreceklene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Parastā receklene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Drebutinis netikradyglis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Galaretek kolczasty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Cat's Tongue",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Jelly Tongue",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Jelly Tooth",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Toothed Jelly Fungus",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Eispilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Eiszitterpilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Gallertiger Zitterzahn",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Gallertstacheling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Faux hydne gélatineux",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Faux-hydne gélatineux",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "pärisüdik üdik üdiseen issvullsopp issvullsopp Bævretand Ложноежовик студенистый Adatreceklene Parastā receklene Drebutinis netikradyglis Galaretek kolczasty Cat's Tongue Jelly Tongue Jelly Tooth Toothed Jelly Fungus Eispilz Eiszitterpilz Gallertiger Zitterzahn Gallertstacheling Faux hydne gélatineux Faux-hydne gélatineux Pseudohydnum gelatinosum (Scop.) P. Karst. Pseudohydnum gelatinosum",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73626667,
+      "longitude": 27.05953056,
+      "altitude": 253.3,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326553",
+      "created_at": "2026-08-29T16:51:31.243146+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/2fbbe700-818d-4090-a526-3fdd3c053e1d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/2fbbe700-818d-4090-a526-3fdd3c053e1d.jpg",
+          "filename": "07A07C6A-29A6-47C3-A530-73A0F8DEBB8F_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/77b58600-c048-442f-993d-9bd58a4c421a.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/77b58600-c048-442f-993d-9bd58a4c421a.jpg",
+          "filename": "794EA4E3-4914-4A2B-B726-07FEBEF67766_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326552",
+      "taxon": "Tricholomopsis rutilans (Schaeff.) Singer",
+      "taxon_id": "179242",
+      "est_name": "kännuheinik, punakas puiduheinik",
+      "vernacular_names": [
+        {
+          "name": "kännuheinik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "punakas puiduheinik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "purppuralahovalmuska",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "heinik",
+          "is_preferred": false
+        },
+        {
+          "name": "Prickmusseron",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rød stubbemusserong",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "punane",
+          "is_preferred": false
+        },
+        {
+          "name": "raud stubbemusserong",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Purpur-væbnerhat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Рядовка жёлто-красная",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Parastā vistene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Raudongalvis baltikenis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rycerzyk czerwonozłoty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Plums And Custard",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Plums-and-Custard",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Purpurfilziger Holzritterling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Rötlicher Holzritterling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Tricholome rutilant",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kännuheinik punakas puiduheinik purppuralahovalmuska Prickmusseron rød stubbemusserong raud stubbemusserong Purpur-væbnerhat Рядовка жёлто-красная Parastā vistene Raudongalvis baltikenis Rycerzyk czerwonozłoty Plums And Custard Plums-and-Custard Purpurfilziger Holzritterling Rötlicher Holzritterling Tricholome rutilant Tricholomopsis rutilans (Schaeff.) Singer Tricholomopsis rutilans",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73645833,
+      "longitude": 27.06766944,
+      "altitude": 279.2,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326552",
+      "created_at": "2026-08-29T16:51:13.784317+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bcc05b05-afe4-4349-a50b-649dd9da0f20.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bcc05b05-afe4-4349-a50b-649dd9da0f20.jpg",
+          "filename": "30547750-5C4F-4480-A4A1-106072BB2EC7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326550",
+      "taxon": "Tricholomopsis decora (Fr.) Singer",
+      "taxon_id": "179237",
+      "est_name": "kuld-puiduheinik",
+      "vernacular_names": [
+        {
+          "name": "kuld-puiduheinik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "keltalahovalmuska",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "kollane-heinik",
+          "is_preferred": false
+        },
+        {
+          "name": "Stubbmusseron",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "brungul stubbemusserong",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "pruun",
+          "is_preferred": false
+        },
+        {
+          "name": "brungul stubbemusserong",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "pruun",
+          "is_preferred": false
+        },
+        {
+          "name": "Sortskællet væbnerhat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "must kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Трихоломопсис красивый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Krāšņā vistene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Gelsvasis Baltikenis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rycerzyk oliwkowożółty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Decorated Mop",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Prunes And Custard",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Olivgelber Holzritterling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Tricholome décoré",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kuld-puiduheinik keltalahovalmuska Stubbmusseron brungul stubbemusserong brungul stubbemusserong Sortskællet væbnerhat Трихоломопсис красивый Krāšņā vistene Gelsvasis Baltikenis Rycerzyk oliwkowożółty Decorated Mop Prunes And Custard Olivgelber Holzritterling Tricholome décoré Tricholomopsis decora Tricholomopsis decora",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73696389,
+      "longitude": 27.06788333,
+      "altitude": 265.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326550",
+      "created_at": "2026-08-29T16:50:59.448193+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6a532eb6-26b8-4ccd-bc25-ebec746744a5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6a532eb6-26b8-4ccd-bc25-ebec746744a5.jpg",
+          "filename": "DDFDD0C9-6995-4411-9969-C4A9E1EA8C34_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/41117223-1923-4114-9d4e-8167d9f6ae0f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/41117223-1923-4114-9d4e-8167d9f6ae0f.jpg",
+          "filename": "A7578593-5757-48D0-9072-1CA2993D6AD1_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326549",
+      "taxon": "Phlebia centrifuga P. Karst.",
+      "taxon_id": "164990",
+      "est_name": "volt-tardnahkis",
+      "vernacular_names": [
+        {
+          "name": "volt-tardnahkis",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "pohjanrypykkä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rynkskinn",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rynkeskinn",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rukkeskinn",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Флебия медовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "volt-tardnahkis pohjanrypykkä rynkskinn rynkeskinn rukkeskinn Флебия медовая Phlebia centrifuga P. Karst. Phlebia centrifuga",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73776944,
+      "longitude": 27.06631944,
+      "altitude": 273.0,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326549",
+      "created_at": "2026-08-29T16:50:43.080480+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/fbd5f13d-b292-4959-8894-06e525382b20.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/fbd5f13d-b292-4959-8894-06e525382b20.jpg",
+          "filename": "7A46E2E5-045D-4876-A072-0FFB67679555_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/76c6e772-e0ab-4db8-8e12-5db6f4c3f824.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/76c6e772-e0ab-4db8-8e12-5db6f4c3f824.jpg",
+          "filename": "5CF658A7-9E42-4FEA-8D2A-3608844245F3_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326548",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "taxon_id": "170683",
+      "est_name": "harilik roostetorik, roostetorik",
+      "vernacular_names": [
+        {
+          "name": "harilik roostetorik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "roostetorik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rusokääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "brandticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "flammekjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "flammekjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Flammeporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Пикнопореллус блестящий",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Liesmainā egļpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Skaisčioji raudonpintėlė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Pomarańczowiec błyszczący",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Leuchtender Weichporling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore flamboyant",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "harilik roostetorik roostetorik rusokääpä brandticka flammekjuke flammekjuke Flammeporesvamp Пикнопореллус блестящий Liesmainā egļpiepe Skaisčioji raudonpintėlė Pomarańczowiec błyszczący Leuchtender Weichporling Polypore flamboyant Pycnoporellus fulgens (Fr.) Donk Pycnoporellus fulgens",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73770833,
+      "longitude": 27.06684444,
+      "altitude": 287.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326548",
+      "created_at": "2026-08-29T16:50:28.067494+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/f64427b6-3c22-4976-b025-51d8767e59b1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/f64427b6-3c22-4976-b025-51d8767e59b1.jpg",
+          "filename": "7F0C0B20-0C3D-4D9C-8E81-C454E0C5429F_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326547",
+      "taxon": "Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch.",
+      "taxon_id": "164872",
+      "est_name": "joontaelik",
+      "vernacular_names": [
+        {
+          "name": "joontaelik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "aarnikääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "gränsticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "svartsonekjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Феллинус черноограниченный",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Феллинус чернополосный",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Melnsvītras cietpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Tamsiarudė kempinė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "joontaelik aarnikääpä gränsticka svartsonekjuke Феллинус черноограниченный Феллинус чернополосный Melnsvītras cietpiepe Tamsiarudė kempinė Phellopilus nigrolimitatus (Romell) Niemelä, T. Wagner & M. Fisch. Phellopilus nigrolimitatus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73741944,
+      "longitude": 27.06748889,
+      "altitude": 267.2,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326547",
+      "created_at": "2026-08-29T16:49:48.234836+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/85a0f27d-b889-422e-af1f-8f075f5a7001.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/85a0f27d-b889-422e-af1f-8f075f5a7001.jpg",
+          "filename": "86EF60BF-619A-451E-86B6-E7C29650F149_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326546",
+      "taxon": "Fomes fomentarius (L.) J.J. Kickx",
+      "taxon_id": "147842",
+      "est_name": "tuletael",
+      "vernacular_names": [
+        {
+          "name": "tuletael",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "taulakääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "tuletael (taelataelik)",
+          "is_preferred": false
+        },
+        {
+          "name": "fnösk-ticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taela-taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "fnöskticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "tuletael (taelataelik)",
+          "is_preferred": false
+        },
+        {
+          "name": "knuskkjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "tuletael (taelataelik)",
+          "is_preferred": false
+        },
+        {
+          "name": "knuskkjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "tuletael (taelataelik)",
+          "is_preferred": false
+        },
+        {
+          "name": "tøndersvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "tuletael (püssirohutünniseen)",
+          "is_preferred": false
+        },
+        {
+          "name": "Трутовик настоящий",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "ehtne tuletael",
+          "is_preferred": false
+        },
+        {
+          "name": "Īstā posapiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "Tikroji pintis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Hubiak pospolity",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Hoof Fungus",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "kabjaseen (kabjakujuline tuletael)",
+          "is_preferred": false
+        },
+        {
+          "name": "Tinder Bracket",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "süütematerjali konsoolseen (tuletael)",
+          "is_preferred": false
+        },
+        {
+          "name": "Zunderschwamm",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "taelaseen (tuletael)",
+          "is_preferred": false
+        },
+        {
+          "name": "Amadouvier, Polypore allume-feu",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Hongo yesquero",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "tuletael taulakääpä fnösk-ticka fnöskticka knuskkjuke knuskkjuke tøndersvamp Трутовик настоящий Īstā posapiepe Tikroji pintis Hubiak pospolity Hoof Fungus Tinder Bracket Zunderschwamm Amadouvier, Polypore allume-feu Hongo yesquero Fomes fomentarius Fomes fomentarius",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73672778,
+      "longitude": 27.06747222,
+      "altitude": 330.8,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326546",
+      "created_at": "2026-08-29T16:49:33.006267+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/97a57248-e22f-45f0-901d-3dd073c15092.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/97a57248-e22f-45f0-901d-3dd073c15092.jpg",
+          "filename": "823E2A5D-D752-447D-B8FB-BB8886D539B7_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d8f86b0f-0e71-4fbb-aec6-bcf67ccea2ba.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d8f86b0f-0e71-4fbb-aec6-bcf67ccea2ba.jpg",
+          "filename": "C924E3D5-B65D-421D-B521-A538F121E41B_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d6b2bb80-9ff9-4eda-aadc-27b28311259d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d6b2bb80-9ff9-4eda-aadc-27b28311259d.jpg",
+          "filename": "B682ABDD-6B14-4546-9EE8-C0F5ADD0E4B7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326542",
+      "taxon": "Ischnoderma benzoinum (Wahlenb.) P. Karst.",
+      "taxon_id": "153338",
+      "est_name": "harilik tõrvis",
+      "vernacular_names": [
+        {
+          "name": "harilik tõrvis",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "tervakääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Sotticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "tjærekjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "tjørekjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Gran-tjæreporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Ишнодерма смолисто-пахучая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Melnā samtpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Tamsioji kelmenė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Smolucha świerkowa",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Benzoin Bracket",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Schwarzgebänderter Harzporling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore balsamique",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "políporo cresteado",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "harilik tõrvis tervakääpä Sotticka tjærekjuke tjørekjuke Gran-tjæreporesvamp Ишнодерма смолисто-пахучая Melnā samtpiepe Tamsioji kelmenė Smolucha świerkowa Benzoin Bracket Schwarzgebänderter Harzporling Polypore balsamique políporo cresteado Ischnoderma benzoinum (Wahlenb.) P. Karst. Ischnoderma benzoinum",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73648333,
+      "longitude": 27.06774167,
+      "altitude": 283.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326542",
+      "created_at": "2026-08-29T16:49:07.326843+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/67e1f639-2f4d-4ed9-b5ac-b5e80ca75c92.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/67e1f639-2f4d-4ed9-b5ac-b5e80ca75c92.jpg",
+          "filename": "CC8683F0-2956-4CE3-AB98-DC324BFF2CC9_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5cfc2cc2-336d-465c-9abe-98959d0c5ca7.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5cfc2cc2-336d-465c-9abe-98959d0c5ca7.jpg",
+          "filename": "A278751F-6199-45EA-8F10-606DFC35D62F_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/63cfee13-a73a-4dac-84f3-381b7ea24b54.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/63cfee13-a73a-4dac-84f3-381b7ea24b54.jpg",
+          "filename": "3446F02B-64DD-4A3B-89C4-4D81CB5EB495_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/acd192a7-8fe3-4dec-922b-471e839835be.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/acd192a7-8fe3-4dec-922b-471e839835be.jpg",
+          "filename": "E0774F5D-B214-4DC8-8DC5-4254B97A8058_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5058c15c-46bf-40c8-86b1-48c92a2bf299.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5058c15c-46bf-40c8-86b1-48c92a2bf299.jpg",
+          "filename": "B88246E5-4F46-480C-BE12-EAC7346EA151_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326540",
+      "taxon": "Pluteus leoninus (Schaeff.) P. Kumm.",
+      "taxon_id": "168016",
+      "est_name": "kollakaspruun napsik",
+      "vernacular_names": [],
+      "all_names_search": "kollakaspruun napsik Pluteus leoninus (Schaeff.) P. Kumm.",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73557222,
+      "longitude": 27.06244444,
+      "altitude": 291.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326540",
+      "created_at": "2026-08-29T16:48:43.209319+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a2702743-3104-49c6-997c-3b664bd51664.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a2702743-3104-49c6-997c-3b664bd51664.jpg",
+          "filename": "D5C4519B-1121-4F51-8096-431937A280D5_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6f1b625f-7586-42f1-ad2c-cada8e17e3e1.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6f1b625f-7586-42f1-ad2c-cada8e17e3e1.jpg",
+          "filename": "18699B26-222F-4FD7-A87F-97623D62483C_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b15adadd-fd28-4fcf-bdb8-56df5bf810cd.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b15adadd-fd28-4fcf-bdb8-56df5bf810cd.jpg",
+          "filename": "D79C6509-42D8-4AF0-90FE-4E159CF0D942_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326538",
+      "taxon": "Pycnoporellus fulgens (Fr.) Donk",
+      "taxon_id": "170683",
+      "est_name": "harilik roostetorik, roostetorik",
+      "vernacular_names": [
+        {
+          "name": "harilik roostetorik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "roostetorik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rusokääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "brandticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "flammekjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "flammekjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Flammeporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Пикнопореллус блестящий",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Liesmainā egļpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Skaisčioji raudonpintėlė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Pomarańczowiec błyszczący",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Leuchtender Weichporling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore flamboyant",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "harilik roostetorik roostetorik rusokääpä brandticka flammekjuke flammekjuke Flammeporesvamp Пикнопореллус блестящий Liesmainā egļpiepe Skaisčioji raudonpintėlė Pomarańczowiec błyszczący Leuchtender Weichporling Polypore flamboyant Pycnoporellus fulgens (Fr.) Donk Pycnoporellus fulgens",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73561111,
+      "longitude": 27.05965,
+      "altitude": 244.9,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326538",
+      "created_at": "2026-08-29T16:48:17.373749+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a75595a8-0c52-4ffe-b28c-3bcc593b0996.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a75595a8-0c52-4ffe-b28c-3bcc593b0996.jpg",
+          "filename": "1D0D6FA7-4A1C-4BF0-BD09-5935A7DE9AE2_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326537",
+      "taxon": "Amanita phalloides (Vaill. ex Fr.) Link",
+      "taxon_id": "131967",
+      "est_name": "roheline kärbseseen",
+      "vernacular_names": [
+        {
+          "name": "roheline kärbseseen",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "kavalakärpässieni",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "lömsk flugsvamp",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "grønn fluesopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "grøn flugesopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Grøn fluesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Бледная поганка",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Zaļā mušmire",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Žalsvoji musmirė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Muchomor zielonawy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Death Cap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Deathcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "The Death Cap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Grüner Knollenblätterpilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Amanite phalloïde, Oronge verte, Calice de la mort, Agaric bulbeux, Oronge ciguë",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Cicuta verde",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "amanite phalloïde",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "roheline kärbseseen kavalakärpässieni lömsk flugsvamp grønn fluesopp grøn flugesopp Grøn fluesvamp Бледная поганка Zaļā mušmire Žalsvoji musmirė Muchomor zielonawy Death Cap Deathcap The Death Cap Grüner Knollenblätterpilz Amanite phalloïde, Oronge verte, Calice de la mort, Agaric bulbeux, Oronge ciguë Cicuta verde amanite phalloïde Amanita phalloides Amanita phalloides",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-10",
+      "latitude": 57.73764444,
+      "longitude": 27.05283889,
+      "altitude": 247.9,
+      "locality": "Soodi küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326537",
+      "created_at": "2026-08-29T16:48:05.672432+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5660dff6-7915-44e3-bbd8-b4677f8c9a1c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5660dff6-7915-44e3-bbd8-b4677f8c9a1c.jpg",
+          "filename": "131AA1ED-B92E-4607-96F0-54B4BA36870E_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5f821f62-3eb0-4dbb-bb13-5506f16f5d87.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5f821f62-3eb0-4dbb-bb13-5506f16f5d87.jpg",
+          "filename": "38E52510-F4B5-476D-93D5-24B67E65BB9B_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326536",
+      "taxon": "Suillus variegatus (Sw.) Kuntze",
+      "taxon_id": "177116",
+      "est_name": "liivapuravik, liivapäkk, liivtatik",
+      "vernacular_names": [
+        {
+          "name": "liivapuravik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "liivapäkk",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "liivtatik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "kangastatti",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "nõmme-puravik",
+          "is_preferred": false
+        },
+        {
+          "name": "sandsopp",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "puravik",
+          "is_preferred": false
+        },
+        {
+          "name": "56092",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "sandsopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "sandsopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Broget slimrørhat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Маслёнок жёлто-бурый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Priežu sviestbeka",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Geltonasis kazlėkas",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Maślak pstry",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Velvet Bolete",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Sand-Röhrling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Sandröhrling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Bolet moucheté",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "boleto manchado",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "boleto variegado",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "boleto variegado, hongo de olor a cloro",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "liivapuravik liivapäkk liivtatik kangastatti sandsopp 56092 sandsopp sandsopp Broget slimrørhat Маслёнок жёлто-бурый Priežu sviestbeka Geltonasis kazlėkas Maślak pstry Velvet Bolete Sand-Röhrling Sandröhrling Bolet moucheté boleto manchado boleto variegado boleto variegado, hongo de olor a cloro Suillus variegatus (Sw.) Kuntze Suillus variegatus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-05",
+      "latitude": 57.82754167,
+      "longitude": 26.99137222,
+      "altitude": 94.2,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326536",
+      "created_at": "2026-08-29T16:47:32.866973+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6d52f094-04d4-49a3-ab1b-7aa46c9f082c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6d52f094-04d4-49a3-ab1b-7aa46c9f082c.jpg",
+          "filename": "8AE440F0-0A49-4752-887B-00D2561EE669_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326534",
+      "taxon": "Coltricia perennis (L.) Murrill",
+      "taxon_id": "140736",
+      "est_name": "liivapuidik",
+      "vernacular_names": [
+        {
+          "name": "liivapuidik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "kangaskääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "nõmme-taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Skinnticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "sandkjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "sandkjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Almindelig sandporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Сухлянка двухлетняя",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Viengadīgā sausene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Žiemkentė sausapintė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Stułka piaskowa",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Brown Funnel Polypore",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Tiger's Eye",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Dauerporling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Gezonter Dauerporling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore persistant",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore vivace",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "liivapuidik kangaskääpä Skinnticka sandkjuke sandkjuke Almindelig sandporesvamp Сухлянка двухлетняя Viengadīgā sausene Žiemkentė sausapintė Stułka piaskowa Brown Funnel Polypore Tiger's Eye Dauerporling Gezonter Dauerporling Polypore persistant Polypore vivace Coltricia perennis Coltricia perennis",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-05",
+      "latitude": 57.821225,
+      "longitude": 26.99300278,
+      "altitude": 83.6,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326534",
+      "created_at": "2026-08-29T16:47:22.460271+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/99711830-e8ed-495d-9ea4-119acc9ee1ea.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/99711830-e8ed-495d-9ea4-119acc9ee1ea.jpg",
+          "filename": "CAF8A717-A804-44E9-967E-0F2862A96515_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326533",
+      "taxon": "Lactarius scrobiculatus (Scop.) Fr.",
+      "taxon_id": "154202",
+      "est_name": "kollariisikas, võiseen",
+      "vernacular_names": [
+        {
+          "name": "kollariisikas",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "võiseen",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "isovoirousku",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "gropriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "svavelriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "svovelriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "svovelriske",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Grubestokket mælkehat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Груздь жёлтый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Eglene",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Gelsvasis piengrybis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Geltonasis piengrybis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Bedłka rydzawa",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj dołkowany",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Scrobiculate Milk Cap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Spotted Milkcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Grubiger Fichten-Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Grubiger Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire à fossettes",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kollariisikas võiseen isovoirousku gropriska svavelriska svovelriske svovelriske Grubestokket mælkehat Груздь жёлтый Eglene Gelsvasis piengrybis Geltonasis piengrybis Bedłka rydzawa Mleczaj dołkowany Scrobiculate Milk Cap Spotted Milkcap Grubiger Fichten-Milchling Grubiger Milchling Lactaire à fossettes Lactarius scrobiculatus Lactarius scrobiculatus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-16",
+      "latitude": 58.05633889,
+      "longitude": 24.79398611,
+      "altitude": 57.7,
+      "locality": "Tali küla",
+      "county": "Pärnu maakond",
+      "commune": "Saarde vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326533",
+      "created_at": "2026-08-29T16:42:23.540602+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/0326ed98-a966-46cf-9b3a-d92cc955b9af.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/0326ed98-a966-46cf-9b3a-d92cc955b9af.jpg",
+          "filename": "BA34727B-2CBA-481D-B678-3C984A810F68_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/bce8119a-45e6-414d-b986-550a28a14db9.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/bce8119a-45e6-414d-b986-550a28a14db9.jpg",
+          "filename": "D89DAED0-351D-4825-9A18-B47328D5D2D3_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326532",
+      "taxon": "Lactifluus bertillonii (Neuhoff ex Z. Schaef.) Verbeken",
+      "taxon_id": "154245",
+      "est_name": "Bertilloni riisikas",
+      "vernacular_names": [
+        {
+          "name": "Bertilloni riisikas",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "lehtorousku",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "ettervitriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "filtet hvitriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "filthvitriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "filtkvitriske",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Blødfiltet mælkehat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Baltasis piengrybis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj bertyloński",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj piekący",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczajowiec piekący",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Scharfmilchender Wollschwamm",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "taelik/käsn",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire de Bertillon",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire fruité",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "Bertilloni riisikas lehtorousku ettervitriska filtet hvitriske filthvitriske filtkvitriske Blødfiltet mælkehat Baltasis piengrybis Mleczaj bertyloński Mleczaj piekący Mleczajowiec piekący Scharfmilchender Wollschwamm Lactaire de Bertillon Lactaire fruité Lactifluus bertillonii (Neuhoff ex Z. Schaef.) Verbeken Lactifluus bertillonii",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-22",
+      "latitude": 57.72525833,
+      "longitude": 27.03213611,
+      "altitude": 294.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326532",
+      "created_at": "2026-08-29T16:39:56.908031+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9804ee5f-8afd-417a-8831-fa99d3eedcef.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9804ee5f-8afd-417a-8831-fa99d3eedcef.jpg",
+          "filename": "5E207C1A-EC3F-4F7F-94DD-4816A19672C2_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/60485d43-cfbf-47cb-bcc8-00fc148cf0f6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/60485d43-cfbf-47cb-bcc8-00fc148cf0f6.jpg",
+          "filename": "0DCB977A-0E02-4861-AD82-2B3C732AC005_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326531",
+      "taxon": "Hydnellum concrescens (Pers.) Banker",
+      "taxon_id": "151214",
+      "est_name": "liit-kübarnarmik",
+      "vernacular_names": [],
+      "all_names_search": "liit-kübarnarmik Hydnellum concrescens (Pers.) Banker",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-04",
+      "latitude": 57.80892222,
+      "longitude": 27.04755,
+      "altitude": 99.9,
+      "locality": "Kose alevik",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326531",
+      "created_at": "2026-08-29T16:39:00.258831+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/695ff5dc-8672-4fc8-aa07-3f0703174549.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/695ff5dc-8672-4fc8-aa07-3f0703174549.jpg",
+          "filename": "2E34DFED-8E6D-43DD-9B54-88C6EAAC1981_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/a89ee727-2e41-4d57-bdc6-b80dac7e6997.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/a89ee727-2e41-4d57-bdc6-b80dac7e6997.jpg",
+          "filename": "14A67917-55B6-48FA-9657-D918B40251A6_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326529",
+      "taxon": "Hydnellum concrescens (Pers.) Banker",
+      "taxon_id": "151214",
+      "est_name": "liit-kübarnarmik",
+      "vernacular_names": [],
+      "all_names_search": "liit-kübarnarmik Hydnellum concrescens (Pers.) Banker",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-08-24",
+      "latitude": 57.72134444,
+      "longitude": 27.03822222,
+      "altitude": 251.4,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Allar Antson",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326529",
+      "created_at": "2026-08-29T16:37:24.285338+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b7d20dcb-8fa5-4b3f-bc4b-0b4cb268881f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b7d20dcb-8fa5-4b3f-bc4b-0b4cb268881f.jpg",
+          "filename": "E32A5622-E503-43E0-AA25-0FC6953D1A9A_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e5cf7bd5-cf77-4327-a659-92ac3d80db58.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e5cf7bd5-cf77-4327-a659-92ac3d80db58.jpg",
+          "filename": "46C96A1F-FD28-4DEF-9714-1F2E92A13E15_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8326528",
+      "taxon": "Cortinarius semisanguineus (Fr.) Gillet",
+      "taxon_id": "142410",
+      "est_name": "verkjas vöödik",
+      "vernacular_names": [
+        {
+          "name": "verkjas vöödik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "verihelttaseitikki",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "vöödik",
+          "is_preferred": false
+        },
+        {
+          "name": "cinnoberskivig spindelskivling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "lehikseen",
+          "is_preferred": false
+        },
+        {
+          "name": "rödskivig kanelspindelskivling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "punane lehikseen",
+          "is_preferred": false
+        },
+        {
+          "name": "rödskivig kanelspindling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "punane",
+          "is_preferred": false
+        },
+        {
+          "name": "rödskivig spindling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "punane",
+          "is_preferred": false
+        },
+        {
+          "name": "falsk rødskiveslørsopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "rødskive-kanelslørsopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "punane seen",
+          "is_preferred": false
+        },
+        {
+          "name": "falsk raudskiveslørsopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Cinnoberbladet slørhat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Паутинник краснопластинковый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Raudonlakštis nuosėdis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Zasłonak purpurowoblaszkowy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Surprise Webcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Blutblättriger Hautkopf",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Cortinaire à demi sanguin",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "verkjas vöödik verihelttaseitikki cinnoberskivig spindelskivling rödskivig kanelspindelskivling rödskivig kanelspindling rödskivig spindling falsk rødskiveslørsopp rødskive-kanelslørsopp falsk raudskiveslørsopp Cinnoberbladet slørhat Паутинник краснопластинковый Raudonlakštis nuosėdis Zasłonak purpurowoblaszkowy Surprise Webcap Blutblättriger Hautkopf Cortinaire à demi sanguin Cortinarius semisanguineus (Fr.) Gillet Cortinarius semisanguineus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-28",
+      "latitude": 57.82140833,
+      "longitude": 26.99398333,
+      "altitude": 84.6,
+      "locality": "Võlsi küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8326528",
+      "created_at": "2026-08-29T16:32:22.247191+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/36090f30-01e2-4496-912c-69172cc62bbf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/36090f30-01e2-4496-912c-69172cc62bbf.jpg",
+          "filename": "8EAF375B-7B6C-460E-B574-E12DB144559F_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/89d38713-9150-4840-921e-32294b4edbbf.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/89d38713-9150-4840-921e-32294b4edbbf.jpg",
+          "filename": "80E93A5C-990D-4CD5-A4C6-2C255E5A0D9C_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325939",
+      "taxon": "Fomitopsis rosea (Alb. & Schwein.) P. Karst.",
+      "taxon_id": "147907",
+      "est_name": "roosa pess",
+      "vernacular_names": [
+        {
+          "name": "roosa pess",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rusokantokääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "rosenticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "rosenkjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "rosenkjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Трутовик розовый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "taelik/tuletael",
+          "is_preferred": false
+        },
+        {
+          "name": "Rožainā apmalpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": true
+        },
+        {
+          "name": "Rausvoji pintainė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "pniarek różowy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rose Bracket",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rosenroter Baumschwamm",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "taelik/käsn",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore rose",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "roosa pess rusokantokääpä rosenticka rosenkjuke rosenkjuke Трутовик розовый Rožainā apmalpiepe Rausvoji pintainė pniarek różowy Rose Bracket Rosenroter Baumschwamm Polypore rose Fomitopsis rosea (Alb. & Schwein.) P. Karst. Fomitopsis rosea",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-21",
+      "latitude": 57.80806389,
+      "longitude": 27.01221111,
+      "altitude": 110.4,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325939",
+      "created_at": "2026-08-28T19:38:25.865048+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7bb6aa3b-dac7-4192-a0f8-2abcd2a43080.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7bb6aa3b-dac7-4192-a0f8-2abcd2a43080.jpg",
+          "filename": "F80CEE50-7C1B-4D83-AB36-F64F44B2347C_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325938",
+      "taxon": "Thelephora terrestris Ehrh.",
+      "taxon_id": "177858",
+      "est_name": "harilik lehternahkis",
+      "vernacular_names": [
+        {
+          "name": "harilik lehternahkis",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "karvasilokka",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "karvane-",
+          "is_preferred": false
+        },
+        {
+          "name": "vårtöra",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "frynsesopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "frynsesopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "flejna-tang",
+          "language": "nor",
+          "lang_name": "Norra keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "furusopp",
+          "language": "nor",
+          "lang_name": "Norra keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Fliget frynsesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Телефора наземная",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Žeminis karpininkas",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Chropiatka pospolita",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Common Fiber Vase",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Earth-Fan",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Earthfan",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Erd-Warzenpilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "teléfora terrestre",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "harilik lehternahkis karvasilokka vårtöra frynsesopp frynsesopp flejna-tang furusopp Fliget frynsesvamp Телефора наземная Žeminis karpininkas Chropiatka pospolita Common Fiber Vase Earth-Fan Earthfan Erd-Warzenpilz teléfora terrestre Thelephora terrestris Ehrh. Thelephora terrestris",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-24",
+      "latitude": 57.83127222,
+      "longitude": 26.94326111,
+      "altitude": 81.1,
+      "locality": "Juba küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325938",
+      "created_at": "2026-08-28T19:38:13.709938+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/7dde2118-8391-4223-809b-37469dabecf5.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/7dde2118-8391-4223-809b-37469dabecf5.jpg",
+          "filename": "5BBFD486-885D-419E-90BD-978E695C72EA_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/d2aafb89-b481-4da3-8849-aa3a5c8165be.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/d2aafb89-b481-4da3-8849-aa3a5c8165be.jpg",
+          "filename": "DF565F5A-1F9B-4300-AE4C-6EEAFD7A7237_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325524",
+      "taxon": "Phellodon tomentosus (L.) Banker",
+      "taxon_id": "164871",
+      "est_name": "Viltjas vöötnarmik",
+      "vernacular_names": [
+        {
+          "name": "Viltjas vöötnarmik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "ryytiorakas",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "orikseen",
+          "is_preferred": false
+        },
+        {
+          "name": "Trattaggsvamp",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "lehter-seen",
+          "is_preferred": false
+        },
+        {
+          "name": "beltesølvpigg",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "vöö-",
+          "is_preferred": false
+        },
+        {
+          "name": "Tragtformet duftpigsvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Tragtformet læderpigsvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Феллодон войлочный",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Tūbainā baltzobe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Gauruotasis tampriadyglis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Kolczak kieliszkowaty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Kolczak kutnerowaty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Korkoząb kieliszkowaty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Woolly Tooth",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Becherförmiger Duftstacheling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "Viltjas vöötnarmik ryytiorakas Trattaggsvamp beltesølvpigg Tragtformet duftpigsvamp Tragtformet læderpigsvamp Феллодон войлочный Tūbainā baltzobe Gauruotasis tampriadyglis Kolczak kieliszkowaty Kolczak kutnerowaty Korkoząb kieliszkowaty Woolly Tooth Becherförmiger Duftstacheling Phellodon tomentosus (L.) Banker Phellodon tomentosus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-21",
+      "latitude": 57.81399444,
+      "longitude": 27.01513889,
+      "altitude": 107.3,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325524",
+      "created_at": "2026-08-28T11:23:25.049816+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/b445e82c-bf86-4617-8629-bf7e05f9fbee.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/b445e82c-bf86-4617-8629-bf7e05f9fbee.jpg",
+          "filename": "E483557E-A69A-4CF4-9FBD-54D6BA14162D_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325523",
+      "taxon": "Gomphidius roseus (Fr.) Fr.",
+      "taxon_id": "149378",
+      "est_name": "roosa liimik",
+      "vernacular_names": [
+        {
+          "name": "roosa liimik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "punanuljaska",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "punane-",
+          "is_preferred": false
+        },
+        {
+          "name": "rosenröd slemskivling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "lehikseen",
+          "is_preferred": false
+        },
+        {
+          "name": "rosenslemskivling",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "lehikseen",
+          "is_preferred": false
+        },
+        {
+          "name": "rosa sleipsopp",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "rosa sleipsopp",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Rosenrød slimslør",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Мокруха розовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rožiaspalvė geltonpėdė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Klejówka różowa",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rosy Spike",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Rosa Schmierling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Rosenroter Schmierling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "gomfidio rosáceo",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "gonfidio rosa",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "roosa liimik punanuljaska rosenröd slemskivling rosenslemskivling rosa sleipsopp rosa sleipsopp Rosenrød slimslør Мокруха розовая Rožiaspalvė geltonpėdė Klejówka różowa Rosy Spike Rosa Schmierling Rosenroter Schmierling gomfidio rosáceo gonfidio rosa Gomphidius roseus (Fr.) Fr. Gomphidius roseus",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2023-09-21",
+      "latitude": 57.81413333,
+      "longitude": 27.01502778,
+      "altitude": 91.4,
+      "locality": "Meegomäe küla",
+      "county": "Võru maakond",
+      "commune": "Võru vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325523",
+      "created_at": "2026-08-28T11:23:13.479457+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/9d3f7fcc-25fe-4bcf-ad67-a7c5d7cded72.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/9d3f7fcc-25fe-4bcf-ad67-a7c5d7cded72.jpg",
+          "filename": "B2702674-CA3F-49CE-B007-5112616DBCA7_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325522",
+      "taxon": "Neoantrodia serialis (Fr.) Audet",
+      "taxon_id": "1178260",
+      "est_name": "kuusekorgik",
+      "vernacular_names": [
+        {
+          "name": "kuusekorgik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rivikääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Антродия рядовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "jamkokora rzędowa",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Serried Porecrust",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kuusekorgik rivikääpä Антродия рядовая jamkokora rzędowa Serried Porecrust Neoantrodia serialis (Fr.) Audet Neoantrodia serialis",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2024-10-30",
+      "latitude": 58.10650556,
+      "longitude": 27.04262778,
+      "altitude": 84.1,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325522",
+      "created_at": "2026-08-28T11:22:24.652787+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1f023482-35cd-46db-8431-35118b83bf5f.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1f023482-35cd-46db-8431-35118b83bf5f.jpg",
+          "filename": "IMG_3345.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325521",
+      "taxon": "Phlebia centrifuga P. Karst.",
+      "taxon_id": "164990",
+      "est_name": "volt-tardnahkis",
+      "vernacular_names": [
+        {
+          "name": "volt-tardnahkis",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "pohjanrypykkä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rynkskinn",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rynkeskinn",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "rukkeskinn",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Флебия медовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "volt-tardnahkis pohjanrypykkä rynkskinn rynkeskinn rukkeskinn Флебия медовая Phlebia centrifuga P. Karst. Phlebia centrifuga",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2024-10-30",
+      "latitude": 58.10650556,
+      "longitude": 27.04262778,
+      "altitude": 84.1,
+      "locality": "Taevaskoja küla",
+      "county": "Põlva maakond",
+      "commune": "Põlva vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325521",
+      "created_at": "2026-08-28T11:21:43.603109+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6e969898-df4a-42e8-952e-b87b4c84be84.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6e969898-df4a-42e8-952e-b87b4c84be84.jpg",
+          "filename": "8B9BADB2-740C-4C70-9C66-C720F8761617_1_105_c.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8325509",
+      "taxon": "Irpex lacteus (Fr.) Fr.",
+      "taxon_id": "153308",
+      "est_name": "valge hammik",
+      "vernacular_names": [],
+      "all_names_search": "valge hammik Irpex lacteus (Fr.) Fr.",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2024-01-16",
+      "latitude": 57.731025,
+      "longitude": 27.06122778,
+      "altitude": 242.6,
+      "locality": "Haanja küla",
+      "county": "Võru maakond",
+      "commune": "Rõuge vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8325509",
+      "created_at": "2026-08-28T11:14:37.145383+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/e53939eb-c5d1-459d-8188-08909d709fc6.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/e53939eb-c5d1-459d-8188-08909d709fc6.jpg",
+          "filename": "2BB2D7A2-F973-47E6-B2F0-D106DEC60BF5_1_105_c.jpeg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c9ba6972-ddba-4ff0-b786-8e04674f647d.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c9ba6972-ddba-4ff0-b786-8e04674f647d.jpg",
+          "filename": "E155D0F0-5B05-49B8-93FE-60254619DC91_1_105_c.jpeg"
+        }
+      ]
+    },
     {
       "id": "8325446",
       "taxon": "Leucocortinarius bulbiger (Alb. & Schwein.) Singer",
@@ -16314,7 +20180,7 @@
       "all_names_search": "õrn narmnahkis turkkiorakas skinntagging piggskorpe piggskorpe Pighud Дентипеллис ломкий Trauslā adatene Trapioji dygliaplutė Zarter Stachelrindenpilz Hydne fragile Dentipellis fragilis Dentipellis fragilis",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2022-05-26",
       "latitude": 57.80963889,
@@ -16725,7 +20591,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2022-08-29",
       "latitude": 57.8086,
@@ -16844,7 +20710,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2022-08-29",
       "latitude": 57.80997222,
@@ -20088,7 +23954,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2022-09-20",
       "latitude": 57.80865833,
@@ -22643,7 +26509,7 @@
       "all_names_search": "must narmik must vöötnarmik mustaorakas Svart taggsvamp svartsølvpigg svartsølvpigg Mørk duftpigsvamp Mørk læderpigsvamp Феллодон чёрный Melnā baltzobe Juosvasis tampriadyglis Black Tooth Schwarzer Duftstacheling Hidno negro Hydne noir Phellodon niger (Fr.) P. Karst. Phellodon niger",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "",
       "red_list_score": 3,
       "date": "2023-09-04",
       "latitude": 57.80839444,
@@ -23713,7 +27579,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-09-15",
       "latitude": 57.80963889,
@@ -23935,7 +27801,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-09-15",
       "latitude": 57.80878889,
@@ -31081,7 +34947,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2023-09-24",
       "latitude": 57.83270556,
@@ -31242,7 +35108,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2023-09-18",
       "latitude": 57.71861944,
@@ -31413,7 +35279,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2023-09-15",
       "latitude": 58.132,
@@ -31574,7 +35440,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2022-08-10",
       "latitude": 57.71218611,
@@ -31735,7 +35601,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-08-16",
       "latitude": 57.63350556,
@@ -31901,7 +35767,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-08-08",
       "latitude": 57.63408611,
@@ -54097,7 +57963,7 @@
       "all_names_search": "must narmik must vöötnarmik mustaorakas Svart taggsvamp svartsølvpigg svartsølvpigg Mørk duftpigsvamp Mørk læderpigsvamp Феллодон чёрный Melnā baltzobe Juosvasis tampriadyglis Black Tooth Schwarzer Duftstacheling Hidno negro Hydne noir Phellodon niger (Fr.) P. Karst. Phellodon niger",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "",
       "red_list_score": 3,
       "date": "2026-08-25",
       "latitude": null,
@@ -78584,7 +82450,7 @@
       "all_names_search": "must narmik must vöötnarmik mustaorakas Svart taggsvamp svartsølvpigg svartsølvpigg Mørk duftpigsvamp Mørk læderpigsvamp Феллодон чёрный Melnā baltzobe Juosvasis tampriadyglis Black Tooth Schwarzer Duftstacheling Hidno negro Hydne noir Phellodon niger (Fr.) P. Karst. Phellodon niger",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "",
       "red_list_score": 3,
       "date": "2026-08-24",
       "latitude": 57.71295833,
@@ -100725,7 +104591,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2024-07-31",
       "latitude": 58.519925,
@@ -106368,7 +110234,7 @@
       "all_names_search": "õrn narmnahkis turkkiorakas skinntagging piggskorpe piggskorpe Pighud Дентипеллис ломкий Trauslā adatene Trapioji dygliaplutė Zarter Stachelrindenpilz Hydne fragile Dentipellis fragilis Dentipellis fragilis",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2024-09-10",
       "latitude": 58.27840833,
@@ -109270,7 +113136,7 @@
       "all_names_search": "must narmik must vöötnarmik mustaorakas Svart taggsvamp svartsølvpigg svartsølvpigg Mørk duftpigsvamp Mørk læderpigsvamp Феллодон чёрный Melnā baltzobe Juosvasis tampriadyglis Black Tooth Schwarzer Duftstacheling Hidno negro Hydne noir Phellodon niger (Fr.) P. Karst. Phellodon niger",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "",
       "red_list_score": 3,
       "date": "2024-09-16",
       "latitude": 59.54711667,
@@ -125003,7 +128869,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2022-07-21",
       "latitude": 57.63399167,
@@ -127431,7 +131297,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2022-08-10",
       "latitude": 57.72675278,
@@ -129589,7 +133455,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2022-08-12",
       "latitude": 57.634875,
@@ -140340,7 +144206,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2023-07-11",
       "latitude": 57.62398611,
@@ -140630,7 +144496,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2023-07-11",
       "latitude": 57.63415833,
@@ -145654,7 +149520,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2023-09-01",
       "latitude": 57.63501667,
@@ -152727,7 +156593,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2023-07-18",
       "latitude": 58.02510833,
@@ -159465,7 +163331,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2025-08-06",
       "latitude": 57.73206944,
@@ -164202,7 +168068,7 @@
       "all_names_search": "vurrik seakõrv pölkkysieni Violgubbe klubblik trumpetsvamp fiolgubbe fiolgubbe Køllekantarel Гомфус булавовидный Violetā cūkause Didysis kuokas Siatkolist maczugowaty Pig's Ear pig's ears Schweinsohr Chanterelle violette Orejas de cerdo Gomphus clavatus (Pers.) Gray Gomphus clavatus",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2022-09-30",
       "latitude": 58.30709722,
@@ -172051,7 +175917,7 @@
       "all_names_search": "vurrik seakõrv pölkkysieni Violgubbe klubblik trumpetsvamp fiolgubbe fiolgubbe Køllekantarel Гомфус булавовидный Violetā cūkause Didysis kuokas Siatkolist maczugowaty Pig's Ear pig's ears Schweinsohr Chanterelle violette Orejas de cerdo Gomphus clavatus (Pers.) Gray Gomphus clavatus",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2023-08-19",
       "latitude": 58.58897778,
@@ -183958,7 +187824,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2026-08-16",
       "latitude": null,
@@ -184077,7 +187943,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2026-08-16",
       "latitude": null,
@@ -191630,7 +195496,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2026-05-25",
       "latitude": 58.22208889,
@@ -199742,7 +203608,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2025-09-02",
       "latitude": 57.84015278,
@@ -202759,7 +206625,7 @@
       "all_names_search": "vurrik seakõrv pölkkysieni Violgubbe klubblik trumpetsvamp fiolgubbe fiolgubbe Køllekantarel Гомфус булавовидный Violetā cūkause Didysis kuokas Siatkolist maczugowaty Pig's Ear pig's ears Schweinsohr Chanterelle violette Orejas de cerdo Gomphus clavatus (Pers.) Gray Gomphus clavatus",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2025-09-02",
       "latitude": 57.626225,
@@ -202920,7 +206786,7 @@
       "all_names_search": "vurrik seakõrv pölkkysieni Violgubbe klubblik trumpetsvamp fiolgubbe fiolgubbe Køllekantarel Гомфус булавовидный Violetā cūkause Didysis kuokas Siatkolist maczugowaty Pig's Ear pig's ears Schweinsohr Chanterelle violette Orejas de cerdo Gomphus clavatus (Pers.) Gray Gomphus clavatus",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2023-08-19",
       "latitude": 58.58897778,
@@ -203060,7 +206926,7 @@
       "all_names_search": "must hundiseenik mäyränkääpä grangråticka grangråkjuke gråkjuke grangråkjuke Sorthvid troldporesvamp Болетопсис бело-черный Eglinė baravykpintė Szaraczek świerkowy Black Falsebolete Schwarzweißer Rußporling Polypore blanc et noir mariner Boletopsis leucomelaena (Pers.) Fayod Boletopsis leucomelaena",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2025-09-02",
       "latitude": 57.62606389,
@@ -206679,7 +210545,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-09-05",
       "latitude": 57.73504,
@@ -214574,7 +218440,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2024-09-06",
       "latitude": null,
@@ -225340,7 +229206,7 @@
       "all_names_search": "õrn narmnahkis turkkiorakas skinntagging piggskorpe piggskorpe Pighud Дентипеллис ломкий Trauslā adatene Trapioji dygliaplutė Zarter Stachelrindenpilz Hydne fragile Dentipellis fragilis Dentipellis fragilis",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2023-09-16",
       "latitude": 58.01918,
@@ -225466,7 +229332,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2023-09-05",
       "latitude": 57.89188,
@@ -229624,7 +233490,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2023-07-30",
       "latitude": null,
@@ -233187,7 +237053,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2023-07-19",
       "latitude": 57.73210833,
@@ -233796,7 +237662,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2023-07-12",
       "latitude": 57.62435,
@@ -233922,7 +237788,7 @@
       "all_names_search": "nabatorik põõsastorik viuhkokääpä grenticka skjermkjuke skjermkjuke Трутовик зонтичный Трутовик зонтичный Umbrella Polypore Eichhase poliporo umbelado políporo en umbela Polyporus umbellatus (Pers.) Fr. Polyporus umbellatus",
       "red_list_status": "EN",
       "red_list_label": "EN (Väljasuremisohus)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 2,
       "date": "2023-07-11",
       "latitude": 57.62435,
@@ -253624,7 +257490,7 @@
       "all_names_search": "mugultorik knollstilkkjuke knollstilkkjuke Knoldet stilkporesvamp Трутовик клубненосный Bumbuļa kātiņpiepe Gumbinė skylėtbudė Tuberous Polypore Sklerotien-Stielporling Polypore moucheté Polypore à sclérote Polyporus tuberaster (Jacq.) Fr. Polyporus tuberaster",
       "red_list_status": "CR",
       "red_list_label": "CR (Kriitilises seisundis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 1,
       "date": "2022-06-12",
       "latitude": 57.735772,
@@ -258990,7 +262856,7 @@
       "all_names_search": "must narmik must vöötnarmik mustaorakas Svart taggsvamp svartsølvpigg svartsølvpigg Mørk duftpigsvamp Mørk læderpigsvamp Феллодон чёрный Melnā baltzobe Juosvasis tampriadyglis Black Tooth Schwarzer Duftstacheling Hidno negro Hydne noir Phellodon niger (Fr.) P. Karst. Phellodon niger",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "",
       "red_list_score": 3,
       "date": "2021-09-04",
       "latitude": 57.608025,
@@ -260742,7 +264608,7 @@
       "all_names_search": "hall hundiseenik sudenkääpä tallgråticka furugråkjuke furugråkjuke Болетопсис серый Pelēkā bekupiepe Pilkoji baravykpintė Szaraczek sosnowy Boletopsis spp. Grey Falsebolete Grauer Rußporling Boletopsis grisea (Peck) Bondartsev & Singer Boletopsis grisea",
       "red_list_status": "VU",
       "red_list_label": "VU (Ohualdis)",
-      "protection_category": "I kaitsekategooria",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 3,
       "date": "2021-10-02",
       "latitude": 57.822767,
@@ -267512,7 +271378,7 @@
       "all_names_search": "sinipuravik sinipäkk sinitatti blåsopp blånende rørsopp blånande røyrsopp Blånende kammerrørhat Гиропорус синеющий Rudzupuķu smilšbeka Melsvėjantysis Šilbaravykis Piaskowiec modrzak Cornflower Bolete Kornblumen-Blasssporröhrling Kornblumen-Röhrling Kornblumenröhrling Bolet bleuissant Bolet indigotier Gyroporus cyanescens Gyroporus cyanescens",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "III kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-09-05",
       "latitude": 57.72328,
@@ -269136,7 +273002,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2021-09-04",
       "latitude": 57.6347,
@@ -281768,7 +285634,7 @@
       "all_names_search": "harunev korallnarmik korallnarmik koralliorakas koralltaggsvamp korallpiggsopp korallpiggsopp Koralpigsvamp Ежовик коралловидный Koraļļu dižadatene Korališkasis trapiadyglis Soplówka bukowa Coral Tooth Coral tooth fungus Hydne corail Hericium coralloides (Scop.) Pers. Hericium coralloides",
       "red_list_status": "NT",
       "red_list_label": "NT (Ohulähedane)",
-      "protection_category": "",
+      "protection_category": "II kaitsekategooria",
       "red_list_score": 4,
       "date": "2020-11-05",
       "latitude": 57.74116,
