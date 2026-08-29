@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PLUTOFF — Mycology Observation Archive</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
 
@@ -176,7 +176,18 @@
   <div id="obsModal" class="modal-backdrop" aria-hidden="true">
     <div class="modal-dialog" role="dialog" aria-modal="true">
       <div class="modal-header">
-        <div id="modalTitle" class="modal-title">Taksoni Nimi</div>
+        <div class="modal-header-info">
+          <div id="modalTitle" class="modal-title">Taksoni Nimi</div>
+          <div class="modal-header-id-row">
+            <button type="button" class="obs-id-copy-btn modal-id-btn" id="modalCopyIdBtn" onclick="copyObsId(event, currentModalObs ? currentModalObs.id : '')" title="Kopeeri PlutoF ID lõikelauale">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="modalIdText" class="id-text">#ID</span>
+            </button>
+          </div>
+        </div>
         <button id="modalCloseBtn" class="modal-close-btn" type="button" aria-label="Sulge">✕</button>
       </div>
 
@@ -252,6 +263,6 @@
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="app.js?v=14"></script>
+  <script src="app.js?v=15"></script>
 </body>
 </html>

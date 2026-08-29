@@ -631,8 +631,14 @@ function renderList() {
         ${estTitle}
         ${sciTitle}
         <div class="obs-meta-row">
-          <span>${formatDateEstonian(o.date) || "-"}</span>
-          <span>${escapeHtml(o.locality || o.county || "")}</span>
+          <span class="obs-meta-date-loc">${formatDateEstonian(o.date) || "-"} • ${escapeHtml(o.locality || o.county || "")}</span>
+          <button type="button" class="obs-id-copy-btn" onclick="copyObsId(event, '${o.id}')" title="Kopeeri PlutoF ID #${o.id} lõikelauale">
+            <svg class="copy-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span class="id-text">#${o.id}</span>
+          </button>
         </div>
         <div class="obs-badges">
           ${badgesHtml}
@@ -773,6 +779,8 @@ function highlightCard(id) {
 function openModal(o) {
   const modal = document.getElementById("obsModal");
   document.getElementById("modalTitle").textContent = o.est_name ? `${o.est_name} (${o.taxon})` : o.taxon;
+  const modalIdText = document.getElementById("modalIdText");
+  if (modalIdText) modalIdText.textContent = `PlutoF ID: #${o.id}`;
   
   const coObservers = (o.collectors || "")
     .split(",")
@@ -928,6 +936,33 @@ window.switchModalPhoto = function(idx) {
   thumbs.forEach((t, i) => {
     if (i === idx) t.classList.add("active");
     else t.classList.remove("active");
+  });
+};
+
+window.copyObsId = function(event, id) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+  if (!id) return;
+  navigator.clipboard.writeText(String(id)).then(() => {
+    const btn = event ? event.currentTarget : null;
+    if (btn) {
+      const origHtml = btn.innerHTML;
+      btn.classList.add("copied");
+      btn.innerHTML = `
+        <svg class="copy-icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span class="id-text">Kopeeritud!</span>
+      `;
+      setTimeout(() => {
+        btn.innerHTML = origHtml;
+        btn.classList.remove("copied");
+      }, 1500);
+    }
+  }).catch(err => {
+    console.error("Lõikelauale kopeerimine ebaõnnestus:", err);
   });
 };
 
