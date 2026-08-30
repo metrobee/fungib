@@ -1,19 +1,17 @@
 /**
- * FUNGIB MYCOLOGY ARCHIVE - SUB-MILLISECOND FUZZY SEARCH WEB WORKER
- * Inverted Index & Multilingual Trie Search Engine off the main UI thread.
+ * FUNGIB MYCOLOGY ARCHIVE - HIGH-PRECISION CONJUNCTIVE FUZZY SEARCH WEB WORKER
+ * Strict multi-term AND matching with field-weighted relevance ranking.
  */
 
-let indexedObservations = [];
-let taxaRegistry = {};
-let invertedIndex = new Map(); // token -> Set of observation indices
+let indexedDocs = [];
 
 function normalizeText(text) {
   if (!text) return '';
   return text.toString()
     .toLowerCase()
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '') // strip diacritics
-    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9äöüõšž\s-]/g, ' ')
     .trim();
 }
 
@@ -24,97 +22,157 @@ function tokenize(text) {
 }
 
 function buildIndex(observations, taxa) {
-  indexedObservations = observations || [];
-  taxaRegistry = taxa || {};
-  invertedIndex = new Map();
+  const obsList = observations || [];
+  const taxaRegistry = taxa || {};
+  indexedDocs = [];
 
-  for (let i = 0; i < indexedObservations.length; i++) {
-    const obs = indexedObservations[i];
-    const tokens = new Set();
-
-    // 1. Taxon names (Latin + Estonian)
-    if (obs.taxon) tokenize(obs.taxon).forEach(t => tokens.add(t));
-    if (obs.est_name) tokenize(obs.est_name).forEach(t => tokens.add(t));
-
-    // 2. Multilingual vernacular names from normalized taxa registry
+  for (let i = 0; i < obsList.length; i++) {
+    const obs = obsList[i];
     const tKey = obs.taxon_key || obs.taxon_id || obs.taxon;
-    const taxonInfo = taxaRegistry[tKey];
-    if (taxonInfo) {
-      if (taxonInfo.all_names_search) {
-        tokenize(taxonInfo.all_names_search).forEach(t => tokens.add(t));
-      }
-      if (Array.isArray(taxonInfo.vernacular_names)) {
-        taxonInfo.vernacular_names.forEach(v => {
-          if (v.name) tokenize(v.name).forEach(t => tokens.add(t));
-          if (v.est_trans) tokenize(v.est_trans).forEach(t => tokens.add(t));
-        });
-      }
-    }
+    const taxonInfo = taxaRegistry[tKey] || {};
 
-    // 3. Location, Habitat, Substrate
-    if (obs.locality) tokenize(obs.locality).forEach(t => tokens.add(t));
-    if (obs.county) tokenize(obs.county).forEach(t => tokens.add(t));
-    if (obs.commune) tokenize(obs.commune).forEach(t => tokens.add(t));
-    if (obs.habitat) tokenize(obs.habitat).forEach(t => tokens.add(t));
-    if (obs.substrate) tokenize(obs.substrate).forEach(t => tokens.add(t));
+    const est_name = normalizeText(obs.est_name || '');
+    const taxon = normalizeText(obs.taxon || '');
+    const all_names = normalizeText(taxonInfo.all_names_search || obs.all_names_search || '');
+    const locality = normalizeText(obs.locality || '');
+    const county = normalizeText(obs.county || '');
+    const commune = normalizeText(obs.commune || '');
+    const observer = normalizeText(obs.primary_observer || '');
+    const collectors = normalizeText(obs.collectors || '');
+    const notes = normalizeText((obs.microscopic_notes || '') + ' ' + (obs.remarks || '') + ' ' + (obs.specimen_code || '') + ' ' + (obs.id || ''));
 
-    // 4. People (Observers, Determiners, Verifiers)
-    if (obs.primary_observer) tokenize(obs.primary_observer).forEach(t => tokens.add(t));
-    if (obs.collectors) tokenize(obs.collectors).forEach(t => tokens.add(t));
-    if (obs.determiner) tokenize(obs.determiner).forEach(t => tokens.add(t));
-    if (obs.verified_by) tokenize(obs.verified_by).forEach(t => tokens.add(t));
-
-    // 5. Specimen & Herbarium codes, microscopic notes
-    if (obs.specimen_code) tokenize(obs.specimen_code).forEach(t => tokens.add(t));
-    if (obs.microscopic_notes) tokenize(obs.microscopic_notes).forEach(t => tokens.add(t));
-    if (obs.remarks) tokenize(obs.remarks).forEach(t => tokens.add(t));
-    if (obs.id) tokens.add(obs.id.toString());
-
-    // Populate Inverted Index
-    tokens.forEach(token => {
-      if (!invertedIndex.has(token)) {
-        invertedIndex.set(token, new Set());
-      }
-      invertedIndex.get(token).add(i);
+    indexedDocs.push({
+      id: obs.id,
+      index: i,
+      est_name,
+      est_tokens: tokenize(est_name),
+      taxon,
+      taxon_tokens: tokenize(taxon),
+      all_names,
+      all_names_tokens: tokenize(all_names),
+      meta: `${locality} ${county} ${commune} ${observer} ${collectors} ${notes}`,
+      meta_tokens: tokenize(`${locality} ${county} ${commune} ${observer} ${collectors} ${notes}`)
     });
   }
 }
 
 function search(query) {
-  const queryTokens = tokenize(query);
-  if (queryTokens.length === 0) {
-    return indexedObservations.map(o => o.id);
+  const qNorm = normalizeText(query);
+  const qTokens = tokenize(query);
+  if (qTokens.length === 0) {
+    return { results: indexedDocs.map(d => d.id), scores: {} };
   }
 
-  const scoreMap = new Map();
+  const scoredResults = [];
 
-  queryTokens.forEach(qToken => {
-    // 1. Exact match
-    if (invertedIndex.has(qToken)) {
-      invertedIndex.get(qToken).forEach(idx => {
-        scoreMap.set(idx, (scoreMap.get(idx) || 0) + 10);
-      });
+  for (let i = 0; i < indexedDocs.length; i++) {
+    const doc = indexedDocs[i];
+    let allTokensMatched = true;
+    let totalScore = 0;
+
+    // 1. Exact full phrase matching boosts
+    if (doc.est_name && doc.est_name.includes(qNorm)) {
+      totalScore += 1000;
+    } else if (doc.taxon && doc.taxon.includes(qNorm)) {
+      totalScore += 800;
+    } else if (doc.all_names && doc.all_names.includes(qNorm)) {
+      totalScore += 600;
+    } else if (doc.meta && doc.meta.includes(qNorm)) {
+      totalScore += 400;
     }
 
-    // 2. Prefix & Substring match
-    for (const [token, indexSet] of invertedIndex.entries()) {
-      if (token !== qToken && token.startsWith(qToken)) {
-        indexSet.forEach(idx => {
-          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 5);
-        });
-      } else if (qToken.length >= 3 && token.includes(qToken)) {
-        indexSet.forEach(idx => {
-          scoreMap.set(idx, (scoreMap.get(idx) || 0) + 2);
-        });
+    // 2. Strict conjunctive (AND) matching for all query tokens
+    for (let t = 0; t < qTokens.length; t++) {
+      const qToken = qTokens[t];
+      let tokenMatched = false;
+
+      // Check Estonian name
+      for (let w = 0; w < doc.est_tokens.length; w++) {
+        const word = doc.est_tokens[w];
+        if (word === qToken) {
+          tokenMatched = true;
+          totalScore += 150;
+          break;
+        } else if (word.startsWith(qToken)) {
+          tokenMatched = true;
+          totalScore += 120;
+          break;
+        } else if (qToken.length >= 4 && (word.endsWith(qToken) || word.includes(qToken))) {
+          // Compound words e.g. "põdranapsik" matches "napsik"
+          tokenMatched = true;
+          totalScore += 100;
+          break;
+        }
+      }
+
+      // Check Latin taxon
+      if (!tokenMatched) {
+        for (let w = 0; w < doc.taxon_tokens.length; w++) {
+          const word = doc.taxon_tokens[w];
+          if (word === qToken) {
+            tokenMatched = true;
+            totalScore += 130;
+            break;
+          } else if (word.startsWith(qToken)) {
+            tokenMatched = true;
+            totalScore += 100;
+            break;
+          }
+        }
+      }
+
+      // Check Multilingual vernacular names
+      if (!tokenMatched) {
+        for (let w = 0; w < doc.all_names_tokens.length; w++) {
+          const word = doc.all_names_tokens[w];
+          if (word === qToken) {
+            tokenMatched = true;
+            totalScore += 80;
+            break;
+          } else if (word.startsWith(qToken) || (qToken.length >= 4 && word.endsWith(qToken))) {
+            tokenMatched = true;
+            totalScore += 60;
+            break;
+          }
+        }
+      }
+
+      // Check Location, Observers, Specimen notes
+      if (!tokenMatched) {
+        for (let w = 0; w < doc.meta_tokens.length; w++) {
+          const word = doc.meta_tokens[w];
+          if (word === qToken) {
+            tokenMatched = true;
+            totalScore += 40;
+            break;
+          } else if (word.startsWith(qToken)) {
+            tokenMatched = true;
+            totalScore += 30;
+            break;
+          }
+        }
+      }
+
+      if (!tokenMatched) {
+        allTokensMatched = false;
+        break;
       }
     }
-  });
 
-  const sortedIds = Array.from(scoreMap.entries())
-    .sort((a, b) => b[1] - a[1])
-    .map(entry => indexedObservations[entry[0]].id);
+    if (allTokensMatched && totalScore > 0) {
+      scoredResults.push({ id: doc.id, score: totalScore });
+    }
+  }
 
-  return sortedIds;
+  scoredResults.sort((a, b) => b.score - a.score);
+
+  const scores = {};
+  scoredResults.forEach(r => { scores[r.id] = r.score; });
+
+  return {
+    results: scoredResults.map(r => r.id),
+    scores
+  };
 }
 
 self.onmessage = function(e) {
@@ -122,9 +180,9 @@ self.onmessage = function(e) {
 
   if (type === 'INDEX') {
     buildIndex(observations, taxa);
-    self.postMessage({ type: 'INDEX_READY', count: indexedObservations.length });
+    self.postMessage({ type: 'INDEX_READY', count: indexedDocs.length });
   } else if (type === 'SEARCH') {
-    const results = search(query || '');
-    self.postMessage({ type: 'SEARCH_RESULTS', query, results, id });
+    const { results, scores } = search(query || '');
+    self.postMessage({ type: 'SEARCH_RESULTS', query, results, scores, id });
   }
 };

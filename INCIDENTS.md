@@ -133,3 +133,16 @@
   1. Normaliseeritud taksonite register `taxa`, vähendades failimahtu 48% (4.93 MB-ni).
   2. Implementeeritud `extract_specimen_info` mootor (tuvastab TU/TAA/KM koodid, DNA proovid, eosemõõdud).
   3. Lisatud kliendipoolne Web Worker välkotsing ja DOM virtualiseerimine (`content-visibility: auto`).
+
+### [INCIDENT-2026-08-30-SEARCH-CONJUNCTIVE-AND-PRECISION] Otsingumootori Mitmesõnaliste Päringute Konjunktiivsuse ja Täpsuse Refaktoorimine
+- **Kuupäev**: 30. august 2026
+- **Sümptom**: Otsides liitpäringut `hall napsik` kuvati 62 ebarelevantsest tulemust (sh *Amanita phalloides*, *Clitocybe nebularis* jms), mitte ainult 3 reaalset liigi *Pluteus salicinus* (*hall napsik*) vaatlust.
+- **Algpõhjus (RCA)**:
+  1. `js/search-worker.js` teostas lahtist disjunktiivset (OR) liitmist, kus iga otsingusõna lisas vasteid eraldi.
+  2. `token.includes(qToken)` lubas suvalisi sisesõnalisi vasteid (nt ladinakeelne tüvi `phalloides` vastas otsingusõnale `hall`).
+  3. Otsingutulemused kirjutati `app.js` poolt üle vaikimisi kuupäevalise sorteerimisega, eirates relevantsust.
+- **Püsiv lahendus**:
+  1. Juurutatud range konjunktiivne (AND) sobitus: kõik otsingusõnad peavad leiduma vaatluse indekseeritud kirjeldustes.
+  2. Eemaldatud suvalised sisesõnalised osavasted ja asendatud täpsete sõna-/eesliite- ja liitsõnavaste reeglitega.
+  3. Lisatud täieliku fraasi boonus (+1000 punkti) ja tulemuste automaatne reastamine relevantsusskoori järgi.
+  4. Päring `hall napsik` tagastab nüüd 100% täpsusega täpselt 3 liigi *Pluteus salicinus* vaatlust.

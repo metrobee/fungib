@@ -162,6 +162,7 @@ function initSearchWorker() {
       searchWorker.onmessage = function(e) {
         if (e.data.type === "SEARCH_RESULTS") {
           const matchingIds = new Set(e.data.results);
+          window.currentSearchScores = e.data.scores || {};
           applyFilters(matchingIds);
         }
       };
@@ -465,26 +466,11 @@ function applyFilters(workerMatches) {
       if (!workerMatches.has(o.id)) return false;
     } else if (q) {
       const taxonInfo = taxaRegistry[o.taxon_key || o.taxon_id || o.taxon] || {};
-      const allNames = taxonInfo.all_names_search || o.all_names_search || "";
-      const matchQuery =
-        (o.est_name && o.est_name.toLowerCase().includes(q)) ||
-        (o.taxon && o.taxon.toLowerCase().includes(q)) ||
-        (allNames && allNames.toLowerCase().includes(q)) ||
-        (o.specimen_code && o.specimen_code.toLowerCase().includes(q)) ||
-        (o.microscopic_notes && o.microscopic_notes.toLowerCase().includes(q)) ||
-        (o.red_list_status && o.red_list_status.toLowerCase().includes(q)) ||
-        (o.red_list_label && o.red_list_label.toLowerCase().includes(q)) ||
-        (o.protection_category && o.protection_category.toLowerCase().includes(q)) ||
-        (o.collectors && o.collectors.toLowerCase().includes(q)) ||
-        (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
-        (o.locality && o.locality.toLowerCase().includes(q)) ||
-        (o.county && o.county.toLowerCase().includes(q)) ||
-        (o.project_name && o.project_name.toLowerCase().includes(q)) ||
-        (o.project_id && o.project_id.includes(q)) ||
-        (o.substrate && o.substrate.toLowerCase().includes(q)) ||
-        (o.substrate_type && o.substrate_type.toLowerCase().includes(q)) ||
-        (o.id && o.id.includes(q));
-      if (!matchQuery) return false;
+      const allNames = (taxonInfo.all_names_search || o.all_names_search || "").toLowerCase();
+      const combined = `${o.est_name || ''} ${o.taxon || ''} ${allNames} ${o.locality || ''} ${o.county || ''} ${o.primary_observer || ''} ${o.collectors || ''} ${o.id || ''}`.toLowerCase();
+      const qTokens = q.split(/\s+/).filter(t => t.length > 0);
+      const allMatched = qTokens.every(token => combined.includes(token));
+      if (!allMatched) return false;
     }
 
     const matchCounty = !county || o.county === county;
@@ -493,8 +479,13 @@ function applyFilters(workerMatches) {
     return matchCounty && matchSub;
   });
 
-  // Sorteerimine
+  // Sorteerimine: kui otsing on aktiivne, reastatakse tulemused esmalt relevantsuse järgi
+  const scores = window.currentSearchScores || {};
   filteredObs.sort((a, b) => {
+    if (q && scores[a.id] !== undefined && scores[b.id] !== undefined) {
+      const diff = (scores[b.id] || 0) - (scores[a.id] || 0);
+      if (diff !== 0) return diff;
+    }
     if (sort === "created_desc") {
       const aCreated = a.created_at || a.date || "";
       const bCreated = b.created_at || b.date || "";
