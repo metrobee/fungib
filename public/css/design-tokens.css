@@ -1,0 +1,124 @@
+/* ==========================================================================
+   FUNGIB UNIFIED DESIGN SYSTEM - DESIGN TOKENS & BASE STYLES
+   Master Source of Truth across all Firebase Web Applications:
+   - sittkeeb-dd91f.web.app (Finants, KÜ, Raamatupidamine)
+   - fungib.web.app (PlutoF Mycology Archive)
+   - vinna2026-a1ef3.web.app (KÕPS Fieldwork & TOMST)
+   - ikiclay, inat-alerts, hommikumotisklus
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Light Mode */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f6f7;
+  --bg-surface: #ffffff;
+  --border-color: #e2e2e5;
+  --border-subtle: #eeeeef;
+  --text-primary: #111111;
+  --text-secondary: #666668;
+  --text-muted: #8e8e93;
+  --accent-color: #000000;
+  --accent-invert: #ffffff;
+  --badge-bg: #ececee;
+  --badge-text: #222222;
+  --card-hover-border: #000000;
+
+  /* Semantic Status Colors */
+  --status-success-text: #15803d;
+  --status-success-bg: #f0fdf4;
+  --status-success-border: #bbf7d0;
+
+  --status-warning-text: #b45309;
+  --status-warning-bg: #fffbeb;
+  --status-warning-border: #fde68a;
+
+  --status-danger-text: #b91c1c;
+  --status-danger-bg: #fef2f2;
+  --status-danger-border: #fecaca;
+
+  --status-info-text: #1d4ed8;
+  --status-info-bg: #eff6ff;
+  --status-info-border: #bfdbfe;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", Menlo, Monaco, monospace;
+}
+
+[data-theme="dark"] {
+  /* Color Palette - Dark Mode */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #121215;
+  --bg-surface: #18181c;
+  --border-color: #26262a;
+  --border-subtle: #1f1f23;
+  --text-primary: #f2f2f5;
+  --text-secondary: #9999a1;
+  --text-muted: #66666e;
+  --accent-color: #ffffff;
+  --accent-invert: #000000;
+  --badge-bg: #222226;
+  --badge-text: #e2e2e5;
+  --card-hover-border: #ffffff;
+
+  /* Semantic Status Colors - Dark Mode */
+  --status-success-text: #4ade80;
+  --status-success-bg: #052e16;
+  --status-success-border: #166534;
+
+  --status-warning-text: #fbbf24;
+  --status-warning-bg: #451a03;
+  --status-warning-border: #92400e;
+
+  --status-danger-text: #f87171;
+  --status-danger-bg: #450a0a;
+  --status-danger-border: #991b1b;
+
+  --status-info-text: #60a5fa;
+  --status-info-bg: #172554;
+  --status-info-border: #1e40af;
+
+  /* Shadows - Dark Mode */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}

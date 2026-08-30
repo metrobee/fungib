@@ -120,3 +120,16 @@
 - **Süsteem:** `fungib.web.app` frontend ja turvalisus
 - **Funktsioon:** Lisatud Google Sign-In autentimisvärav (`ALLOWED_EMAILS = ['borismeldre@gmail.com']`), mis teeb arhiivi privaatseks.
 - **Dokumentatsioon:** Uuendatud `README.md` koos täieliku paigaldus- ja seadistusjuhendiga uutele kasutajatele.
+
+# INCIDENT LOGS & RCA (ROOT CAUSE ANALYSIS) - FUNGIB
+
+## INCIDENT 004: Observations.json Payload Bloat & Lack of Herbarium Filtering
+- **Kuupäev:** 2026-08-30
+- **Sümptom:** `observations.json` faili suurus kasvas 9.4 MB-ni, kuna iga 2108 vaatluse juures dubleeriti 14 keele etümoloogilist sõnastikku (`vernacular_names`). Puudus spetsiaalne otsing ja filter teaduskollektsioonide (TU, TAA, DNA proovid, mikroskoopia) eristamiseks.
+- **RCA:**
+  1. Denormaliseeritud JSON struktuur tekitas ~4.5 MB tarbetut dubleerimist 680 liigi vahel.
+  2. Herbaariumi ja DNA proovide metaandmed olid maetud vabatekstilistesse märkustesse ilma struktuurse tuvastuseta.
+- **Püsiv Lahendus:**
+  1. Normaliseeritud taksonite register `taxa`, vähendades failimahtu 48% (4.93 MB-ni).
+  2. Implementeeritud `extract_specimen_info` mootor (tuvastab TU/TAA/KM koodid, DNA proovid, eosemõõdud).
+  3. Lisatud kliendipoolne Web Worker välkotsing ja DOM virtualiseerimine (`content-visibility: auto`).

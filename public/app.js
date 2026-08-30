@@ -1,5 +1,7 @@
 // PLUTOFF Mycology Dashboard - Executive Minimalist Client
 let observations = [];
+let taxaRegistry = {};
+let searchWorker = null;
 let filteredObs = [];
 let activeRole = "all"; // "all" | "primary" | "co"
 let map = null;
@@ -153,11 +155,32 @@ function updateMapTiles() {
   }
 }
 
+function initSearchWorker() {
+  if (window.Worker) {
+    try {
+      searchWorker = new Worker("js/search-worker.js");
+      searchWorker.onmessage = function(e) {
+        if (e.data.type === "SEARCH_RESULTS") {
+          const matchingIds = new Set(e.data.results);
+          applyFilters(matchingIds);
+        }
+      };
+      if (observations.length > 0) {
+        searchWorker.postMessage({ type: "INDEX", observations, taxa: taxaRegistry });
+      }
+    } catch (e) {
+      console.warn("Search worker initsialiseerimise viga, kasutan sünkroonset otsingut:", e);
+    }
+  }
+}
+
 async function loadData() {
   try {
     const res = await fetch("data/observations.json?v=" + Date.now());
     const data = await res.json();
     observations = data.observations || [];
+    taxaRegistry = data.taxa || {};
+    initSearchWorker();
 
     populateFilters(data.metadata);
     updateStats(data.metadata);
@@ -226,6 +249,19 @@ function populateFilters(meta) {
     if (rs.NT > 0) optHtml += `<option value="NT" ${curVal === "NT" ? "selected" : ""}>NT — Ohulähedane (${rs.NT})</option>`;
     if (rs.DD > 0) optHtml += `<option value="DD" ${curVal === "DD" ? "selected" : ""}>DD — Puuduliku andmestikuga (${rs.DD})</option>`;
     redSelect.innerHTML = optHtml;
+  }
+
+  // Specimen filter
+  const specSelect = document.getElementById("specimenFilter");
+  if (specSelect && meta.specimen_stats) {
+    const ss = meta.specimen_stats;
+    const curVal = specSelect.value || "";
+    let optHtml = `<option value="" ${curVal === "" ? "selected" : ""}>Kõik vaatlused (Herbaariumiga ja ilma)</option>`;
+    optHtml += `<option value="any" ${curVal === "any" ? "selected" : ""}>Ainult Herbaarium / DNA / Mikroskoopia (${ss.total})</option>`;
+    if (ss.herbaarium > 0) optHtml += `<option value="herbaarium" ${curVal === "herbaarium" ? "selected" : ""}>Ainult Herbaariumnäidised (${ss.herbaarium})</option>`;
+    if (ss.dna > 0) optHtml += `<option value="dna" ${curVal === "dna" ? "selected" : ""}>Ainult DNA proovid (${ss.dna})</option>`;
+    if (ss.mikroskoopia > 0) optHtml += `<option value="mikroskoopia" ${curVal === "mikroskoopia" ? "selected" : ""}>Ainult Mikroskoopia märkmetega (${ss.mikroskoopia})</option>`;
+    specSelect.innerHTML = optHtml;
   }
 
   // Role counts
@@ -381,11 +417,12 @@ function setRole(role) {
   applyFilters();
 }
 
-function applyFilters() {
+function applyFilters(workerMatches) {
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
   const sort = document.getElementById("sortOrder").value;
   const project = document.getElementById("projectFilter") ? document.getElementById("projectFilter").value : "none";
   const redList = document.getElementById("redListFilter") ? document.getElementById("redListFilter").value : "";
+  const specimen = document.getElementById("specimenFilter") ? document.getElementById("specimenFilter").value : "";
   const status = document.getElementById("statusFilter").value;
   const observer = document.getElementById("observerFilter").value;
   const county = document.getElementById("countyFilter").value;
@@ -406,6 +443,12 @@ function applyFilters() {
       if (o.red_list_status !== redList) return false;
     }
 
+    // Specimen / Herbarium / DNA filter
+    if (specimen === "any" && !o.is_specimen) return false;
+    if (specimen === "herbaarium" && o.specimen_type !== "herbaarium") return false;
+    if (specimen === "dna" && o.specimen_type !== "dna") return false;
+    if (specimen === "mikroskoopia" && o.specimen_type !== "mikroskoopia") return false;
+
     // Role filter
     if (activeRole === "primary" && o.is_co_observer) return false;
     if (activeRole === "co" && !o.is_co_observer) return false;
@@ -417,28 +460,37 @@ function applyFilters() {
     // Observer filter
     if (observer && o.primary_observer !== observer && !o.collectors.includes(observer)) return false;
 
-    // Search query
-    const matchQuery = !q || 
-      (o.est_name && o.est_name.toLowerCase().includes(q)) ||
-      (o.taxon && o.taxon.toLowerCase().includes(q)) ||
-      (o.all_names_search && o.all_names_search.toLowerCase().includes(q)) ||
-      (o.red_list_status && o.red_list_status.toLowerCase().includes(q)) ||
-      (o.red_list_label && o.red_list_label.toLowerCase().includes(q)) ||
-      (o.protection_category && o.protection_category.toLowerCase().includes(q)) ||
-      (o.collectors && o.collectors.toLowerCase().includes(q)) ||
-      (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
-      (o.locality && o.locality.toLowerCase().includes(q)) ||
-      (o.county && o.county.toLowerCase().includes(q)) ||
-      (o.project_name && o.project_name.toLowerCase().includes(q)) ||
-      (o.project_id && o.project_id.includes(q)) ||
-      (o.substrate && o.substrate.toLowerCase().includes(q)) ||
-      (o.substrate_type && o.substrate_type.toLowerCase().includes(q)) ||
-      (o.id && o.id.includes(q));
+    // Search query via Web Worker or Fallback
+    if (workerMatches && q) {
+      if (!workerMatches.has(o.id)) return false;
+    } else if (q) {
+      const taxonInfo = taxaRegistry[o.taxon_key || o.taxon_id || o.taxon] || {};
+      const allNames = taxonInfo.all_names_search || o.all_names_search || "";
+      const matchQuery =
+        (o.est_name && o.est_name.toLowerCase().includes(q)) ||
+        (o.taxon && o.taxon.toLowerCase().includes(q)) ||
+        (allNames && allNames.toLowerCase().includes(q)) ||
+        (o.specimen_code && o.specimen_code.toLowerCase().includes(q)) ||
+        (o.microscopic_notes && o.microscopic_notes.toLowerCase().includes(q)) ||
+        (o.red_list_status && o.red_list_status.toLowerCase().includes(q)) ||
+        (o.red_list_label && o.red_list_label.toLowerCase().includes(q)) ||
+        (o.protection_category && o.protection_category.toLowerCase().includes(q)) ||
+        (o.collectors && o.collectors.toLowerCase().includes(q)) ||
+        (o.primary_observer && o.primary_observer.toLowerCase().includes(q)) ||
+        (o.locality && o.locality.toLowerCase().includes(q)) ||
+        (o.county && o.county.toLowerCase().includes(q)) ||
+        (o.project_name && o.project_name.toLowerCase().includes(q)) ||
+        (o.project_id && o.project_id.includes(q)) ||
+        (o.substrate && o.substrate.toLowerCase().includes(q)) ||
+        (o.substrate_type && o.substrate_type.toLowerCase().includes(q)) ||
+        (o.id && o.id.includes(q));
+      if (!matchQuery) return false;
+    }
 
     const matchCounty = !county || o.county === county;
     const matchSub = !sub || o.substrate === sub;
 
-    return matchQuery && matchCounty && matchSub;
+    return matchCounty && matchSub;
   });
 
   // Sorteerimine
@@ -578,6 +630,11 @@ function renderList() {
     if (o.project_name || o.project_id) {
       topBadges += `<span class="badge badge-project-tag">${escapeHtml(o.project_name || 'Projekt ' + o.project_id)}</span>`;
     }
+    if (o.is_specimen) {
+      const stype = o.specimen_type || 'herbaarium';
+      const sLabel = stype === 'dna' ? 'DNA PROOV' : (stype === 'herbaarium' ? 'HERBAARIUM' : 'MIKROSKOOPIA');
+      topBadges += `<span class="badge badge-specimen ${stype}">${sLabel}</span>`;
+    }
     if (o.is_co_observer) {
       topBadges += `<span class="badge badge-co-highlight">KAASVAATLEJA</span>`;
     }
@@ -612,6 +669,9 @@ function renderList() {
     if (o.is_verified) {
       const vText = o.verified_by ? `Kinnitatud (${escapeHtml(o.verified_by)})` : "Kinnitatud";
       badgesHtml += `<span class="badge badge-verified">${vText}</span>`;
+    }
+    if (o.specimen_code) {
+      badgesHtml += `<span class="badge" style="border-color:var(--text-primary);color:var(--text-primary);font-weight:700;">Kood: ${escapeHtml(o.specimen_code)}</span>`;
     }
     if (o.substrate) badgesHtml += `<span class="badge">${escapeHtml(o.substrate)}</span>`;
     if (o.substrate_type) badgesHtml += `<span class="badge">${escapeHtml(o.substrate_type)}</span>`;
@@ -832,14 +892,40 @@ function openModal(o) {
     }
   }
 
-  // Tavanimetused
+  // Herbaarium & DNA & Mikroskoopia
+  const modalSpecBlock = document.getElementById("modalSpecimenBlock");
+  if (modalSpecBlock) {
+    if (o.is_specimen) {
+      modalSpecBlock.style.display = "block";
+      let sHtml = "";
+      if (o.specimen_code) {
+        sHtml += `<div style="margin-bottom:4px;"><strong>Eksemplari / Proovi kood:</strong> <span style="font-family:var(--font-mono);color:var(--accent-primary, var(--text-primary));font-weight:700;">${escapeHtml(o.specimen_code)}</span></div>`;
+      }
+      if (o.microscopic_notes) {
+        sHtml += `<div><strong>Mikroskoopia / Märkmed:</strong> ${escapeHtml(o.microscopic_notes)}</div>`;
+      }
+      if (!sHtml) {
+        sHtml = `<div><strong>Tüüp:</strong> ${escapeHtml(o.specimen_type || 'Herbaariumnäidis')}</div>`;
+      }
+      document.getElementById("modalSpecimenVal").innerHTML = sHtml;
+    } else {
+      modalSpecBlock.style.display = "none";
+    }
+  }
+
+  // Tavanimetused (Hydrated from taxaRegistry)
+  const taxonInfo = taxaRegistry[o.taxon_key || o.taxon_id || o.taxon] || {};
+  const vNames = (taxonInfo && taxonInfo.vernacular_names && taxonInfo.vernacular_names.length > 0)
+    ? taxonInfo.vernacular_names
+    : (o.vernacular_names || []);
+
   const vBlock = document.getElementById("modalVernacularBlock");
   const vList = document.getElementById("modalVernacularList");
   if (vBlock && vList) {
-    if (o.vernacular_names && o.vernacular_names.length > 0) {
+    if (vNames && vNames.length > 0) {
       vBlock.style.display = "block";
       let vHtml = `<div class="vernacular-tags">`;
-      o.vernacular_names.forEach(v => {
+      vNames.forEach(v => {
         const lang = v.lang_name || v.language || "Muu keel";
         const prefClass = v.is_preferred ? "is-pref" : "";
         const litHtml = v.literal_trans ? `<span class="literal-trans">≈ "${escapeHtml(v.literal_trans)}"</span>` : "";
@@ -987,7 +1073,12 @@ function initEventListeners() {
   if (searchInput) {
     searchInput.addEventListener("input", () => {
       updateSearchClearBtn();
-      applyFilters();
+      const query = searchInput.value.trim();
+      if (searchWorker && query) {
+        searchWorker.postMessage({ type: "SEARCH", query: query });
+      } else {
+        applyFilters();
+      }
     });
 
     searchInput.addEventListener("keydown", (e) => {
@@ -1014,14 +1105,16 @@ function initEventListeners() {
   }
 
   const projSelect = document.getElementById("projectFilter");
-  if (projSelect) projSelect.addEventListener("change", applyFilters);
+  if (projSelect) projSelect.addEventListener("change", () => applyFilters());
   const redSelect = document.getElementById("redListFilter");
-  if (redSelect) redSelect.addEventListener("change", applyFilters);
-  document.getElementById("sortOrder").addEventListener("change", applyFilters);
-  document.getElementById("statusFilter").addEventListener("change", applyFilters);
-  document.getElementById("observerFilter").addEventListener("change", applyFilters);
-  document.getElementById("countyFilter").addEventListener("change", applyFilters);
-  document.getElementById("substrateFilter").addEventListener("change", applyFilters);
+  if (redSelect) redSelect.addEventListener("change", () => applyFilters());
+  const specSelect = document.getElementById("specimenFilter");
+  if (specSelect) specSelect.addEventListener("change", () => applyFilters());
+  document.getElementById("sortOrder").addEventListener("change", () => applyFilters());
+  document.getElementById("statusFilter").addEventListener("change", () => applyFilters());
+  document.getElementById("observerFilter").addEventListener("change", () => applyFilters());
+  document.getElementById("countyFilter").addEventListener("change", () => applyFilters());
+  document.getElementById("substrateFilter").addEventListener("change", () => applyFilters());
   document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
 
   // Role button events

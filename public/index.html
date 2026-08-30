@@ -143,6 +143,13 @@
           </select>
         </div>
         <div class="filter-row">
+          <select id="specimenFilter" class="filter-select specimen-filter-select">
+            <option value="">Kõik vaatlused (Herbaariumiga ja ilma)</option>
+            <option value="any">Ainult Herbaarium / DNA / Mikroskoopia</option>
+            <option value="herbaarium">Ainult Herbaariumnäidised (TU/TAA/KM)</option>
+            <option value="dna">Ainult DNA proovid / Sekveneeritud</option>
+            <option value="mikroskoopia">Ainult Mikroskoopia märkmetega</option>
+          </select>
           <select id="substrateFilter" class="filter-select">
             <option value="">Kõik substraadid</option>
           </select>
@@ -236,6 +243,10 @@
           <div class="detail-block" id="modalRedListBlock" style="display: none;">
             <div class="detail-label">Punane nimestik & Kaitse</div>
             <div id="modalRedList" class="detail-value">-</div>
+          </div>
+          <div class="detail-block" id="modalSpecimenBlock" style="display: none; grid-column: 1 / -1; background: var(--bg-surface-elevated, var(--bg-surface)); border: 1px solid var(--border-color); border-radius: var(--radius-sm); padding: 8px 12px;">
+            <div class="detail-label" style="font-weight: 700; color: var(--accent-primary, var(--text-primary));">Herbaarium / DNA / Mikroskoopia</div>
+            <div id="modalSpecimenVal" class="detail-value" style="margin-top: 4px; font-size: 0.8125rem;">-</div>
           </div>
           <div class="detail-block modal-vernacular-block" id="modalVernacularBlock" style="display: none; grid-column: 1 / -1;">
             <div class="detail-label">Tavanimetused (elurikkus.ee / PlutoF)</div>

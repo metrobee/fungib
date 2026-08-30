@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="et" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakenduse Pealkiri • Firebase App</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Fungib Core Design System -->
+  <link rel="stylesheet" href="/css/design-tokens.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <script src="/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- Standard Header -->
+  <header class="header">
+    <div class="header-main-bar">
+      <div class="brand">
+        <a href="/" class="brand-title">RAKENDUS</a>
+        <span class="brand-subtitle">Mooduli kirjeldus</span>
+      </div>
+
+      <div class="header-center">
+        <div class="search-wrapper">
+          <input type="text" class="search-input" id="globalSearch" placeholder="Otsi...">
+        </div>
+      </div>
+
+      <div class="header-right">
+        <button class="btn-theme-toggle" onclick="toggleTheme()">Teema</button>
+        <a href="/" class="btn btn-secondary btn-sm">Tagasi pealehele</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    
+    <!-- Top Statistics / Metrics -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Kirjete arv</div>
+        <div class="stat-value" id="statCount">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Kogusumma</div>
+        <div class="stat-value" id="statSum">0.00 €</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Staatus</div>
+        <div class="stat-value" style="font-size: 1rem;"><span class="badge badge-success">Aktiivne</span></div>
+      </div>
+    </section>
+
+    <!-- Content Card with Filter Tabs and Data Table -->
+    <section class="card">
+      <div class="flex-between" style="margin-bottom: 16px;">
+        <h2 class="card-title">Andmete nimekiri</h2>
+        
+        <div class="tab-group">
+          <button class="tab-btn active">Kõik</button>
+          <button class="tab-btn">Aktiivsed</button>
+          <button class="tab-btn">Arhiveeritud</button>
+        </div>
+      </div>
+
+      <!-- Responsive Table -->
+      <div class="table-responsive">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Kuupäev</th>
+              <th>Identifikaator</th>
+              <th>Kirjeldus</th>
+              <th>Olek</th>
+              <th class="col-right">Summa</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td class="col-mono text-secondary">2026-08-30</td>
+              <td class="col-mono"><span class="badge badge-mono">DOC-001</span></td>
+              <td>Näidiskirje kirjeldus</td>
+              <td><span class="badge badge-success">Kinnitatud</span></td>
+              <td class="col-right col-mono">120.50 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

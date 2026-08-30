@@ -694,6 +694,8 @@ html, body {
 }
 
 .obs-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 320px;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
@@ -995,7 +997,35 @@ html, body {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.project-filter-select, .red-list-filter-select {
+.badge-specimen {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.badge-specimen.herbaarium {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.badge-specimen.dna {
+  background-color: var(--accent-color);
+  color: var(--accent-invert);
+  border: 1px solid var(--accent-color);
+}
+
+.badge-specimen.mikroskoopia {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.project-filter-select, .red-list-filter-select, .specimen-filter-select {
   font-weight: 600;
   border-color: var(--border-color);
   background-color: var(--bg-surface);

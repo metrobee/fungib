@@ -5,16 +5,16 @@ import os
 import re
 import datetime
 
-DB_PATH = '/Users/metrobee/GEMINI/data/plutof_vaatlused.db'
-CSV_PATH = '/Users/metrobee/GEMINI/data/plutof_full_export_latest.csv'
-SNIPPETS_PATH = os.path.expanduser('~/.clipsnippet_snippets.json')
-RED_LIST_PATH = '/Users/metrobee/GEMINI/data/eesti_punane_nimestik_seened.json'
-OUTPUT_JSON = '/Users/metrobee/Projects/fungib/public/data/observations.json'
+DB_PATH = "/Users/metrobee/GEMINI/data/plutof_vaatlused.db"
+CSV_PATH = "/Users/metrobee/GEMINI/data/plutof_full_export_latest.csv"
+SNIPPETS_PATH = os.path.expanduser("~/.clipsnippet_snippets.json")
+RED_LIST_PATH = "/Users/metrobee/GEMINI/data/eesti_punane_nimestik_seened.json"
+OUTPUT_JSON = "/Users/metrobee/Projects/fungib/public/data/observations.json"
 
 def load_red_list():
     if os.path.exists(RED_LIST_PATH):
         try:
-            with open(RED_LIST_PATH, 'r', encoding='utf-8') as f:
+            with open(RED_LIST_PATH, "r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
             pass
@@ -26,12 +26,12 @@ def find_red_list_info(taxon_name, est_name, red_dict):
     if not red_dict:
         return {"status": "", "label": "", "protection": "", "score": 99}
     
-    t_clean = re.sub(r'\(.*?\)', '', taxon_name or '').strip().lower()
+    t_clean = re.sub(r"\(.*?\)", "", taxon_name or "").strip().lower()
     words = t_clean.split()
     bin_name = f"{words[0]} {words[1]}" if len(words) >= 2 else t_clean
     
-    v_clean = (est_name or '').strip().lower()
-    v_words = [v.strip() for v in v_clean.split(',') if v.strip()]
+    v_clean = (est_name or "").strip().lower()
+    v_words = [v.strip() for v in v_clean.split(",") if v.strip()]
     
     info = red_dict.get(bin_name) or red_dict.get(t_clean)
     if not info:
@@ -41,9 +41,9 @@ def find_red_list_info(taxon_name, est_name, red_dict):
                 break
 
     if info:
-        raw_status = info.get('punane_nimestik') or ''
-        code = raw_status.split()[0] if raw_status else ''
-        prot = info.get('kaitsekategooria') or ''
+        raw_status = info.get("punane_nimestik") or ""
+        code = raw_status.split()[0] if raw_status else ""
+        prot = info.get("kaitsekategooria") or ""
         score = RED_ORDER.get(code, 50)
         return {
             "status": code,
@@ -58,15 +58,15 @@ def load_est_name_map():
     est_map = {}
     if os.path.exists(SNIPPETS_PATH):
         try:
-            with open(SNIPPETS_PATH, 'r', encoding='utf-8') as f:
+            with open(SNIPPETS_PATH, "r", encoding="utf-8") as f:
                 d = json.load(f)
-            seened = d.get('Seened', {})
+            seened = d.get("Seened", {})
             for trigger, val in seened.items():
-                m = re.match(r'^(.*?)\s*\((.*?)\)$', val)
+                m = re.match(r"^(.*?)\s*\((.*?)\)$", val)
                 if m:
                     est = m.group(1).strip()
                     sci = m.group(2).strip().lower()
-                    sci_species = ' '.join(sci.split()[:2])
+                    sci_species = " ".join(sci.split()[:2])
                     est_map[sci_species] = est
                     est_map[sci] = est
         except Exception:
@@ -76,13 +76,53 @@ def load_est_name_map():
 def find_est_name(taxon_name, est_map):
     if not taxon_name:
         return ""
-    clean_name = re.sub(r'\(.*?\)', '', taxon_name).strip()
+    clean_name = re.sub(r"\(.*?\)", "", taxon_name).strip()
     parts = clean_name.split()
     if len(parts) >= 2:
         bin_name = f"{parts[0]} {parts[1]}".lower()
         if bin_name in est_map:
             return est_map[bin_name]
     return est_map.get(taxon_name.lower(), "")
+
+def extract_specimen_info(remarks, substrate, locality, csv_notes):
+    combined = f"{remarks} {substrate} {locality} {csv_notes}"
+    
+    is_specimen = False
+    specimen_type = ""
+    specimen_code = ""
+    microscopic_notes = ""
+    
+    # 1. Herbarium / Collector voucher codes
+    herb_match = re.search(r"(TU\s*\d+|TAA\s*\d+|KM\d+-\d+|#\w+-\w+|coll\.?)", combined, re.IGNORECASE)
+    if herb_match or "herbaar" in combined.lower() or "kuivatis" in combined.lower():
+        is_specimen = True
+        specimen_type = "herbaarium"
+        if herb_match:
+            specimen_code = herb_match.group(0).strip()
+            
+    # 2. DNA Sample / Sequencing tags
+    if re.search(r"(DNA|sekveneer|ITS|ekstraktsioon)", combined, re.IGNORECASE):
+        is_specimen = True
+        specimen_type = "dna"
+        dna_tag_match = re.search(r"(#[\w-]+|\w+-\w+)?\s*(?:->)?\s*DNA[^\.,;]*", combined, re.IGNORECASE)
+        if dna_tag_match:
+            tag_str = dna_tag_match.group(0).strip()
+            specimen_code = tag_str if not specimen_code else f"{specimen_code} ({tag_str})"
+            
+    # 3. Microscopic notes & Spore dimensions
+    micro_match = re.search(r"(\d+[\.,]?\d*\s*[-–xX]\s*\d+[\.,]?\d*(?:\s*[-–xX]\s*\d+[\.,]?\d*)?\s*(?:μm|mikromeetr|µm)?|eosed|tsüstidi|basidia|pooride niidid|tsüanofiil|KOH|amüloid)", combined, re.IGNORECASE)
+    if micro_match:
+        if not specimen_type:
+            specimen_type = "mikroskoopia"
+            is_specimen = True
+        microscopic_notes = remarks.strip()
+        
+    return {
+        "is_specimen": is_specimen,
+        "specimen_type": specimen_type,
+        "specimen_code": specimen_code,
+        "microscopic_notes": microscopic_notes
+    }
 
 def main():
     conn = sqlite3.connect(DB_PATH)
@@ -95,18 +135,18 @@ def main():
     csv_mtime = None
     if os.path.exists(CSV_PATH):
         csv_mtime = datetime.datetime.fromtimestamp(os.path.getmtime(CSV_PATH), tz=datetime.timezone.utc).isoformat()
-        with open(CSV_PATH, 'r', encoding='utf-8') as f:
+        with open(CSV_PATH, "r", encoding="utf-8") as f:
             for r in csv.DictReader(f):
-                link = r.get('Veebilink', '').strip()
-                if '/' in link:
-                    obs_id = link.split('/')[-1]
-                    img_url = r.get('Image URL', '').strip()
+                link = r.get("Veebilink", "").strip()
+                if "/" in link:
+                    obs_id = link.split("/")[-1]
+                    img_url = r.get("Image URL", "").strip()
                     csv_meta[obs_id] = {
                         "image_url": img_url,
-                        "determiner": r.get('Määrang.Määrajad', '').strip(),
-                        "observer": r.get('Sündmus.Kogujad', '').strip() or r.get('Õiguste hoidja', '').strip(),
-                        "notes": r.get('Märkused', '').strip(),
-                        "locality_csv": r.get('Ala.Asukoha tekst', '').strip() or r.get('Ala.Nimi', '').strip()
+                        "determiner": r.get("Määrang.Määrajad", "").strip(),
+                        "observer": r.get("Sündmus.Kogujad", "").strip() or r.get("Õiguste hoidja", "").strip(),
+                        "notes": r.get("Märkused", "").strip(),
+                        "locality_csv": r.get("Ala.Asukoha tekst", "").strip() or r.get("Ala.Nimi", "").strip()
                     }
 
     c.execute("""
@@ -124,6 +164,7 @@ def main():
     rows = c.fetchall()
     
     observations = []
+    taxa_registry = {}
     taxa_set = set()
     county_set = set()
     collectors_set = set()
@@ -140,11 +181,18 @@ def main():
         "protected": 0
     }
 
+    specimen_stats = {
+        "total": 0,
+        "herbaarium": 0,
+        "dna": 0,
+        "mikroskoopia": 0
+    }
+
     now = datetime.datetime.now(datetime.timezone.utc)
-    today_str = now.strftime('%Y-%m-%d')
-    cur_year_str = now.strftime('%Y')
-    cur_month_str = now.strftime('%Y-%m')
-    start_of_week = (now - datetime.timedelta(days=now.weekday())).strftime('%Y-%m-%d')
+    today_str = now.strftime("%Y-%m-%d")
+    cur_year_str = now.strftime("%Y")
+    cur_month_str = now.strftime("%Y-%m")
+    start_of_week = (now - datetime.timedelta(days=now.weekday())).strftime("%Y-%m-%d")
 
     added_today = 0
     added_this_week = 0
@@ -159,7 +207,7 @@ def main():
     for r in rows:
         obs_id = str(r[0])
         taxon = r[1] or "Tundmatu takson"
-        date_str = (r[2] or "").split('T')[0]
+        date_str = (r[2] or "").split("T")[0]
         lat = r[3]
         lon = r[4]
         alt = r[5]
@@ -202,7 +250,7 @@ def main():
         else:
             primary_count += 1
 
-        created_date = created_at.split('T')[0] if created_at else date_str
+        created_date = created_at.split("T")[0] if created_at else date_str
 
         # Perioodide loendus
         if created_date == today_str:
@@ -237,6 +285,15 @@ def main():
         if not all_names_search:
             all_names_search = f"{est_name} {taxon}"
 
+        # Registreeri taksonite sõnastik (Normaliseerimine)
+        taxon_key = taxon_id or taxon
+        if taxon_key and taxon_key not in taxa_registry:
+            taxa_registry[taxon_key] = {
+                "vernacular_names": vernacular_list,
+                "all_names_search": all_names_search,
+                "est_name": est_name
+            }
+
         # Punane nimestik ja kaitsekategooria
         red_info = find_red_list_info(taxon, est_name, red_dict)
         if red_info["status"]:
@@ -245,6 +302,15 @@ def main():
                 red_stats[red_info["status"]] += 1
         if red_info["protection"]:
             red_stats["protected"] += 1
+
+        # Herbaariumi ja näidiste analüüs
+        csv_notes = csv_meta[obs_id]["notes"] if obs_id in csv_meta else ""
+        specimen_res = extract_specimen_info(remarks, substrate, locality, csv_notes)
+        if specimen_res["is_specimen"]:
+            specimen_stats["total"] += 1
+            stype = specimen_res["specimen_type"]
+            if stype in specimen_stats:
+                specimen_stats[stype] += 1
 
         if taxon:
             taxa_set.add(taxon)
@@ -262,9 +328,8 @@ def main():
             "id": obs_id,
             "taxon": taxon,
             "taxon_id": taxon_id,
+            "taxon_key": taxon_key,
             "est_name": est_name,
-            "vernacular_names": vernacular_list,
-            "all_names_search": all_names_search,
             "red_list_status": red_info["status"],
             "red_list_label": red_info["label"],
             "protection_category": red_info["protection"],
@@ -291,7 +356,11 @@ def main():
             "project_name": proj_name,
             "url": url,
             "created_at": created_at,
-            "photos": photos
+            "photos": photos,
+            "is_specimen": specimen_res["is_specimen"],
+            "specimen_type": specimen_res["specimen_type"],
+            "specimen_code": specimen_res["specimen_code"],
+            "microscopic_notes": specimen_res["microscopic_notes"]
         }
 
         observations.append(obs_item)
@@ -306,7 +375,7 @@ def main():
             "id": str(last_r[0]),
             "taxon": last_r[1],
             "est_name": last_est,
-            "date": (last_r[2] or "").split('T')[0],
+            "date": (last_r[2] or "").split("T")[0],
             "locality": last_r[3] or "",
             "county": last_r[4] or "",
             "url": last_r[5] or f"https://app.plutof.ut.ee/observation/view/{last_r[0]}",
@@ -335,6 +404,7 @@ def main():
                 "pending": pending_count
             },
             "red_list_stats": red_stats,
+            "specimen_stats": specimen_stats,
             "time_stats": {
                 "today": added_today,
                 "this_week": added_this_week,
@@ -352,15 +422,16 @@ def main():
             },
             "latest_observation": latest_obs
         },
+        "taxa": taxa_registry,
         "observations": observations
     }
 
-    with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
+    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
-    obs_with_photos_count = sum(1 for o in observations if o["photos"])
-    print(f"Eksport edukas: {len(observations)} vaatlust salvestatud faili {OUTPUT_JSON}")
-    print(f"Kaasvaatluste andmete seis: {csv_mtime}")
+    print(f"Eksport edukas: {len(observations)} vaatlust ja {len(taxa_registry)} taksonit salvestatud faili {OUTPUT_JSON}")
+    print(f"Herbaariumikirjeid: {specimen_stats["total"]} (DNA: {specimen_stats["dna"]}, Herbaarium: {specimen_stats["herbaarium"]}, Mikroskoopia: {specimen_stats["mikroskoopia"]})")
+    print(f"Faili suurus: {os.path.getsize(OUTPUT_JSON) / (1024*1024):.2f} MB")
 
 if __name__ == "__main__":
     main()
