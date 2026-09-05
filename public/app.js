@@ -15,7 +15,7 @@ const TILES = {
 };
 
 // Firebase Auth Configuration
-const ALLOWED_EMAILS = ["borismeldre@gmail.com"];
+const ALLOWED_EMAILS = ["borismeldre@gmail.com", "boris.meldre@ut.ee"];
 
 const firebaseConfig = {
   apiKey: "AIzaSyBEtiCBt2hYWiiL2dDeTRSqE8pY15eGbcE",

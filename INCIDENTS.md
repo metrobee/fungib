@@ -146,3 +146,17 @@
   2. Eemaldatud suvalised sisesõnalised osavasted ja asendatud täpsete sõna-/eesliite- ja liitsõnavaste reeglitega.
   3. Lisatud täieliku fraasi boonus (+1000 punkti) ja tulemuste automaatne reastamine relevantsusskoori järgi.
   4. Päring `hall napsik` tagastab nüüd 100% täpsusega täpselt 3 liigi *Pluteus salicinus* vaatlust.
+
+---
+
+### [INCIDENT-2026-09-05-FUNGIB-HOSTING-OVERWRITE] Firebase Hosting Sihtprojekti Ülekirjutuse Tõrge ja PlutoFF Arhiivi Taastamine
+- **Kuupäev**: 5. september 2026
+- **Sümptom**: Rakendus `https://fungib.web.app/` ei töötanud; PlutoFF mükoloogiaarhiivi asemel avanes mittetoimiv teise projekti ("Sittkeeb") dashboard, mille alamlehed ja andmepäringud ebaõnnestusid.
+- **Algpõhjus (RCA)**: 4. septembril 2026 teostati välisest repositooriumist (`realtime-veebis`) ekslik Hosting deploy olukorras, kus Firebase CLI aktiivseks vaike-projektiks oli märgitud `fungib` ja puudus lokaalne lukustusfail `.firebaserc`. Selle tagajärjel kirjutati `fungib.web.app` üle võõra veebirakenduse staatiliste failidega.
+- **Püsiv lahendus**:
+  1. Loodud range projekti lukustus `.firebaserc` (`{"projects": {"default": "fungib"}}`), mis välistab vale projekti sihtimise.
+  2. Eraldatud konfiguratsioonid ja lisatud `.gitignore` reeglid ajutiste vahemälude jaoks.
+  3. Täiendatud autentimise valge nimekirja tuge (`boris.meldre@ut.ee` lisatud ametliku meiliaadressina `app.js` koodis).
+  4. Teostatud PlutoFF täielik taaskomplekteerimine ja ametlik taas-deploy Firebase Hostingusse (`fungib.web.app`).
+  5. Verifitseeritud HTTP 200 vastused lehe indeksi, 2135 vaatlusega normaliseeritud andmefaili (`observations.json`), Leaflet kaardikihtide ja Web Worker taustaotsingu jaoks.
+
