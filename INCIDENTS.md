@@ -160,3 +160,18 @@
   4. Teostatud PlutoFF täielik taaskomplekteerimine ja ametlik taas-deploy Firebase Hostingusse (`fungib.web.app`).
   5. Verifitseeritud HTTP 200 vastused lehe indeksi, 2135 vaatlusega normaliseeritud andmefaili (`observations.json`), Leaflet kaardikihtide ja Web Worker taustaotsingu jaoks.
 
+---
+
+### [INCIDENT-2026-09-11-SEEN-CLI-DEPLOY-AND-STDOUT-LEAK] seen CLI Automaatse Juurutuse Tõrge ja Terminali Väljundileke
+- **Kuupäev**: 11. september 2026
+- **Sümptom**: Pärast `seen` käsuga vaatluse lisamist (sh vaatlus `8334701` *Amyloporia xantha*) ei jõudnud andmed veebirakendusse `https://fungib.web.app` ning kasutaja terminali prinditi eksportija silumisinfo (`Eksport edukas: 2293 vaatlust ja 697 taksonit...`).
+- **Algpõhjus (RCA)**:
+  1. Varasemas commits asendati sünkroonne funktsioon `deploy_to_fungib()` funktsiooniga `run_post_sync_hook()`, kus käivitati `subprocess.Popen([sys.executable, exp_script], start_new_session=True)`.
+  2. See jättis teostamata käsu `firebase deploy --only hosting --project fungib`, jättes veebirakenduse uuendamata.
+  3. Protsessi standardväljundit ei vaigistatud, mistõttu eksportija statistika lekkis vaatluse sisestamise järel terminali.
+- **Püsiv lahendus**:
+  1. Taastatud sünkroonne `deploy_to_fungib()` funktsionaalsus `seen` CLI koodis (`capture_output=True`), tagades terminali puhtuse ja silumisväljundi peitmise.
+  2. Firebase Hosting juurutus käivitatakse automaatselt ja korrektselt pärast andmete eksporti (`firebase deploy --only hosting --project fungib`).
+  3. Uuendatud kood sünkroniseeritud failides `/Users/metrobee/GEMINI/scripts/seen_cli.py` ja `/Users/metrobee/GEMINI/projekti_hoidlad/plutoff/seen.py`.
+  4. Veebirakendus `https://fungib.web.app` juurutatud, vaatlus `8334701` on reaalajas kättesaadav.
+
