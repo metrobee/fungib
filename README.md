@@ -1,4 +1,4 @@
-# PLUTOFF Mycology Archive (Fungib)
+# PlutoF viewer (Fungib)
 
 Executive minimalistlik ja suure joudlusega mukoloogiline arhiiv ning reaalajas veebidashboard seente vaatluste, herbaariumieksemplaride ja DNA proovide haldamiseks.
 

@@ -175,3 +175,19 @@
   3. Uuendatud kood sünkroniseeritud failides `/Users/metrobee/GEMINI/scripts/seen_cli.py` ja `/Users/metrobee/GEMINI/projekti_hoidlad/plutoff/seen.py`.
   4. Veebirakendus `https://fungib.web.app` juurutatud, vaatlus `8334701` on reaalajas kättesaadav.
 
+---
+
+### [INCIDENT-2026-09-15-FUNGIB-HOSTING-OVERWRITE-RECURRENCE-AND-REBRAND] Korduv Hosting Sihtprojekti Ülekirjutus (Vinna2026), Sellest Tingitud Aegunud Andmete Deploy ja Rakenduse Ümbernimetamine "PlutoF viewer"-iks
+- **Kuupäev**: 15. september 2026
+- **Sümptom**: Kasutaja ei saanud `https://fungib.web.app` lehel Google kontoga sisse logida (`FirebaseError: auth/unauthorized-domain`). Esmane diagnoos (Identity Platform Admin API kaudu kontrollitud `authorizedDomains`) näitas, et `fungib` projekti konfiguratsioon oli korrektne, mistõttu jäi viga esialgu seletamatuks.
+- **Algpõhjus (RCA)**:
+  1. Rakenduse `https://fungib.web.app` HTML ja manustatud `firebaseConfig` (`authDomain: "vinna2026-a1ef3.firebaseapp.com"`, `projectId: "vinna2026-a1ef3"`, pealkiri "Vinna Litter Bags 2026") tõestasid, et lehel ei jooksnud üldse PlutoFF/Fungib kood, vaid `vinna2026` repositooriumi rakendus — korduv esinemine samast INCIDENT-2026-09-05 veaklassist (vale aktiivse Firebase projektiga tehtud Hosting deploy teisest repositooriumist).
+  2. Autoriseeritud domeenide kontroll ei tuvastanud viga, kuna see kontrolliti `fungib` projekti konfiguratsiooni vastu — probleem oli hoopis vales rakenduses, mis üldse ei kasutanud `fungib` projekti autentimist.
+  3. Parandusdeploy (`firebase deploy --only hosting --project fungib` kataloogist `/Users/metrobee/Projects/fungib`) taastas õige PlutoFF rakenduse, kuid kuna see kasutas kataloogis juba olemasolevat (mitte värskelt genereeritud) faili `public/data/observations.json`, jäid kasutaja `seen` CLI-ga vahetult enne juurutatud uusimad vaatlused (sh 2026-09-15 lisatud *Lactarius glyciosmus*) veebirakendusse ajutiselt kajastamata ("osaliselt sünkroonis").
+- **Püsiv lahendus**:
+  1. Taastatud korrektne PlutoFF/Fungib rakendus `fungib.web.app` peale (`firebase deploy --only hosting --project fungib` allikaga `/Users/metrobee/Projects/fungib`), verifitseeritud manustatud `firebaseConfig` (`authDomain: fungib.firebaseapp.com`, `projectId: fungib`).
+  2. Käivitatud `scripts/export_dashboard_data.py` uuesti kohaliku PlutoF andmebaasi (`/Users/metrobee/GEMINI/data/plutof_vaatlused.db`) pealt ENNE lõplikku juurutust, mis taastas kõik 2343 vaatlust (sh uusimad `seen` CLI kirjed) täpses järjekorras veebirakendusse.
+  3. Rakendus ümber nimetatud: pealkiri ja brändielemendid "PLUTOFF" / "Mycology Archive" asendatud "PlutoF viewer"-iga (`<title>`, autentimisekraan, päise bränd); eemaldatud sünkroonimisriba märk "PLUTOF SÜNKROON".
+  4. Tuvastatud, et GitHubi töövoog `.github/workflows/sync_plutof.yml` (ajastatud 03:00 ja 15:00 UTC) tugineb ekslikult kohalikule failiteele `/Users/metrobee/GEMINI/data/plutof_vaatlused.db`, mida GitHubi käivitaja ei saa kunagi lugeda — see ajastatud sünkroon ebaõnnestub tõenäoliselt vaikimisi igal käivitusel ja vajab tulevikus eraldi parandust (andmebaasi ekspordi teisaldamine repositooriumisse või pilve, et ajastatud töövoog reaalselt toimiks).
+- **Ennetav märkus**: See on teine korduv esinemine samast veaklassist (vt INCIDENT-2026-09-05). Kuna `.firebaserc` projektilukustus üksi ei ole korduvaid ristprojekti deploy-vigu takistanud, tuleks edaspidi iga `fungib`-i puudutava Hosting deploy eel kontrollida jooksvat töökataloogi (`pwd`) ja `.firebaserc` sisu enne käsu käivitamist.
+

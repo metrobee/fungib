@@ -1,4 +1,4 @@
-// PLUTOFF Mycology Dashboard - Executive Minimalist Client
+// PlutoF viewer - Executive Minimalist Client
 let observations = [];
 let taxaRegistry = {};
 let searchWorker = null;
