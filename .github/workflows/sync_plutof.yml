@@ -1,4 +1,14 @@
-name: Scheduled PlutoF Live Sync
+name: Scheduled Hosting Safety Redeploy
+
+# Ajastatud "turvavõrk", mis juurutab kaks korda paevas repositooriumis juba
+# committitud public/ sisu Firebase Hostingusse. See ei ekspordi PlutoF
+# andmeid uuesti (see toimub reaalajas `seen` CLI kaudu kasutaja Macis, kus
+# on ligipääs kohalikule SQLite andmebaasile /Users/metrobee/GEMINI/data/
+# plutof_vaatlused.db - GitHubi käivitajal sellele ligipääsu pole). Selle
+# tööjärje eesmärk on ise-taastuda juhul, kui fungib.web.app saab kogemata
+# ülekirjutatud teise Firebase projekti deployga (vt INCIDENT-2026-09-05 ja
+# INCIDENT-2026-09-15) - kuni 12h jooksul taastub see automaatselt oigele
+# sisule, ilma kasutaja sekkumiseta.
 
 on:
   schedule:
@@ -7,20 +17,11 @@ on:
   workflow_dispatch: # Võimaldab käivitada ka käsitsi ühe klikiga GitHubist
 
 jobs:
-  sync:
+  redeploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Export Data
-        run: |
-          python3 scripts/export_dashboard_data.py
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -29,4 +30,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FUNGIB }}'
           channelId: live
           projectId: fungib
-        continue-on-error: true
