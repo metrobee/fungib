@@ -5,6 +5,10 @@
         ".read": "$userId === auth.uid",
         ".write": "$userId === auth.uid"
       }
+    },
+    "observations": {
+      ".read": "auth != null && (auth.token.email === 'borismeldre@gmail.com' || auth.token.email === 'boris.meldre@ut.ee')",
+      ".write": false
     }
   }
 }

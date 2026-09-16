@@ -29,7 +29,7 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-09-15T19:58:10.098896+00:00",
+    "generated_at": "2026-09-16T17:55:50.288730+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
       "total": 2343,
@@ -57,7 +57,7 @@
       "mikroskoopia": 19
     },
     "time_stats": {
-      "today": 1,
+      "today": 0,
       "this_week": 1,
       "this_month": 205,
       "this_year": 1673
@@ -28088,11 +28088,6 @@
       "all_names_search": "vahtratarjak vaahterankääpä lönnticka lønnekjuke lønnekjuke Poppelporesvamp Оксипорус тополёвый Poplar Bracket Treppenförmiger Steifporling Polypore stratifié Oxyporus populinus Oxyporus populinus",
       "est_name": "vahtratarjak"
     },
-    "Corydalis solida (L.) Clairv.": {
-      "vernacular_names": [],
-      "all_names_search": " Corydalis solida (L.) Clairv.",
-      "est_name": ""
-    },
     "164787": {
       "vernacular_names": [
         {
@@ -28321,16 +28316,6 @@
       ],
       "all_names_search": "kuldkülik keltavinokas Stinkmussling ferskenhatt ferskenhatt Okkerblad Филлотопсис гнездовидный Oranžā puslocene Vėduoklinė meškaitė Boczniaczek pomarańczowożółty Mock Oyster Mushroom Orange Mock Oyster Stinking Orange Oyster mock oyster Gemeiner Orangeseitling Orangeseitling Pleurote en forme de nid Pleurote petit nid belarri orrihori Phyllotopsis nidulans (Pers.) Singer Phyllotopsis nidulans",
       "est_name": "kuldkülik"
-    },
-    "Hepatica Mill.": {
-      "vernacular_names": [],
-      "all_names_search": " Hepatica Mill.",
-      "est_name": ""
-    },
-    "Polytrichastrum G.L.Sm.": {
-      "vernacular_names": [],
-      "all_names_search": " Polytrichastrum G.L.Sm.",
-      "est_name": ""
     },
     "183267": {
       "vernacular_names": [
@@ -28692,11 +28677,6 @@
       ],
       "all_names_search": "punapoorik punakääpä Cinnoberticka sinoberkjuke Трутовик киноварно-красный пикнопорус киноварно-красный Tikroji raudonpintė Gęstoporek cynobrowy Cinnabar Bracket Nördlicher Zinnoberschwamm Zinnobertramete Tramète cinabre Yesquero bermellón políporo delor cinabrio trametes rojo-cinabrio yesquero bermellon yesquero bermellón, trametes rojo-cinabrio Pycnoporus cinnabarinus (Jacq.) Fr. Pycnoporus cinnabarinus",
       "est_name": "punapoorik"
-    },
-    "Daphne mezereum L.": {
-      "vernacular_names": [],
-      "all_names_search": " Daphne mezereum L.",
-      "est_name": ""
     },
     "178675": {
       "vernacular_names": [
@@ -29693,11 +29673,6 @@
         }
       ],
       "all_names_search": "poliporo de tamarindo yesquero del taray Inonotus tamaricis (Pat.) Maire Inonotus tamaricis",
-      "est_name": ""
-    },
-    "Neckera pennata Hedw.": {
-      "vernacular_names": [],
-      "all_names_search": " Neckera pennata Hedw.",
       "est_name": ""
     },
     "136106": {
@@ -43870,11 +43845,6 @@
       "all_names_search": "tamminahakka brunskinn eikelærsopp eikelêrsopp Tynd lædersvamp Стереум дубовый Ozolu sīkpiepe Tankioji plutpintė Skórnik dębowy Bleeding Oak Crust Zottiger Eichen-Schichtpilz Zottiger Eichenschichtpilz Stérée duveteux Stérée à barbe hérissée Stereum gausapatum Stereum gausapatum",
       "est_name": "eikelærsopp"
     },
-    "Lathyrus sylvestris L.": {
-      "vernacular_names": [],
-      "all_names_search": " Lathyrus sylvestris L.",
-      "est_name": ""
-    },
     "163933": {
       "vernacular_names": [
         {
@@ -45924,11 +45894,6 @@
       ],
       "all_names_search": "safranvöödik keltahelttaseitikki gulskivig kanelspindelskivling gulskivig kanelspindling sennepslørsopp sennepsslørsopp sennepslørsopp sennepsslørsopp Gulbladet slørhat Паутинник шафрановый Zasłonak szafranowy Saffron Webcap Gelbblättriger Hautkopf Safranblättriger Hautkopf Cortinarius croceus (Schaeff.) Gray Cortinarius croceus",
       "est_name": "safranvöödik"
-    },
-    "Bellis perennis L.": {
-      "vernacular_names": [],
-      "all_names_search": " Bellis perennis L.",
-      "est_name": ""
     },
     "151479": {
       "vernacular_names": [
@@ -65109,6 +65074,41 @@
       ],
       "all_names_search": "sametlõhik sametlõhkik nahkapikari läderskål lærskål lêrskål Hassel-læderskive Энцелия шелушистая Lazdu graudaine Rupusis žievinukas Orzechówka mączysta Spring Hazelcup Hasel-Kleiebecherling Kleiiger(Knäuel.) Haselbecher Encélie du noisetier Pézize du noisetier Encoelia furfuracea (Roth) P. Karst. Encoelia furfuracea",
       "est_name": "sametlõhik, sametlõhkik"
+    },
+    "Corydalis solida (L_) Clairv_": {
+      "vernacular_names": [],
+      "all_names_search": " Corydalis solida (L.) Clairv.",
+      "est_name": ""
+    },
+    "Hepatica Mill_": {
+      "vernacular_names": [],
+      "all_names_search": " Hepatica Mill.",
+      "est_name": ""
+    },
+    "Polytrichastrum G_L_Sm_": {
+      "vernacular_names": [],
+      "all_names_search": " Polytrichastrum G.L.Sm.",
+      "est_name": ""
+    },
+    "Daphne mezereum L_": {
+      "vernacular_names": [],
+      "all_names_search": " Daphne mezereum L.",
+      "est_name": ""
+    },
+    "Neckera pennata Hedw_": {
+      "vernacular_names": [],
+      "all_names_search": " Neckera pennata Hedw.",
+      "est_name": ""
+    },
+    "Lathyrus sylvestris L_": {
+      "vernacular_names": [],
+      "all_names_search": " Lathyrus sylvestris L.",
+      "est_name": ""
+    },
+    "Bellis perennis L_": {
+      "vernacular_names": [],
+      "all_names_search": " Bellis perennis L.",
+      "est_name": ""
     }
   },
   "observations": [
@@ -93284,9 +93284,9 @@
     },
     {
       "id": "8322799",
-      "taxon": "Corydalis solida (L.) Clairv.",
+      "taxon": "Corydalis solida (L_) Clairv_",
       "taxon_id": "",
-      "taxon_key": "Corydalis solida (L.) Clairv.",
+      "taxon_key": "Corydalis solida (L_) Clairv_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -94228,9 +94228,9 @@
     },
     {
       "id": "8322777",
-      "taxon": "Hepatica Mill.",
+      "taxon": "Hepatica Mill_",
       "taxon_id": "",
-      "taxon_key": "Hepatica Mill.",
+      "taxon_key": "Hepatica Mill_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -94316,9 +94316,9 @@
     },
     {
       "id": "8322774",
-      "taxon": "Polytrichastrum G.L.Sm.",
+      "taxon": "Polytrichastrum G_L_Sm_",
       "taxon_id": "",
-      "taxon_key": "Polytrichastrum G.L.Sm.",
+      "taxon_key": "Polytrichastrum G_L_Sm_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -95495,9 +95495,9 @@
     },
     {
       "id": "8322720",
-      "taxon": "Daphne mezereum L.",
+      "taxon": "Daphne mezereum L_",
       "taxon_id": "",
-      "taxon_key": "Daphne mezereum L.",
+      "taxon_key": "Daphne mezereum L_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -98432,9 +98432,9 @@
     },
     {
       "id": "8322156",
-      "taxon": "Neckera pennata Hedw.",
+      "taxon": "Neckera pennata Hedw_",
       "taxon_id": "",
-      "taxon_key": "Neckera pennata Hedw.",
+      "taxon_key": "Neckera pennata Hedw_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -104513,9 +104513,9 @@
     },
     {
       "id": "8321800",
-      "taxon": "Neckera pennata Hedw.",
+      "taxon": "Neckera pennata Hedw_",
       "taxon_id": "",
-      "taxon_key": "Neckera pennata Hedw.",
+      "taxon_key": "Neckera pennata Hedw_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -120109,9 +120109,9 @@
     },
     {
       "id": "8319613",
-      "taxon": "Lathyrus sylvestris L.",
+      "taxon": "Lathyrus sylvestris L_",
       "taxon_id": "",
-      "taxon_key": "Lathyrus sylvestris L.",
+      "taxon_key": "Lathyrus sylvestris L_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",
@@ -125028,9 +125028,9 @@
     },
     {
       "id": "8319461",
-      "taxon": "Bellis perennis L.",
+      "taxon": "Bellis perennis L_",
       "taxon_id": "",
-      "taxon_key": "Bellis perennis L.",
+      "taxon_key": "Bellis perennis L_",
       "est_name": "",
       "red_list_status": "",
       "red_list_label": "",

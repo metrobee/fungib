@@ -20,6 +20,7 @@ const ALLOWED_EMAILS = ["borismeldre@gmail.com", "boris.meldre@ut.ee"];
 const firebaseConfig = {
   apiKey: "AIzaSyBEtiCBt2hYWiiL2dDeTRSqE8pY15eGbcE",
   authDomain: "fungib.firebaseapp.com",
+  databaseURL: "https://fungib-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "fungib",
   storageBucket: "fungib.firebasestorage.app",
   messagingSenderId: "589912931967",
@@ -177,8 +178,11 @@ function initSearchWorker() {
 
 async function loadData() {
   try {
-    const res = await fetch("data/observations.json?v=" + Date.now());
-    const data = await res.json();
+    // Vaatlusandmed tulevad nüüd autentitud RTDB lugemisest, mitte avalikult
+    // loetavast staatilisest failist - vt security audit 2026-09-15/16
+    // (fungib observations.json exposure, kaitstud liikide asukohad).
+    const snap = await firebase.database().ref("observations").once("value");
+    const data = snap.val() || {};
     observations = data.observations || [];
     taxaRegistry = data.taxa || {};
     initSearchWorker();

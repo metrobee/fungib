@@ -4,6 +4,16 @@ import csv
 import os
 import re
 import datetime
+import subprocess
+
+RTDB_INVALID_KEY_CHARS = re.compile(r'[.\$#\[\]/]')
+
+def sanitize_rtdb_key(key):
+    """Firebase RTDB keys may not contain . $ # [ ] /  - taxa are keyed by
+    scientific name incl. author citation (e.g. 'Corydalis solida (L.) Clairv.'),
+    which routinely contains periods. Replace with '_' and keep a consistent
+    mapping so observation records referencing the old key still resolve."""
+    return RTDB_INVALID_KEY_CHARS.sub('_', key)
 
 DB_PATH = "/Users/metrobee/GEMINI/data/plutof_vaatlused.db"
 CSV_PATH = "/Users/metrobee/GEMINI/data/plutof_full_export_latest.csv"
@@ -426,12 +436,50 @@ def main():
         "observations": observations
     }
 
+    # RTDB keys can't contain . $ # [ ] / - sanitize taxa_registry's keys
+    # (scientific names with author citations) and keep observations' taxon
+    # references consistent, so the RTDB write below never fails and the
+    # client's taxaRegistry[taxon_key] lookup keeps working after the sync.
+    rename_map = {}
+    for old_key in list(taxa_registry.keys()):
+        if RTDB_INVALID_KEY_CHARS.search(old_key):
+            new_key = sanitize_rtdb_key(old_key)
+            rename_map[old_key] = new_key
+            taxa_registry[new_key] = taxa_registry.pop(old_key)
+    if rename_map:
+        for obs in observations:
+            for field in ("taxon_key", "taxon_id", "taxon"):
+                val = obs.get(field)
+                if val in rename_map:
+                    obs[field] = rename_map[val]
+
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
     print(f"Eksport edukas: {len(observations)} vaatlust ja {len(taxa_registry)} taksonit salvestatud faili {OUTPUT_JSON}")
     print(f"Herbaariumikirjeid: {specimen_stats["total"]} (DNA: {specimen_stats["dna"]}, Herbaarium: {specimen_stats["herbaarium"]}, Mikroskoopia: {specimen_stats["mikroskoopia"]})")
     print(f"Faili suurus: {os.path.getsize(OUTPUT_JSON) / (1024*1024):.2f} MB")
+
+    # Vaatlusandmed loeb rakendus nüüd autentitud RTDB-st (security fix
+    # 2026-09-16 - observations.json oli avalikult loetav). See fail jääb
+    # kohapeal ainult varukoopiaks/silumiseks; firebase.json ignore-nimekiri
+    # takistab selle avaldamist Hostingusse.
+    try:
+        subprocess.run(
+            ["firebase", "database:set", "/observations", OUTPUT_JSON,
+             "--project", "fungib", "--instance", "fungib-default-rtdb", "--force"],
+            check=True, capture_output=True, text=True
+        )
+        print("Vaatlusandmed sünkroonitud RTDB sõlme /observations.")
+    except FileNotFoundError:
+        subprocess.run(
+            ["npx", "-y", "firebase-tools@latest", "database:set", "/observations", OUTPUT_JSON,
+             "--project", "fungib", "--instance", "fungib-default-rtdb", "--force"],
+            check=True, capture_output=True, text=True
+        )
+        print("Vaatlusandmed sünkroonitud RTDB sõlme /observations (npx).")
+    except subprocess.CalledProcessError as e:
+        print(f"Hoiatus: RTDB sünkroonimine ebaõnnestus: {e.stderr}")
 
 if __name__ == "__main__":
     main()
