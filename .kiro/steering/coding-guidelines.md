@@ -49,11 +49,29 @@ you're currently focused on.
 
 Before you flip an open rule to closed (or restructure access control),
 find every real consumer of that path first — grep the whole workspace,
-not just the one file you're editing. A hardening pass that doesn't do
-this will silently break live features, and unless something surfaces an
-error the user actually sees, nobody will notice until much later. If you
-can't find why something was open, that's a reason to investigate, not a
-reason to assume it's safe to close.
+not just the one file you're editing, and cross-check any README or docs
+that mention external services, webhooks, or gateways. A hardening pass
+that doesn't do this will silently break live features, and unless
+something surfaces an error the user actually sees, nobody will notice
+until much later. If you can't find why something was open, that's a
+reason to investigate, not a reason to assume it's safe to close.
+
+**This is not hypothetical — it happened here, to Claude, not just to a
+previous agent.** During this same audit, `diary/incoming`'s open write
+rule was tightened after checking one candidate writer (a Firebase Cloud
+Function using the Admin SDK, which does bypass rules) and concluding
+that was the only writer. It wasn't: the project's own README documented
+a *separate* external gateway (`https://realtime-gps.vercel.app/gps`,
+receiving live phone GPS pings) that wrote to the same path with a plain
+unauthenticated REST call. The Cloud Function was likely dead code. Real-
+time location tracking silently stopped for roughly 12 hours before the
+user noticed and reported it — data that could never be recovered,
+because it was never sent, not just hidden. The fix (checking one
+consumer instead of grepping for all of them, including references in
+documentation) took two minutes. The outage took twelve hours to notice
+and cost data permanently. Grep for the literal path string across the
+*entire* repo, and read any README that mentions where data comes from,
+before you conclude you've found every writer.
 
 ## 3. Deploys: know exactly what you're about to overwrite
 
