@@ -563,6 +563,36 @@ html, body {
   line-height: 1.3;
 }
 
+.project-filter-notice {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-filter-notice button {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
+
+.project-filter-notice button:hover {
+  background-color: var(--accent-color);
+  color: var(--accent-invert);
+}
+
 /* Right Pane: Observations Feed & Grid */
 .content-pane {
   overflow-y: auto;

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "total_observations": 2343,
+    "total_observations": 2347,
     "unique_taxa": 923,
     "counties": [
       "Barcelonès",
@@ -29,16 +29,16 @@
       "Taavi Tatsi",
       "Triin Varvas"
     ],
-    "generated_at": "2026-09-16T17:55:50.288730+00:00",
+    "generated_at": "2026-09-18T14:32:41.931402+00:00",
     "co_data_updated_at": "2026-08-20T11:06:31.457246+00:00",
     "role_stats": {
-      "total": 2343,
-      "primary": 1784,
+      "total": 2347,
+      "primary": 1788,
       "co_observer": 559
     },
     "verification_stats": {
       "verified": 2124,
-      "pending": 219
+      "pending": 223
     },
     "red_list_stats": {
       "total_listed": 196,
@@ -57,12 +57,17 @@
       "mikroskoopia": 19
     },
     "time_stats": {
-      "today": 0,
-      "this_week": 1,
-      "this_month": 205,
-      "this_year": 1673
+      "today": 3,
+      "this_week": 5,
+      "this_month": 209,
+      "this_year": 1677
     },
     "projects": [
+      {
+        "id": "110041",
+        "name": "2026 Autumn Mushroom Foray",
+        "count": 3
+      },
       {
         "id": "108731",
         "name": "2023 Autumn Mushroom Foray",
@@ -83,19 +88,505 @@
       "person_id": "83911"
     },
     "latest_observation": {
-      "id": "8342851",
-      "taxon": "Lactarius glyciosmus (Fr.) Fr.",
-      "est_name": "lõhnav riisikas",
-      "date": "2026-09-15",
-      "locality": "Vikipalu küla",
-      "county": "Harju maakond",
-      "url": "https://app.plutof.ut.ee/observation/view/8342851",
-      "created_at": "2026-09-15T19:26:45.523621+00:00",
+      "id": "8343905",
+      "taxon": "Phellinus tremulae (Bondartsev) Bondartsev & Borissov",
+      "est_name": "haavataelik",
+      "date": "2026-09-18",
+      "locality": "Päraküla",
+      "county": "Pärnu maakond",
+      "url": "https://app.plutof.ut.ee/observation/view/8343905",
+      "created_at": "2026-09-18T14:32:41.724058+00:00",
       "is_co_observer": false,
       "primary_observer": "Boris Meldre"
     }
   },
   "taxa": {
+    "164837": {
+      "vernacular_names": [
+        {
+          "name": "haavataelik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "haavankääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "aspticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "haava-taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "ospeildkjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "ospeeldkjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Aspe-ildporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Трутовик ложный осиновый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "taelik/tuletael eba-/vale",
+          "is_preferred": false
+        },
+        {
+          "name": "Apšu cietpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Drebulinė kempinė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "czyreń osikowy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Aspen Bracket",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Aspen Fomes",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Aspen Trunk Rot",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Espen-Feuerschwamm",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "taelik/käsn",
+          "is_preferred": false
+        },
+        {
+          "name": "Phellin du tremble",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore du tremble",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Polypore du tremble, Phellin du tremble",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "haavataelik haavankääpä aspticka ospeildkjuke ospeeldkjuke Aspe-ildporesvamp Трутовик ложный осиновый Apšu cietpiepe Drebulinė kempinė czyreń osikowy Aspen Bracket Aspen Fomes Aspen Trunk Rot Espen-Feuerschwamm Phellin du tremble Polypore du tremble Polypore du tremble, Phellin du tremble Phellinus tremulae Phellinus tremulae",
+      "est_name": "haavataelik"
+    },
+    "154227": {
+      "vernacular_names": [
+        {
+          "name": "kaseriisikas",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "vahelik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "vahulik",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "karvarousku",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "karvane-riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "skäggriska",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "riisikas",
+          "is_preferred": false
+        },
+        {
+          "name": "skjeggriske",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "skjeggriske",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Волнушка розовая",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Parastais vilnītis",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Piengrybis paberžis",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Mleczaj wełnianka",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Woolly Milkcap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Birken-Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Grubiger Weißtannen-Milchling",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "lane/ik",
+          "is_preferred": false
+        },
+        {
+          "name": "Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "kaseriisikas vahelik vahulik karvarousku skäggriska skjeggriske skjeggriske Волнушка розовая Parastais vilnītis Piengrybis paberžis Mleczaj wełnianka Woolly Milkcap Birken-Milchling Grubiger Weißtannen-Milchling Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées Lactarius torminosus (Schaeff.) Pers. Lactarius torminosus",
+      "est_name": "kaseriisikas, vahelik, vahulik"
+    },
+    "152947": {
+      "vernacular_names": [
+        {
+          "name": "lilla narmasnutt",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "siid-narmasnutt",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "valge narmasnutt",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "valkorisakas",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "valge-",
+          "is_preferred": false
+        },
+        {
+          "name": "Sidentråding",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Almindelig trævlhat",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "kübar",
+          "is_preferred": false
+        },
+        {
+          "name": "Волоконница земляная",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Zemes šķiedrgalvīte",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Pilkalakštė plaušabudė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Strzępiak ziemistoblaszkowy",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Strzępiak ziemisty",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "White Fibrecap",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Erdblättriger Risspilz",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Inocibe terrestre",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Inocybe terreux",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Inocybe à lames couleur de terre",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Inocybe à lames couleur de terre, Inocybe terreux",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "inocibe blanco",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "lilla narmasnutt siid-narmasnutt valge narmasnutt valkorisakas Sidentråding Almindelig trævlhat Волоконница земляная Zemes šķiedrgalvīte Pilkalakštė plaušabudė Strzępiak ziemistoblaszkowy Strzępiak ziemisty White Fibrecap Erdblättriger Risspilz Inocibe terrestre Inocybe terreux Inocybe à lames couleur de terre Inocybe à lames couleur de terre, Inocybe terreux inocibe blanco Inocybe geophylla (Bull.) P. Kumm. Inocybe geophylla",
+      "est_name": "lilla narmasnutt, siid-narmasnutt, valge narmasnutt"
+    },
+    "178675": {
+      "vernacular_names": [
+        {
+          "name": "vill-tagel",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "villtagel",
+          "language": "est",
+          "lang_name": "Eesti keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "karvavyökääpä",
+          "language": "fin",
+          "lang_name": "Soome keel",
+          "literal_trans": "karvane vööttaelik",
+          "is_preferred": false
+        },
+        {
+          "name": "borstticka",
+          "language": "swe",
+          "lang_name": "Rootsi keel",
+          "literal_trans": "harjastaelik (karvane tagel)",
+          "is_preferred": false
+        },
+        {
+          "name": "raggkjuke",
+          "language": "nob",
+          "lang_name": "Norra keel (Bokmål)",
+          "literal_trans": "karedakarvane taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "raggkjuke",
+          "language": "nno",
+          "lang_name": "Norra keel (Nynorsk)",
+          "literal_trans": "karedakarvane taelik",
+          "is_preferred": false
+        },
+        {
+          "name": "Håret læderporesvamp",
+          "language": "dan",
+          "lang_name": "Taani keel",
+          "literal_trans": "seen",
+          "is_preferred": false
+        },
+        {
+          "name": "Траметес жёстковолосистый",
+          "language": "rus",
+          "lang_name": "Vene keel",
+          "literal_trans": "karedakarvaline tagel",
+          "is_preferred": false
+        },
+        {
+          "name": "Sarainā tauriņpiepe",
+          "language": "lav",
+          "lang_name": "Läti keel",
+          "literal_trans": "harjaskarvane libliktaelik",
+          "is_preferred": true
+        },
+        {
+          "name": "Šiurkščioji kempė",
+          "language": "lit",
+          "lang_name": "Leedu keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Wrośniak szorstki",
+          "language": "pol",
+          "lang_name": "Poola keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "Hairy Bracket",
+          "language": "eng",
+          "lang_name": "Inglise keel",
+          "literal_trans": "karvane konsoolseen",
+          "is_preferred": false
+        },
+        {
+          "name": "Striegelige Tramete",
+          "language": "deu",
+          "lang_name": "Saksa keel",
+          "literal_trans": "harjas-",
+          "is_preferred": false
+        },
+        {
+          "name": "Tramète hirsute",
+          "language": "fra",
+          "lang_name": "Prantsuse keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "poliporo peludo , yesquero peludo",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        },
+        {
+          "name": "yesquero blanco peludo",
+          "language": "spa",
+          "lang_name": "Hispaania keel",
+          "literal_trans": "",
+          "is_preferred": false
+        }
+      ],
+      "all_names_search": "vill-tagel villtagel karvavyökääpä borstticka raggkjuke raggkjuke Håret læderporesvamp Траметес жёстковолосистый Sarainā tauriņpiepe Šiurkščioji kempė Wrośniak szorstki Hairy Bracket Striegelige Tramete Tramète hirsute poliporo peludo , yesquero peludo yesquero blanco peludo Trametes hirsuta (Wulfen) Pilat Trametes hirsuta",
+      "est_name": "vill-tagel, villtagel"
+    },
     "154108": {
       "vernacular_names": [
         {
@@ -16127,117 +16618,6 @@
       "all_names_search": "sooriisikas lakritsirousku lakritsriska lakrisriske lakrisriske Mose-mælkehat Млечник серо-розовый Sarkandzeltaine Samaninis piengrybis Mleczaj płowy Burnt-sugar Milky Fenugreek Milkcap Filziger Milchling Maggipilz Lactaire à odeur de céleri lactario marrón amarillento Lactarius helvus Lactarius helvus",
       "est_name": "sooriisikas"
     },
-    "154227": {
-      "vernacular_names": [
-        {
-          "name": "kaseriisikas",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "vahelik",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "vahulik",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "karvarousku",
-          "language": "fin",
-          "lang_name": "Soome keel",
-          "literal_trans": "karvane-riisikas",
-          "is_preferred": false
-        },
-        {
-          "name": "skäggriska",
-          "language": "swe",
-          "lang_name": "Rootsi keel",
-          "literal_trans": "riisikas",
-          "is_preferred": false
-        },
-        {
-          "name": "skjeggriske",
-          "language": "nob",
-          "lang_name": "Norra keel (Bokmål)",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "skjeggriske",
-          "language": "nno",
-          "lang_name": "Norra keel (Nynorsk)",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Волнушка розовая",
-          "language": "rus",
-          "lang_name": "Vene keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Parastais vilnītis",
-          "language": "lav",
-          "lang_name": "Läti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Piengrybis paberžis",
-          "language": "lit",
-          "lang_name": "Leedu keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Mleczaj wełnianka",
-          "language": "pol",
-          "lang_name": "Poola keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Woolly Milkcap",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Birken-Milchling",
-          "language": "deu",
-          "lang_name": "Saksa keel",
-          "literal_trans": "lane/ik",
-          "is_preferred": false
-        },
-        {
-          "name": "Grubiger Weißtannen-Milchling",
-          "language": "deu",
-          "lang_name": "Saksa keel",
-          "literal_trans": "lane/ik",
-          "is_preferred": false
-        },
-        {
-          "name": "Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        }
-      ],
-      "all_names_search": "kaseriisikas vahelik vahulik karvarousku skäggriska skjeggriske skjeggriske Волнушка розовая Parastais vilnītis Piengrybis paberžis Mleczaj wełnianka Woolly Milkcap Birken-Milchling Grubiger Weißtannen-Milchling Lactaire à toison, Lactaire aux coliques, Lactaire aux tranchées Lactarius torminosus (Schaeff.) Pers. Lactarius torminosus",
-      "est_name": "kaseriisikas, vahelik, vahulik"
-    },
     "212943": {
       "vernacular_names": [
         {
@@ -24912,131 +25292,6 @@
       "all_names_search": "Lilla mütsik sinipunahiippo Rättikhätta Skær huesvamp Мицена чистая Dzidrā sēntiņa Dvokiančioji šalmabudė Dvokioji šalmabudė Grzybówka czysta Grzybówka fioletowawa Lilac Bonnet Gemeiner Rettich-Helmling Rettich-Helmling Micena pura Mycène pur Mycène pure Mycena pura (Pers.) P. Kumm. Mycena pura",
       "est_name": "Lilla mütsik"
     },
-    "164837": {
-      "vernacular_names": [
-        {
-          "name": "haavataelik",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "haavankääpä",
-          "language": "fin",
-          "lang_name": "Soome keel",
-          "literal_trans": "taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "aspticka",
-          "language": "swe",
-          "lang_name": "Rootsi keel",
-          "literal_trans": "haava-taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "ospeildkjuke",
-          "language": "nob",
-          "lang_name": "Norra keel (Bokmål)",
-          "literal_trans": "taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "ospeeldkjuke",
-          "language": "nno",
-          "lang_name": "Norra keel (Nynorsk)",
-          "literal_trans": "taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "Aspe-ildporesvamp",
-          "language": "dan",
-          "lang_name": "Taani keel",
-          "literal_trans": "seen",
-          "is_preferred": false
-        },
-        {
-          "name": "Трутовик ложный осиновый",
-          "language": "rus",
-          "lang_name": "Vene keel",
-          "literal_trans": "taelik/tuletael eba-/vale",
-          "is_preferred": false
-        },
-        {
-          "name": "Apšu cietpiepe",
-          "language": "lav",
-          "lang_name": "Läti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Drebulinė kempinė",
-          "language": "lit",
-          "lang_name": "Leedu keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "czyreń osikowy",
-          "language": "pol",
-          "lang_name": "Poola keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Aspen Bracket",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Aspen Fomes",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Aspen Trunk Rot",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Espen-Feuerschwamm",
-          "language": "deu",
-          "lang_name": "Saksa keel",
-          "literal_trans": "taelik/käsn",
-          "is_preferred": false
-        },
-        {
-          "name": "Phellin du tremble",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Polypore du tremble",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Polypore du tremble, Phellin du tremble",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        }
-      ],
-      "all_names_search": "haavataelik haavankääpä aspticka ospeildkjuke ospeeldkjuke Aspe-ildporesvamp Трутовик ложный осиновый Apšu cietpiepe Drebulinė kempinė czyreń osikowy Aspen Bracket Aspen Fomes Aspen Trunk Rot Espen-Feuerschwamm Phellin du tremble Polypore du tremble Polypore du tremble, Phellin du tremble Phellinus tremulae Phellinus tremulae",
-      "est_name": "haavataelik"
-    },
     "153465": {
       "vernacular_names": [
         {
@@ -28677,124 +28932,6 @@
       ],
       "all_names_search": "punapoorik punakääpä Cinnoberticka sinoberkjuke Трутовик киноварно-красный пикнопорус киноварно-красный Tikroji raudonpintė Gęstoporek cynobrowy Cinnabar Bracket Nördlicher Zinnoberschwamm Zinnobertramete Tramète cinabre Yesquero bermellón políporo delor cinabrio trametes rojo-cinabrio yesquero bermellon yesquero bermellón, trametes rojo-cinabrio Pycnoporus cinnabarinus (Jacq.) Fr. Pycnoporus cinnabarinus",
       "est_name": "punapoorik"
-    },
-    "178675": {
-      "vernacular_names": [
-        {
-          "name": "vill-tagel",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "villtagel",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "karvavyökääpä",
-          "language": "fin",
-          "lang_name": "Soome keel",
-          "literal_trans": "karvane vööttaelik",
-          "is_preferred": false
-        },
-        {
-          "name": "borstticka",
-          "language": "swe",
-          "lang_name": "Rootsi keel",
-          "literal_trans": "harjastaelik (karvane tagel)",
-          "is_preferred": false
-        },
-        {
-          "name": "raggkjuke",
-          "language": "nob",
-          "lang_name": "Norra keel (Bokmål)",
-          "literal_trans": "karedakarvane taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "raggkjuke",
-          "language": "nno",
-          "lang_name": "Norra keel (Nynorsk)",
-          "literal_trans": "karedakarvane taelik",
-          "is_preferred": false
-        },
-        {
-          "name": "Håret læderporesvamp",
-          "language": "dan",
-          "lang_name": "Taani keel",
-          "literal_trans": "seen",
-          "is_preferred": false
-        },
-        {
-          "name": "Траметес жёстковолосистый",
-          "language": "rus",
-          "lang_name": "Vene keel",
-          "literal_trans": "karedakarvaline tagel",
-          "is_preferred": false
-        },
-        {
-          "name": "Sarainā tauriņpiepe",
-          "language": "lav",
-          "lang_name": "Läti keel",
-          "literal_trans": "harjaskarvane libliktaelik",
-          "is_preferred": true
-        },
-        {
-          "name": "Šiurkščioji kempė",
-          "language": "lit",
-          "lang_name": "Leedu keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Wrośniak szorstki",
-          "language": "pol",
-          "lang_name": "Poola keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Hairy Bracket",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "karvane konsoolseen",
-          "is_preferred": false
-        },
-        {
-          "name": "Striegelige Tramete",
-          "language": "deu",
-          "lang_name": "Saksa keel",
-          "literal_trans": "harjas-",
-          "is_preferred": false
-        },
-        {
-          "name": "Tramète hirsute",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "poliporo peludo , yesquero peludo",
-          "language": "spa",
-          "lang_name": "Hispaania keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "yesquero blanco peludo",
-          "language": "spa",
-          "lang_name": "Hispaania keel",
-          "literal_trans": "",
-          "is_preferred": false
-        }
-      ],
-      "all_names_search": "vill-tagel villtagel karvavyökääpä borstticka raggkjuke raggkjuke Håret læderporesvamp Траметес жёстковолосистый Sarainā tauriņpiepe Šiurkščioji kempė Wrośniak szorstki Hairy Bracket Striegelige Tramete Tramète hirsute poliporo peludo , yesquero peludo yesquero blanco peludo Trametes hirsuta (Wulfen) Pilat Trametes hirsuta",
-      "est_name": "vill-tagel, villtagel"
     },
     "147778": {
       "vernacular_names": [
@@ -45478,138 +45615,6 @@
       ],
       "all_names_search": "kirju puravik nokitatti fläcksopp svartskrubb svartskrubb Flammet skælrørhat Подберёзовик разноцветный Raibā bērzubeka Kislusis Raudonviršis Koźlarz różnobarwny Mottled Bolete Gefleckter Raufuß Verschiedenfarbiger Raufuß Vielverfärbender Birkenpilz Bolet ramoneur Ramoneur (Le), Bolet ramoneur, Bolet du bouleau Leccinum variicolor Watling Leccinum variicolor",
       "est_name": "kirju puravik"
-    },
-    "152947": {
-      "vernacular_names": [
-        {
-          "name": "lilla narmasnutt",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "siid-narmasnutt",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "valge narmasnutt",
-          "language": "est",
-          "lang_name": "Eesti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "valkorisakas",
-          "language": "fin",
-          "lang_name": "Soome keel",
-          "literal_trans": "valge-",
-          "is_preferred": false
-        },
-        {
-          "name": "Sidentråding",
-          "language": "swe",
-          "lang_name": "Rootsi keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Almindelig trævlhat",
-          "language": "dan",
-          "lang_name": "Taani keel",
-          "literal_trans": "kübar",
-          "is_preferred": false
-        },
-        {
-          "name": "Волоконница земляная",
-          "language": "rus",
-          "lang_name": "Vene keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Zemes šķiedrgalvīte",
-          "language": "lav",
-          "lang_name": "Läti keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Pilkalakštė plaušabudė",
-          "language": "lit",
-          "lang_name": "Leedu keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Strzępiak ziemistoblaszkowy",
-          "language": "pol",
-          "lang_name": "Poola keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Strzępiak ziemisty",
-          "language": "pol",
-          "lang_name": "Poola keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "White Fibrecap",
-          "language": "eng",
-          "lang_name": "Inglise keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Erdblättriger Risspilz",
-          "language": "deu",
-          "lang_name": "Saksa keel",
-          "literal_trans": "seen",
-          "is_preferred": false
-        },
-        {
-          "name": "Inocibe terrestre",
-          "language": "spa",
-          "lang_name": "Hispaania keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Inocybe terreux",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Inocybe à lames couleur de terre",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "Inocybe à lames couleur de terre, Inocybe terreux",
-          "language": "fra",
-          "lang_name": "Prantsuse keel",
-          "literal_trans": "",
-          "is_preferred": false
-        },
-        {
-          "name": "inocibe blanco",
-          "language": "spa",
-          "lang_name": "Hispaania keel",
-          "literal_trans": "",
-          "is_preferred": false
-        }
-      ],
-      "all_names_search": "lilla narmasnutt siid-narmasnutt valge narmasnutt valkorisakas Sidentråding Almindelig trævlhat Волоконница земляная Zemes šķiedrgalvīte Pilkalakštė plaušabudė Strzępiak ziemistoblaszkowy Strzępiak ziemisty White Fibrecap Erdblättriger Risspilz Inocibe terrestre Inocybe terreux Inocybe à lames couleur de terre Inocybe à lames couleur de terre, Inocybe terreux inocibe blanco Inocybe geophylla (Bull.) P. Kumm. Inocybe geophylla",
-      "est_name": "lilla narmasnutt, siid-narmasnutt, valge narmasnutt"
     },
     "172391": {
       "vernacular_names": [
@@ -65112,6 +65117,192 @@
     }
   },
   "observations": [
+    {
+      "id": "8343905",
+      "taxon": "Phellinus tremulae (Bondartsev) Bondartsev & Borissov",
+      "taxon_id": "164837",
+      "taxon_key": "164837",
+      "est_name": "haavataelik",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2026-09-18",
+      "latitude": 58.32824167,
+      "longitude": 24.15800556,
+      "altitude": 54.3,
+      "locality": "Päraküla",
+      "county": "Pärnu maakond",
+      "commune": "Pärnu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "110041",
+      "project_name": "2026 Autumn Mushroom Foray",
+      "url": "https://app.plutof.ut.ee/observation/view/8343905",
+      "created_at": "2026-09-18T14:32:41.724058+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/6aa5f7cc-baf7-4527-b7f7-e55878c0568c.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/6aa5f7cc-baf7-4527-b7f7-e55878c0568c.jpg",
+          "filename": "PXL_20260918_082203277.jpg"
+        }
+      ],
+      "is_specimen": false,
+      "specimen_type": "",
+      "specimen_code": "",
+      "microscopic_notes": ""
+    },
+    {
+      "id": "8343904",
+      "taxon": "Lactarius torminosus (Schaeff.) Pers.",
+      "taxon_id": "154227",
+      "taxon_key": "154227",
+      "est_name": "kaseriisikas, vahelik, vahulik",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2026-09-18",
+      "latitude": 58.32964722,
+      "longitude": 24.15496111,
+      "altitude": 50.6,
+      "locality": "Päraküla",
+      "county": "Pärnu maakond",
+      "commune": "Pärnu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "110041",
+      "project_name": "2026 Autumn Mushroom Foray",
+      "url": "https://app.plutof.ut.ee/observation/view/8343904",
+      "created_at": "2026-09-18T14:29:05.911880+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/74eb2931-2a14-4b51-a31a-8ff49766d9ac.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/74eb2931-2a14-4b51-a31a-8ff49766d9ac.jpg",
+          "filename": "PXL_20260918_084451543.jpg"
+        }
+      ],
+      "is_specimen": false,
+      "specimen_type": "",
+      "specimen_code": "",
+      "microscopic_notes": ""
+    },
+    {
+      "id": "8343903",
+      "taxon": "Inocybe geophylla (Bull.) P. Kumm.",
+      "taxon_id": "152947",
+      "taxon_key": "152947",
+      "est_name": "lilla narmasnutt, siid-narmasnutt, valge narmasnutt",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2026-09-18",
+      "latitude": 58.31831389,
+      "longitude": 24.153625,
+      "altitude": 43.7,
+      "locality": "Kõpu küla",
+      "county": "Pärnu maakond",
+      "commune": "Pärnu linn",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "110041",
+      "project_name": "2026 Autumn Mushroom Foray",
+      "url": "https://app.plutof.ut.ee/observation/view/8343903",
+      "created_at": "2026-09-18T14:28:28.043647+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/1c1bd299-939d-4a48-b30b-d0ebdd037c34.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/1c1bd299-939d-4a48-b30b-d0ebdd037c34.jpg",
+          "filename": "PXL_20260918_063526903.NIGHT.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/04522a4a-d0c1-40f0-947f-47560eae5d34.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/04522a4a-d0c1-40f0-947f-47560eae5d34.jpg",
+          "filename": "PXL_20260918_063531321.NIGHT.jpg"
+        },
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/c298f7c6-fd9d-4af1-baf9-f7710999e672.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/c298f7c6-fd9d-4af1-baf9-f7710999e672.jpg",
+          "filename": "PXL_20260918_063534461.NIGHT.jpg"
+        }
+      ],
+      "is_specimen": false,
+      "specimen_type": "",
+      "specimen_code": "",
+      "microscopic_notes": ""
+    },
+    {
+      "id": "8343253",
+      "taxon": "Trametes hirsuta (Wulfen) Pilat",
+      "taxon_id": "178675",
+      "taxon_key": "178675",
+      "est_name": "vill-tagel, villtagel",
+      "red_list_status": "",
+      "red_list_label": "",
+      "protection_category": "",
+      "red_list_score": 99,
+      "date": "2026-09-16",
+      "latitude": 59.43725,
+      "longitude": 25.24663611,
+      "altitude": 58.7,
+      "locality": "Ruu küla",
+      "county": "Harju maakond",
+      "commune": "Jõelähtme vald",
+      "substrate": "",
+      "substrate_type": "",
+      "abundance": "",
+      "remarks": "",
+      "is_co_observer": false,
+      "collectors": "Boris Meldre",
+      "primary_observer": "Boris Meldre",
+      "determiner": "Boris Meldre",
+      "verified_by": "",
+      "is_verified": false,
+      "habitat": "",
+      "project_id": "",
+      "project_name": "",
+      "url": "https://app.plutof.ut.ee/observation/view/8343253",
+      "created_at": "2026-09-16T18:02:19.815434+00:00",
+      "photos": [
+        {
+          "url": "https://s3.hpc.ut.ee/plutof-public/large/5132ca34-db03-4da6-870a-2137ced7e073.jpg",
+          "thumbnail": "https://s3.hpc.ut.ee/plutof-public/large/5132ca34-db03-4da6-870a-2137ced7e073.jpg",
+          "filename": "PXL_20260916_095022763.MACRO_FOCUS.jpg"
+        }
+      ],
+      "is_specimen": false,
+      "specimen_type": "",
+      "specimen_code": "",
+      "microscopic_notes": ""
+    },
     {
       "id": "8342851",
       "taxon": "Lactarius glyciosmus (Fr.) Fr.",

@@ -522,6 +522,18 @@ function applyFilters(workerMatches) {
   const redLabel = redList ? ` • Punane nimestik: ${redList}` : "";
   document.getElementById("resultsMeta").textContent = `${filteredObs.length} vaatlust leitud (${primCount} minu, ${coCount} kaasvaatlust • ${projLabel}${redLabel})`;
 
+  const notice = document.getElementById("projectFilterNotice");
+  if (notice) {
+    const hiddenByProject = project === "none" ? observations.filter(o => o.project_id).length : 0;
+    if (hiddenByProject > 0) {
+      notice.style.display = "flex";
+      notice.innerHTML = `Vaade on piiratud isiklike (projektita) vaatlustega — ${hiddenByProject} projekti vaatlust (nt uusimad foray/uuringu leiud) on hetkel peidus. <button type="button" onclick="document.getElementById('projectFilter').value='all';applyFilters();">Näita kõiki vaatlusi</button>`;
+    } else {
+      notice.style.display = "none";
+      notice.innerHTML = "";
+    }
+  }
+
   currentPage = 1;
   renderList();
   renderMarkers();
